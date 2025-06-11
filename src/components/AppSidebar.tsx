@@ -1,5 +1,14 @@
-
-import { Calendar, Code, FileText, Home, BookOpen, Lightbulb, MessageCircle, GitBranch } from "lucide-react";
+import {
+  Calendar,
+  Code,
+  FileText,
+  Home,
+  BookOpen,
+  Lightbulb,
+  MessageCircle,
+  GitBranch,
+} from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import {
   Sidebar,
   SidebarContent,
@@ -16,51 +25,46 @@ import {
 const navigationItems = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
-    title: "Introduction",
-    url: "#introduction",
-    icon: BookOpen,
-  },
-  {
-    title: "How It Works",
-    url: "#how-it-works",
-    icon: GitBranch,
-  },
-  {
     title: "User Guides",
-    url: "#user-guides",
+    url: "/user-guides",
     icon: FileText,
   },
   {
     title: "Developer Docs",
-    url: "#developer-docs",
+    url: "/developer-docs",
     icon: Code,
   },
   {
     title: "Whitepaper",
-    url: "#whitepaper",
+    url: "/whitepaper",
     icon: Lightbulb,
   },
   {
-    title: "FAQs",
-    url: "#faqs",
+    title: "FAQs & Glossary",
+    url: "/faqs",
     icon: MessageCircle,
   },
   {
     title: "Changelog",
-    url: "#changelog",
+    url: "/changelog",
     icon: Calendar,
   },
 ];
 
 export function AppSidebar() {
+  const location = useLocation();
+
   return (
     <Sidebar className="border-r border-border/50">
       <SidebarHeader className="p-6">
-        <div className="flex items-center gap-3">
+        <Link
+          to="/"
+          className="flex items-center gap-3 hover:opacity-90 transition-opacity"
+        >
           <div className="w-10 h-10 lotus-gradient rounded-lg flex items-center justify-center lotus-bloom">
             <span className="text-white font-bold text-lg">蓮</span>
           </div>
@@ -72,9 +76,9 @@ export function AppSidebar() {
               Cầu nối đa chuỗi
             </p>
           </div>
-        </div>
+        </Link>
       </SidebarHeader>
-      
+
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground mb-3">
@@ -84,11 +88,21 @@ export function AppSidebar() {
             <SidebarMenu>
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild className="bridge-transition">
-                    <a href={item.url} className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-accent/20 transition-all duration-300">
+                  <SidebarMenuButton
+                    asChild
+                    className={`bridge-transition ${
+                      location.pathname === item.url
+                        ? "bg-primary/10 text-primary"
+                        : ""
+                    }`}
+                  >
+                    <Link
+                      to={item.url}
+                      className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-accent/20 transition-all duration-300"
+                    >
                       <item.icon className="w-5 h-5" />
                       <span className="font-medium">{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -96,7 +110,7 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      
+
       <SidebarFooter className="p-6">
         <div className="text-center">
           <div className="text-xs text-muted-foreground mb-2">
