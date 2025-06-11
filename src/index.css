@@ -1,94 +1,107 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Vietnamese-inspired design system with lotus and Dong Son motifs */
 
 @layer base {
   :root {
+    /* Lotus-inspired color palette */
+    --lotus-pink: 341 100% 84%;
+    --lotus-deep-pink: 341 85% 65%;
+    --lotus-green: 142 76% 36%;
+    --lotus-deep-green: 142 84% 24%;
+    --lotus-gold: 45 93% 58%;
+    --lotus-red: 0 84% 60%;
+    
+    /* Vietnamese cultural colors */
+    --vn-red: 0 100% 50%;
+    --vn-gold: 43 100% 50%;
+    --vn-deep-blue: 222 47% 11%;
+    
+    /* Technical documentation colors */
+    --tech-gray: 210 11% 15%;
+    --tech-light-gray: 210 11% 85%;
+    --tech-accent: 217 91% 60%;
+    
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: var(--tech-gray);
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: var(--tech-gray);
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: var(--tech-gray);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--lotus-deep-pink);
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: var(--lotus-pink);
+    --secondary-foreground: var(--tech-gray);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: var(--tech-light-gray);
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--lotus-gold);
+    --accent-foreground: var(--tech-gray);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: var(--lotus-red);
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: var(--lotus-deep-pink);
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-foreground: var(--tech-gray);
+    --sidebar-primary: var(--lotus-deep-pink);
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
+    --sidebar-accent: var(--lotus-pink);
+    --sidebar-accent-foreground: var(--tech-gray);
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: var(--tech-accent);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: var(--tech-gray);
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222 84% 5%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--lotus-pink);
+    --primary-foreground: var(--tech-gray);
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: var(--lotus-gold);
     --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: var(--lotus-pink);
+
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: var(--lotus-pink);
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: var(--tech-accent);
   }
 }
 
@@ -99,5 +112,118 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Be Vietnam Pro', 'Inter', system-ui, sans-serif;
   }
+
+  /* Vietnamese-inspired patterns */
+  .dong-son-pattern {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 8px,
+      hsl(var(--lotus-gold) / 0.1) 8px,
+      hsl(var(--lotus-gold) / 0.1) 16px
+    );
+  }
+
+  .lotus-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--lotus-pink)) 0%, 
+      hsl(var(--lotus-deep-pink)) 50%, 
+      hsl(var(--lotus-gold)) 100%);
+  }
+
+  /* Smooth scrolling and transitions */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Typography for Vietnamese text */
+  .vietnamese-text {
+    font-family: 'Be Vietnam Pro', 'Noto Sans Vietnamese', sans-serif;
+    line-height: 1.7;
+  }
+
+  /* Custom animations */
+  @keyframes lotus-bloom {
+    0% {
+      transform: scale(0.8) rotate(-5deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.05) rotate(2deg);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes silk-flow {
+    0%, 100% {
+      transform: translateY(0px) scaleY(1);
+    }
+    50% {
+      transform: translateY(-10px) scaleY(1.05);
+    }
+  }
+
+  .lotus-bloom {
+    animation: lotus-bloom 2s ease-out;
+  }
+
+  .silk-flow {
+    animation: silk-flow 4s ease-in-out infinite;
+  }
+
+  /* Bridge transition effect */
+  .bridge-transition {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bridge-transition::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      hsl(var(--lotus-gold) / 0.3) 50%, 
+      transparent 100%);
+    transition: left 0.6s ease-in-out;
+  }
+
+  .bridge-transition:hover::before {
+    left: 100%;
+  }
+}
+
+/* Code syntax highlighting */
+pre {
+  @apply bg-muted/50 rounded-lg p-4 overflow-x-auto;
+}
+
+code {
+  @apply bg-muted/30 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted/30;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
 }
