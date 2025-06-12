@@ -1,0 +1,492 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "home": "Home",
+        "language": "Language",
+        "english": "English",
+        "vietnamese": "Vietnamese",
+        "search": "Search",
+        "readMore": "Read More",
+        "learnMore": "Learn More",
+        "getStarted": "Get Started",
+        "viewAll": "View All",
+        "comingSoon": "Coming Soon",
+        "newFeature": "New Feature",
+        "beta": "Beta"
+    },
+    "navigation": {
+        "home": "Home",
+        "userGuides": "User Guides",
+        "developerDocs": "Developer Documentation",
+        "whitepaper": "Whitepaper",
+        "faqs": "FAQs",
+        "changelog": "Changelog",
+        "documentation": "Documentation"
+    },
+    "hero": {
+        "title": "🌸 Lotus Bridge",
+        "subtitle": "Built by Vietnam. Bridging the World.",
+        "subtitleVietnamese": "Xây dựng bởi Việt Nam. Kết nối thế giới.",
+        "mission": "From the heart of Vietnam blooms the Lotus — bridging blockchains, cultures, and futures. This is not just about swapping tokens. It's about freedom of movement, sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
+        "getStarted": "Get Started",
+        "viewDocs": "View Documentation",
+        "learnMore": "Learn More"
+    },
+    "introduction": {
+        "badge": "Vietnamese Innovation",
+        "title": "🌍 The Problem: A Fragmented World of Chains",
+        "description": "Today's blockchain landscape is vast, vibrant, and… fractured. Each network speaks its own language, runs on its own logic, and is home to unique communities and ecosystems. But for the average user — especially those in emerging markets like Vietnam — navigating this complexity feels like crossing rivers with no bridges.",
+        "solution": {
+            "title": "🌸 Enter Lotus Bridge – Blooming Unity From Diversity",
+            "description": "Inspired by the Lotus — a sacred symbol of purity, resilience, and rebirth in Vietnamese culture — Lotus Bridge rises as a trustless, multi-chain, architecture-agnostic super-bridge."
+        },
+        "mission": {
+            "title": "Mission - Sứ mệnh",
+            "description": "To democratize cross-chain transactions by building secure, efficient, and culturally-inspired infrastructure that connects global blockchain networks while honoring Vietnamese values of community, resilience, and innovation."
+        },
+        "vision": {
+            "title": "Vision - Tầm nhìn",
+            "description": "To establish Vietnam as a leading force in blockchain interoperability, creating a world where value flows seamlessly across networks like the Mekong River flows through our homeland."
+        },
+        "vietnameseRoots": {
+            "title": "Vietnamese Roots & Global Impact",
+            "culturalHeritage": {
+                "title": "Cultural Heritage",
+                "description": "Drawing inspiration from traditional Vietnamese craftsmanship and values"
+            },
+            "communityFirst": {
+                "title": "Community First",
+                "description": "Built by the community, for the community, with transparency at its core"
+            },
+            "innovationSpirit": {
+                "title": "Innovation Spirit",
+                "description": "Pushing technological boundaries while staying true to our values"
+            }
+        },
+        "whyLotusMatters": {
+            "title": "Why Lotus Bridge Matters",
+            "securityFirst": {
+                "title": "Security First",
+                "description": "Multi-signature validation and rigorous security audits"
+            },
+            "costEffective": {
+                "title": "Cost Effective",
+                "description": "Minimal fees without compromising security or speed"
+            },
+            "userFriendly": {
+                "title": "User Friendly",
+                "description": "Intuitive interface designed for both beginners and advanced users"
+            },
+            "globalReach": {
+                "title": "Global Reach",
+                "description": "Support for major blockchain networks worldwide"
+            }
+        }
+    },
+    "features": {
+        "title": "Why Choose Lotus Bridge?",
+        "subtitle": "Built with Vietnamese innovation and cutting-edge technology to provide the best cross-chain experience.",
+        "lightningFast": {
+            "title": "Lightning Fast",
+            "description": "Sub-15 second finality with our innovative Lotus Consensus Algorithm"
+        },
+        "ultraSecure": {
+            "title": "Ultra Secure",
+            "description": "Multi-layer security with zero-knowledge proofs and validator consensus"
+        },
+        "lowFees": {
+            "title": "Ultra Low Fees",
+            "description": "Minimal transaction costs with transparent fee structure"
+        },
+        "userFriendly": {
+            "title": "User Friendly",
+            "description": "Intuitive interface designed for both beginners and advanced users"
+        }
+    },
+    "quickStart": {
+        "connectWallet": {
+            "title": "Connect Wallet",
+            "description": "Link your crypto wallet to get started with bridging"
+        },
+        "documentation": {
+            "title": "Documentation",
+            "description": "Comprehensive guides for developers and users"
+        },
+        "community": {
+            "title": "Community",
+            "description": "Join our Discord, follow on Twitter, and connect with the Lotus community"
+        }
+    },
+    "userGuides": {
+        "title": "User Guides",
+        "subtitle": "Step-by-step guides to help you navigate and use Lotus Bridge effectively. From wallet connection to advanced bridging strategies.",
+        "badge": "User Documentation",
+        "gettingStarted": "Getting Started",
+        "tokenBridging": "Token Bridging",
+        "securityBestPractices": "Security Best Practices",
+        "troubleshooting": "Troubleshooting",
+        "walletConnection": {
+            "title": "Wallet Connection",
+            "description": "Connect your wallet to start using Lotus Bridge",
+            "step1": "Install wallet extension (MetaMask, WalletConnect, etc.)",
+            "step2": "Click 'Connect Wallet' on our platform",
+            "step3": "Approve the connection request",
+            "step4": "Verify your wallet is connected"
+        },
+        "accountSetup": {
+            "title": "Account Setup",
+            "description": "Optimize your account for secure bridging",
+            "setupAccount": "Setup Account"
+        },
+        "howToBridge": {
+            "title": "How to Bridge Tokens",
+            "description": "Complete walkthrough of the token bridging process",
+            "selectNetworks": {
+                "title": "Select Networks",
+                "description": "Choose source and destination blockchains"
+            },
+            "enterAmount": {
+                "title": "Enter Amount",
+                "description": "Specify the amount of tokens to bridge"
+            },
+            "confirmTransaction": {
+                "title": "Confirm Transaction",
+                "description": "Review details and complete the transfer"
+            }
+        }
+    },
+    "developerDocs": {
+        "title": "Developer Documentation",
+        "subtitle": "Comprehensive guides, APIs, and SDKs to integrate Lotus Bridge into your applications. Build the future of cross-chain DeFi.",
+        "badge": "Developer Resources",
+        "quickStart": {
+            "title": "Quick Start",
+            "description": "Get up and running in minutes",
+            "button": "View Quick Start Guide"
+        },
+        "apiReference": {
+            "title": "API Reference",
+            "description": "Complete API documentation",
+            "button": "Browse API Docs"
+        },
+        "sdkDownloads": {
+            "title": "SDK Downloads",
+            "description": "Official SDKs and libraries",
+            "button": "Download SDKs"
+        },
+        "restApi": {
+            "title": "REST API",
+            "overview": {
+                "title": "REST API Overview",
+                "description": "RESTful API for querying bridge status, transaction history, and supported networks"
+            },
+            "baseUrl": "Base URL",
+            "authentication": "Authentication",
+            "authDescription": "Most endpoints are public. For private endpoints, include your API key in the header:",
+            "coreEndpoints": "Core Endpoints"
+        },
+        "javascriptSdk": {
+            "title": "JavaScript SDK",
+            "description": "Official TypeScript/JavaScript SDK for seamless integration",
+            "installation": "Installation",
+            "basicUsage": "Basic Usage",
+            "configurationOptions": "Configuration Options"
+        },
+        "smartContracts": {
+            "title": "Smart Contract Integration",
+            "description": "Direct smart contract interaction for advanced use cases",
+            "bridgeContracts": "Bridge Contract Addresses",
+            "keyFunctions": "Key Functions",
+            "exampleIntegration": "Example Contract Integration"
+        },
+        "webhooks": {
+            "title": "Webhooks",
+            "description": "Real-time notifications for transaction events",
+            "eventTypes": "Event Types",
+            "payloadExample": "Webhook Payload Example",
+            "setupInstructions": "Setup Instructions"
+        }
+    },
+    "changelog": {
+        "title": "Changelog",
+        "subtitle": "Track the evolution of Lotus Bridge with detailed release notes, new features, improvements, and important updates.",
+        "badge": "Version History",
+        "latestRelease": "Latest Release",
+        "upcomingReleases": "Upcoming Releases",
+        "stayUpdated": "Stay Updated",
+        "stayUpdatedDescription": "Follow our development progress and get notified about new releases",
+        "followGithub": "Follow on GitHub",
+        "joinCommunity": "Join Community",
+        "releaseHighlights": "Release Highlights",
+        "majorUpdates": "Major Updates",
+        "improvements": "Improvements",
+        "bugFixes": "Bug Fixes",
+        "breaking": "Breaking Changes",
+        "deprecated": "Deprecated",
+        "security": "Security Updates",
+        "performance": "Performance",
+        "viewAll": "View All Changes",
+        "downloadRelease": "Download Release"
+    },
+    "faqs": {
+        "title": "FAQs & Glossary",
+        "subtitle": "Find answers to common questions and understand key concepts about cross-chain bridging and Lotus Bridge.",
+        "badge": "Help & Support",
+        "searchPlaceholder": "Search FAQs and terms...",
+        "generalQuestions": "General Questions",
+        "bridging": "Bridging",
+        "security": "Security",
+        "technical": "Technical",
+        "glossary": "Glossary",
+        "noResults": "No results found. Try searching for different terms.",
+        "stillNeedHelp": "Still need help?",
+        "contactSupport": "Contact Support",
+        "joinDiscord": "Join Discord",
+        "browseAllFAQs": "Browse All FAQs"
+    },
+    "whitepaper": {
+        "title": "Lotus Bridge Whitepaper",
+        "subtitle": "Comprehensive technical documentation detailing the architecture, economics, and vision behind Lotus Bridge's cross-chain infrastructure.",
+        "badge": "Technical Documentation",
+        "downloadPdf": "Download PDF",
+        "viewOnline": "View Online",
+        "share": "Share",
+        "bookmark": "Bookmark",
+        "lastUpdated": "Last Updated",
+        "readingTime": "min read",
+        "tableOfContents": "Table of Contents",
+        "abstract": "Abstract",
+        "introduction": "Introduction",
+        "architecture": "Architecture",
+        "consensus": "Consensus Mechanism",
+        "security": "Security Model",
+        "economics": "Token Economics",
+        "roadmap": "Roadmap",
+        "conclusion": "Conclusion",
+        "references": "References",
+        "appendix": "Appendix"
+    },
+    "notFound": {
+        "title": "404",
+        "subtitle": "Oops! Page not found",
+        "description": "The page you're looking for doesn't exist or has been moved.",
+        "returnHome": "Return to Home",
+        "browsePages": "Browse Pages",
+        "reportIssue": "Report Issue"
+    },
+    "footer": {
+        "title": "Lotus Bridge",
+        "subtitle": "Bridging blockchain networks with Vietnamese innovation",
+        "copyright": "Built with 💚 in Vietnam • © 2024 Lotus Bridge Team"
+    },
+    "vietnameseFeatures": {
+        "title": "🇻🇳 Built for Vietnam. Bridging the World.",
+        "subtitle": "The first bridge built by Vietnamese for Vietnamese, designed with cultural, economic, and technological sensitivity.",
+        "localTokens": {
+            "title": "Vietnamese Token Support",
+            "description": "Supports local tokens often neglected by other platforms — including SLP, VNST, SIPHER, KNC, KAI, VNDC, and C98.",
+            "tokens": [
+                "VNDC",
+                "VNST",
+                "KNC",
+                "C98",
+                "SLP",
+                "SIPHER",
+                "KAI"
+            ]
+        },
+        "localizedUX": {
+            "title": "Fully Localized UX",
+            "description": "Intuitive, educational, accessible interface designed for Vietnamese users"
+        },
+        "liquidityEnvironment": {
+            "title": "Vietnamese Liquidity Focus",
+            "description": "Designed for the unique liquidity environment of Vietnam"
+        },
+        "developerToolkit": {
+            "title": "Vietnamese Developer Toolkit",
+            "description": "SDKs, APIs, and localized documentation for Vietnamese developers"
+        }
+    },
+    "symbolism": {
+        "title": "🌱 The Symbolism of the Lotus",
+        "description": "In Vietnamese culture, the lotus rises pure from murky waters. It represents resilience, rebirth, and peace. In blockchain, that water is fragmentation, isolation, and complexity. Lotus Bridge blooms as the answer — creating order from chaos, clarity from confusion.",
+        "movement": "It is more than a bridge. It is a movement."
+    },
+    "vision": {
+        "title": "💡 The Vision: A Resilient Future, Rooted in Innovation",
+        "description": "Lotus Bridge is not a temporary product. It's an infrastructure layer.",
+        "features": {
+            "futureProof": "Its architecture-agnostic model means it's future-proof — adaptable to whatever blockchain innovations emerge.",
+            "marketResilience": "In a market downturn, when hype-driven projects fail, Lotus Bridge survives — because it's functional, essential, and deeply integrated into user habits and DeFi flows.",
+            "liquidityFreedom": "It enables liquidity freedom — unlocking new strategies for traders, builders, and protocols.",
+            "developerToolkit": "It provides a toolkit for Vietnamese developers to build on top of, with SDKs, APIs, and localized documentation."
+        }
+    },
+    "impact": {
+        "title": "🌐 Why This Matters for Vietnam — and Beyond",
+        "forUsers": {
+            "title": "For Vietnamese users",
+            "benefits": [
+                "One interface to rule them all",
+                "Access global liquidity with local tokens",
+                "Transfer wealth between chains, addresses, and formats without complexity"
+            ]
+        },
+        "forDevelopers": {
+            "title": "For developers",
+            "benefits": [
+                "Build cross-chain dApps faster",
+                "Local-first focus brings a Vietnamese innovation layer into global projects"
+            ]
+        },
+        "forLiquidityProviders": {
+            "title": "For liquidity providers",
+            "benefits": [
+                "Plug into a multi-chain bridge that constantly moves volume",
+                "Yield opportunities across volatile markets, secured by real-world utility"
+            ]
+        },
+        "forTheWorld": {
+            "title": "For the world",
+            "benefits": [
+                "Vietnam becomes a key player in Web3 infrastructure — not just a consumer market, but a technology exporter",
+                "Lotus Bridge becomes the model for regional-first DeFi innovation — where culture meets code, and local strength drives global growth"
+            ]
+        }
+    },
+    "finalMessage": {
+        "title": "🚀 Final Message: Lotus Bridge Is the Infrastructure of Tomorrow",
+        "subtitle": "This is not just about swapping tokens.",
+        "points": [
+            "It's about freedom of movement.",
+            "It's about sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
+            "Lotus Bridge doesn't just move assets — it moves the future of Vietnamese crypto, and with it, reshapes global DeFi."
+        ],
+        "tagline": "🌸 Lotus Bridge - Built by Vietnam. Bridging the World."
+    },
+    "architecture": {
+        "title": "Architecture & Core Concept",
+        "subtitle": "Modular architecture consisting of specialized layers",
+        "layers": {
+            "networkAdapter": {
+                "title": "Network Adapter Layer",
+                "description": "Interfaces with various blockchain protocols, extracting transaction methods and enabling compatibility across chains"
+            },
+            "bridgeOrchestration": {
+                "title": "Bridge Orchestration Layer",
+                "description": "Coordinates transaction logic, handles validation, and manages state transitions between networks"
+            },
+            "walletManagement": {
+                "title": "Wallet Management Layer",
+                "description": "Supports multi-wallet connectivity and address mapping across architectures"
+            },
+            "localization": {
+                "title": "Localization Layer",
+                "description": "Provides localized content, user flows, and token compatibility tailored to the Vietnamese ecosystem"
+            },
+            "security": {
+                "title": "Security & Validation Layer",
+                "description": "Incorporates decentralized validation mechanisms, rate-limiting, fraud detection, and fail-safes"
+            }
+        }
+    },
+    "useCases": {
+        "title": "Use Cases",
+        "crossChainTransfers": "Cross-chain asset transfers: Move your VNDC from Ethereum to Solana",
+        "chainToChainSwaps": "Chain-to-chain swaps: Instantly swap AXS on Ronin for ETH on Ethereum",
+        "multiWalletManagement": "Multi-wallet portfolio management: Bridge and swap between addresses you control on different chains",
+        "localizedDefi": "Localized DeFi: Participate in DeFi protocols using regionally popular tokens",
+        "liquidityRouting": "Liquidity routing: Arbitrage opportunities and LP provisioning across fragmented pools"
+    },
+    "ecosystemBenefits": {
+        "title": "Ecosystem Benefits",
+        "forUsers": {
+            "title": "For Users",
+            "benefits": [
+                "Simplified access to global DeFi",
+                "Local-first design with Vietnamese token support",
+                "Flexible transaction routing across multiple chains"
+            ]
+        },
+        "forDevelopers": {
+            "title": "For Developers",
+            "benefits": [
+                "SDKs and APIs for building cross-chain dApps",
+                "Developer-friendly documentation localized for Vietnam"
+            ]
+        },
+        "forLiquidityProviders": {
+            "title": "For Liquidity Providers",
+            "benefits": [
+                "New liquidity pools tied to real usage",
+                "Exposure to multiple ecosystems through a single bridge",
+                "Dynamic fee structures and yield incentives"
+            ]
+        },
+        "forVietnam": {
+            "title": "For Vietnam's Crypto Industry",
+            "benefits": [
+                "Position Vietnam as a Web3 innovation hub",
+                "Showcase local tokens on the global stage",
+                "Empower local developers and entrepreneurs"
+            ]
+        }
+    },
+    "supportedTokens": {
+        "title": "Supported Vietnamese Tokens",
+        "description": "Native support for tokens popular in Vietnam",
+        "tokens": {
+            "AXS": "Axie Infinity",
+            "SLP": "Smooth Love Potion",
+            "VNDC": "Vietnamese Dong Coin",
+            "VNST": "VN Stable Token",
+            "KAI": "KardiaChain",
+            "SIPHER": "Sipher Token",
+            "A8": "A8 Token",
+            "C98": "Coin98",
+            "KNC": "Kyber Network Crystal"
+        }
+    },
+    "roadmap": {
+        "title": "Development Roadmap",
+        "subtitle": "Strategic milestones and feature releases",
+        "genesis": "v1.0.0 \"Genesis Launch\" (June 2025)",
+        "phases": {
+            "q3_2025": {
+                "title": "Q3 2025: Beta Launch",
+                "description": "Beta launch with EVM + Solana support"
+            },
+            "q4_2025": {
+                "title": "Q4 2025: Tokenomics",
+                "description": "Liquidity provider incentives and tokenomics"
+            },
+            "q1_2026": {
+                "title": "Q1 2026: Mobile Integration",
+                "description": "Mobile wallet integration"
+            },
+            "q2_2026": {
+                "title": "Q2 2026: DAO Launch",
+                "description": "DAO governance model launch"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact Information",
+        "email": "team@lotusbridge.io",
+        "description": "For media inquiries, partnerships, or access to the developer program"
+    },
+    "legal": {
+        "disclaimer": "This document is for informational purposes only and does not constitute legal, financial, or investment advice. The Lotus Bridge project is under continuous development, and all information is subject to change."
+    }
+}

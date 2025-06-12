@@ -49,9 +49,9 @@ const FAQs = () => {
                     FAQs & Glossary
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                    Find answers to frequently asked questions and learn about
-                    cross-chain terminology. Get the help you need to use Lotus
-                    Bridge effectively.
+                    Common questions about Lotus Bridge, Vietnamese token
+                    support, cross-chain bridging, and our vision for Vietnamese
+                    crypto.
                   </p>
                   <div className="max-w-md mx-auto relative">
                     <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
@@ -261,6 +261,285 @@ const FAQs = () => {
                                   <p className="mt-3">
                                     You can track your transaction status in
                                     real-time using our bridge explorer.
+                                  </p>
+                                </AccordionContent>
+                              </AccordionItem>
+
+                              {/* New FAQ items from docs.txt */}
+                              <AccordionItem value="supported-blockchains">
+                                <AccordionTrigger>
+                                  Which blockchains does Lotus Bridge support?
+                                </AccordionTrigger>
+                                <AccordionContent className="space-y-3">
+                                  <p>
+                                    Initially Ethereum, Solana, BNB Chain,
+                                    Polygon, and Ronin, with more to follow.
+                                  </p>
+                                  <p>
+                                    Our architecture-agnostic design allows us
+                                    to rapidly integrate new blockchains as they
+                                    emerge, ensuring Lotus Bridge stays at the
+                                    forefront of cross-chain innovation.
+                                  </p>
+                                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
+                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
+                                      <strong>Ethereum</strong>
+                                      <br />
+                                      <span className="text-xs text-muted-foreground">
+                                        EVM Compatible
+                                      </span>
+                                    </div>
+                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
+                                      <strong>Solana</strong>
+                                      <br />
+                                      <span className="text-xs text-muted-foreground">
+                                        High Performance
+                                      </span>
+                                    </div>
+                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
+                                      <strong>BNB Chain</strong>
+                                      <br />
+                                      <span className="text-xs text-muted-foreground">
+                                        Low Fees
+                                      </span>
+                                    </div>
+                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
+                                      <strong>Polygon</strong>
+                                      <br />
+                                      <span className="text-xs text-muted-foreground">
+                                        Layer 2
+                                      </span>
+                                    </div>
+                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
+                                      <strong>Ronin</strong>
+                                      <br />
+                                      <span className="text-xs text-muted-foreground">
+                                        Gaming Focus
+                                      </span>
+                                    </div>
+                                    <div className="bg-primary/10 p-2 rounded text-center text-sm">
+                                      <strong>More Coming</strong>
+                                      <br />
+                                      <span className="text-xs text-muted-foreground">
+                                        Stay Tuned
+                                      </span>
+                                    </div>
+                                  </div>
+                                </AccordionContent>
+                              </AccordionItem>
+
+                              <AccordionItem value="security-question">
+                                <AccordionTrigger>
+                                  Is Lotus Bridge secure?
+                                </AccordionTrigger>
+                                <AccordionContent className="space-y-3">
+                                  <p>
+                                    <strong>
+                                      Yes, security is a core principle.
+                                    </strong>{" "}
+                                    Lotus uses decentralized validators,
+                                    fallback mechanisms, and real-time
+                                    monitoring to ensure the highest security
+                                    standards.
+                                  </p>
+                                  <div className="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                      <h4 className="font-semibold mb-2">
+                                        Security Features:
+                                      </h4>
+                                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                                        <li>Decentralized validator network</li>
+                                        <li>Multi-signature validations</li>
+                                        <li>Real-time fraud detection</li>
+                                        <li>Emergency pause mechanisms</li>
+                                        <li>Time-locked transactions</li>
+                                      </ul>
+                                    </div>
+                                    <div>
+                                      <h4 className="font-semibold mb-2">
+                                        Security Audits:
+                                      </h4>
+                                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                                        <li>Professional security audits</li>
+                                        <li>Bug bounty programs</li>
+                                        <li>Continuous monitoring</li>
+                                        <li>Community security reviews</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </AccordionContent>
+                              </AccordionItem>
+
+                              <AccordionItem value="multi-wallet-support">
+                                <AccordionTrigger>
+                                  Can I use multiple wallets at once?
+                                </AccordionTrigger>
+                                <AccordionContent className="space-y-3">
+                                  <p>
+                                    <strong>
+                                      Yes, Lotus Bridge allows multi-wallet
+                                      connections and mapping across addresses.
+                                    </strong>
+                                  </p>
+                                  <p>
+                                    This is one of our unique features - you can
+                                    connect multiple wallets from different
+                                    ecosystems simultaneously and bridge assets
+                                    between addresses you control on different
+                                    chains.
+                                  </p>
+                                  <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
+                                    <h4 className="font-medium mb-2">
+                                      Multi-wallet Features:
+                                    </h4>
+                                    <ul className="space-y-1 text-sm">
+                                      <li>
+                                        • Connect MetaMask + Phantom
+                                        simultaneously
+                                      </li>
+                                      <li>
+                                        • Bridge between your different
+                                        addresses
+                                      </li>
+                                      <li>
+                                        • Portfolio management across chains
+                                      </li>
+                                      <li>
+                                        • Address mapping for cross-chain
+                                        identity
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </AccordionContent>
+                              </AccordionItem>
+
+                              <AccordionItem value="native-token">
+                                <AccordionTrigger>
+                                  Is there a native token?
+                                </AccordionTrigger>
+                                <AccordionContent className="space-y-3">
+                                  <p>
+                                    Details on a native token and utility model
+                                    will be announced in a future version.
+                                  </p>
+                                  <p>
+                                    We're currently focused on delivering a
+                                    robust, secure, and user-friendly bridge
+                                    experience. Tokenomics and governance
+                                    mechanisms will be introduced as part of our
+                                    roadmap in Q4 2025.
+                                  </p>
+                                  <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
+                                    <h4 className="font-medium mb-2">
+                                      What to expect:
+                                    </h4>
+                                    <ul className="space-y-1 text-sm text-muted-foreground">
+                                      <li>
+                                        • Governance token for protocol
+                                        decisions
+                                      </li>
+                                      <li>
+                                        • Incentives for liquidity providers
+                                      </li>
+                                      <li>• Fee sharing mechanisms</li>
+                                      <li>• Community-driven development</li>
+                                    </ul>
+                                    <p className="text-xs text-muted-foreground mt-2">
+                                      <strong>Timeline:</strong> Token launch
+                                      planned for Q4 2025
+                                    </p>
+                                  </div>
+                                </AccordionContent>
+                              </AccordionItem>
+
+                              <AccordionItem value="vietnamese-tokens">
+                                <AccordionTrigger>
+                                  🇻🇳 Which Vietnamese tokens are supported?
+                                </AccordionTrigger>
+                                <AccordionContent className="space-y-3">
+                                  <p>
+                                    Lotus Bridge provides native support for
+                                    Vietnamese tokens including:
+                                  </p>
+                                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    <div className="bg-green-50 dark:bg-green-950/20 p-3 rounded border border-green-200 dark:border-green-800">
+                                      <strong className="text-green-800 dark:text-green-400">
+                                        AXS
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-green-600 dark:text-green-300">
+                                        Axie Infinity
+                                      </span>
+                                    </div>
+                                    <div className="bg-blue-50 dark:bg-blue-950/20 p-3 rounded border border-blue-200 dark:border-blue-800">
+                                      <strong className="text-blue-800 dark:text-blue-400">
+                                        SLP
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-blue-600 dark:text-blue-300">
+                                        Smooth Love Potion
+                                      </span>
+                                    </div>
+                                    <div className="bg-purple-50 dark:bg-purple-950/20 p-3 rounded border border-purple-200 dark:border-purple-800">
+                                      <strong className="text-purple-800 dark:text-purple-400">
+                                        VNDC
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-purple-600 dark:text-purple-300">
+                                        VND Coin
+                                      </span>
+                                    </div>
+                                    <div className="bg-orange-50 dark:bg-orange-950/20 p-3 rounded border border-orange-200 dark:border-orange-800">
+                                      <strong className="text-orange-800 dark:text-orange-400">
+                                        VNST
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-orange-600 dark:text-orange-300">
+                                        VN Stable Token
+                                      </span>
+                                    </div>
+                                    <div className="bg-red-50 dark:bg-red-950/20 p-3 rounded border border-red-200 dark:border-red-800">
+                                      <strong className="text-red-800 dark:text-red-400">
+                                        KAI
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-red-600 dark:text-red-300">
+                                        KardiaChain
+                                      </span>
+                                    </div>
+                                    <div className="bg-indigo-50 dark:bg-indigo-950/20 p-3 rounded border border-indigo-200 dark:border-indigo-800">
+                                      <strong className="text-indigo-800 dark:text-indigo-400">
+                                        SIPHER
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-indigo-600 dark:text-indigo-300">
+                                        Sipher Token
+                                      </span>
+                                    </div>
+                                    <div className="bg-yellow-50 dark:bg-yellow-950/20 p-3 rounded border border-yellow-200 dark:border-yellow-800">
+                                      <strong className="text-yellow-800 dark:text-yellow-400">
+                                        C98
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-yellow-600 dark:text-yellow-300">
+                                        Coin98
+                                      </span>
+                                    </div>
+                                    <div className="bg-teal-50 dark:bg-teal-950/20 p-3 rounded border border-teal-200 dark:border-teal-800">
+                                      <strong className="text-teal-800 dark:text-teal-400">
+                                        KNC
+                                      </strong>
+                                      <br />
+                                      <span className="text-xs text-teal-600 dark:teal-300">
+                                        Kyber Network
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <p className="text-sm text-muted-foreground">
+                                    <strong>Note:</strong> We're continuously
+                                    adding support for more Vietnamese and
+                                    regional tokens. If you have a specific
+                                    token request, please contact our team.
                                   </p>
                                 </AccordionContent>
                               </AccordionItem>

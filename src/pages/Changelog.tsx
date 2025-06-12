@@ -23,8 +23,11 @@ import {
   Users,
   Globe,
 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Changelog = () => {
+  const { t } = useLanguage();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -39,14 +42,13 @@ const Changelog = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Version History
+                    {t("changelog.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Changelog
+                    {t("changelog.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Track the evolution of Lotus Bridge with detailed release
-                    notes, new features, improvements, and important updates.
+                    {t("changelog.subtitle")}
                   </p>
                 </div>
               </div>
@@ -82,7 +84,9 @@ const Changelog = () => {
                         <div className="space-y-3">
                           <div className="flex items-center gap-2">
                             <Star className="h-4 w-4 text-yellow-500" />
-                            <h4 className="font-semibold">New Features</h4>
+                            <h4 className="font-semibold">
+                              {t("changelog.majorUpdates")}
+                            </h4>
                           </div>
                           <ul className="space-y-2 text-sm">
                             <li className="flex items-start gap-2">
@@ -114,7 +118,9 @@ const Changelog = () => {
                         <div className="space-y-3">
                           <div className="flex items-center gap-2">
                             <Zap className="h-4 w-4 text-blue-500" />
-                            <h4 className="font-semibold">Improvements</h4>
+                            <h4 className="font-semibold">
+                              {t("changelog.improvements")}
+                            </h4>
                           </div>
                           <ul className="space-y-2 text-sm">
                             <li className="flex items-start gap-2">
@@ -147,7 +153,9 @@ const Changelog = () => {
                         <div className="space-y-3">
                           <div className="flex items-center gap-2">
                             <Shield className="h-4 w-4 text-green-500" />
-                            <h4 className="font-semibold">Security</h4>
+                            <h4 className="font-semibold">
+                              {t("changelog.security")}
+                            </h4>
                           </div>
                           <ul className="space-y-2 text-sm">
                             <li className="flex items-start gap-2">
@@ -182,7 +190,7 @@ const Changelog = () => {
                         <div className="flex items-center gap-2 mb-2">
                           <AlertCircle className="h-4 w-4 text-amber-600" />
                           <span className="font-medium text-amber-800 dark:text-amber-400">
-                            Breaking Changes
+                            {t("changelog.breaking")}
                           </span>
                         </div>
                         <ul className="text-sm text-amber-700 dark:text-amber-300 space-y-1">
@@ -226,7 +234,7 @@ const Changelog = () => {
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
                           <h4 className="font-semibold mb-3 text-green-600">
-                            Improvements
+                            {t("changelog.improvements")}
                           </h4>
                           <ul className="space-y-1 text-sm">
                             <li>
@@ -244,7 +252,7 @@ const Changelog = () => {
                         </div>
                         <div>
                           <h4 className="font-semibold mb-3 text-blue-600">
-                            Bug Fixes
+                            {t("changelog.bugFixes")}
                           </h4>
                           <ul className="space-y-1 text-sm">
                             <li>

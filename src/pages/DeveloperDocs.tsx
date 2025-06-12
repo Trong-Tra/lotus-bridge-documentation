@@ -13,8 +13,11 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Code, Terminal, Book, Zap, Globe, Shield } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const DeveloperDocs = () => {
+  const { t } = useLanguage();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -29,15 +32,15 @@ const DeveloperDocs = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Developer Resources
+                    {t("developerDocs.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Developer Documentation
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Comprehensive guides, APIs, and SDKs to integrate Lotus
-                    Bridge into your applications. Build the future of
-                    cross-chain DeFi.
+                    Build cross-chain dApps with our comprehensive SDK, APIs,
+                    and localized documentation. Vietnamese developers get
+                    first-class support and Vietnamese-first documentation.
                   </p>
                 </div>
               </div>
@@ -50,27 +53,33 @@ const DeveloperDocs = () => {
                   <Card className="border-primary/20">
                     <CardHeader>
                       <Zap className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Quick Start</CardTitle>
+                      <CardTitle>
+                        {t("developerDocs.quickStart.title")}
+                      </CardTitle>
                       <CardDescription>
-                        Get up and running in minutes
+                        {t("developerDocs.quickStart.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <Button className="w-full">View Quick Start Guide</Button>
+                      <Button className="w-full">
+                        {t("developerDocs.quickStart.button")}
+                      </Button>
                     </CardContent>
                   </Card>
 
                   <Card className="border-accent/20">
                     <CardHeader>
                       <Book className="h-8 w-8 text-accent mb-2" />
-                      <CardTitle>API Reference</CardTitle>
+                      <CardTitle>
+                        {t("developerDocs.apiReference.title")}
+                      </CardTitle>
                       <CardDescription>
-                        Complete API documentation
+                        {t("developerDocs.apiReference.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <Button variant="outline" className="w-full">
-                        Browse API Docs
+                        {t("developerDocs.apiReference.button")}
                       </Button>
                     </CardContent>
                   </Card>
@@ -78,14 +87,16 @@ const DeveloperDocs = () => {
                   <Card className="border-green-200 dark:border-green-800">
                     <CardHeader>
                       <Terminal className="h-8 w-8 text-green-600 mb-2" />
-                      <CardTitle>SDK Downloads</CardTitle>
+                      <CardTitle>
+                        {t("developerDocs.sdkDownloads.title")}
+                      </CardTitle>
                       <CardDescription>
-                        Official SDKs and libraries
+                        {t("developerDocs.sdkDownloads.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <Button variant="outline" className="w-full">
-                        Download SDKs
+                        {t("developerDocs.sdkDownloads.button")}
                       </Button>
                     </CardContent>
                   </Card>
@@ -93,27 +104,36 @@ const DeveloperDocs = () => {
 
                 <Tabs defaultValue="rest-api" className="w-full">
                   <TabsList className="grid w-full grid-cols-4">
-                    <TabsTrigger value="rest-api">REST API</TabsTrigger>
-                    <TabsTrigger value="sdk">JavaScript SDK</TabsTrigger>
-                    <TabsTrigger value="smart-contracts">
-                      Smart Contracts
+                    <TabsTrigger value="rest-api">
+                      {t("developerDocs.restApi.title")}
                     </TabsTrigger>
-                    <TabsTrigger value="webhooks">Webhooks</TabsTrigger>
+                    <TabsTrigger value="sdk">
+                      {t("developerDocs.javascriptSdk.title")}
+                    </TabsTrigger>
+                    <TabsTrigger value="smart-contracts">
+                      {t("developerDocs.smartContracts.title")}
+                    </TabsTrigger>
+                    <TabsTrigger value="webhooks">
+                      {t("developerDocs.webhooks.title")}
+                    </TabsTrigger>
                   </TabsList>
 
                   <TabsContent value="rest-api" className="space-y-8">
                     <Card>
                       <CardHeader>
-                        <CardTitle>REST API Overview</CardTitle>
+                        <CardTitle>
+                          {t("developerDocs.restApi.overview.title")}
+                        </CardTitle>
                         <CardDescription>
-                          RESTful API for querying bridge status, transaction
-                          history, and supported networks
+                          {t("developerDocs.restApi.overview.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         <div className="space-y-4">
                           <div>
-                            <h4 className="font-semibold mb-2">Base URL</h4>
+                            <h4 className="font-semibold mb-2">
+                              {t("developerDocs.restApi.baseUrl")}
+                            </h4>
                             <div className="bg-muted rounded-lg p-3 font-mono text-sm">
                               https://api.lotusbridge.io/v1
                             </div>
@@ -121,11 +141,10 @@ const DeveloperDocs = () => {
 
                           <div>
                             <h4 className="font-semibold mb-2">
-                              Authentication
+                              {t("developerDocs.restApi.authentication")}
                             </h4>
                             <p className="text-sm text-muted-foreground mb-3">
-                              Most endpoints are public. For private endpoints,
-                              include your API key in the header:
+                              {t("developerDocs.restApi.authDescription")}
                             </p>
                             <div className="bg-muted rounded-lg p-3 font-mono text-sm">
                               Authorization: Bearer YOUR_API_KEY
@@ -135,7 +154,9 @@ const DeveloperDocs = () => {
                           <Separator />
 
                           <div className="space-y-4">
-                            <h4 className="font-semibold">Core Endpoints</h4>
+                            <h4 className="font-semibold">
+                              {t("developerDocs.restApi.coreEndpoints")}
+                            </h4>
 
                             <div className="border rounded-lg p-4">
                               <div className="flex items-center gap-2 mb-2">
@@ -166,7 +187,7 @@ const DeveloperDocs = () => {
                               <div className="flex items-center gap-2 mb-2">
                                 <Badge variant="secondary">GET</Badge>
                                 <code className="font-mono">
-                                  /transaction/{txHash}
+                                  /transaction/&#123;txHash&#125;
                                 </code>
                               </div>
                               <p className="text-sm text-muted-foreground mb-3">
@@ -210,22 +231,27 @@ const DeveloperDocs = () => {
                   <TabsContent value="sdk" className="space-y-8">
                     <Card>
                       <CardHeader>
-                        <CardTitle>JavaScript SDK</CardTitle>
+                        <CardTitle>
+                          {t("developerDocs.javascriptSdk.title")}
+                        </CardTitle>
                         <CardDescription>
-                          Official TypeScript/JavaScript SDK for seamless
-                          integration
+                          {t("developerDocs.javascriptSdk.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         <div>
-                          <h4 className="font-semibold mb-3">Installation</h4>
+                          <h4 className="font-semibold mb-3">
+                            {t("developerDocs.javascriptSdk.installation")}
+                          </h4>
                           <div className="bg-muted rounded-lg p-3 font-mono text-sm">
                             npm install @lotus-bridge/sdk
                           </div>
                         </div>
 
                         <div>
-                          <h4 className="font-semibold mb-3">Basic Usage</h4>
+                          <h4 className="font-semibold mb-3">
+                            {t("developerDocs.javascriptSdk.basicUsage")}
+                          </h4>
                           <div className="bg-muted rounded-lg p-4 text-sm">
                             <pre>{`import { LotusBridge } from '@lotus-bridge/sdk';
 
@@ -259,7 +285,9 @@ const transaction = await bridge.bridge({
 
                         <div>
                           <h4 className="font-semibold mb-3">
-                            Configuration Options
+                            {t(
+                              "developerDocs.javascriptSdk.configurationOptions"
+                            )}
                           </h4>
                           <div className="space-y-3">
                             <div className="border rounded-lg p-3">
@@ -290,17 +318,20 @@ const transaction = await bridge.bridge({
                   <TabsContent value="smart-contracts" className="space-y-8">
                     <Card>
                       <CardHeader>
-                        <CardTitle>Smart Contract Integration</CardTitle>
+                        <CardTitle>
+                          {t("developerDocs.smartContracts.title")}
+                        </CardTitle>
                         <CardDescription>
-                          Direct smart contract interaction for advanced use
-                          cases
+                          {t("developerDocs.smartContracts.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <h4 className="font-semibold mb-3">
-                              Bridge Contract Addresses
+                              {t(
+                                "developerDocs.smartContracts.bridgeContracts"
+                              )}
                             </h4>
                             <div className="space-y-2 text-sm">
                               <div className="flex justify-between">
@@ -324,7 +355,7 @@ const transaction = await bridge.bridge({
 
                           <div>
                             <h4 className="font-semibold mb-3">
-                              Key Functions
+                              {t("developerDocs.smartContracts.keyFunctions")}
                             </h4>
                             <div className="space-y-2 text-sm">
                               <div className="border rounded p-2">
@@ -353,7 +384,9 @@ const transaction = await bridge.bridge({
 
                         <div>
                           <h4 className="font-semibold mb-3">
-                            Example Contract Integration
+                            {t(
+                              "developerDocs.smartContracts.exampleIntegration"
+                            )}
                           </h4>
                           <div className="bg-muted rounded-lg p-4 text-sm">
                             <pre>{`// SPDX-License-Identifier: MIT
@@ -389,14 +422,18 @@ contract YourContract {
                   <TabsContent value="webhooks" className="space-y-8">
                     <Card>
                       <CardHeader>
-                        <CardTitle>Webhooks</CardTitle>
+                        <CardTitle>
+                          {t("developerDocs.webhooks.title")}
+                        </CardTitle>
                         <CardDescription>
-                          Real-time notifications for transaction events
+                          {t("developerDocs.webhooks.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         <div>
-                          <h4 className="font-semibold mb-3">Event Types</h4>
+                          <h4 className="font-semibold mb-3">
+                            {t("developerDocs.webhooks.eventTypes")}
+                          </h4>
                           <div className="space-y-3">
                             <div className="border rounded-lg p-3">
                               <div className="flex items-center gap-2 mb-2">
@@ -433,7 +470,7 @@ contract YourContract {
 
                         <div>
                           <h4 className="font-semibold mb-3">
-                            Webhook Payload Example
+                            {t("developerDocs.webhooks.payloadExample")}
                           </h4>
                           <div className="bg-muted rounded-lg p-4 text-sm">
                             <pre>{`{
@@ -456,7 +493,7 @@ contract YourContract {
 
                         <div>
                           <h4 className="font-semibold mb-3">
-                            Setup Instructions
+                            {t("developerDocs.webhooks.setupInstructions")}
                           </h4>
                           <div className="space-y-3">
                             <div className="flex items-start gap-3">
@@ -465,11 +502,12 @@ contract YourContract {
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Configure webhook endpoint
+                                  {t(
+                                    "developerDocs.webhooks.configureEndpoint"
+                                  )}
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Set up a POST endpoint to receive webhook
-                                  events
+                                  {t("developerDocs.webhooks.setupDescription")}
                                 </p>
                               </div>
                             </div>
@@ -479,11 +517,12 @@ contract YourContract {
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Register webhook URL
+                                  {t("developerDocs.webhooks.registerUrl")}
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Add your endpoint URL in the developer
-                                  dashboard
+                                  {t(
+                                    "developerDocs.webhooks.registerDescription"
+                                  )}
                                 </p>
                               </div>
                             </div>
@@ -493,11 +532,12 @@ contract YourContract {
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Verify webhook signature
+                                  {t("developerDocs.webhooks.verifySignature")}
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Validate incoming webhooks using the provided
-                                  signature
+                                  {t(
+                                    "developerDocs.webhooks.signatureDescription"
+                                  )}
                                 </p>
                               </div>
                             </div>

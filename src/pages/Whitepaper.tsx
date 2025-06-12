@@ -27,8 +27,11 @@ import {
   TrendingUp,
   Lock,
 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Whitepaper = () => {
+  const { t } = useLanguage();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -43,15 +46,15 @@ const Whitepaper = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Technical Documentation
+                    {t("whitepaper.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Lotus Bridge Whitepaper
+                    🌸 Lotus Bridge Whitepaper
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                    Comprehensive technical documentation covering our vision,
-                    architecture, tokenomics, and security measures for
-                    cross-chain interoperability.
+                    A Gateway of Infinite Possibility, Rooted in Vietnam - "From
+                    the heart of Vietnam blooms the Lotus — bridging
+                    blockchains, cultures, and futures."
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
                     <Button size="lg" className="gap-2">
@@ -131,29 +134,38 @@ const Whitepaper = () => {
                           </CardHeader>
                           <CardContent className="space-y-4">
                             <p className="text-muted-foreground leading-relaxed">
-                              Lotus Bridge represents a paradigm shift in
-                              cross-chain interoperability, addressing the
-                              fundamental challenges of blockchain fragmentation
-                              through innovative Vietnamese-engineered
-                              solutions. Our protocol enables seamless asset
-                              transfers across multiple blockchain networks
-                              while maintaining security, efficiency, and
-                              decentralization.
+                              🌸 Lotus Bridge – A Gateway of Infinite
+                              Possibility, Rooted in Vietnam
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                              Built on a foundation of mathematical rigor and
-                              cryptographic excellence, Lotus Bridge introduces
-                              novel consensus mechanisms and state verification
-                              protocols that ensure atomic cross-chain
-                              transactions without compromising on security or
-                              requiring trusted intermediaries.
+                              "From the heart of Vietnam blooms the Lotus —
+                              bridging blockchains, cultures, and futures."
+                              Inspired by the Lotus — a sacred symbol of purity,
+                              resilience, and rebirth in Vietnamese culture —
+                              Lotus Bridge rises as a trustless, multi-chain,
+                              architecture-agnostic super-bridge.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                              This is not just another bridge. This is a
+                              universal bridge layer, able to adapt to any
+                              exchange method used in any network it connects
+                              to. A true cross-architecture connector — swap and
+                              send across chains that don't even share address
+                              formats or VM compatibilities (e.g., from Ethereum
+                              to Solana).
                             </p>
                             <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-4 border-l-4 border-primary">
-                              <p className="font-medium mb-2">Key Innovation</p>
+                              <p className="font-medium mb-2">
+                                🇻🇳 Built for Vietnam. Bridging the World.
+                              </p>
                               <p className="text-sm text-muted-foreground">
-                                Our Lotus Consensus Algorithm (LCA) achieves
-                                99.9% uptime with sub-15-second finality across
-                                all supported networks.
+                                Lotus Bridge is the first bridge built by
+                                Vietnamese for Vietnamese, designed with
+                                cultural, economic, and technological
+                                sensitivity. But it doesn't stop there — it's a
+                                gateway for Vietnamese users and developers to
+                                access the world, and for the world to access
+                                the vibrant Vietnamese Web3 ecosystem.
                               </p>
                             </div>
                           </CardContent>
@@ -293,6 +305,179 @@ const Whitepaper = () => {
                         </Card>
                       </div>
                     </div>
+
+                    {/* Problem Statement Card */}
+                    <Card className="border-destructive/20">
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2 text-destructive">
+                          <Globe className="h-5 w-5" />
+                          🌍 The Problem: A Fragmented World of Chains
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <p className="text-muted-foreground leading-relaxed">
+                          Today's blockchain landscape is vast, vibrant, and…
+                          fractured. Ethereum. Solana. BNB Chain. Polygon.
+                          Cosmos. Each network speaks its own language, runs on
+                          its own logic, and is home to unique communities and
+                          ecosystems.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed">
+                          But for the average user — especially those in
+                          emerging markets like Vietnam — navigating this
+                          complexity feels like crossing rivers with no bridges.
+                        </p>
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
+                            <h4 className="font-semibold text-destructive mb-2">
+                              Current Challenges
+                            </h4>
+                            <ul className="space-y-1 text-sm text-muted-foreground">
+                              <li>
+                                • You want to swap an asset from Solana to
+                                Ethereum? You'll need multiple steps, tools,
+                                wallets, bridges
+                              </li>
+                              <li>
+                                • Often clunky, risky, or downright impossible
+                                if networks have fundamentally different
+                                architectures
+                              </li>
+                              <li>
+                                • Vietnamese tokens like VNDC, VNST, KNC, and
+                                C98? Often excluded from global bridging
+                                conversations
+                              </li>
+                              <li>
+                                • Global adoption? Stunted by exclusion.
+                                Liquidity? Siloed. Users? Confused.
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="bg-muted/50 p-4 rounded-lg border">
+                            <h4 className="font-semibold mb-2">The Result</h4>
+                            <p className="text-sm text-muted-foreground">
+                              The dream of a unified Web3 world remains out of
+                              reach. Each blockchain becomes an island, and
+                              users are left to navigate treacherous waters
+                              between them.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    {/* Solution Card */}
+                    <Card className="border-primary/20">
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2 text-primary">
+                          <Zap className="h-5 w-5" />
+                          🌸 Enter Lotus Bridge – Blooming Unity From Diversity
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-6">
+                        <p className="text-muted-foreground leading-relaxed">
+                          Inspired by the Lotus — a sacred symbol of purity,
+                          resilience, and rebirth in Vietnamese culture — Lotus
+                          Bridge rises as a trustless, multi-chain,
+                          architecture-agnostic super-bridge.
+                        </p>
+                        <div className="grid md:grid-cols-3 gap-4">
+                          <div className="text-center p-4 bg-background/50 rounded-lg border">
+                            <Globe className="h-8 w-8 text-primary mx-auto mb-2" />
+                            <h4 className="font-semibold mb-2">
+                              Universal Bridge Layer
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
+                              Able to adapt to any exchange method used in any
+                              network it connects to.
+                            </p>
+                          </div>
+                          <div className="text-center p-4 bg-background/50 rounded-lg border">
+                            <Zap className="h-8 w-8 text-primary mx-auto mb-2" />
+                            <h4 className="font-semibold mb-2">
+                              Cross-Architecture Connector
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
+                              Swap and send across chains that don't even share
+                              address formats or VM compatibilities.
+                            </p>
+                          </div>
+                          <div className="text-center p-4 bg-background/50 rounded-lg border">
+                            <Users className="h-8 w-8 text-primary mx-auto mb-2" />
+                            <h4 className="font-semibold mb-2">
+                              Multi-Wallet Portal
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
+                              Bridging and swapping across tokens, user
+                              identities, Vietnamese and global assets.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    {/* Vision and Impact Card */}
+                    <Card className="border-accent/20">
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                          <Target className="h-5 w-5" />
+                          💡 The Vision: A Resilient Future, Rooted in
+                          Innovation
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <p className="text-muted-foreground leading-relaxed">
+                          Lotus Bridge is not a temporary product. It's an
+                          infrastructure layer.
+                        </p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div className="space-y-3">
+                            <h4 className="font-semibold">
+                              🌐 Why This Matters for Vietnam — and Beyond
+                            </h4>
+                            <div className="space-y-2 text-sm">
+                              <div className="flex items-start gap-2">
+                                <div className="h-2 w-2 rounded-full bg-primary mt-2"></div>
+                                <div>
+                                  <strong>For Vietnamese users:</strong> One
+                                  interface to rule them all. Access global
+                                  liquidity with local tokens.
+                                </div>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <div className="h-2 w-2 rounded-full bg-primary mt-2"></div>
+                                <div>
+                                  <strong>For developers:</strong> Build
+                                  cross-chain dApps faster with local-first
+                                  focus.
+                                </div>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <div className="h-2 w-2 rounded-full bg-primary mt-2"></div>
+                                <div>
+                                  <strong>For the world:</strong> Vietnam
+                                  becomes a key player in Web3 infrastructure.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="bg-gradient-to-br from-accent/10 to-primary/10 p-4 rounded-lg border">
+                            <h4 className="font-semibold mb-2">
+                              🌱 The Symbolism of the Lotus
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
+                              In Vietnamese culture, the lotus rises pure from
+                              murky waters. It represents resilience, rebirth,
+                              and peace. In blockchain, that water is
+                              fragmentation, isolation, and complexity. Lotus
+                              Bridge blooms as the answer — creating order from
+                              chaos, clarity from confusion.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   </TabsContent>
 
                   <TabsContent value="technical" className="space-y-8">
@@ -872,6 +1057,79 @@ const Whitepaper = () => {
                                   • Research into next-generation technologies
                                 </li>
                               </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <Separator className="my-6" />
+
+                        {/* Updated Roadmap from docs.txt */}
+                        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg p-6">
+                          <h4 className="font-semibold mb-4 text-center">
+                            🚀 Updated Roadmap (v1.0.0 "Genesis Launch")
+                          </h4>
+                          <div className="space-y-4">
+                            <div className="flex items-center gap-4">
+                              <div className="w-3 h-3 rounded-full bg-primary"></div>
+                              <div className="flex-1">
+                                <div className="flex items-center justify-between mb-1">
+                                  <h5 className="font-semibold text-primary">
+                                    Q3 2025: Beta Launch
+                                  </h5>
+                                  <Badge>Current</Badge>
+                                </div>
+                                <p className="text-sm text-muted-foreground">
+                                  Beta launch with EVM + Solana support
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center gap-4">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                              <div className="flex-1">
+                                <div className="flex items-center justify-between mb-1">
+                                  <h5 className="font-semibold text-accent">
+                                    Q4 2025: Tokenomics
+                                  </h5>
+                                  <Badge variant="outline">Upcoming</Badge>
+                                </div>
+                                <p className="text-sm text-muted-foreground">
+                                  Liquidity provider incentives and tokenomics
+                                  launch
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center gap-4">
+                              <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
+                              <div className="flex-1">
+                                <div className="flex items-center justify-between mb-1">
+                                  <h5 className="font-semibold">
+                                    Q1 2026: Mobile Integration
+                                  </h5>
+                                  <Badge variant="outline">Planned</Badge>
+                                </div>
+                                <p className="text-sm text-muted-foreground">
+                                  Mobile wallet integration and mobile-first
+                                  experience
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center gap-4">
+                              <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
+                              <div className="flex-1">
+                                <div className="flex items-center justify-between mb-1">
+                                  <h5 className="font-semibold">
+                                    Q2 2026: DAO Launch
+                                  </h5>
+                                  <Badge variant="outline">Future</Badge>
+                                </div>
+                                <p className="text-sm text-muted-foreground">
+                                  DAO governance model launch with community
+                                  voting
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>

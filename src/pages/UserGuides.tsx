@@ -18,8 +18,11 @@ import {
   AlertTriangle,
   CheckCircle,
 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const UserGuides = () => {
+  const { t } = useLanguage();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -34,15 +37,15 @@ const UserGuides = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    User Documentation
+                    {t("userGuides.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    User Guides
+                    User Guides - Hướng dẫn sử dụng
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Step-by-step guides to help you navigate and use Lotus
-                    Bridge effectively. From wallet connection to advanced
-                    bridging strategies.
+                    Step-by-step guides to bridge your assets across chains,
+                    with special support for Vietnamese tokens like VNDC, VNST,
+                    KNC, and C98.
                   </p>
                 </div>
               </div>
@@ -54,27 +57,161 @@ const UserGuides = () => {
                 <Tabs defaultValue="getting-started" className="w-full">
                   <TabsList className="grid w-full grid-cols-4">
                     <TabsTrigger value="getting-started">
-                      Getting Started
+                      {t("userGuides.gettingStarted")}
                     </TabsTrigger>
-                    <TabsTrigger value="bridging">Token Bridging</TabsTrigger>
+                    <TabsTrigger value="bridging">
+                      {t("userGuides.tokenBridging")}
+                    </TabsTrigger>
                     <TabsTrigger value="security">
-                      Security Best Practices
+                      {t("userGuides.securityBestPractices")}
                     </TabsTrigger>
                     <TabsTrigger value="troubleshooting">
-                      Troubleshooting
+                      {t("userGuides.troubleshooting")}
                     </TabsTrigger>
                   </TabsList>
 
                   <TabsContent value="getting-started" className="space-y-8">
+                    {/* Vietnamese Token Spotlight */}
+                    <Card className="border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20">
+                      <CardHeader>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-2xl">🇻🇳</span>
+                          <CardTitle className="text-green-800 dark:text-green-400">
+                            Vietnamese Token Support
+                          </CardTitle>
+                        </div>
+                        <CardDescription>
+                          Lotus Bridge provides native support for Vietnamese
+                          tokens often neglected by other platforms
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-blue-600">AXS</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              Axie Infinity
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-green-600">SLP</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              Smooth Love Potion
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-purple-600">VNDC</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              VND Coin
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-orange-600">VNST</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              VN Stable Token
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-red-600">KAI</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              KardiaChain
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-indigo-600">SIPHER</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              Sipher Token
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-yellow-600">C98</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              Coin98
+                            </span>
+                          </div>
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <strong className="text-teal-600">KNC</strong>
+                            <br />
+                            <span className="text-xs text-muted-foreground">
+                              Kyber Network
+                            </span>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    {/* Use Cases Examples */}
+                    <Card className="border-primary/20">
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                          <ArrowRightLeft className="h-5 w-5" />
+                          Real-World Use Cases
+                        </CardTitle>
+                        <CardDescription>
+                          Examples of how to use Lotus Bridge for common
+                          Vietnamese token scenarios
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded border border-blue-200 dark:border-blue-800">
+                            <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">
+                              🔄 Cross-chain Asset Transfer
+                            </h4>
+                            <p className="text-sm text-blue-700 dark:text-blue-300">
+                              "Move your VNDC from Ethereum to Solana to access
+                              lower fees and faster transactions"
+                            </p>
+                          </div>
+                          <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded border border-green-200 dark:border-green-800">
+                            <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">
+                              ⚡ Chain-to-chain Swaps
+                            </h4>
+                            <p className="text-sm text-green-700 dark:text-green-300">
+                              "Instantly swap AXS on Ronin for ETH on Ethereum
+                              without multiple steps"
+                            </p>
+                          </div>
+                          <div className="bg-purple-50 dark:bg-purple-950/20 p-4 rounded border border-purple-200 dark:border-purple-800">
+                            <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">
+                              💼 Multi-wallet Management
+                            </h4>
+                            <p className="text-sm text-purple-700 dark:text-purple-300">
+                              "Bridge and swap between addresses you control on
+                              different chains"
+                            </p>
+                          </div>
+                          <div className="bg-orange-50 dark:bg-orange-950/20 p-4 rounded border border-orange-200 dark:border-orange-800">
+                            <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-2">
+                              🌏 Localized DeFi
+                            </h4>
+                            <p className="text-sm text-orange-700 dark:text-orange-300">
+                              "Participate in DeFi protocols using regionally
+                              popular Vietnamese tokens"
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
                     <div className="grid md:grid-cols-2 gap-6">
                       <Card className="border-primary/20">
                         <CardHeader>
                           <div className="flex items-center gap-2 mb-2">
                             <Wallet className="h-5 w-5 text-primary" />
-                            <CardTitle>Wallet Connection</CardTitle>
+                            <CardTitle>
+                              {t("userGuides.walletConnection.title")}
+                            </CardTitle>
                           </div>
                           <CardDescription>
-                            Connect your wallet to start using Lotus Bridge
+                            {t("userGuides.walletConnection.description")}
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-4">

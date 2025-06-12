@@ -26,8 +26,11 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Index = () => {
+  const { t, language } = useLanguage();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -45,15 +48,18 @@ const Index = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Documentation Hub
+                    {language === "vi"
+                      ? "Trung tâm tài liệu"
+                      : "Documentation Hub"}
                   </Badge>
                   <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Comprehensive Documentation
                   </h2>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                     Everything you need to understand, use, and build with Lotus
-                    Bridge. From basic user guides to advanced technical
-                    documentation.
+                    Bridge. From Vietnamese token bridging to advanced
+                    cross-chain development - built with Vietnamese innovation
+                    for global adoption.
                   </p>
                 </div>
 
@@ -62,17 +68,16 @@ const Index = () => {
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <FileText className="h-5 w-5 text-primary" />
-                        <CardTitle>User Guides</CardTitle>
+                        <CardTitle>{t("navigation.userGuides")}</CardTitle>
                       </div>
                       <CardDescription>
-                        Step-by-step guides for connecting wallets, bridging
-                        tokens, and troubleshooting
+                        {t("userGuides.subtitle")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <Link to="/user-guides">
                         <Button className="w-full gap-2 group-hover:gap-3 transition-all">
-                          Get Started
+                          {t("hero.getStarted")}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -83,11 +88,10 @@ const Index = () => {
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <Code className="h-5 w-5 text-accent" />
-                        <CardTitle>Developer Docs</CardTitle>
+                        <CardTitle>{t("navigation.developerDocs")}</CardTitle>
                       </div>
                       <CardDescription>
-                        APIs, SDKs, smart contracts, and integration guides for
-                        developers
+                        {t("developerDocs.subtitle")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -96,7 +100,9 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          Build with Us
+                          {language === "vi"
+                            ? "Xây dựng cùng chúng tôi"
+                            : "Build with Us"}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -107,11 +113,12 @@ const Index = () => {
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <Lightbulb className="h-5 w-5 text-orange-600" />
-                        <CardTitle>Whitepaper</CardTitle>
+                        <CardTitle>{t("navigation.whitepaper")}</CardTitle>
                       </div>
                       <CardDescription>
-                        Technical vision, protocol architecture, tokenomics, and
-                        security analysis
+                        {language === "vi"
+                          ? "Tầm nhìn kỹ thuật, kiến trúc giao thức, tokenomics và phân tích bảo mật"
+                          : "Technical vision, protocol architecture, tokenomics, and security analysis"}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -120,7 +127,9 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          Read Whitepaper
+                          {language === "vi"
+                            ? "Đọc Whitepaper"
+                            : "Read Whitepaper"}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -131,11 +140,12 @@ const Index = () => {
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <MessageCircle className="h-5 w-5 text-green-600" />
-                        <CardTitle>FAQs & Glossary</CardTitle>
+                        <CardTitle>{t("navigation.faqs")}</CardTitle>
                       </div>
                       <CardDescription>
-                        Frequently asked questions and comprehensive terminology
-                        guide
+                        {language === "vi"
+                          ? "Câu hỏi thường gặp và hướng dẫn thuật ngữ toàn diện"
+                          : "Frequently asked questions and comprehensive terminology guide"}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -144,7 +154,9 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          Find Answers
+                          {language === "vi"
+                            ? "Tìm câu trả lời"
+                            : "Find Answers"}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -155,10 +167,10 @@ const Index = () => {
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <Calendar className="h-5 w-5 text-purple-600" />
-                        <CardTitle>Changelog</CardTitle>
+                        <CardTitle>{t("navigation.changelog")}</CardTitle>
                       </div>
                       <CardDescription>
-                        Version history, release notes, and upcoming features
+                        {t("changelog.subtitle")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -167,7 +179,7 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          View Updates
+                          {language === "vi" ? "Xem cập nhật" : "View Updates"}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -178,11 +190,10 @@ const Index = () => {
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <Users className="h-5 w-5 text-blue-600" />
-                        <CardTitle>Community</CardTitle>
+                        <CardTitle>{t("quickStart.community.title")}</CardTitle>
                       </div>
                       <CardDescription>
-                        Join our Discord, follow on Twitter, and connect with
-                        the Lotus community
+                        {t("quickStart.community.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -190,7 +201,9 @@ const Index = () => {
                         variant="outline"
                         className="w-full gap-2 group-hover:gap-3 transition-all"
                       >
-                        Join Community
+                        {language === "vi"
+                          ? "Tham gia cộng đồng"
+                          : "Join Community"}
                         <ArrowRight className="h-4 w-4" />
                       </Button>
                     </CardContent>
@@ -272,14 +285,41 @@ const Index = () => {
                     <span className="text-2xl text-white font-bold">蓮</span>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Lotus Bridge
+                    🌸 Lotus Bridge
                   </h3>
-                  <p className="text-muted-foreground mb-6 vietnamese-text">
-                    Bridging blockchain networks with Vietnamese innovation
+                  <p className="text-muted-foreground mb-4 vietnamese-text">
+                    Built by Vietnam. Bridging the World.
                   </p>
-                  <p className="text-sm text-muted-foreground">
-                    Built with 💚 in Vietnam • © 2024 Lotus Bridge Team
-                  </p>
+
+                  {/* Contact Information from docs.txt */}
+                  <div className="mb-6 space-y-2">
+                    <p className="text-sm text-muted-foreground">
+                      For media inquiries, partnerships, or access to the
+                      developer program:
+                    </p>
+                    <a
+                      href="mailto:team@lotusbridge.io"
+                      className="text-primary hover:text-primary/80 transition-colors font-medium"
+                    >
+                      team@lotusbridge.io
+                    </a>
+                  </div>
+
+                  {/* Version and Legal */}
+                  <div className="space-y-2">
+                    <p className="text-sm text-muted-foreground">
+                      <strong>v1.0.0 "Genesis Launch"</strong> (June 2025)
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      This document is for informational purposes only and does
+                      not constitute legal, financial, or investment advice. The
+                      Lotus Bridge project is under continuous development, and
+                      all information is subject to change.
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Built with 💚 in Vietnam • © 2025 Lotus Bridge Team
+                    </p>
+                  </div>
                 </div>
               </div>
             </footer>
