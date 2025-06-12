@@ -3,7 +3,6 @@ import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { IntroductionSection } from "@/components/IntroductionSection";
-import { HowItWorksSection } from "@/components/HowItWorksSection";
 import {
   Card,
   CardContent,
@@ -41,7 +40,6 @@ const Index = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
             <HeroSection />
             <IntroductionSection />
-            <HowItWorksSection />
 
             {/* Documentation Overview Section */}
             <section id="documentation" className="py-20 px-6 bg-muted/20">
