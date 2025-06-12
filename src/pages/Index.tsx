@@ -294,31 +294,14 @@ const Index = () => {
                   {/* Contact Information from docs.txt */}
                   <div className="mb-6 space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      For media inquiries, partnerships, or access to the
-                      developer program:
+                      For media inquiries, partnerships:
                     </p>
                     <a
                       href="mailto:team@lotusbridge.io"
                       className="text-primary hover:text-primary/80 transition-colors font-medium"
                     >
-                      team@lotusbridge.io
+                      trongtrawork@gmail.com
                     </a>
-                  </div>
-
-                  {/* Version and Legal */}
-                  <div className="space-y-2">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>v1.0.0 "Genesis Launch"</strong> (June 2025)
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      This document is for informational purposes only and does
-                      not constitute legal, financial, or investment advice. The
-                      Lotus Bridge project is under continuous development, and
-                      all information is subject to change.
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Built with 💚 in Vietnam • © 2025 Lotus Bridge Team
-                    </p>
                   </div>
                 </div>
               </div>
