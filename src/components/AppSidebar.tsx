@@ -422,11 +422,18 @@ export function AppSidebar() {
       </SidebarContent>
 
       <SidebarFooter className="p-6">
-        <div className="text-center">
-          <div className="text-xs text-muted-foreground mb-2">
-            {t("footer.copyright")}
+        <div className="text-center space-y-3">
+          {/* Built with heart attribution */}
+          <div className="text-xs text-muted-foreground">
+            Built with <span className="text-red-500 text-sm">❤️</span> in
+            Vietnam 2025
           </div>
-          <div className="flex justify-center gap-2">
+          <div className="text-xs text-muted-foreground font-medium">
+            VNUHCM-UIT The Blockchainists
+          </div>
+
+          {/* Language switcher */}
+          <div className="flex justify-center gap-2 pt-2">
             <button
               onClick={() => setLanguage("vi")}
               className={`px-3 py-1 text-xs rounded-full transition-colors ${
