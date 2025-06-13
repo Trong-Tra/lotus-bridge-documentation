@@ -120,7 +120,7 @@ const Index = () => {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <Link to="/whitepaper">
+                      <Link to="/abstract">
                         <Button
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"

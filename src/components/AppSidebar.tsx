@@ -15,6 +15,7 @@ import {
   Globe,
   ChevronDown,
   ChevronRight,
+  Shield,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -197,9 +198,19 @@ export function AppSidebar() {
       ],
     },
     {
-      title: t("navigation.whitepaper"),
-      url: "/whitepaper",
-      icon: Lightbulb,
+      title: "Security",
+      url: "/security",
+      icon: Shield,
+    },
+    {
+      title: "Tokenomics",
+      url: "/tokenomics",
+      icon: TrendingUp,
+    },
+    {
+      title: "Roadmap",
+      url: "/roadmap",
+      icon: Calendar,
     },
   ];
 

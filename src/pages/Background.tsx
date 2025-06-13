@@ -57,34 +57,118 @@ const Background = () => {
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-4xl">
                 <div className="space-y-8">
-                  {/* Industry Challenges */}
-                  <Card className="border-orange-500/20">
+                  {/* Problem Statement Card - Enhanced from Whitepaper */}
+                  <Card className="border-destructive/20">
                     <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <AlertTriangle className="h-5 w-5 text-orange-500" />
-                        The Fragmentation Problem
+                      <CardTitle className="flex items-center gap-2 text-destructive">
+                        <Globe className="h-5 w-5" />
+                        🌍 The Problem: A Fragmented World of Chains
                       </CardTitle>
                       <CardDescription>
-                        Current state of blockchain interoperability
+                        Understanding the blockchain interoperability crisis
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <p className="text-muted-foreground leading-relaxed">
+                        Today's blockchain landscape is vast, vibrant, and…
+                        fractured. Ethereum. Solana. BNB Chain. Polygon. Cosmos.
+                        Each network speaks its own language, runs on its own
+                        logic, and is home to unique communities and ecosystems.
+                      </p>
+                      <p className="text-muted-foreground leading-relaxed">
+                        But for the average user — especially those in emerging
+                        markets like Vietnam — navigating this complexity feels
+                        like crossing rivers with no bridges.
+                      </p>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
+                          <h4 className="font-semibold text-destructive mb-2">
+                            Current Challenges
+                          </h4>
+                          <ul className="space-y-1 text-sm text-muted-foreground">
+                            <li>
+                              • You want to swap an asset from Solana to
+                              Ethereum? You'll need multiple steps, tools,
+                              wallets, bridges
+                            </li>
+                            <li>
+                              • Often clunky, risky, or downright impossible if
+                              networks have fundamentally different
+                              architectures
+                            </li>
+                            <li>
+                              • Vietnamese tokens like VNDC, VNST, KNC, and C98?
+                              Often excluded from global bridging conversations
+                            </li>
+                            <li>
+                              • Global adoption? Stunted by exclusion.
+                              Liquidity? Siloed. Users? Confused.
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="bg-muted/50 p-4 rounded-lg border">
+                          <h4 className="font-semibold mb-2">The Result</h4>
+                          <p className="text-sm text-muted-foreground">
+                            The dream of a unified Web3 world remains out of
+                            reach. Each blockchain becomes an island, and users
+                            are left to navigate treacherous waters between
+                            them.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Solution Card - Enhanced from Whitepaper */}
+                  <Card className="border-primary/20">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-primary">
+                        <Flag className="h-5 w-5" />
+                        🌸 Enter Lotus Bridge – Blooming Unity From Diversity
+                      </CardTitle>
+                      <CardDescription>
+                        A Vietnamese-inspired solution for global blockchain
+                        interoperability
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      <div className="prose prose-lg max-w-none dark:prose-invert">
-                        <p className="text-lg leading-relaxed">
-                          The blockchain industry is expanding rapidly with{" "}
-                          <strong>
-                            hundreds of layer-1 and layer-2 networks
-                          </strong>
-                          , each optimized for different use cases. However, the
-                          lack of interoperability across these networks hinders
-                          composability, user adoption, and liquidity flow.
-                        </p>
-
-                        <p className="text-lg leading-relaxed">
-                          Existing bridges are typically limited to
-                          EVM-compatible chains or require complex, risk-prone
-                          interactions.
-                        </p>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Inspired by the Lotus — a sacred symbol of purity,
+                        resilience, and rebirth in Vietnamese culture — Lotus
+                        Bridge rises as a trustless, multi-chain,
+                        architecture-agnostic super-bridge.
+                      </p>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="text-center p-4 bg-background/50 rounded-lg border">
+                          <Globe className="h-8 w-8 text-primary mx-auto mb-2" />
+                          <h4 className="font-semibold mb-2">
+                            Universal Bridge Layer
+                          </h4>
+                          <p className="text-sm text-muted-foreground">
+                            Able to adapt to any exchange method used in any
+                            network it connects to.
+                          </p>
+                        </div>
+                        <div className="text-center p-4 bg-background/50 rounded-lg border">
+                          <Network className="h-8 w-8 text-primary mx-auto mb-2" />
+                          <h4 className="font-semibold mb-2">
+                            Cross-Architecture Connector
+                          </h4>
+                          <p className="text-sm text-muted-foreground">
+                            Swap and send across chains that don't even share
+                            address formats or VM compatibilities.
+                          </p>
+                        </div>
+                        <div className="text-center p-4 bg-background/50 rounded-lg border">
+                          <TrendingUp className="h-8 w-8 text-primary mx-auto mb-2" />
+                          <h4 className="font-semibold mb-2">
+                            Multi-Wallet Portal
+                          </h4>
+                          <p className="text-sm text-muted-foreground">
+                            Bridging and swapping across tokens, user
+                            identities, Vietnamese and global assets.
+                          </p>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>

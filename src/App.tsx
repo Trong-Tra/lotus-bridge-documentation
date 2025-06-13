@@ -22,7 +22,9 @@ import BenefitsUsers from "./pages/BenefitsUsers";
 import BenefitsDevelopers from "./pages/BenefitsDevelopers";
 import BenefitsLiquidity from "./pages/BenefitsLiquidity";
 import BenefitsVietnam from "./pages/BenefitsVietnam";
-import Whitepaper from "./pages/Whitepaper";
+import Security from "./pages/Security";
+import Tokenomics from "./pages/Tokenomics";
+import Roadmap from "./pages/Roadmap";
 import FAQs from "./pages/FAQs";
 import Changelog from "./pages/Changelog";
 import NotFound from "./pages/NotFound";
@@ -58,7 +60,9 @@ const App = () => (
             />
             <Route path="/benefits-liquidity" element={<BenefitsLiquidity />} />
             <Route path="/benefits-vietnam" element={<BenefitsVietnam />} />
-            <Route path="/whitepaper" element={<Whitepaper />} />
+            <Route path="/security" element={<Security />} />
+            <Route path="/tokenomics" element={<Tokenomics />} />
+            <Route path="/roadmap" element={<Roadmap />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/changelog" element={<Changelog />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

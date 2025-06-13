@@ -260,6 +260,144 @@ const Architecture = () => {
               </div>
             </section>
 
+            {/* Technical Architecture Deep Dive */}
+            <section className="py-16 px-6">
+              <div className="container mx-auto max-w-6xl">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold mb-4">
+                    🔧 Technical Deep Dive
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Core technical components and performance metrics from our
+                    whitepaper
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-xl">Core Components</h4>
+                    <div className="space-y-3">
+                      <div className="border rounded-lg p-4">
+                        <div className="font-medium mb-2 text-primary">
+                          Lotus Consensus Algorithm (LCA)
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Novel Byzantine Fault Tolerant consensus optimized for
+                          cross-chain operations
+                        </p>
+                      </div>
+                      <div className="border rounded-lg p-4">
+                        <div className="font-medium mb-2 text-accent">
+                          State Verification Protocol
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Cryptographic proofs ensuring atomic cross-chain state
+                          transitions
+                        </p>
+                      </div>
+                      <div className="border rounded-lg p-4">
+                        <div className="font-medium mb-2 text-primary">
+                          Relay Network
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Decentralized network of validators maintaining
+                          cross-chain communication
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-xl">
+                      Performance Metrics
+                    </h4>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
+                        <span className="text-sm font-medium">
+                          Transaction Finality
+                        </span>
+                        <Badge variant="secondary">12-15 seconds</Badge>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
+                        <span className="text-sm font-medium">
+                          Throughput (TPS)
+                        </span>
+                        <Badge variant="secondary">10,000+</Badge>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
+                        <span className="text-sm font-medium">
+                          Network Uptime
+                        </span>
+                        <Badge variant="secondary">99.9%</Badge>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
+                        <span className="text-sm font-medium">
+                          Security Guarantees
+                        </span>
+                        <Badge variant="secondary">Byzantine Safe</Badge>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Protocol Flow */}
+                <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg p-8">
+                  <h4 className="font-semibold mb-6 text-center text-xl">
+                    Protocol Flow
+                  </h4>
+                  <div className="grid md:grid-cols-4 gap-6">
+                    <div className="text-center">
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <span className="text-primary font-bold text-xl">
+                          1
+                        </span>
+                      </div>
+                      <h5 className="font-medium text-lg mb-2">Lock Assets</h5>
+                      <p className="text-sm text-muted-foreground">
+                        Assets locked on source chain with cryptographic proof
+                        generation
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                        <span className="text-accent font-bold text-xl">2</span>
+                      </div>
+                      <h5 className="font-medium text-lg mb-2">
+                        Generate Proof
+                      </h5>
+                      <p className="text-sm text-muted-foreground">
+                        Zero-knowledge proofs created for secure verification
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <span className="text-primary font-bold text-xl">
+                          3
+                        </span>
+                      </div>
+                      <h5 className="font-medium text-lg mb-2">
+                        Relay & Verify
+                      </h5>
+                      <p className="text-sm text-muted-foreground">
+                        Decentralized validators verify and relay to destination
+                        chain
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                        <span className="text-accent font-bold text-xl">4</span>
+                      </div>
+                      <h5 className="font-medium text-lg mb-2">Mint Assets</h5>
+                      <p className="text-sm text-muted-foreground">
+                        Assets minted on destination chain with full security
+                        guarantees
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Navigation */}
             <section className="py-8 px-6 border-t">
               <div className="container mx-auto max-w-6xl">
