@@ -156,52 +156,12 @@
         "title": "Tài liệu nhà phát triển",
         "subtitle": "Hướng dẫn toàn diện, API và SDK để tích hợp Lotus Bridge vào ứng dụng của bạn. Xây dựng tương lai của DeFi chuỗi chéo.",
         "badge": "Tài nguyên nhà phát triển",
-        "quickStart": {
-            "title": "Bắt đầu nhanh",
-            "description": "Bắt đầu và chạy trong vài phút",
-            "button": "Xem hướng dẫn bắt đầu nhanh"
-        },
-        "apiReference": {
-            "title": "Tham khảo API",
-            "description": "Tài liệu API hoàn chỉnh",
-            "button": "Duyệt tài liệu API"
-        },
-        "sdkDownloads": {
-            "title": "Tải xuống SDK",
-            "description": "SDK và thư viện chính thức",
-            "button": "Tải xuống SDK"
-        },
-        "restApi": {
-            "title": "REST API",
-            "overview": {
-                "title": "Tổng quan REST API",
-                "description": "API RESTful để truy vấn trạng thái bridge, lịch sử giao dịch và các mạng được hỗ trợ"
-            },
-            "baseUrl": "URL cơ sở",
-            "authentication": "Xác thực",
-            "authDescription": "Hầu hết các endpoint đều công khai. Đối với các endpoint riêng tư, hãy bao gồm API key của bạn trong header:",
-            "coreEndpoints": "Endpoint cốt lõi"
-        },
-        "javascriptSdk": {
-            "title": "JavaScript SDK",
-            "description": "SDK TypeScript/JavaScript chính thức để tích hợp liền mạch",
-            "installation": "Cài đặt",
-            "basicUsage": "Sử dụng cơ bản",
-            "configurationOptions": "Tùy chọn cấu hình"
-        },
         "smartContracts": {
             "title": "Tích hợp Smart Contract",
             "description": "Tương tác smart contract trực tiếp cho các trường hợp sử dụng nâng cao",
             "bridgeContracts": "Địa chỉ Bridge Contract",
             "keyFunctions": "Chức năng chính",
             "exampleIntegration": "Ví dụ tích hợp Contract"
-        },
-        "webhooks": {
-            "title": "Webhook",
-            "description": "Thông báo thời gian thực cho các sự kiện giao dịch",
-            "eventTypes": "Loại sự kiện",
-            "payloadExample": "Ví dụ Payload Webhook",
-            "setupInstructions": "Hướng dẫn thiết lập"
         }
     },
     "changelog": {

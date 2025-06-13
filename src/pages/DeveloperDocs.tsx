@@ -9,10 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
-import { Code, Terminal, Book, Zap, Globe, Shield } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 
 const DeveloperDocs = () => {
@@ -28,9 +25,9 @@ const DeveloperDocs = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
+            <section className="py-16 px-6 bg-gradient-to-br from-background to-muted/20">
               <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
+                <div className="text-center mb-8">
                   <Badge variant="outline" className="mb-4">
                     {t("developerDocs.badge")}
                   </Badge>
@@ -46,507 +43,264 @@ const DeveloperDocs = () => {
               </div>
             </section>
 
-            {/* Quick Start */}
-            <section className="py-20 px-6">
+            {/* Smart Contract Integration */}
+            <section className="py-12 px-6">
               <div className="container mx-auto max-w-6xl">
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                  <Card className="border-primary/20">
-                    <CardHeader>
-                      <Zap className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>
-                        {t("developerDocs.quickStart.title")}
-                      </CardTitle>
-                      <CardDescription>
-                        {t("developerDocs.quickStart.description")}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <Button className="w-full">
-                        {t("developerDocs.quickStart.button")}
-                      </Button>
-                    </CardContent>
-                  </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Smart Contract Integration</CardTitle>
+                    <CardDescription>
+                      Integrate Lotus Bridge directly into your smart contracts
+                      for seamless cross-chain functionality
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    {/* Bridge Contracts Section */}
+                    <div>
+                      <h4 className="font-semibold mb-4 text-lg">
+                        Bridge Contracts
+                      </h4>
+                      <div className="grid gap-3">
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Ethereum</span>
+                          <code className="font-mono text-sm">
+                            0x742d35Cc6634C0532925a3b8D1f2A5eC9B4d8A9B
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Goerli</span>
+                          <code className="font-mono text-sm">
+                            0x8a2F18C4dE4aB9C6dF432E7D5f6G8eH1i2J3K4L5
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">BSC</span>
+                          <code className="font-mono text-sm">
+                            0x853f43B7C8346C9B4d8A9Bb3E2c4D5e6F7g8H9i0
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">BSC Testnet</span>
+                          <code className="font-mono text-sm">
+                            0x9b3G29D5eF5bC7eG543F8E6F6h7I8j9K0l1M2n3O
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Polygon</span>
+                          <code className="font-mono text-sm">
+                            0x964A2F17B8D6C1dD832E7B45C3f4G5h6I7j8K9l0
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Mumbai</span>
+                          <code className="font-mono text-sm">
+                            0xac4H30E6fG6cD8fH654G9F7G7m8N9o0P1q2R3s4T
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Avalanche</span>
+                          <code className="font-mono text-sm">
+                            0x075c48CC92bD4eB7F29D4fcF8g9H0i1J2k3L4m5N
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Fuji</span>
+                          <code className="font-mono text-sm">
+                            0xbd5I41F7gH7dE9gI765H0G8H8n9O0p1Q2r3S4t5U
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Solana</span>
+                          <code className="font-mono text-sm">
+                            DLotusBridgeProgram1111111111111111111111111
+                          </code>
+                        </div>
+                        <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
+                          <span className="font-medium">Solana Devnet</span>
+                          <code className="font-mono text-sm">
+                            DLotusTestProgram11111111111111111111111111
+                          </code>
+                        </div>
+                      </div>
+                    </div>
 
-                  <Card className="border-accent/20">
-                    <CardHeader>
-                      <Book className="h-8 w-8 text-accent mb-2" />
-                      <CardTitle>
-                        {t("developerDocs.apiReference.title")}
-                      </CardTitle>
-                      <CardDescription>
-                        {t("developerDocs.apiReference.description")}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <Button variant="outline" className="w-full">
-                        {t("developerDocs.apiReference.button")}
-                      </Button>
-                    </CardContent>
-                  </Card>
+                    <Separator />
 
-                  <Card className="border-green-200 dark:border-green-800">
-                    <CardHeader>
-                      <Terminal className="h-8 w-8 text-green-600 mb-2" />
-                      <CardTitle>
-                        {t("developerDocs.sdkDownloads.title")}
-                      </CardTitle>
-                      <CardDescription>
-                        {t("developerDocs.sdkDownloads.description")}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <Button variant="outline" className="w-full">
-                        {t("developerDocs.sdkDownloads.button")}
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </div>
+                    {/* Key Functions Section */}
+                    <div>
+                      <h4 className="font-semibold mb-4 text-lg">
+                        Key Functions
+                      </h4>
 
-                <Tabs defaultValue="rest-api" className="w-full">
-                  <TabsList className="grid w-full grid-cols-4">
-                    <TabsTrigger value="rest-api">
-                      {t("developerDocs.restApi.title")}
-                    </TabsTrigger>
-                    <TabsTrigger value="sdk">
-                      {t("developerDocs.javascriptSdk.title")}
-                    </TabsTrigger>
-                    <TabsTrigger value="smart-contracts">
-                      {t("developerDocs.smartContracts.title")}
-                    </TabsTrigger>
-                    <TabsTrigger value="webhooks">
-                      {t("developerDocs.webhooks.title")}
-                    </TabsTrigger>
-                  </TabsList>
-
-                  <TabsContent value="rest-api" className="space-y-8">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>
-                          {t("developerDocs.restApi.overview.title")}
-                        </CardTitle>
-                        <CardDescription>
-                          {t("developerDocs.restApi.overview.description")}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="space-y-6">
-                        <div className="space-y-4">
-                          <div>
-                            <h4 className="font-semibold mb-2">
-                              {t("developerDocs.restApi.baseUrl")}
-                            </h4>
-                            <div className="bg-muted rounded-lg p-3 font-mono text-sm">
-                              https://api.lotusbridge.io/v1
-                            </div>
+                      {/* Bridge Function */}
+                      <div className="space-y-4">
+                        <div className="border rounded-lg p-4">
+                          <div className="flex items-center gap-2 mb-3">
+                            <Badge variant="secondary">function</Badge>
+                            <code className="font-mono font-semibold">
+                              bridge
+                            </code>
                           </div>
-
-                          <div>
-                            <h4 className="font-semibold mb-2">
-                              {t("developerDocs.restApi.authentication")}
-                            </h4>
-                            <p className="text-sm text-muted-foreground mb-3">
-                              {t("developerDocs.restApi.authDescription")}
+                          <p className="text-sm text-muted-foreground mb-3">
+                            Initiates a cross-chain bridge transaction
+                          </p>
+                          <div className="bg-muted/50 rounded-lg p-4 text-sm font-mono">
+                            <pre>{`function bridge(
+    address token,
+    uint256 amount,
+    uint256 destinationChainId,
+    address recipient
+) external payable returns (bytes32 txId)`}</pre>
+                          </div>
+                          <div className="mt-3 space-y-2">
+                            <p className="text-sm">
+                              <strong>Parameters:</strong>
                             </p>
-                            <div className="bg-muted rounded-lg p-3 font-mono text-sm">
-                              Authorization: Bearer YOUR_API_KEY
-                            </div>
-                          </div>
-
-                          <Separator />
-
-                          <div className="space-y-4">
-                            <h4 className="font-semibold">
-                              {t("developerDocs.restApi.coreEndpoints")}
-                            </h4>
-
-                            <div className="border rounded-lg p-4">
-                              <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="secondary">GET</Badge>
-                                <code className="font-mono">/networks</code>
-                              </div>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Get list of supported networks and their
-                                configurations
-                              </p>
-                              <div className="bg-muted/50 rounded p-3 text-sm">
-                                <pre>{`{
-  "networks": [
-    {
-      "id": "ethereum",
-      "name": "Ethereum",
-      "chainId": 1,
-      "nativeToken": "ETH",
-      "rpcUrl": "...",
-      "bridgeContract": "0x..."
-    }
-  ]
-}`}</pre>
-                              </div>
-                            </div>
-
-                            <div className="border rounded-lg p-4">
-                              <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="secondary">GET</Badge>
-                                <code className="font-mono">
-                                  /transaction/&#123;txHash&#125;
-                                </code>
-                              </div>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Get transaction status and details
-                              </p>
-                              <div className="bg-muted/50 rounded p-3 text-sm">
-                                <pre>{`{
-  "status": "completed",
-  "sourceChain": "ethereum",
-  "destinationChain": "polygon",
-  "amount": "1000000000000000000",
-  "token": "USDC",
-  "fees": "0.5"
-}`}</pre>
-                              </div>
-                            </div>
-
-                            <div className="border rounded-lg p-4">
-                              <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="destructive">POST</Badge>
-                                <code className="font-mono">/bridge/quote</code>
-                              </div>
-                              <p className="text-sm text-muted-foreground mb-3">
-                                Get a quote for bridging tokens
-                              </p>
-                              <div className="bg-muted/50 rounded p-3 text-sm">
-                                <pre>{`{
-  "sourceChain": "ethereum",
-  "destinationChain": "polygon",
-  "token": "USDC",
-  "amount": "1000000000000000000"
-}`}</pre>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </TabsContent>
-
-                  <TabsContent value="sdk" className="space-y-8">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>
-                          {t("developerDocs.javascriptSdk.title")}
-                        </CardTitle>
-                        <CardDescription>
-                          {t("developerDocs.javascriptSdk.description")}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="space-y-6">
-                        <div>
-                          <h4 className="font-semibold mb-3">
-                            {t("developerDocs.javascriptSdk.installation")}
-                          </h4>
-                          <div className="bg-muted rounded-lg p-3 font-mono text-sm">
-                            npm install @lotus-bridge/sdk
+                            <ul className="text-sm text-muted-foreground space-y-1 ml-4">
+                              <li>
+                                • <code>token</code> - Address of the token to
+                                bridge
+                              </li>
+                              <li>
+                                • <code>amount</code> - Amount of tokens to
+                                bridge
+                              </li>
+                              <li>
+                                • <code>destinationChainId</code> - Target chain
+                                ID
+                              </li>
+                              <li>
+                                • <code>recipient</code> - Recipient address on
+                                destination chain
+                              </li>
+                            </ul>
                           </div>
                         </div>
 
-                        <div>
-                          <h4 className="font-semibold mb-3">
-                            {t("developerDocs.javascriptSdk.basicUsage")}
-                          </h4>
-                          <div className="bg-muted rounded-lg p-4 text-sm">
-                            <pre>{`import { LotusBridge } from '@lotus-bridge/sdk';
-
-// Initialize the bridge
-const bridge = new LotusBridge({
-  apiKey: 'your-api-key', // Optional for read operations
-  network: 'mainnet' // or 'testnet'
-});
-
-// Get supported networks
-const networks = await bridge.getNetworks();
-
-// Get a quote for bridging
-const quote = await bridge.getQuote({
-  sourceChain: 'ethereum',
-  destinationChain: 'polygon',
-  token: 'USDC',
-  amount: '1000'
-});
-
-// Execute a bridge transaction
-const transaction = await bridge.bridge({
-  sourceChain: 'ethereum',
-  destinationChain: 'polygon',
-  token: 'USDC',
-  amount: '1000',
-  recipient: '0x...'
-});`}</pre>
+                        {/* Get Quote Function */}
+                        <div className="border rounded-lg p-4">
+                          <div className="flex items-center gap-2 mb-3">
+                            <Badge variant="secondary">view</Badge>
+                            <code className="font-mono font-semibold">
+                              getQuote
+                            </code>
+                          </div>
+                          <p className="text-sm text-muted-foreground mb-3">
+                            Get bridging fee estimation before transaction
+                          </p>
+                          <div className="bg-muted/50 rounded-lg p-4 text-sm font-mono">
+                            <pre>{`function getQuote(
+    address token,
+    uint256 amount,
+    uint256 destinationChainId
+) external view returns (uint256 fee, uint256 estimatedTime)`}</pre>
                           </div>
                         </div>
 
-                        <div>
-                          <h4 className="font-semibold mb-3">
-                            {t(
-                              "developerDocs.javascriptSdk.configurationOptions"
-                            )}
-                          </h4>
-                          <div className="space-y-3">
-                            <div className="border rounded-lg p-3">
-                              <code className="font-mono text-sm">apiKey</code>
-                              <p className="text-sm text-muted-foreground mt-1">
-                                Your Lotus Bridge API key (optional for read
-                                operations)
-                              </p>
-                            </div>
-                            <div className="border rounded-lg p-3">
-                              <code className="font-mono text-sm">network</code>
-                              <p className="text-sm text-muted-foreground mt-1">
-                                Network environment: 'mainnet' or 'testnet'
-                              </p>
-                            </div>
-                            <div className="border rounded-lg p-3">
-                              <code className="font-mono text-sm">timeout</code>
-                              <p className="text-sm text-muted-foreground mt-1">
-                                Request timeout in milliseconds (default: 30000)
-                              </p>
-                            </div>
+                        {/* Check Status Function */}
+                        <div className="border rounded-lg p-4">
+                          <div className="flex items-center gap-2 mb-3">
+                            <Badge variant="secondary">view</Badge>
+                            <code className="font-mono font-semibold">
+                              getTransactionStatus
+                            </code>
+                          </div>
+                          <p className="text-sm text-muted-foreground mb-3">
+                            Check the status of a bridge transaction
+                          </p>
+                          <div className="bg-muted/50 rounded-lg p-4 text-sm font-mono">
+                            <pre>{`function getTransactionStatus(
+    bytes32 txId
+) external view returns (
+    uint8 status,
+    uint256 timestamp,
+    uint256 confirmations
+)`}</pre>
                           </div>
                         </div>
-                      </CardContent>
-                    </Card>
-                  </TabsContent>
+                      </div>
+                    </div>
 
-                  <TabsContent value="smart-contracts" className="space-y-8">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>
-                          {t("developerDocs.smartContracts.title")}
-                        </CardTitle>
-                        <CardDescription>
-                          {t("developerDocs.smartContracts.description")}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="space-y-6">
-                        <div className="grid md:grid-cols-2 gap-6">
-                          <div>
-                            <h4 className="font-semibold mb-3">
-                              {t(
-                                "developerDocs.smartContracts.bridgeContracts"
-                              )}
-                            </h4>
-                            <div className="space-y-2 text-sm">
-                              <div className="flex justify-between">
-                                <span>Ethereum:</span>
-                                <code className="font-mono">0x1234...5678</code>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>Polygon:</span>
-                                <code className="font-mono">0x2345...6789</code>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>BSC:</span>
-                                <code className="font-mono">0x3456...7890</code>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>Avalanche:</span>
-                                <code className="font-mono">0x4567...8901</code>
-                              </div>
-                            </div>
-                          </div>
+                    <Separator />
 
-                          <div>
-                            <h4 className="font-semibold mb-3">
-                              {t("developerDocs.smartContracts.keyFunctions")}
-                            </h4>
-                            <div className="space-y-2 text-sm">
-                              <div className="border rounded p-2">
-                                <code className="font-mono">
-                                  bridge(token, amount, destinationChain)
-                                </code>
-                              </div>
-                              <div className="border rounded p-2">
-                                <code className="font-mono">
-                                  getQuote(token, amount, destChain)
-                                </code>
-                              </div>
-                              <div className="border rounded p-2">
-                                <code className="font-mono">
-                                  claimTokens(proof, txHash)
-                                </code>
-                              </div>
-                              <div className="border rounded p-2">
-                                <code className="font-mono">
-                                  getSupportedTokens()
-                                </code>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div>
-                          <h4 className="font-semibold mb-3">
-                            {t(
-                              "developerDocs.smartContracts.exampleIntegration"
-                            )}
-                          </h4>
-                          <div className="bg-muted rounded-lg p-4 text-sm">
-                            <pre>{`// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+                    {/* Example Integration */}
+                    <div>
+                      <h4 className="font-semibold mb-4 text-lg">
+                        Example Integration
+                      </h4>
+                      <div className="bg-muted/30 rounded-lg p-4">
+                        <h5 className="font-semibold mb-3">
+                          Basic Bridge Integration
+                        </h5>
+                        <div className="bg-gray-900 text-gray-100 rounded-lg p-4 text-sm font-mono overflow-x-auto">
+                          <pre>{`// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
 
 import "@lotus-bridge/contracts/interfaces/ILotusBridge.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract YourContract {
-    ILotusBridge public bridge;
+contract MyDApp {
+    ILotusBridge public immutable lotusBridge;
     
     constructor(address _bridgeAddress) {
-        bridge = ILotusBridge(_bridgeAddress);
+        lotusBridge = ILotusBridge(_bridgeAddress);
     }
     
-    function bridgeTokens(
+    function bridgeTokensToPolygon(
         address token,
-        uint256 amount,
-        uint256 destinationChain
+        uint256 amount
     ) external {
-        // Approve tokens first
-        IERC20(token).approve(address(bridge), amount);
+        // Get quote first
+        (uint256 fee,) = lotusBridge.getQuote(
+            token, 
+            amount, 
+            137 // Polygon chain ID
+        );
         
-        // Execute bridge
-        bridge.bridge(token, amount, destinationChain);
+        // Approve tokens to bridge contract
+        IERC20(token).transferFrom(msg.sender, address(this), amount);
+        IERC20(token).approve(address(lotusBridge), amount);
+        
+        // Execute bridge transaction
+        bytes32 txId = lotusBridge.bridge{value: fee}(
+            token,
+            amount,
+            137, // Polygon
+            msg.sender // Same recipient on destination
+        );
+        
+        emit BridgeInitiated(txId, msg.sender, amount);
     }
+    
+    event BridgeInitiated(
+        bytes32 indexed txId, 
+        address indexed user, 
+        uint256 amount
+    );
 }`}</pre>
-                          </div>
                         </div>
-                      </CardContent>
-                    </Card>
-                  </TabsContent>
+                      </div>
+                    </div>
 
-                  <TabsContent value="webhooks" className="space-y-8">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>
-                          {t("developerDocs.webhooks.title")}
-                        </CardTitle>
-                        <CardDescription>
-                          {t("developerDocs.webhooks.description")}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="space-y-6">
+                    {/* Coming Soon Notice */}
+                    <div className="bg-blue-50 dark:bg-blue-950/20 rounded-lg p-6 border border-blue-200 dark:border-blue-800">
+                      <div className="flex items-start gap-3">
+                        <div className="text-2xl">🚧</div>
                         <div>
-                          <h4 className="font-semibold mb-3">
-                            {t("developerDocs.webhooks.eventTypes")}
-                          </h4>
-                          <div className="space-y-3">
-                            <div className="border rounded-lg p-3">
-                              <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="secondary">
-                                  bridge.initiated
-                                </Badge>
-                              </div>
-                              <p className="text-sm text-muted-foreground">
-                                Triggered when a bridge transaction is initiated
-                              </p>
-                            </div>
-                            <div className="border rounded-lg p-3">
-                              <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="secondary">
-                                  bridge.completed
-                                </Badge>
-                              </div>
-                              <p className="text-sm text-muted-foreground">
-                                Triggered when tokens are successfully bridged
-                              </p>
-                            </div>
-                            <div className="border rounded-lg p-3">
-                              <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="destructive">
-                                  bridge.failed
-                                </Badge>
-                              </div>
-                              <p className="text-sm text-muted-foreground">
-                                Triggered when a bridge transaction fails
-                              </p>
-                            </div>
-                          </div>
+                          <h5 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">
+                            More Documentation Coming Soon
+                          </h5>
+                          <p className="text-sm text-blue-700 dark:text-blue-300">
+                            Additional developer resources including SDK
+                            documentation, REST API guides, and webhook
+                            integration examples are currently being prepared by
+                            our development team.
+                          </p>
                         </div>
-
-                        <div>
-                          <h4 className="font-semibold mb-3">
-                            {t("developerDocs.webhooks.payloadExample")}
-                          </h4>
-                          <div className="bg-muted rounded-lg p-4 text-sm">
-                            <pre>{`{
-  "event": "bridge.completed",
-  "timestamp": "2024-01-15T10:30:00Z",
-  "data": {
-    "transactionId": "tx_1234567890",
-    "sourceChain": "ethereum",
-    "destinationChain": "polygon",
-    "token": "USDC",
-    "amount": "1000000000000000000",
-    "sender": "0x...",
-    "recipient": "0x...",
-    "fees": "0.5",
-    "status": "completed"
-  }
-}`}</pre>
-                          </div>
-                        </div>
-
-                        <div>
-                          <h4 className="font-semibold mb-3">
-                            {t("developerDocs.webhooks.setupInstructions")}
-                          </h4>
-                          <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center mt-0.5">
-                                1
-                              </div>
-                              <div>
-                                <p className="font-medium">
-                                  {t(
-                                    "developerDocs.webhooks.configureEndpoint"
-                                  )}
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                  {t("developerDocs.webhooks.setupDescription")}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center mt-0.5">
-                                2
-                              </div>
-                              <div>
-                                <p className="font-medium">
-                                  {t("developerDocs.webhooks.registerUrl")}
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                  {t(
-                                    "developerDocs.webhooks.registerDescription"
-                                  )}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center mt-0.5">
-                                3
-                              </div>
-                              <div>
-                                <p className="font-medium">
-                                  {t("developerDocs.webhooks.verifySignature")}
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                  {t(
-                                    "developerDocs.webhooks.signatureDescription"
-                                  )}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </TabsContent>
-                </Tabs>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </section>
           </div>

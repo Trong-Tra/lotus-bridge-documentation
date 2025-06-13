@@ -156,52 +156,12 @@
         "title": "Developer Documentation",
         "subtitle": "Comprehensive guides, APIs, and SDKs to integrate Lotus Bridge into your applications. Build the future of cross-chain DeFi.",
         "badge": "Developer Resources",
-        "quickStart": {
-            "title": "Quick Start",
-            "description": "Get up and running in minutes",
-            "button": "View Quick Start Guide"
-        },
-        "apiReference": {
-            "title": "API Reference",
-            "description": "Complete API documentation",
-            "button": "Browse API Docs"
-        },
-        "sdkDownloads": {
-            "title": "SDK Downloads",
-            "description": "Official SDKs and libraries",
-            "button": "Download SDKs"
-        },
-        "restApi": {
-            "title": "REST API",
-            "overview": {
-                "title": "REST API Overview",
-                "description": "RESTful API for querying bridge status, transaction history, and supported networks"
-            },
-            "baseUrl": "Base URL",
-            "authentication": "Authentication",
-            "authDescription": "Most endpoints are public. For private endpoints, include your API key in the header:",
-            "coreEndpoints": "Core Endpoints"
-        },
-        "javascriptSdk": {
-            "title": "JavaScript SDK",
-            "description": "Official TypeScript/JavaScript SDK for seamless integration",
-            "installation": "Installation",
-            "basicUsage": "Basic Usage",
-            "configurationOptions": "Configuration Options"
-        },
         "smartContracts": {
             "title": "Smart Contract Integration",
             "description": "Direct smart contract interaction for advanced use cases",
             "bridgeContracts": "Bridge Contract Addresses",
             "keyFunctions": "Key Functions",
             "exampleIntegration": "Example Contract Integration"
-        },
-        "webhooks": {
-            "title": "Webhooks",
-            "description": "Real-time notifications for transaction events",
-            "eventTypes": "Event Types",
-            "payloadExample": "Webhook Payload Example",
-            "setupInstructions": "Setup Instructions"
         }
     },
     "changelog": {
