@@ -50,7 +50,7 @@ const Index = () => {
                       ? "Trung tâm tài liệu"
                       : "Documentation Hub"}
                   </Badge>
-                  <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h2 className="text-4xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Comprehensive Documentation
                   </h2>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -214,7 +214,7 @@ const Index = () => {
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
-                  <h2 className="text-4xl font-bold mb-6">
+                  <h2 className="text-4xl font-bold leading-tight mb-6">
                     Why Choose Lotus Bridge?
                   </h2>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

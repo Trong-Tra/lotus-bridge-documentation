@@ -121,7 +121,7 @@ const BenefitsLiquidity = () => {
                   <Badge variant="outline" className="mb-4">
                     💰 Liquidity Provider Benefits
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Benefits for Liquidity Providers
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -134,7 +134,7 @@ const BenefitsLiquidity = () => {
             </section>
 
             {/* Core Benefits */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="grid gap-8">
                   {liquidityBenefits.map((benefit, index) => {
@@ -270,7 +270,7 @@ const BenefitsLiquidity = () => {
             </section>
 
             {/* Yield Optimization */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
@@ -354,7 +354,7 @@ const BenefitsLiquidity = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+                    <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">💎 Premium APR</h4>
                         <p className="text-sm text-muted-foreground">

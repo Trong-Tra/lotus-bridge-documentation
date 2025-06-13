@@ -43,7 +43,7 @@ const Consensus = () => {
                   <Badge variant="outline" className="mb-4">
                     🔮 Future Development
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Lotus Bridge Consensus
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -55,7 +55,7 @@ const Consensus = () => {
             </section>
 
             {/* Development Notice */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <Card className="border-2 border-dashed border-primary/30 bg-primary/5">
                   <CardHeader className="text-center">
@@ -76,7 +76,7 @@ const Consensus = () => {
                       Our team is working on innovative consensus solutions that
                       will provide:
                     </p>
-                    <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Vote className="h-5 w-5 text-primary" />

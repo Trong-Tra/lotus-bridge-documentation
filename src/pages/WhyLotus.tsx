@@ -43,7 +43,7 @@ const WhyLotus = () => {
                   <Badge variant="outline" className="mb-4">
                     🇻🇳 Vietnamese Innovation
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Why Lotus?
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ const WhyLotus = () => {
 
             {/* Main Content */}
             <section className="py-20 px-6">
-              <div className="container mx-auto max-w-4xl">
+              <div className="container mx-auto max-w-6xl">
                 <div className="space-y-8">
                   {/* Cultural Significance */}
                   <Card className="border-primary/20">

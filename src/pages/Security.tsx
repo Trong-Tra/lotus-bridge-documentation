@@ -41,7 +41,7 @@ const Security = () => {
                   <Badge variant="outline" className="mb-4">
                     🛡️ Security Framework
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Security
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -53,7 +53,7 @@ const Security = () => {
             </section>
 
             {/* Security Framework */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <Card className="mb-8">
                   <CardHeader>
@@ -234,7 +234,7 @@ const Security = () => {
             </section>
 
             {/* Security Guarantee */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-8">
                   <div className="flex items-center gap-4 mb-6">

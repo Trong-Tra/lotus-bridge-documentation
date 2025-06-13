@@ -42,7 +42,7 @@ const EcosystemBenefits = () => {
                   <Badge variant="outline" className="mb-4">
                     🌍 Ecosystem Impact
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Ecosystem Benefits
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

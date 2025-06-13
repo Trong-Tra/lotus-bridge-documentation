@@ -106,7 +106,7 @@ const BenefitsUsers = () => {
                   <Badge variant="outline" className="mb-4">
                     👥 User Benefits
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Benefits for Users
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -119,7 +119,7 @@ const BenefitsUsers = () => {
             </section>
 
             {/* Core Benefits */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="grid gap-8">
                   {userBenefits.map((benefit, index) => {
@@ -237,7 +237,7 @@ const BenefitsUsers = () => {
             </section>
 
             {/* Vietnamese Token Showcase */}
-            <section className="py-16 px-6">
+            <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">

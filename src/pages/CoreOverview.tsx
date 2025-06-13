@@ -42,7 +42,7 @@ const CoreOverview = () => {
                   <Badge variant="outline" className="mb-4">
                     ⚡ Core Capabilities
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Overview
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -55,7 +55,7 @@ const CoreOverview = () => {
 
             {/* Main Content */}
             <section className="py-20 px-6">
-              <div className="container mx-auto max-w-4xl">
+              <div className="container mx-auto max-w-6xl">
                 <div className="space-y-8">
                   {/* What Lotus Bridge Enables */}
                   <Card className="border-primary/20">

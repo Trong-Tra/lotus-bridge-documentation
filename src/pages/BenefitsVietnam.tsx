@@ -153,7 +153,7 @@ const BenefitsVietnam = () => {
                   <Badge variant="outline" className="mb-4">
                     🇻🇳 Vietnam's Crypto Industry
                   </Badge>
-                  <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Benefits for Vietnam's Crypto Industry
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
