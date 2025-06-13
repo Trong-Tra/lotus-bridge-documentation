@@ -10,13 +10,10 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import {
   Network,
-  GitBranch,
-  Wallet,
-  Globe,
   Shield,
+  Globe,
   ArrowRight,
   ArrowLeft,
   Layers,
@@ -26,74 +23,6 @@ import { Link } from "react-router-dom";
 
 const Architecture = () => {
   const { t, language } = useLanguage();
-
-  const architectureLayers = [
-    {
-      layer: 1,
-      name: "Network Adapter Layer",
-      description:
-        "Interfaces with various blockchain protocols, extracting transaction methods and enabling compatibility across chains.",
-      icon: Network,
-      features: [
-        "Protocol abstraction",
-        "Transaction method extraction",
-        "Cross-chain compatibility",
-        "Dynamic adapter loading",
-      ],
-    },
-    {
-      layer: 2,
-      name: "Bridge Orchestration Layer",
-      description:
-        "Coordinates transaction logic, handles validation, and manages state transitions between networks.",
-      icon: GitBranch,
-      features: [
-        "Transaction coordination",
-        "State management",
-        "Validation handling",
-        "Cross-chain messaging",
-      ],
-    },
-    {
-      layer: 3,
-      name: "Wallet Management Layer",
-      description:
-        "Supports multi-wallet connectivity and address mapping across architectures.",
-      icon: Wallet,
-      features: [
-        "Multi-wallet support",
-        "Address mapping",
-        "Cross-architecture compatibility",
-        "Session management",
-      ],
-    },
-    {
-      layer: 4,
-      name: "Localization Layer",
-      description:
-        "Provides localized content, user flows, and token compatibility tailored to the Vietnamese ecosystem.",
-      icon: Globe,
-      features: [
-        "Vietnamese language support",
-        "Local token integration",
-        "Cultural UX adaptation",
-        "Regional compliance",
-      ],
-    },
-    {
-      layer: 5,
-      name: "Security & Validation Layer",
-      description:
-        "Incorporates decentralized validation mechanisms, rate-limiting, fraud detection, and fail-safes.",
-      icon: Shield,
-      features: [
-        "Decentralized validation",
-        "Rate limiting",
-        "Fraud detection",
-        "Emergency fail-safes",
-      ],
-    },
-  ];
 
   return (
     <SidebarProvider>
@@ -115,286 +44,80 @@ const Architecture = () => {
                     Lotus Bridge Architecture
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    A modular, five-layer architecture designed for maximum
-                    flexibility, security, and Vietnamese market integration.
+                    Detailed architecture documentation and diagrams coming
+                    soon.
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Architecture Overview */}
+            {/* Coming Soon Section */}
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    Modular Design Philosophy
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Lotus Bridge's architecture is built on five distinct
-                    layers, each designed to handle specific aspects of
-                    cross-chain interoperability while maintaining Vietnamese
-                    cultural and technical priorities.
-                  </p>
-                </div>
-
-                <div className="grid gap-8">
-                  {architectureLayers.map((layer, index) => {
-                    const IconComponent = layer.icon;
-                    return (
-                      <Card
-                        key={layer.layer}
-                        className="relative overflow-hidden"
-                      >
-                        <div
-                          className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${
-                            index % 2 === 0
-                              ? "from-primary to-accent"
-                              : "from-accent to-primary"
-                          }`}
-                        />
-                        <CardHeader className="pl-8">
-                          <div className="flex items-center gap-4 mb-2">
-                            <div
-                              className={`p-3 rounded-lg ${
-                                index % 2 === 0
-                                  ? "bg-primary/10"
-                                  : "bg-accent/10"
-                              }`}
-                            >
-                              <IconComponent
-                                className={`h-6 w-6 ${
-                                  index % 2 === 0
-                                    ? "text-primary"
-                                    : "text-accent"
-                                }`}
-                              />
-                            </div>
-                            <Badge variant="secondary">
-                              Layer {layer.layer}
-                            </Badge>
-                          </div>
-                          <CardTitle className="text-2xl">
-                            {layer.name}
-                          </CardTitle>
-                          <CardDescription className="text-lg">
-                            {layer.description}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="pl-8">
-                          <div className="grid md:grid-cols-2 gap-4">
-                            {layer.features.map((feature, featureIndex) => (
-                              <div
-                                key={featureIndex}
-                                className="flex items-center gap-2"
-                              >
-                                <div className="w-2 h-2 bg-primary rounded-full" />
-                                <span className="text-sm font-medium">
-                                  {feature}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
-
-            {/* Technical Features */}
-            <section className="py-16 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🇻🇳 Vietnamese-First Design
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Every layer of our architecture considers the unique needs
-                    of Vietnamese users and the local crypto ecosystem.
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <Card>
-                    <CardHeader>
-                      <Layers className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Adaptive Protocol Support</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">
-                        Dynamic adaptation to different blockchain protocols,
-                        including Vietnamese-popular networks like Ronin and
-                        KardiaChain.
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardHeader>
-                      <Network className="h-8 w-8 text-accent mb-2" />
-                      <CardTitle>Multi-Chain Orchestration</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">
-                        Seamless coordination between different blockchain
-                        architectures, from EVM to Solana to custom Vietnamese
-                        chains.
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardHeader>
-                      <Shield className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Enterprise Security</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">
-                        Multiple layers of security validation, designed to
-                        protect high-value Vietnamese gaming and DeFi assets.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </section>
-
-            {/* Technical Architecture Deep Dive */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🔧 Technical Deep Dive
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Core technical components and performance metrics from our
-                    whitepaper
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8 mb-12">
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-xl">Core Components</h4>
-                    <div className="space-y-3">
-                      <div className="border rounded-lg p-4">
-                        <div className="font-medium mb-2 text-primary">
-                          Lotus Consensus Algorithm (LCA)
-                        </div>
-                        <p className="text-sm text-muted-foreground">
-                          Novel Byzantine Fault Tolerant consensus optimized for
-                          cross-chain operations
+                <Card className="text-center">
+                  <CardHeader>
+                    <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center">
+                      <Layers className="h-16 w-16 text-primary" />
+                    </div>
+                    <CardTitle className="text-3xl mb-4">
+                      Architecture Documentation
+                    </CardTitle>
+                    <CardDescription className="text-lg max-w-2xl mx-auto">
+                      We are currently preparing comprehensive architecture
+                      diagrams and technical documentation. This section will
+                      include detailed system architecture, component
+                      interactions, and technical specifications.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div className="bg-muted/30 rounded-lg p-12 border-2 border-dashed border-muted-foreground/30">
+                      <div className="text-muted-foreground">
+                        <div className="text-6xl mb-6">📊</div>
+                        <h3 className="font-semibold text-2xl mb-4">
+                          Architecture Diagrams Coming Soon
+                        </h3>
+                        <p className="text-lg mb-4">
+                          Detailed technical diagrams and system flow charts
+                          will be available here.
                         </p>
-                      </div>
-                      <div className="border rounded-lg p-4">
-                        <div className="font-medium mb-2 text-accent">
-                          State Verification Protocol
-                        </div>
-                        <p className="text-sm text-muted-foreground">
-                          Cryptographic proofs ensuring atomic cross-chain state
-                          transitions
-                        </p>
-                      </div>
-                      <div className="border rounded-lg p-4">
-                        <div className="font-medium mb-2 text-primary">
-                          Relay Network
-                        </div>
-                        <p className="text-sm text-muted-foreground">
-                          Decentralized network of validators maintaining
-                          cross-chain communication
+                        <p className="text-sm text-muted-foreground/70">
+                          Including modular layer architecture, cross-chain
+                          protocols, and Vietnamese ecosystem integration
                         </p>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-xl">
-                      Performance Metrics
-                    </h4>
-                    <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
-                        <span className="text-sm font-medium">
-                          Transaction Finality
-                        </span>
-                        <Badge variant="secondary">12-15 seconds</Badge>
+                    <div className="grid md:grid-cols-3 gap-6 mt-8">
+                      <div className="p-6 border rounded-lg">
+                        <Network className="h-8 w-8 text-primary mb-3 mx-auto" />
+                        <h4 className="font-semibold mb-2">Network Layer</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Multi-chain protocol adaptation
+                        </p>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
-                        <span className="text-sm font-medium">
-                          Throughput (TPS)
-                        </span>
-                        <Badge variant="secondary">10,000+</Badge>
+                      <div className="p-6 border rounded-lg">
+                        <Shield className="h-8 w-8 text-accent mb-3 mx-auto" />
+                        <h4 className="font-semibold mb-2">Security Layer</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Enterprise-grade validation
+                        </p>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
-                        <span className="text-sm font-medium">
-                          Network Uptime
-                        </span>
-                        <Badge variant="secondary">99.9%</Badge>
-                      </div>
-                      <div className="flex justify-between items-center p-3 bg-background/50 rounded-lg border">
-                        <span className="text-sm font-medium">
-                          Security Guarantees
-                        </span>
-                        <Badge variant="secondary">Byzantine Safe</Badge>
+                      <div className="p-6 border rounded-lg">
+                        <Globe className="h-8 w-8 text-primary mb-3 mx-auto" />
+                        <h4 className="font-semibold mb-2">
+                          Localization Layer
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          Vietnamese ecosystem integration
+                        </p>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                {/* Protocol Flow */}
-                <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg p-8">
-                  <h4 className="font-semibold mb-6 text-center text-xl">
-                    Protocol Flow
-                  </h4>
-                  <div className="grid md:grid-cols-4 gap-6">
-                    <div className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                        <span className="text-primary font-bold text-xl">
-                          1
-                        </span>
-                      </div>
-                      <h5 className="font-medium text-lg mb-2">Lock Assets</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Assets locked on source chain with cryptographic proof
-                        generation
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                        <span className="text-accent font-bold text-xl">2</span>
-                      </div>
-                      <h5 className="font-medium text-lg mb-2">
-                        Generate Proof
-                      </h5>
-                      <p className="text-sm text-muted-foreground">
-                        Zero-knowledge proofs created for secure verification
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                        <span className="text-primary font-bold text-xl">
-                          3
-                        </span>
-                      </div>
-                      <h5 className="font-medium text-lg mb-2">
-                        Relay & Verify
-                      </h5>
-                      <p className="text-sm text-muted-foreground">
-                        Decentralized validators verify and relay to destination
-                        chain
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                        <span className="text-accent font-bold text-xl">4</span>
-                      </div>
-                      <h5 className="font-medium text-lg mb-2">Mint Assets</h5>
-                      <p className="text-sm text-muted-foreground">
-                        Assets minted on destination chain with full security
-                        guarantees
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                    <Badge variant="secondary" className="text-lg py-2 px-4">
+                      🚧 Under Development - Stay Tuned!
+                    </Badge>
+                  </CardContent>
+                </Card>
               </div>
             </section>
 
