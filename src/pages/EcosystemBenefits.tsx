@@ -304,9 +304,9 @@ const EcosystemBenefits = () => {
                   {/* Navigation */}
                   <div className="flex justify-between items-center">
                     <Button variant="outline" className="gap-2" asChild>
-                      <Link to="/use-cases">
+                      <Link to="/governance">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Use Cases
+                        Back to Governance
                       </Link>
                     </Button>
 

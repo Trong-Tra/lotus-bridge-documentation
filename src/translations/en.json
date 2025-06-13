@@ -348,14 +348,6 @@
             }
         }
     },
-    "useCases": {
-        "title": "Use Cases",
-        "crossChainTransfers": "Cross-chain asset transfers: Move your VNDC from Ethereum to Solana",
-        "chainToChainSwaps": "Chain-to-chain swaps: Instantly swap AXS on Ronin for ETH on Ethereum",
-        "multiWalletManagement": "Multi-wallet portfolio management: Bridge and swap between addresses you control on different chains",
-        "localizedDefi": "Localized DeFi: Participate in DeFi protocols using regionally popular tokens",
-        "liquidityRouting": "Liquidity routing: Arbitrage opportunities and LP provisioning across fragmented pools"
-    },
     "ecosystemBenefits": {
         "title": "Ecosystem Benefits",
         "forUsers": {

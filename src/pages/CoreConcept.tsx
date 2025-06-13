@@ -280,8 +280,8 @@ const CoreConcept = () => {
                     </div>
 
                     <Button className="gap-2" asChild>
-                      <Link to="/use-cases">
-                        Continue to Use Cases
+                      <Link to="/core-overview">
+                        Continue to Core Overview
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

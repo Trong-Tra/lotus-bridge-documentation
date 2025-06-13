@@ -170,11 +170,6 @@ export function AppSidebar() {
       ],
     },
     {
-      title: "Use Cases",
-      url: "/use-cases",
-      icon: TrendingUp,
-    },
-    {
       title: "Ecosystem Benefits",
       url: "/ecosystem-benefits",
       icon: Globe,

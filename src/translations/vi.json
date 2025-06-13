@@ -262,14 +262,6 @@
             }
         }
     },
-    "useCases": {
-        "title": "Trường hợp sử dụng",
-        "crossChainTransfers": "Chuyển tài sản chuỗi chéo: Di chuyển VNDC từ Ethereum sang Solana",
-        "chainToChainSwaps": "Hoán đổi chuỗi-chuỗi: Ngay lập tức hoán đổi AXS trên Ronin lấy ETH trên Ethereum",
-        "multiWalletManagement": "Quản lý danh mục đầu tư đa ví: Cầu nối và hoán đổi giữa các địa chỉ bạn kiểm soát trên các chuỗi khác nhau",
-        "localizedDefi": "DeFi bản địa hóa: Tham gia vào các giao thức DeFi sử dụng token phổ biến trong khu vực",
-        "liquidityRouting": "Định tuyến thanh khoản: Cơ hội chênh lệch giá và cung cấp LP qua các pool phân mảnh"
-    },
     "ecosystemBenefits": {
         "title": "Lợi ích Hệ sinh thái",
         "forUsers": {

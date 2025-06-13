@@ -456,9 +456,9 @@ const BenefitsVietnam = () => {
                   <Link to="/ecosystem-benefits">
                     <Button variant="outline">Back to Overview</Button>
                   </Link>
-                  <Link to="/use-cases">
+                  <Link to="/security">
                     <Button className="flex items-center gap-2">
-                      Use Cases
+                      Security
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>

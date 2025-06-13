@@ -16,7 +16,6 @@ import CoreConcept from "./pages/CoreConcept";
 import CoreOverview from "./pages/CoreOverview";
 import Architecture from "./pages/Architecture";
 import Governance from "./pages/Governance";
-import UseCases from "./pages/UseCases";
 import EcosystemBenefits from "./pages/EcosystemBenefits";
 import BenefitsUsers from "./pages/BenefitsUsers";
 import BenefitsDevelopers from "./pages/BenefitsDevelopers";
@@ -51,7 +50,6 @@ const App = () => (
             <Route path="/core-overview" element={<CoreOverview />} />
             <Route path="/architecture" element={<Architecture />} />
             <Route path="/governance" element={<Governance />} />
-            <Route path="/use-cases" element={<UseCases />} />
             <Route path="/ecosystem-benefits" element={<EcosystemBenefits />} />
             <Route path="/benefits-users" element={<BenefitsUsers />} />
             <Route

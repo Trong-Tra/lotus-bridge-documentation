@@ -229,9 +229,9 @@ const Governance = () => {
                   <Link to="/core-concept">
                     <Button variant="outline">Back to Core Concept</Button>
                   </Link>
-                  <Link to="/use-cases">
+                  <Link to="/ecosystem-benefits">
                     <Button className="flex items-center gap-2">
-                      Use Cases
+                      Ecosystem Benefits
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
