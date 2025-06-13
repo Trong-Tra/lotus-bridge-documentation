@@ -193,6 +193,15 @@ const WhatIsLotus = () => {
                               </p>
                             </div>
                           </div>
+                          <div className="flex items-start gap-3">
+                            <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                            <div>
+                              <h4 className="font-medium">Governance</h4>
+                              <p className="text-sm text-muted-foreground">
+                                Governance system for emergency scenarios
+                              </p>
+                            </div>
+                          </div>
                         </div>
                         <div className="space-y-4">
                           <div className="flex items-start gap-3">

@@ -215,6 +215,13 @@ const WhyLotus = () => {
                                 needs
                               </span>
                             </li>
+                            <li className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                              <span className="text-sm">
+                                Emergency governance by trusted key holders to
+                                safeguard the network in critical situations
+                              </span>
+                            </li>
                           </ul>
                         </div>
 
