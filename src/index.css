@@ -169,12 +169,35 @@
     }
   }
 
+  /* Vietnamese token animation */
+  @keyframes vietnamese-token-spin {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.15);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+
   .lotus-bloom {
     animation: lotus-bloom 2s ease-out;
   }
 
   .silk-flow {
     animation: silk-flow 4s ease-in-out infinite;
+  }
+
+  /* Vietnamese token hover effects */
+  .vietnamese-token {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+  }
+
+  .vietnamese-token:hover {
+    animation: vietnamese-token-spin 0.8s ease-in-out;
   }
 
   /* Bridge transition effect */
@@ -199,6 +222,37 @@
 
   .bridge-transition:hover::before {
     left: 100%;
+  }
+
+  /* Tab improvements for FAQs */
+  .tab-header {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tab-header.active {
+    border-bottom-color: hsl(var(--primary));
+    box-shadow: 0 2px 4px hsl(var(--primary) / 0.1);
+  }
+
+  .tab-header:hover:not(.active) {
+    background-color: hsl(var(--muted) / 0.5);
+  }
+
+  /* Token grid layout improvements */
+  .token-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .token-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 0.75rem;
+    }
   }
 }
 

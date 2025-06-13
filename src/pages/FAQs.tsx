@@ -1,3 +1,4 @@
+
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -9,8 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Accordion,
   AccordionContent,
@@ -19,16 +18,18 @@ import {
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  Search,
   MessageCircle,
-  Book,
-  AlertCircle,
-  CheckCircle,
-  Clock,
-  Lightbulb,
+  HelpCircle,
+  Shield,
+  Zap,
+  Users,
+  Code,
 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 const FAQs = () => {
+  const { t } = useLanguage();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -43,703 +44,143 @@ const FAQs = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Help & Support
+                    {t("faqs.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    FAQs & Glossary
+                    {t("faqs.title")}
                   </h1>
-                  <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                    Common questions about Lotus Bridge, Vietnamese token
-                    support, cross-chain bridging, and our vision for Vietnamese
-                    crypto.
+                  <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    {t("faqs.subtitle")}
                   </p>
-                  <div className="max-w-md mx-auto relative">
-                    <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                    <Input
-                      placeholder="Search for answers..."
-                      className="pl-10"
-                    />
-                  </div>
                 </div>
               </div>
             </section>
 
-            {/* Main Content */}
+            {/* FAQs Content */}
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <Tabs defaultValue="general" className="w-full">
-                  <TabsList className="grid w-full grid-cols-5">
-                    <TabsTrigger value="general">General</TabsTrigger>
-                    <TabsTrigger value="technical">Technical</TabsTrigger>
-                    <TabsTrigger value="security">Security</TabsTrigger>
-                    <TabsTrigger value="fees">Fees & Limits</TabsTrigger>
-                    <TabsTrigger value="glossary">Glossary</TabsTrigger>
+                  <TabsList className="grid w-full grid-cols-6 mb-8 h-12">
+                    <TabsTrigger
+                      value="general"
+                      className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
+                    >
+                      <HelpCircle className="h-4 w-4 mr-2" />
+                      General
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="technical"
+                      className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
+                    >
+                      <Code className="h-4 w-4 mr-2" />
+                      Technical
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="security"
+                      className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
+                    >
+                      <Shield className="h-4 w-4 mr-2" />
+                      Security
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="fees"
+                      className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
+                    >
+                      <Zap className="h-4 w-4 mr-2" />
+                      Fees
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="vietnamese"
+                      className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
+                    >
+                      🇻🇳
+                      Vietnamese
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="support"
+                      className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
+                    >
+                      <Users className="h-4 w-4 mr-2" />
+                      Support
+                    </TabsTrigger>
                   </TabsList>
 
-                  <TabsContent value="general" className="space-y-8">
-                    <div className="grid lg:grid-cols-3 gap-8">
-                      <div className="lg:col-span-2">
-                        <Card>
-                          <CardHeader>
-                            <CardTitle className="flex items-center gap-2">
-                              <MessageCircle className="h-5 w-5" />
-                              General Questions
-                            </CardTitle>
-                            <CardDescription>
-                              Common questions about Lotus Bridge and how it
-                              works
-                            </CardDescription>
-                          </CardHeader>
-                          <CardContent>
-                            <Accordion
-                              type="single"
-                              collapsible
-                              className="w-full"
-                            >
-                              <AccordionItem value="what-is-lotus-bridge">
-                                <AccordionTrigger>
-                                  What is Lotus Bridge?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    Lotus Bridge is a decentralized cross-chain
-                                    protocol that enables seamless transfer of
-                                    digital assets between different blockchain
-                                    networks. Built with Vietnamese innovation
-                                    at its core, it provides secure, fast, and
-                                    cost-effective bridging solutions for users
-                                    and developers.
-                                  </p>
-                                  <p>
-                                    Our protocol supports major blockchains
-                                    including Ethereum, Polygon, Binance Smart
-                                    Chain, Avalanche, and more, allowing users
-                                    to move their assets freely across the
-                                    multi-chain ecosystem.
-                                  </p>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="how-does-it-work">
-                                <AccordionTrigger>
-                                  How does Lotus Bridge work?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    Lotus Bridge uses a lock-and-mint mechanism
-                                    combined with advanced cryptographic proofs
-                                    to ensure secure cross-chain transfers:
-                                  </p>
-                                  <ol className="list-decimal list-inside space-y-2 ml-4">
-                                    <li>
-                                      Your tokens are locked in a smart contract
-                                      on the source blockchain
-                                    </li>
-                                    <li>
-                                      Our validator network verifies the lock
-                                      transaction
-                                    </li>
-                                    <li>
-                                      Equivalent tokens are minted on the
-                                      destination blockchain
-                                    </li>
-                                    <li>
-                                      You receive your tokens on the target
-                                      network
-                                    </li>
-                                  </ol>
-                                  <p>
-                                    The entire process is trustless and
-                                    typically completes within 15-30 seconds.
-                                  </p>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="supported-networks">
-                                <AccordionTrigger>
-                                  Which blockchain networks are supported?
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                  <p className="mb-3">
-                                    Lotus Bridge currently supports the
-                                    following networks:
-                                  </p>
-                                  <div className="grid grid-cols-2 gap-2 mb-3">
-                                    <div className="flex items-center gap-2">
-                                      <CheckCircle className="h-4 w-4 text-green-500" />
-                                      <span>Ethereum</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <CheckCircle className="h-4 w-4 text-green-500" />
-                                      <span>Polygon</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <CheckCircle className="h-4 w-4 text-green-500" />
-                                      <span>Binance Smart Chain</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <CheckCircle className="h-4 w-4 text-green-500" />
-                                      <span>Avalanche</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <CheckCircle className="h-4 w-4 text-green-500" />
-                                      <span>Arbitrum</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <CheckCircle className="h-4 w-4 text-green-500" />
-                                      <span>Optimism</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <Clock className="h-4 w-4 text-orange-500" />
-                                      <span>Solana (Coming Soon)</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <Clock className="h-4 w-4 text-orange-500" />
-                                      <span>Fantom (Coming Soon)</span>
-                                    </div>
-                                  </div>
-                                  <p>
-                                    We're continuously expanding our network
-                                    support based on community demand.
-                                  </p>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="getting-started">
-                                <AccordionTrigger>
-                                  How do I get started with Lotus Bridge?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    Getting started is simple and only takes a
-                                    few minutes:
-                                  </p>
-                                  <ol className="list-decimal list-inside space-y-2 ml-4">
-                                    <li>
-                                      Install a Web3 wallet (MetaMask,
-                                      WalletConnect, etc.)
-                                    </li>
-                                    <li>
-                                      Visit lotusbridge.io and connect your
-                                      wallet
-                                    </li>
-                                    <li>
-                                      Select source and destination networks
-                                    </li>
-                                    <li>
-                                      Choose the token and amount you want to
-                                      bridge
-                                    </li>
-                                    <li>
-                                      Review the transaction details and confirm
-                                    </li>
-                                  </ol>
-                                  <p>
-                                    No registration or KYC is required. The
-                                    process is completely decentralized and
-                                    permissionless.
-                                  </p>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="transaction-time">
-                                <AccordionTrigger>
-                                  How long do transactions take?
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                  <p className="mb-3">
-                                    Transaction times vary by network congestion
-                                    but typically:
-                                  </p>
-                                  <ul className="list-disc list-inside space-y-1 ml-4">
-                                    <li>Normal conditions: 15-30 seconds</li>
-                                    <li>High congestion: 2-5 minutes</li>
-                                    <li>
-                                      Extreme congestion: Up to 30 minutes
-                                    </li>
-                                  </ul>
-                                  <p className="mt-3">
-                                    You can track your transaction status in
-                                    real-time using our bridge explorer.
-                                  </p>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              {/* New FAQ items from docs.txt */}
-                              <AccordionItem value="supported-blockchains">
-                                <AccordionTrigger>
-                                  Which blockchains does Lotus Bridge support?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    Initially Ethereum, Solana, BNB Chain,
-                                    Polygon, and Ronin, with more to follow.
-                                  </p>
-                                  <p>
-                                    Our architecture-agnostic design allows us
-                                    to rapidly integrate new blockchains as they
-                                    emerge, ensuring Lotus Bridge stays at the
-                                    forefront of cross-chain innovation.
-                                  </p>
-                                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
-                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
-                                      <strong>Ethereum</strong>
-                                      <br />
-                                      <span className="text-xs text-muted-foreground">
-                                        EVM Compatible
-                                      </span>
-                                    </div>
-                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
-                                      <strong>Solana</strong>
-                                      <br />
-                                      <span className="text-xs text-muted-foreground">
-                                        High Performance
-                                      </span>
-                                    </div>
-                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
-                                      <strong>BNB Chain</strong>
-                                      <br />
-                                      <span className="text-xs text-muted-foreground">
-                                        Low Fees
-                                      </span>
-                                    </div>
-                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
-                                      <strong>Polygon</strong>
-                                      <br />
-                                      <span className="text-xs text-muted-foreground">
-                                        Layer 2
-                                      </span>
-                                    </div>
-                                    <div className="bg-muted/50 p-2 rounded text-center text-sm">
-                                      <strong>Ronin</strong>
-                                      <br />
-                                      <span className="text-xs text-muted-foreground">
-                                        Gaming Focus
-                                      </span>
-                                    </div>
-                                    <div className="bg-primary/10 p-2 rounded text-center text-sm">
-                                      <strong>More Coming</strong>
-                                      <br />
-                                      <span className="text-xs text-muted-foreground">
-                                        Stay Tuned
-                                      </span>
-                                    </div>
-                                  </div>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="security-question">
-                                <AccordionTrigger>
-                                  Is Lotus Bridge secure?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    <strong>
-                                      Yes, security is a core principle.
-                                    </strong>{" "}
-                                    Lotus uses decentralized validators,
-                                    fallback mechanisms, and real-time
-                                    monitoring to ensure the highest security
-                                    standards.
-                                  </p>
-                                  <div className="grid md:grid-cols-2 gap-4">
-                                    <div>
-                                      <h4 className="font-semibold mb-2">
-                                        Security Features:
-                                      </h4>
-                                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                                        <li>Decentralized validator network</li>
-                                        <li>Multi-signature validations</li>
-                                        <li>Real-time fraud detection</li>
-                                        <li>Emergency pause mechanisms</li>
-                                        <li>Time-locked transactions</li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <h4 className="font-semibold mb-2">
-                                        Security Audits:
-                                      </h4>
-                                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                                        <li>Professional security audits</li>
-                                        <li>Bug bounty programs</li>
-                                        <li>Continuous monitoring</li>
-                                        <li>Community security reviews</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="multi-wallet-support">
-                                <AccordionTrigger>
-                                  Can I use multiple wallets at once?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    <strong>
-                                      Yes, Lotus Bridge allows multi-wallet
-                                      connections and mapping across addresses.
-                                    </strong>
-                                  </p>
-                                  <p>
-                                    This is one of our unique features - you can
-                                    connect multiple wallets from different
-                                    ecosystems simultaneously and bridge assets
-                                    between addresses you control on different
-                                    chains.
-                                  </p>
-                                  <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-                                    <h4 className="font-medium mb-2">
-                                      Multi-wallet Features:
-                                    </h4>
-                                    <ul className="space-y-1 text-sm">
-                                      <li>
-                                        • Connect MetaMask + Phantom
-                                        simultaneously
-                                      </li>
-                                      <li>
-                                        • Bridge between your different
-                                        addresses
-                                      </li>
-                                      <li>
-                                        • Portfolio management across chains
-                                      </li>
-                                      <li>
-                                        • Address mapping for cross-chain
-                                        identity
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="native-token">
-                                <AccordionTrigger>
-                                  Is there a native token?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    Details on a native token and utility model
-                                    will be announced in a future version.
-                                  </p>
-                                  <p>
-                                    We're currently focused on delivering a
-                                    robust, secure, and user-friendly bridge
-                                    experience. Tokenomics and governance
-                                    mechanisms will be introduced as part of our
-                                    roadmap in Q4 2025.
-                                  </p>
-                                  <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-                                    <h4 className="font-medium mb-2">
-                                      What to expect:
-                                    </h4>
-                                    <ul className="space-y-1 text-sm text-muted-foreground">
-                                      <li>
-                                        • Governance token for protocol
-                                        decisions
-                                      </li>
-                                      <li>
-                                        • Incentives for liquidity providers
-                                      </li>
-                                      <li>• Fee sharing mechanisms</li>
-                                      <li>• Community-driven development</li>
-                                    </ul>
-                                    <p className="text-xs text-muted-foreground mt-2">
-                                      <strong>Timeline:</strong> Token launch
-                                      planned for Q4 2025
-                                    </p>
-                                  </div>
-                                </AccordionContent>
-                              </AccordionItem>
-
-                              <AccordionItem value="vietnamese-tokens">
-                                <AccordionTrigger>
-                                  🇻🇳 Which Vietnamese tokens are supported?
-                                </AccordionTrigger>
-                                <AccordionContent className="space-y-3">
-                                  <p>
-                                    Lotus Bridge provides native support for
-                                    Vietnamese tokens including:
-                                  </p>
-                                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                                    <div className="bg-green-50 dark:bg-green-950/20 p-3 rounded border border-green-200 dark:border-green-800">
-                                      <strong className="text-green-800 dark:text-green-400">
-                                        AXS
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-green-600 dark:text-green-300">
-                                        Axie Infinity
-                                      </span>
-                                    </div>
-                                    <div className="bg-blue-50 dark:bg-blue-950/20 p-3 rounded border border-blue-200 dark:border-blue-800">
-                                      <strong className="text-blue-800 dark:text-blue-400">
-                                        SLP
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-blue-600 dark:text-blue-300">
-                                        Smooth Love Potion
-                                      </span>
-                                    </div>
-                                    <div className="bg-purple-50 dark:bg-purple-950/20 p-3 rounded border border-purple-200 dark:border-purple-800">
-                                      <strong className="text-purple-800 dark:text-purple-400">
-                                        VNDC
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-purple-600 dark:text-purple-300">
-                                        VND Coin
-                                      </span>
-                                    </div>
-                                    <div className="bg-orange-50 dark:bg-orange-950/20 p-3 rounded border border-orange-200 dark:border-orange-800">
-                                      <strong className="text-orange-800 dark:text-orange-400">
-                                        VNST
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-orange-600 dark:text-orange-300">
-                                        VN Stable Token
-                                      </span>
-                                    </div>
-                                    <div className="bg-red-50 dark:bg-red-950/20 p-3 rounded border border-red-200 dark:border-red-800">
-                                      <strong className="text-red-800 dark:text-red-400">
-                                        KAI
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-red-600 dark:text-red-300">
-                                        KardiaChain
-                                      </span>
-                                    </div>
-                                    <div className="bg-indigo-50 dark:bg-indigo-950/20 p-3 rounded border border-indigo-200 dark:border-indigo-800">
-                                      <strong className="text-indigo-800 dark:text-indigo-400">
-                                        SIPHER
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-indigo-600 dark:text-indigo-300">
-                                        Sipher Token
-                                      </span>
-                                    </div>
-                                    <div className="bg-yellow-50 dark:bg-yellow-950/20 p-3 rounded border border-yellow-200 dark:border-yellow-800">
-                                      <strong className="text-yellow-800 dark:text-yellow-400">
-                                        C98
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-yellow-600 dark:text-yellow-300">
-                                        Coin98
-                                      </span>
-                                    </div>
-                                    <div className="bg-teal-50 dark:bg-teal-950/20 p-3 rounded border border-teal-200 dark:border-teal-800">
-                                      <strong className="text-teal-800 dark:text-teal-400">
-                                        KNC
-                                      </strong>
-                                      <br />
-                                      <span className="text-xs text-teal-600 dark:teal-300">
-                                        Kyber Network
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <p className="text-sm text-muted-foreground">
-                                    <strong>Note:</strong> We're continuously
-                                    adding support for more Vietnamese and
-                                    regional tokens. If you have a specific
-                                    token request, please contact our team.
-                                  </p>
-                                </AccordionContent>
-                              </AccordionItem>
-                            </Accordion>
-                          </CardContent>
-                        </Card>
-                      </div>
-
-                      <div className="space-y-6">
-                        <Card>
-                          <CardHeader>
-                            <CardTitle className="text-lg">
-                              Need More Help?
-                            </CardTitle>
-                          </CardHeader>
-                          <CardContent className="space-y-4">
-                            <Button className="w-full gap-2">
-                              <MessageCircle className="h-4 w-4" />
-                              Join Discord Community
-                            </Button>
-                            <Button variant="outline" className="w-full gap-2">
-                              <Book className="h-4 w-4" />
-                              Read Documentation
-                            </Button>
-                            <Button variant="outline" className="w-full gap-2">
-                              <AlertCircle className="h-4 w-4" />
-                              Submit Support Ticket
-                            </Button>
-                          </CardContent>
-                        </Card>
-
-                        <Card>
-                          <CardHeader>
-                            <CardTitle className="text-lg">
-                              Quick Stats
-                            </CardTitle>
-                          </CardHeader>
-                          <CardContent className="space-y-3 text-sm">
-                            <div className="flex justify-between">
-                              <span className="text-muted-foreground">
-                                Total Bridges:
-                              </span>
-                              <span className="font-medium">1.2M+</span>
-                            </div>
-                            <div className="flex justify-between">
-                              <span className="text-muted-foreground">
-                                Volume Bridged:
-                              </span>
-                              <span className="font-medium">$2.8B</span>
-                            </div>
-                            <div className="flex justify-between">
-                              <span className="text-muted-foreground">
-                                Average Time:
-                              </span>
-                              <span className="font-medium">22 seconds</span>
-                            </div>
-                            <div className="flex justify-between">
-                              <span className="text-muted-foreground">
-                                Success Rate:
-                              </span>
-                              <span className="font-medium">99.98%</span>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </div>
-                  </TabsContent>
-
-                  <TabsContent value="technical" className="space-y-8">
+                  <TabsContent value="general" className="space-y-4">
                     <Card>
                       <CardHeader>
-                        <CardTitle>Technical Questions</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                          <HelpCircle className="h-5 w-5" />
+                          General Questions
+                        </CardTitle>
                         <CardDescription>
-                          In-depth technical information about Lotus Bridge
-                          protocol
+                          Common questions about Lotus Bridge
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <Accordion type="single" collapsible className="w-full">
-                          <AccordionItem value="consensus-mechanism">
+                        <Accordion type="single" collapsible>
+                          <AccordionItem value="what-is-lotus">
                             <AccordionTrigger>
-                              What consensus mechanism does Lotus Bridge use?
-                            </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Lotus Bridge employs the Lotus Consensus
-                                Algorithm (LCA), a novel Byzantine Fault
-                                Tolerant consensus mechanism specifically
-                                designed for cross-chain operations. LCA
-                                provides:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Sub-15-second finality across all supported
-                                  networks
-                                </li>
-                                <li>
-                                  Resistance to up to 33% malicious validators
-                                </li>
-                                <li>
-                                  Optimized throughput for cross-chain
-                                  transactions
-                                </li>
-                                <li>Energy-efficient validation process</li>
-                              </ul>
-                            </AccordionContent>
-                          </AccordionItem>
-
-                          <AccordionItem value="smart-contracts">
-                            <AccordionTrigger>
-                              Are the smart contracts audited?
-                            </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Yes, all Lotus Bridge smart contracts have
-                                undergone comprehensive security audits:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Trail of Bits - Core protocol audit
-                                  (Completed)
-                                </li>
-                                <li>
-                                  Quantstamp - Smart contract security review
-                                  (Completed)
-                                </li>
-                                <li>
-                                  CertiK - Formal verification (In Progress)
-                                </li>
-                                <li>
-                                  Ongoing bug bounty program with $500K+ rewards
-                                </li>
-                              </ul>
-                              <p>
-                                All audit reports are publicly available on our
-                                documentation site.
-                              </p>
-                            </AccordionContent>
-                          </AccordionItem>
-
-                          <AccordionItem value="gas-optimization">
-                            <AccordionTrigger>
-                              How does Lotus Bridge optimize gas costs?
-                            </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Lotus Bridge implements several gas optimization
-                                techniques:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Batch transaction processing to reduce
-                                  per-transaction costs
-                                </li>
-                                <li>
-                                  Efficient merkle proof verification algorithms
-                                </li>
-                                <li>
-                                  Dynamic gas price optimization based on
-                                  network conditions
-                                </li>
-                                <li>
-                                  Layer 2 integration for ultra-low cost
-                                  transactions
-                                </li>
-                              </ul>
-                              <p>
-                                These optimizations typically result in 40-60%
-                                lower gas costs compared to traditional bridge
-                                solutions.
-                              </p>
-                            </AccordionContent>
-                          </AccordionItem>
-
-                          <AccordionItem value="api-rate-limits">
-                            <AccordionTrigger>
-                              What are the API rate limits?
+                              What is Lotus Bridge?
                             </AccordionTrigger>
                             <AccordionContent>
-                              <p className="mb-3">
-                                API rate limits depend on your usage tier:
-                              </p>
-                              <div className="space-y-2">
-                                <div className="flex justify-between border rounded p-2">
-                                  <span>Free Tier:</span>
-                                  <span>100 requests/minute</span>
-                                </div>
-                                <div className="flex justify-between border rounded p-2">
-                                  <span>Developer Tier:</span>
-                                  <span>1,000 requests/minute</span>
-                                </div>
-                                <div className="flex justify-between border rounded p-2">
-                                  <span>Enterprise Tier:</span>
-                                  <span>10,000 requests/minute</span>
-                                </div>
-                              </div>
-                              <p className="mt-3">
-                                Contact our team for custom rate limits if you
-                                need higher throughput.
-                              </p>
+                              Lotus Bridge is a decentralized cross-chain bridge
+                              that enables secure and efficient transfers of
+                              digital assets between different blockchain
+                              networks. Built with Vietnamese innovation, it
+                              focuses on providing low-cost, fast transactions
+                              while maintaining the highest security standards.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="supported-networks">
+                            <AccordionTrigger>
+                              Which networks are supported?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Currently, Lotus Bridge supports Ethereum,
+                              Polygon, Binance Smart Chain, Avalanche, Arbitrum,
+                              and Optimism. We're continuously expanding our
+                              network support based on community demand and
+                              Vietnamese market needs.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="how-to-start">
+                            <AccordionTrigger>
+                              How do I start using Lotus Bridge?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              To start using Lotus Bridge: 1) Connect your Web3
+                              wallet (MetaMask, WalletConnect, etc.), 2) Select
+                              the source and destination networks, 3) Choose the
+                              token and amount to bridge, 4) Review the
+                              transaction details and fees, 5) Confirm the
+                              transaction. The process typically takes 30
+                              seconds to 2 minutes.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="transaction-time">
+                            <AccordionTrigger>
+                              How long do transactions take?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Transaction times vary by network pair: Ethereum
+                              ↔ Polygon: 30-60 seconds, BSC ↔ Avalanche: 45-90
+                              seconds, Arbitrum ↔ Optimism: 20-45 seconds. Times
+                              may be longer during network congestion.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="minimum-maximum">
+                            <AccordionTrigger>
+                              Are there minimum or maximum limits?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Minimum: $10 USD equivalent per transaction.
+                              Maximum: $100,000 USD equivalent per transaction,
+                              $500,000 USD equivalent per day. Higher limits
+                              available for verified institutional users.
                             </AccordionContent>
                           </AccordionItem>
                         </Accordion>
@@ -747,50 +188,99 @@ const FAQs = () => {
                     </Card>
                   </TabsContent>
 
-                  <TabsContent value="security" className="space-y-8">
+                  <TabsContent value="technical" className="space-y-4">
                     <Card>
                       <CardHeader>
-                        <CardTitle>Security Questions</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                          <Code className="h-5 w-5" />
+                          Technical Questions
+                        </CardTitle>
                         <CardDescription>
-                          Security measures and best practices for using Lotus
-                          Bridge
+                          Technical details and implementation
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <Accordion type="single" collapsible className="w-full">
-                          <AccordionItem value="fund-safety">
+                        <Accordion type="single" collapsible>
+                          <AccordionItem value="consensus-mechanism">
                             <AccordionTrigger>
-                              How safe are my funds?
+                              What consensus mechanism does Lotus Bridge use?
                             </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Lotus Bridge prioritizes security through
-                                multiple layers of protection:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Multi-signature validation requiring consensus
-                                  from multiple validators
-                                </li>
-                                <li>
-                                  Time-locked transactions with emergency pause
-                                  mechanisms
-                                </li>
-                                <li>
-                                  Regular security audits by top-tier firms
-                                </li>
-                                <li>
-                                  $10M security fund to protect users against
-                                  potential exploits
-                                </li>
-                                <li>
-                                  Real-time monitoring and anomaly detection
-                                </li>
-                              </ul>
-                              <p>
-                                Our protocol has maintained 99.98% uptime with
-                                zero security incidents since launch.
-                              </p>
+                            <AccordionContent>
+                              Lotus Bridge uses the Lotus Consensus Algorithm
+                              (LCA), a hybrid Proof-of-Stake mechanism designed
+                              for cross-chain operations. It combines Byzantine
+                              Fault Tolerance with optimistic verification for
+                              fast finality while maintaining security.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="smart-contracts">
+                            <AccordionTrigger>
+                              Are smart contracts open source?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Yes, all Lotus Bridge smart contracts are open
+                              source and available on GitHub. They have been
+                              audited by Trail of Bits, Quantstamp, and CertiK.
+                              Contract addresses are published on our
+                              documentation site.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="api-integration">
+                            <AccordionTrigger>
+                              How can developers integrate with Lotus Bridge?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Developers can integrate using our REST API,
+                              GraphQL endpoint, or directly interact with smart
+                              contracts. We provide SDKs for JavaScript,
+                              Python, and Go. Full documentation and examples
+                              are available in our Developer Docs section.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="validator-network">
+                            <AccordionTrigger>
+                              How does the validator network work?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Lotus Bridge operates with a decentralized
+                              validator network of 100+ nodes globally, with
+                              special focus on Vietnamese validators. Validators
+                              stake LOTUS tokens and earn rewards for processing
+                              cross-chain transactions. Misbehavior results in
+                              slashing penalties.
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      </CardContent>
+                    </Card>
+                  </TabsContent>
+
+                  <TabsContent value="security" className="space-y-4">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                          <Shield className="h-5 w-5" />
+                          Security Questions
+                        </CardTitle>
+                        <CardDescription>
+                          Security measures and fund protection
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Accordion type="single" collapsible>
+                          <AccordionItem value="fund-security">
+                            <AccordionTrigger>
+                              How are my funds protected?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Funds are protected through multiple layers:
+                              cryptographic proofs, multi-signature validation,
+                              time-locked transactions, and a $10M security
+                              fund. Smart contracts use battle-tested patterns
+                              and have undergone extensive security audits.
                             </AccordionContent>
                           </AccordionItem>
 
@@ -799,67 +289,38 @@ const FAQs = () => {
                               Does Lotus Bridge have access to my private keys?
                             </AccordionTrigger>
                             <AccordionContent>
-                              <p className="mb-3">
-                                No, Lotus Bridge never has access to your
-                                private keys or funds. The protocol is:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Non-custodial - You maintain full control of
-                                  your assets
-                                </li>
-                                <li>
-                                  Trustless - No need to trust any central
-                                  authority
-                                </li>
-                                <li>
-                                  Decentralized - Operated by a network of
-                                  independent validators
-                                </li>
-                                <li>
-                                  Transparent - All transactions are publicly
-                                  verifiable on-chain
-                                </li>
-                              </ul>
-                              <p className="mt-3">
-                                Always ensure you're using the official Lotus
-                                Bridge interface and verify transaction details
-                                before signing.
-                              </p>
+                              No, Lotus Bridge is completely non-custodial. We
+                              never have access to your private keys or funds.
+                              All transactions are executed through smart
+                              contracts that you interact with directly using
+                              your wallet.
                             </AccordionContent>
                           </AccordionItem>
 
-                          <AccordionItem value="validator-security">
+                          <AccordionItem value="audit-reports">
                             <AccordionTrigger>
-                              How are validators secured?
+                              Where can I find security audit reports?
                             </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Lotus Bridge validators are secured through
-                                multiple mechanisms:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Economic staking requirements (minimum 100,000
-                                  LOTUS tokens)
-                                </li>
-                                <li>
-                                  Slashing conditions for malicious or incorrect
-                                  behavior
-                                </li>
-                                <li>
-                                  Regular performance monitoring and automated
-                                  rotation
-                                </li>
-                                <li>
-                                  Geographic distribution to prevent
-                                  centralization
-                                </li>
-                                <li>
-                                  Multi-signature schemes requiring majority
-                                  consensus
-                                </li>
-                              </ul>
+                            <AccordionContent>
+                              All security audit reports are publicly available
+                              on our website. We've been audited by Trail of
+                              Bits (completed), Quantstamp (completed), and
+                              CertiK (in progress). Reports cover smart
+                              contracts, protocol design, and operational
+                              security.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="bug-bounty">
+                            <AccordionTrigger>
+                              Do you have a bug bounty program?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Yes, we offer up to $100,000 for critical
+                              vulnerabilities. Our bug bounty program covers
+                              smart contracts, web interfaces, and
+                              infrastructure. Submit reports through our secure
+                              disclosure process.
                             </AccordionContent>
                           </AccordionItem>
                         </Accordion>
@@ -867,112 +328,68 @@ const FAQs = () => {
                     </Card>
                   </TabsContent>
 
-                  <TabsContent value="fees" className="space-y-8">
+                  <TabsContent value="fees" className="space-y-4">
                     <Card>
                       <CardHeader>
-                        <CardTitle>Fees & Limits</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                          <Zap className="h-5 w-5" />
+                          Fees & Costs
+                        </CardTitle>
                         <CardDescription>
-                          Information about bridge fees, limits, and cost
-                          optimization
+                          Understanding bridge fees and gas costs
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <Accordion type="single" collapsible className="w-full">
+                        <Accordion type="single" collapsible>
                           <AccordionItem value="bridge-fees">
                             <AccordionTrigger>
                               What are the bridge fees?
                             </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Lotus Bridge fees are competitive and
-                                transparent:
-                              </p>
-                              <div className="space-y-2">
-                                <div className="flex justify-between border rounded p-2">
-                                  <span>Stablecoins (USDC, USDT, DAI):</span>
-                                  <span>0.05%</span>
-                                </div>
-                                <div className="flex justify-between border rounded p-2">
-                                  <span>Major tokens (ETH, WBTC):</span>
-                                  <span>0.1%</span>
-                                </div>
-                                <div className="flex justify-between border rounded p-2">
-                                  <span>Other tokens:</span>
-                                  <span>0.15-0.25%</span>
-                                </div>
-                              </div>
-                              <p>
-                                Plus network gas fees on both source and
-                                destination chains. LOTUS token holders receive
-                                up to 50% fee discounts.
-                              </p>
+                            <AccordionContent>
+                              Bridge fees are 0.1% of transaction value, with a
+                              minimum of $1 and maximum of $50. This covers
+                              validator rewards, protocol maintenance, and
+                              security measures. Fees are automatically
+                              deducted from the bridged amount.
                             </AccordionContent>
                           </AccordionItem>
 
-                          <AccordionItem value="transaction-limits">
+                          <AccordionItem value="gas-costs">
                             <AccordionTrigger>
-                              Are there transaction limits?
+                              Who pays for gas costs?
                             </AccordionTrigger>
                             <AccordionContent>
-                              <p className="mb-3">
-                                Transaction limits vary by token and user
-                                verification level:
-                              </p>
-                              <div className="space-y-3">
-                                <div>
-                                  <h4 className="font-medium mb-2">
-                                    Unverified Users:
-                                  </h4>
-                                  <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-                                    <li>Minimum: $10 per transaction</li>
-                                    <li>Maximum: $50,000 per transaction</li>
-                                    <li>Daily limit: $100,000</li>
-                                  </ul>
-                                </div>
-                                <div>
-                                  <h4 className="font-medium mb-2">
-                                    Verified Users:
-                                  </h4>
-                                  <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-                                    <li>Minimum: $10 per transaction</li>
-                                    <li>Maximum: $1,000,000 per transaction</li>
-                                    <li>Daily limit: $5,000,000</li>
-                                  </ul>
-                                </div>
-                              </div>
+                              Users pay gas costs for the source network
+                              transaction. Destination network gas is covered by
+                              Lotus Bridge validators and included in the bridge
+                              fee. This ensures users only need native tokens on
+                              the source network.
                             </AccordionContent>
                           </AccordionItem>
 
-                          <AccordionItem value="fee-optimization">
+                          <AccordionItem value="fee-calculation">
                             <AccordionTrigger>
-                              How can I reduce bridge fees?
+                              How are fees calculated?
                             </AccordionTrigger>
-                            <AccordionContent className="space-y-3">
-                              <p>
-                                Several strategies can help reduce your bridge
-                                costs:
-                              </p>
-                              <ul className="list-disc list-inside space-y-1 ml-4">
-                                <li>
-                                  Hold LOTUS tokens for up to 50% fee discounts
-                                </li>
-                                <li>
-                                  Bridge during off-peak hours when gas costs
-                                  are lower
-                                </li>
-                                <li>
-                                  Use Layer 2 networks (Polygon, Arbitrum) for
-                                  cheaper transactions
-                                </li>
-                                <li>
-                                  Batch multiple small transactions into larger
-                                  ones
-                                </li>
-                                <li>
-                                  Monitor gas prices and bridge when costs are
-                                  optimal
-                                </li>
-                              </ul>
+                            <AccordionContent>
+                              Total cost = Bridge fee (0.1%) + Source network
+                              gas + Price impact (if applicable). Fees are
+                              calculated in real-time and displayed before
+                              transaction confirmation. No hidden fees or
+                              surprise charges.
+                            </AccordionContent>
+                          </AccordionItem>
+
+                          <AccordionItem value="fee-discounts">
+                            <AccordionTrigger>
+                              Are there any fee discounts available?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Yes! LOTUS token holders receive fee discounts:
+                              0.075% with 1,000+ LOTUS, 0.05% with 10,000+
+                              LOTUS, 0.025% with 100,000+ LOTUS. Vietnamese
+                              users get additional 10% discount during the first
+                              year.
                             </AccordionContent>
                           </AccordionItem>
                         </Accordion>
@@ -980,144 +397,212 @@ const FAQs = () => {
                     </Card>
                   </TabsContent>
 
-                  <TabsContent value="glossary" className="space-y-8">
+                  <TabsContent value="vietnamese" className="space-y-4">
                     <Card>
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
-                          <Book className="h-5 w-5" />
-                          Cross-Chain Glossary
+                          🇻🇳
+                          Vietnamese Community
                         </CardTitle>
                         <CardDescription>
-                          Essential terminology for understanding cross-chain
-                          bridges and DeFi
+                          Questions specific to Vietnamese users and market
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <div className="space-y-6">
-                          <div className="grid md:grid-cols-2 gap-6">
-                            <div className="space-y-4">
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">Bridge</h4>
-                                <p className="text-sm text-muted-foreground">
-                                  A protocol that enables the transfer of tokens
-                                  or data between different blockchain networks.
-                                </p>
-                              </div>
+                        <Accordion type="single" collapsible>
+                          <AccordionItem value="vn-regulations">
+                            <AccordionTrigger>
+                              Is Lotus Bridge compliant with Vietnamese
+                              regulations?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Yes, Lotus Bridge operates in compliance with
+                              Vietnamese cryptocurrency regulations and works
+                              closely with local authorities. We follow all KYC
+                              and AML requirements for Vietnamese users and
+                              maintain proper licensing where required.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">
-                                  Cross-Chain
-                                </h4>
-                                <p className="text-sm text-muted-foreground">
-                                  Interactions between different blockchain
-                                  networks, allowing assets and data to move
-                                  across chains.
-                                </p>
-                              </div>
+                          <AccordionItem value="vn-support">
+                            <AccordionTrigger>
+                              Do you provide Vietnamese language support?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Absolutely! Our interface is fully available in
+                              Vietnamese, and our support team includes native
+                              Vietnamese speakers. We also have localized
+                              content, tutorials, and community channels in
+                              Vietnamese.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">
-                                  Lock & Mint
-                                </h4>
-                                <p className="text-sm text-muted-foreground">
-                                  A bridge mechanism where tokens are locked on
-                                  the source chain and equivalent tokens are
-                                  minted on the destination chain.
-                                </p>
-                              </div>
+                          <AccordionItem value="vn-tokens">
+                            <AccordionTrigger>
+                              Which Vietnamese tokens are supported?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              We support major Vietnamese tokens including VND
+                              stablecoins, Vietnamese DeFi tokens, and NFT
+                              project tokens. We prioritize adding tokens that
+                              are popular in the Vietnamese market and work with
+                              local projects for integration.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">
-                                  Validator
-                                </h4>
-                                <p className="text-sm text-muted-foreground">
-                                  Network participants who verify and validate
-                                  cross-chain transactions to ensure security
-                                  and consensus.
-                                </p>
-                              </div>
+                          <AccordionItem value="vn-partnerships">
+                            <AccordionTrigger>
+                              Do you partner with Vietnamese exchanges?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Yes, we have partnerships with major Vietnamese
+                              exchanges and DeFi platforms. This enables
+                              seamless integration and better liquidity for
+                              Vietnamese users. We're always open to new
+                              partnerships that benefit our Vietnamese
+                              community.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">Slashing</h4>
-                                <p className="text-sm text-muted-foreground">
-                                  Economic penalty imposed on validators for
-                                  malicious behavior or protocol violations.
-                                </p>
-                              </div>
-                            </div>
+                          <AccordionItem value="vn-education">
+                            <AccordionTrigger>
+                              Do you provide education for Vietnamese users?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Yes! We offer comprehensive educational resources
+                              in Vietnamese including video tutorials,
+                              step-by-step guides, webinars, and community
+                              workshops. Our goal is to make cross-chain DeFi
+                              accessible to all Vietnamese users.
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      </CardContent>
+                    </Card>
+                  </TabsContent>
 
-                            <div className="space-y-4">
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">Finality</h4>
-                                <p className="text-sm text-muted-foreground">
-                                  The point at which a transaction is considered
-                                  irreversible and permanently recorded on the
-                                  blockchain.
-                                </p>
-                              </div>
+                  <TabsContent value="support" className="space-y-4">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                          <Users className="h-5 w-5" />
+                          Support & Help
+                        </CardTitle>
+                        <CardDescription>
+                          Getting help when you need it
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Accordion type="single" collapsible>
+                          <AccordionItem value="contact-support">
+                            <AccordionTrigger>
+                              How can I contact support?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Multiple support channels available: 1) Discord
+                              community (fastest response), 2) Email:
+                              support@lotusbridge.io, 3) Telegram support bot,
+                              4) Help widget on the website. Average response
+                              time is under 2 hours.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">
-                                  Atomic Transaction
-                                </h4>
-                                <p className="text-sm text-muted-foreground">
-                                  A transaction that either completes entirely
-                                  or fails completely, ensuring no partial
-                                  execution.
-                                </p>
-                              </div>
+                          <AccordionItem value="stuck-transaction">
+                            <AccordionTrigger>
+                              What if my transaction is stuck?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              If a transaction appears stuck: 1) Check the
+                              transaction status on our dashboard, 2) Verify
+                              network confirmations, 3) Wait for automatic retry
+                              (up to 1 hour), 4) Contact support with
+                              transaction hash if issue persists. Most issues
+                              resolve automatically.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">
-                                  Liquidity Pool
-                                </h4>
-                                <p className="text-sm text-muted-foreground">
-                                  A collection of tokens locked in a smart
-                                  contract that facilitates trading and provides
-                                  liquidity.
-                                </p>
-                              </div>
+                          <AccordionItem value="wrong-network">
+                            <AccordionTrigger>
+                              I sent tokens to the wrong network. Can you help?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Recovery depends on the specific case. If tokens
+                              were sent to a supported network, recovery is
+                              usually possible. Contact support immediately with
+                              transaction details. For unsupported networks,
+                              recovery may not be possible.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">Gas Fees</h4>
-                                <p className="text-sm text-muted-foreground">
-                                  Transaction costs paid to network validators
-                                  for processing and confirming blockchain
-                                  transactions.
-                                </p>
-                              </div>
+                          <AccordionItem value="report-bug">
+                            <AccordionTrigger>
+                              How do I report a bug or issue?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Report bugs through: 1) Discord #bug-reports
+                              channel, 2) GitHub issues for technical problems,
+                              3) Email for security issues, 4) Bug bounty
+                              program for serious vulnerabilities. Include
+                              detailed steps to reproduce the issue.
+                            </AccordionContent>
+                          </AccordionItem>
 
-                              <div className="border rounded-lg p-4">
-                                <h4 className="font-semibold mb-2">
-                                  TVL (Total Value Locked)
-                                </h4>
-                                <p className="text-sm text-muted-foreground">
-                                  The total amount of assets deposited and
-                                  locked in a DeFi protocol or bridge.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-6 border-l-4 border-primary">
-                            <div className="flex items-center gap-2 mb-3">
-                              <Lightbulb className="h-5 w-5 text-primary" />
-                              <h4 className="font-semibold">Did You Know?</h4>
-                            </div>
-                            <p className="text-sm text-muted-foreground">
-                              The term "bridge" in blockchain comes from the
-                              concept of connecting two separate landmasses
-                              (blockchains) to enable travel (asset transfer)
-                              between them. Lotus Bridge represents the
-                              evolution of this concept with Vietnamese
-                              engineering excellence.
-                            </p>
-                          </div>
-                        </div>
+                          <AccordionItem value="feature-request">
+                            <AccordionTrigger>
+                              Can I request new features?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              Absolutely! We welcome feature requests from our
+                              community. Submit suggestions through Discord,
+                              governance forums, or email. Popular requests are
+                              prioritized in our development roadmap. Vietnamese
+                              market needs get special consideration.
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
                       </CardContent>
                     </Card>
                   </TabsContent>
                 </Tabs>
+
+                {/* Contact Section */}
+                <div className="mt-16">
+                  <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+                    <CardHeader className="text-center">
+                      <CardTitle className="text-2xl">
+                        Still Have Questions?
+                      </CardTitle>
+                      <CardDescription className="text-lg">
+                        Our community and support team are here to help
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                      <div className="grid md:grid-cols-3 gap-6 mb-6">
+                        <div className="text-center">
+                          <MessageCircle className="h-8 w-8 mx-auto mb-2 text-primary" />
+                          <h4 className="font-semibold">Discord Community</h4>
+                          <p className="text-sm text-muted-foreground">
+                            Join 5,000+ users for real-time help
+                          </p>
+                        </div>
+                        <div className="text-center">
+                          <Users className="h-8 w-8 mx-auto mb-2 text-accent" />
+                          <h4 className="font-semibold">Vietnamese Support</h4>
+                          <p className="text-sm text-muted-foreground">
+                            Native language support available
+                          </p>
+                        </div>
+                        <div className="text-center">
+                          <HelpCircle className="h-8 w-8 mx-auto mb-2 text-primary" />
+                          <h4 className="font-semibold">Developer Docs</h4>
+                          <p className="text-sm text-muted-foreground">
+                            Comprehensive technical documentation
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </section>
           </div>
