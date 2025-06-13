@@ -135,19 +135,6 @@
         "tokenBridging": "Token Bridging",
         "securityBestPractices": "Security Best Practices",
         "troubleshooting": "Troubleshooting",
-        "walletConnection": {
-            "title": "Wallet Connection",
-            "description": "Connect your wallet to start using Lotus Bridge",
-            "step1": "Install wallet extension (MetaMask, WalletConnect, etc.)",
-            "step2": "Click 'Connect Wallet' on our platform",
-            "step3": "Approve the connection request",
-            "step4": "Verify your wallet is connected"
-        },
-        "accountSetup": {
-            "title": "Account Setup",
-            "description": "Optimize your account for secure bridging",
-            "setupAccount": "Setup Account"
-        },
         "howToBridge": {
             "title": "How to Bridge Tokens",
             "description": "Complete walkthrough of the token bridging process",

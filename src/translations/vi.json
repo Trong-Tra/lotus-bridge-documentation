@@ -135,19 +135,6 @@
         "tokenBridging": "Bridging token",
         "securityBestPractices": "Thực hành bảo mật tốt nhất",
         "troubleshooting": "Khắc phục sự cố",
-        "walletConnection": {
-            "title": "Kết nối ví",
-            "description": "Kết nối ví của bạn để bắt đầu sử dụng Lotus Bridge",
-            "step1": "Cài đặt extension ví (MetaMask, WalletConnect, v.v.)",
-            "step2": "Nhấp 'Kết nối ví' trên nền tảng của chúng tôi",
-            "step3": "Phê duyệt yêu cầu kết nối",
-            "step4": "Xác minh ví của bạn đã được kết nối"
-        },
-        "accountSetup": {
-            "title": "Thiết lập tài khoản",
-            "description": "Tối ưu hóa tài khoản của bạn để bridging an toàn",
-            "setupAccount": "Thiết lập tài khoản"
-        },
         "howToBridge": {
             "title": "Cách bridge token",
             "description": "Hướng dẫn hoàn chỉnh về quy trình bridging token",

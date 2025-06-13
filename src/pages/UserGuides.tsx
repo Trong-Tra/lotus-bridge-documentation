@@ -88,6 +88,11 @@ const UserGuides = () => {
                       <CardContent>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://coin-images.coingecko.com/coins/images/13029/large/axie_infinity_logo.png?1696512817"
+                              alt="AXS"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-blue-600">AXS</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -95,6 +100,11 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://coin-images.coingecko.com/coins/images/10366/large/SLP.png?1696510368"
+                              alt="SLP"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-green-600">SLP</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -102,6 +112,11 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740"
+                              alt="VNDC"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-purple-600">VNDC</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -109,6 +124,11 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75"
+                              alt="VNST"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-orange-600">VNST</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -116,6 +136,11 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172"
+                              alt="KAI"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-red-600">KAI</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -123,6 +148,11 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453"
+                              alt="SIPHER"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-indigo-600">SIPHER</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -130,6 +160,11 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677"
+                              alt="C98"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-yellow-600">C98</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
@@ -137,10 +172,15 @@ const UserGuides = () => {
                             </span>
                           </div>
                           <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                            <img
+                              src="https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562"
+                              alt="KNC"
+                              className="w-8 h-8 mx-auto mb-2 rounded-full"
+                            />
                             <strong className="text-teal-600">KNC</strong>
                             <br />
                             <span className="text-xs text-muted-foreground">
-                              Kyber Network
+                              Kyber Network Crystal
                             </span>
                           </div>
                         </div>
@@ -201,36 +241,167 @@ const UserGuides = () => {
                       </CardContent>
                     </Card>
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <Card className="border-primary/20">
-                        <CardHeader>
-                          <div className="flex items-center gap-2 mb-2">
-                            <Wallet className="h-5 w-5 text-primary" />
-                            <CardTitle>
-                              {t("userGuides.walletConnection.title")}
-                            </CardTitle>
+                    {/* Wallet Recommendations - Full Width */}
+                    <Card className="border-primary/20">
+                      <CardHeader>
+                        <div className="flex items-center gap-2 mb-2">
+                          <Wallet className="h-5 w-5 text-primary" />
+                          <CardTitle>Wallet Recommendations</CardTitle>
+                        </div>
+                        <CardDescription>
+                          Choose the best wallet for your network and experience
+                          level
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-6">
+                        {/* Wallet Recommendations */}
+                        <div className="space-y-6">
+                          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {/* MetaMask for Beginners */}
+                            <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group">
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                                  🦊
+                                </span>
+                                <div>
+                                  <h4 className="font-semibold text-blue-800 dark:text-blue-400 group-hover:text-blue-900 dark:group-hover:text-blue-300 transition-colors duration-300">
+                                    MetaMask
+                                  </h4>
+                                  <Badge
+                                    variant="secondary"
+                                    className="text-xs group-hover:bg-blue-200 dark:group-hover:bg-blue-900 transition-colors duration-300"
+                                  >
+                                    Beginner Friendly
+                                  </Badge>
+                                </div>
+                              </div>
+                              <p className="text-sm text-blue-700 dark:text-blue-300 mb-3 group-hover:text-blue-800 dark:group-hover:text-blue-200 transition-colors duration-300">
+                                Perfect for newcomers to DeFi. Simple interface
+                                with excellent tutorials and widespread
+                                compatibility.
+                              </p>
+                              <div className="text-xs text-blue-600 dark:text-blue-400 space-y-1 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors duration-300">
+                                <div>✓ Easy setup and onboarding</div>
+                                <div>✓ Wide ecosystem support</div>
+                                <div>✓ Excellent for basic usage</div>
+                                <div>✓ Great educational resources</div>
+                              </div>
+                            </div>
+
+                            {/* Rabby for Advanced EVM */}
+                            <div className="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group">
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                                  🐰
+                                </span>
+                                <div>
+                                  <h4 className="font-semibold text-purple-800 dark:text-purple-400 group-hover:text-purple-900 dark:group-hover:text-purple-300 transition-colors duration-300">
+                                    Rabby Wallet
+                                  </h4>
+                                  <Badge
+                                    variant="secondary"
+                                    className="text-xs group-hover:bg-purple-200 dark:group-hover:bg-purple-900 transition-colors duration-300"
+                                  >
+                                    EVM Advanced
+                                  </Badge>
+                                </div>
+                              </div>
+                              <p className="text-sm text-purple-700 dark:text-purple-300 mb-3 group-hover:text-purple-800 dark:group-hover:text-purple-200 transition-colors duration-300">
+                                Superior UI/UX with better asset management
+                                across EVM chains. Perfect for power users.
+                              </p>
+                              <div className="text-xs text-purple-600 dark:text-purple-400 space-y-1 group-hover:text-purple-700 dark:group-hover:text-purple-300 transition-colors duration-300">
+                                <div>✓ Beautiful, intuitive interface</div>
+                                <div>✓ Advanced multi-chain view</div>
+                                <div>✓ Better asset control</div>
+                                <div>✓ Enhanced security features</div>
+                              </div>
+                            </div>
+
+                            {/* Phantom for Solana */}
+                            <div className="bg-indigo-50 dark:bg-indigo-950/20 p-6 rounded-lg border border-indigo-200 dark:border-indigo-800 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group">
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                                  👻
+                                </span>
+                                <div>
+                                  <h4 className="font-semibold text-indigo-800 dark:text-indigo-400 group-hover:text-indigo-900 dark:group-hover:text-indigo-300 transition-colors duration-300">
+                                    Phantom
+                                  </h4>
+                                  <Badge
+                                    variant="secondary"
+                                    className="text-xs group-hover:bg-indigo-200 dark:group-hover:bg-indigo-900 transition-colors duration-300"
+                                  >
+                                    Solana
+                                  </Badge>
+                                </div>
+                              </div>
+                              <p className="text-sm text-indigo-700 dark:text-indigo-300 mb-3 group-hover:text-indigo-800 dark:group-hover:text-indigo-200 transition-colors duration-300">
+                                The most popular and trusted wallet for Solana
+                                ecosystem with native SPL token support.
+                              </p>
+                              <div className="text-xs text-indigo-600 dark:text-indigo-400 space-y-1 group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors duration-300">
+                                <div>✓ Solana native integration</div>
+                                <div>✓ Lightning fast transactions</div>
+                                <div>✓ Built-in NFT support</div>
+                                <div>✓ DeFi protocol optimization</div>
+                              </div>
+                            </div>
+
+                            {/* Sui Wallet */}
+                            <div className="bg-teal-50 dark:bg-teal-950/20 p-6 rounded-lg border border-teal-200 dark:border-teal-800 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group">
+                              <div className="flex items-center gap-2 mb-3">
+                                <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                                  🌊
+                                </span>
+                                <div>
+                                  <h4 className="font-semibold text-teal-800 dark:text-teal-400 group-hover:text-teal-900 dark:group-hover:text-teal-300 transition-colors duration-300">
+                                    Slush Wallet
+                                  </h4>
+                                  <Badge
+                                    variant="secondary"
+                                    className="text-xs group-hover:bg-teal-200 dark:group-hover:bg-teal-900 transition-colors duration-300"
+                                  >
+                                    Sui Network
+                                  </Badge>
+                                </div>
+                              </div>
+                              <p className="text-sm text-teal-700 dark:text-teal-300 mb-3 group-hover:text-teal-800 dark:group-hover:text-teal-200 transition-colors duration-300">
+                                Official wallet developed by Mysten Labs for
+                                optimal Sui blockchain experience.
+                              </p>
+                              <div className="text-xs text-teal-600 dark:text-teal-400 space-y-1 group-hover:text-teal-700 dark:group-hover:text-teal-300 transition-colors duration-300">
+                                <div>✓ Official Mysten Labs support</div>
+                                <div>✓ Sui blockchain optimized</div>
+                                <div>✓ Advanced object management</div>
+                                <div>✓ Move language integration</div>
+                              </div>
+                            </div>
                           </div>
-                          <CardDescription>
-                            {t("userGuides.walletConnection.description")}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="space-y-4">
-                          <div className="space-y-3">
+                        </div>
+
+                        {/* Connection Steps */}
+                        <div className="space-y-4 border-t pt-6">
+                          <h4 className="font-semibold text-lg mb-4">
+                            How to Connect Your Wallet:
+                          </h4>
+                          <div className="grid md:grid-cols-3 gap-4">
                             <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center mt-0.5">
+                              <div className="w-8 h-8 rounded-full bg-primary text-white text-sm flex items-center justify-center mt-0.5">
                                 1
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Install MetaMask or Compatible Wallet
+                                  Install Your Preferred Wallet
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Download and set up a Web3 wallet extension
+                                  Download the recommended wallet for your
+                                  target network from official sources
                                 </p>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center mt-0.5">
+                              <div className="w-8 h-8 rounded-full bg-primary text-white text-sm flex items-center justify-center mt-0.5">
                                 2
                               </div>
                               <div>
@@ -239,12 +410,12 @@ const UserGuides = () => {
                                 </p>
                                 <p className="text-sm text-muted-foreground">
                                   Find the connect button in the top right
-                                  corner
+                                  corner of the Lotus Bridge interface
                                 </p>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center mt-0.5">
+                              <div className="w-8 h-8 rounded-full bg-primary text-white text-sm flex items-center justify-center mt-0.5">
                                 3
                               </div>
                               <div>
@@ -253,75 +424,19 @@ const UserGuides = () => {
                                 </p>
                                 <p className="text-sm text-muted-foreground">
                                   Authorize Lotus Bridge to view your wallet
-                                  address
+                                  address and interact securely
                                 </p>
                               </div>
                             </div>
                           </div>
-                          <Button className="w-full">
-                            View Detailed Guide
-                          </Button>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-accent/20">
-                        <CardHeader>
-                          <div className="flex items-center gap-2 mb-2">
-                            <CheckCircle className="h-5 w-5 text-accent" />
-                            <CardTitle>Account Setup</CardTitle>
+                          <div className="flex justify-center pt-4">
+                            <Button size="lg" className="px-8">
+                              View Detailed Setup Guides
+                            </Button>
                           </div>
-                          <CardDescription>
-                            Complete your profile and security settings
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="space-y-4">
-                          <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-accent text-white text-xs flex items-center justify-center mt-0.5">
-                                1
-                              </div>
-                              <div>
-                                <p className="font-medium">
-                                  Verify Email (Optional)
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                  Get notifications about your transactions
-                                </p>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-accent text-white text-xs flex items-center justify-center mt-0.5">
-                                2
-                              </div>
-                              <div>
-                                <p className="font-medium">
-                                  Enable Two-Factor Authentication
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                  Add an extra layer of security
-                                </p>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <div className="w-6 h-6 rounded-full bg-accent text-white text-xs flex items-center justify-center mt-0.5">
-                                3
-                              </div>
-                              <div>
-                                <p className="font-medium">
-                                  Set Transaction Limits
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                  Configure daily/weekly bridging limits
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <Button variant="outline" className="w-full">
-                            Setup Account
-                          </Button>
-                        </CardContent>
-                      </Card>
-                    </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   </TabsContent>
 
                   <TabsContent value="bridging" className="space-y-8">
