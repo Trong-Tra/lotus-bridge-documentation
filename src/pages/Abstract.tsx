@@ -80,8 +80,11 @@ const Abstract = () => {
                           With <strong>multi-wallet support</strong> and a
                           localized focus on tokens popular in Vietnam, Lotus
                           Bridge is positioned to become a foundational layer
-                          for global DeFi innovation rooted in regional
-                          empowerment.
+                          for Viet Nam DeFi innovation, paving the way for
+                          Vietnamese developers and entrepreneurs to build
+                          cross-chain applications that can tap into global
+                          liquidity while maintaining a seamless user
+                          experience.
                         </p>
                       </div>
                     </CardContent>
@@ -183,35 +186,22 @@ const Abstract = () => {
                     <CardContent className="space-y-4">
                       <div className="prose max-w-none dark:prose-invert">
                         <p>
-                          Lotus Bridge represents more than just technical
-                          innovation—it's a bridge between cultures, economies,
-                          and futures. By bringing Vietnamese tokens into the
-                          global liquidity flow while offering seamless UX,
-                          robust security, and future-proof scalability, we're
-                          creating a foundation for{" "}
+                          Lotus Bridge is more than a technical innovation—it’s
+                          a symbol of connection between cultures, economies,
+                          and tomorrow’s digital world. By integrating
+                          Vietnamese tokens into the global liquidity stream,
+                          Lotus Bridge empowers Vietnam to step confidently onto
+                          the Web3 stage. With seamless user experience,
+                          uncompromising security, and scalable infrastructure,
+                          we are laying the groundwork for Vietnam to emerge as
+                          a{" "}
                           <strong>
-                            global DeFi innovation rooted in regional
-                            empowerment
+                            leading hub of Web3 innovation—pioneering
+                            cross-chain interoperability and shaping the future
+                            of decentralized finance
                           </strong>
                           .
                         </p>
-                      </div>
-
-                      <div className="grid md:grid-cols-2 gap-4 mt-6">
-                        <div className="bg-background/50 p-4 rounded-lg border">
-                          <h4 className="font-semibold mb-2">For Vietnam</h4>
-                          <p className="text-sm text-muted-foreground">
-                            Showcase local innovation on the global stage and
-                            empower Vietnamese developers
-                          </p>
-                        </div>
-                        <div className="bg-background/50 p-4 rounded-lg border">
-                          <h4 className="font-semibold mb-2">For the World</h4>
-                          <p className="text-sm text-muted-foreground">
-                            Access to vibrant Vietnamese Web3 ecosystem and
-                            innovative cross-chain solutions
-                          </p>
-                        </div>
                       </div>
                     </CardContent>
                   </Card>
