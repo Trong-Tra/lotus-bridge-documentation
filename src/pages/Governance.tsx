@@ -24,7 +24,7 @@ import {
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
 
-const Consensus = () => {
+const Governance = () => {
   const { t, language } = useLanguage();
 
   return (
@@ -41,14 +41,14 @@ const Consensus = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🔮 Future Development
+                    🏛️ Governance Framework
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Lotus Bridge Consensus
+                    Lotus Bridge Governance
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Advanced consensus mechanisms designed for Vietnamese market
-                    needs and global blockchain interoperability.
+                    Decentralized governance framework designed for Vietnamese
+                    market needs and global blockchain interoperability.
                   </p>
                 </div>
               </div>
@@ -66,54 +66,54 @@ const Consensus = () => {
                       🚧 Under Development
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      The Lotus Bridge consensus mechanism is currently in
+                      The Lotus Bridge governance framework is currently in
                       active development. This section will be completed in a
                       future update.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-muted-foreground mb-6">
-                      Our team is working on innovative consensus solutions that
-                      will provide:
+                      Our team is working on innovative governance solutions
+                      that will provide:
                     </p>
                     <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Vote className="h-5 w-5 text-primary" />
-                          Decentralized Validation
+                          Decentralized Governance
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Community-driven validation mechanisms with Vietnamese
+                          Community-driven governance mechanisms with Vietnamese
                           stakeholder participation
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Zap className="h-5 w-5 text-accent" />
-                          High Performance
+                          Efficient Decision Making
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Optimized for fast transaction processing across
-                          multiple chains
+                          Streamlined proposal and voting systems for rapid
+                          protocol evolution
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Shield className="h-5 w-5 text-primary" />
-                          Enhanced Security
+                          Transparent Processes
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Advanced cryptographic techniques for cross-chain
-                          transaction security
+                          Open and auditable governance processes with clear
+                          accountability
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Users className="h-5 w-5 text-accent" />
-                          Vietnamese Governance
+                          Vietnamese Community Focus
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Local community governance with global
+                          Local community representation with global
                           interoperability standards
                         </p>
                       </div>
@@ -131,7 +131,7 @@ const Consensus = () => {
                     🌸 Development Timeline
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Stay tuned for updates on our consensus mechanism
+                    Stay tuned for updates on our governance framework
                     development as we build the future of Vietnamese blockchain
                     interoperability.
                   </p>
@@ -146,7 +146,7 @@ const Consensus = () => {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Consensus mechanism research and Vietnamese market
+                        Governance framework research and Vietnamese market
                         requirements analysis
                       </p>
                     </CardContent>
@@ -160,7 +160,7 @@ const Consensus = () => {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Implementation of consensus protocols with Vietnamese
+                        Implementation of governance protocols with Vietnamese
                         stakeholder feedback
                       </p>
                     </CardContent>
@@ -174,7 +174,7 @@ const Consensus = () => {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Full consensus mechanism deployment with Vietnamese
+                        Full governance framework deployment with Vietnamese
                         token integration
                       </p>
                     </CardContent>
@@ -192,7 +192,7 @@ const Consensus = () => {
                       🇻🇳 Join the Development
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Interested in contributing to Lotus Bridge consensus
+                      Interested in contributing to Lotus Bridge governance
                       development?
                     </CardDescription>
                   </CardHeader>
@@ -200,7 +200,7 @@ const Consensus = () => {
                     <p className="text-muted-foreground mb-6">
                       We welcome Vietnamese developers, researchers, and
                       blockchain enthusiasts to participate in shaping our
-                      consensus mechanism.
+                      governance framework.
                     </p>
                     <Button
                       size="lg"
@@ -245,4 +245,4 @@ const Consensus = () => {
   );
 };
 
-export default Consensus;
+export default Governance;

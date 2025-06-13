@@ -154,35 +154,36 @@ const CoreConcept = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Clock className="h-5 w-5" />
-                          Consensus
+                          Governance
                         </CardTitle>
                         <CardDescription>
-                          Future consensus mechanism
+                          Future governance protocol
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Learn about the planned Lotus Bridge Consensus
-                          mechanism that will enhance security and
-                          decentralization.
+                          Learn about the planned Lotus Bridge Governance
+                          protocol that will help preventing and stopping
+                          malicious activities while enhancing community
+                          participation.
                         </p>
                         <div className="flex items-center gap-2 text-xs text-orange-600 dark:text-orange-400">
                           <Clock className="h-3 w-3" />
                           <span>Coming in future update</span>
                         </div>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Decentralized validation</li>
-                          <li>• Cross-chain state verification</li>
-                          <li>• Economic security model</li>
-                          <li>• Validator incentives</li>
+                          <li>• Governance System</li>
+                          <li>• Community voting mechanisms</li>
+                          <li>• Transparent decision making</li>
+                          <li>• Vietnamese stakeholder participation</li>
                         </ul>
                         <Button
                           variant="outline"
                           className="w-full mt-4"
                           asChild
                         >
-                          <Link to="/consensus">
-                            Learn About Consensus
+                          <Link to="/governance">
+                            Learn About Governance
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -245,6 +246,12 @@ const CoreConcept = () => {
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                               <span>Regional market understanding</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                              <span>
+                                Governance system for emergency scenarios
+                              </span>
                             </li>
                           </ul>
                         </div>

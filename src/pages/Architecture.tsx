@@ -414,9 +414,9 @@ const Architecture = () => {
                   <Link to="/core-concept">
                     <Button variant="outline">Back to Core Concept</Button>
                   </Link>
-                  <Link to="/consensus">
+                  <Link to="/governance">
                     <Button className="flex items-center gap-2">
-                      Consensus Mechanism
+                      Governance Framework
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
