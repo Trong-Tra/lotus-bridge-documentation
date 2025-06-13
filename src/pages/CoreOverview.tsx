@@ -103,9 +103,9 @@ const CoreOverview = () => {
                         <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-4 rounded-lg border">
                           <h4 className="font-semibold mb-2">Example</h4>
                           <p className="text-sm text-muted-foreground">
-                            Move VNDC from Ethereum to Solana to access lower
-                            fees and faster transactions while maintaining full
-                            asset control.
+                            Move VNST from BSC to TON to access lower fees and
+                            faster transactions while maintaining full asset
+                            control.
                           </p>
                         </div>
                         <ul className="space-y-2 text-sm">
@@ -186,29 +186,23 @@ const CoreOverview = () => {
                         </p>
                         <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-4 rounded-lg border">
                           <h4 className="font-semibold mb-2">
-                            Supported Wallets
+                            Popular Wallet Support
                           </h4>
+                          <p className="text-xs text-muted-foreground mb-3">
+                            Here are some popular wallets we recommend - many
+                            more are supported!
+                          </p>
                           <div className="flex flex-wrap gap-2">
-                            <Badge variant="outline">MetaMask</Badge>
-                            <Badge variant="outline">Phantom</Badge>
-                            <Badge variant="outline">Trust Wallet</Badge>
-                            <Badge variant="outline">WalletConnect</Badge>
+                            <Badge variant="outline">🦊 MetaMask</Badge>
+                            <Badge variant="outline">👻 Phantom</Badge>
+                            <Badge variant="outline">🛡️ Trust Wallet</Badge>
+                            <Badge variant="outline">🔗 WalletConnect</Badge>
                           </div>
+                          <p className="text-xs text-muted-foreground mt-2 italic">
+                            + Many other wallets supported via WalletConnect
+                            protocol
+                          </p>
                         </div>
-                        <ul className="space-y-2 text-sm">
-                          <li className="flex items-start gap-2">
-                            <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span>Cross-platform wallet connectivity</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span>Unified transaction interface</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span>Portfolio aggregation</span>
-                          </li>
-                        </ul>
                       </CardContent>
                     </Card>
 
@@ -234,40 +228,29 @@ const CoreOverview = () => {
                           <h4 className="font-semibold mb-2">
                             Transaction Types
                           </h4>
-                          <ul className="text-sm space-y-1">
-                            <li>• Wallet-to-wallet (same user)</li>
+                          <ul className="text-sm space-y-2">
+                            <li>• Wallet-to-wallet (same address)</li>
                             <li>• Cross-address transfers</li>
-                            <li>• Batch transactions</li>
-                            <li>• Scheduled transfers</li>
+                            <li>• Cross-chain bridge</li>
+                            <li>• Cross-chain swap</li>
                           </ul>
                         </div>
-                        <ul className="space-y-2 text-sm">
-                          <li className="flex items-start gap-2">
-                            <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                            <span>Flexible recipient addressing</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                            <span>Advanced transaction routing</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                            <span>Gas optimization strategies</span>
-                          </li>
-                        </ul>
                       </CardContent>
                     </Card>
                   </div>
 
                   {/* Vietnamese Token Support */}
-                  <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
+                  <Card className="border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20">
                     <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Globe className="h-5 w-5" />
-                        🇻🇳 Vietnamese Token Integration
-                      </CardTitle>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-2xl">🇻🇳</span>
+                        <CardTitle className="text-green-800 dark:text-green-400">
+                          Vietnamese Token Integration
+                        </CardTitle>
+                      </div>
                       <CardDescription>
-                        Native support for popular Vietnamese tokens
+                        Native support for Vietnamese tokens often neglected by
+                        other platforms
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
@@ -277,79 +260,152 @@ const CoreOverview = () => {
                             Localization and native support for Vietnamese
                             tokens
                           </strong>{" "}
-                          such as AXS, SLP, VNDC, VNST, KAI, SIPHER, A8, C98,
-                          and KNC.
+                          with priority optimization for routing, liquidity
+                          access, and fee structures.
                         </p>
                       </div>
 
+                      {/* Token Categories in Columns */}
                       <div className="grid md:grid-cols-3 gap-6">
-                        <div className="space-y-4">
-                          <h4 className="font-semibold text-primary">
-                            Gaming Tokens
+                        {/* Gaming Ecosystem */}
+                        <div className="flex flex-col h-full">
+                          <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-4">
+                            🎮 Gaming Ecosystem
                           </h4>
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2">
-                              <Badge>AXS</Badge>
-                              <span className="text-sm text-muted-foreground">
+                          <div className="grid grid-cols-2 gap-3 flex-1">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                              <img
+                                src="https://coin-images.coingecko.com/coins/images/13029/large/axie_infinity_logo.png?1696512817"
+                                alt="AXS"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-blue-600 block text-sm">
+                                AXS
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
                                 Axie Infinity
                               </span>
                             </div>
-                            <div className="flex items-center gap-2">
-                              <Badge>SLP</Badge>
-                              <span className="text-sm text-muted-foreground">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                              <img
+                                src="https://coin-images.coingecko.com/coins/images/10366/large/SLP.png?1696510368"
+                                alt="SLP"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-green-600 block text-sm">
+                                SLP
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
                                 Smooth Love Potion
                               </span>
                             </div>
-                            <div className="flex items-center gap-2">
-                              <Badge>SIPHER</Badge>
-                              <span className="text-sm text-muted-foreground">
-                                Sipher
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                              <img
+                                src="https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453"
+                                alt="SIPHER"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-indigo-600 block text-sm">
+                                SIPHER
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
+                                Sipher Token
+                              </span>
+                            </div>
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                              <img
+                                src="https://assets.coingecko.com/coins/images/39170/standard/A8_Token-04_200x200.png?1720798300"
+                                alt="A8"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-purple-600 block text-sm">
+                                A8
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
+                                A8 Token
                               </span>
                             </div>
                           </div>
                         </div>
 
-                        <div className="space-y-4">
-                          <h4 className="font-semibold text-accent">
-                            Stablecoins
+                        {/* Vietnamese Stablecoins */}
+                        <div className="flex flex-col h-full">
+                          <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-4">
+                            💰 Vietnamese Stablecoins
                           </h4>
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2">
-                              <Badge variant="outline">VNDC</Badge>
-                              <span className="text-sm text-muted-foreground">
+                          <div className="space-y-3 flex-1">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                              <img
+                                src="https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740"
+                                alt="VNDC"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-purple-600 block text-sm">
+                                VNDC
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
                                 VND Coin
                               </span>
                             </div>
-                            <div className="flex items-center gap-2">
-                              <Badge variant="outline">VNST</Badge>
-                              <span className="text-sm text-muted-foreground">
-                                VND Stablecoin
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                              <img
+                                src="https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75"
+                                alt="VNST"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-orange-600 block text-sm">
+                                VNST
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
+                                VN Stable Token
                               </span>
                             </div>
                           </div>
                         </div>
 
-                        <div className="space-y-4">
-                          <h4 className="font-semibold text-primary">
-                            Ecosystem Tokens
+                        {/* DeFi Infrastructure */}
+                        <div className="flex flex-col h-full">
+                          <h4 className="font-semibold text-teal-800 dark:text-teal-400 mb-4">
+                            🔧 DeFi Infrastructure
                           </h4>
-                          <div className="space-y-2">
-                            <div className="flex items-center gap-2">
-                              <Badge variant="secondary">KAI</Badge>
-                              <span className="text-sm text-muted-foreground">
+                          <div className="space-y-3 flex-1">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                              <img
+                                src="https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172"
+                                alt="KAI"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-red-600 block text-sm">
+                                KAI
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
                                 KardiaChain
                               </span>
                             </div>
-                            <div className="flex items-center gap-2">
-                              <Badge variant="secondary">C98</Badge>
-                              <span className="text-sm text-muted-foreground">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                              <img
+                                src="https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677"
+                                alt="C98"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-yellow-600 block text-sm">
+                                C98
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
                                 Coin98
                               </span>
                             </div>
-                            <div className="flex items-center gap-2">
-                              <Badge variant="secondary">KNC</Badge>
-                              <span className="text-sm text-muted-foreground">
-                                Kyber Network
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                              <img
+                                src="https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562"
+                                alt="KNC"
+                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                              />
+                              <strong className="text-teal-600 block text-sm">
+                                KNC
+                              </strong>
+                              <span className="text-xs text-muted-foreground">
+                                Kyber Network Crystal
                               </span>
                             </div>
                           </div>
