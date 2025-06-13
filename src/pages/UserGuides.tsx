@@ -42,6 +42,11 @@ const UserGuides = () => {
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     User Guides
                   </h1>
+                  <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Step-by-step instructions on how to bridge assets across
+                    supported blockchain networks, with guidance tailored for
+                    both general users and Viet Nam region-specific tokens
+                  </p>
                 </div>
               </div>
             </section>
@@ -446,54 +451,143 @@ const UserGuides = () => {
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
-                        <div className="grid md:grid-cols-3 gap-6">
-                          <div className="text-center">
-                            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                              <span className="text-primary font-bold">1</span>
-                            </div>
-                            <h3 className="font-semibold mb-2">
-                              Select Networks
+                        {/* Bridging Process Diagram Placeholder */}
+                        <div className="bg-muted/30 rounded-lg p-8 text-center border-2 border-dashed border-muted-foreground/30">
+                          <div className="text-muted-foreground">
+                            <div className="text-4xl mb-4">📊</div>
+                            <h3 className="font-semibold text-lg mb-2">
+                              Bridging Process Diagram
                             </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Choose source and destination blockchain networks
-                            </p>
-                          </div>
-                          <div className="text-center">
-                            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                              <span className="text-primary font-bold">2</span>
-                            </div>
-                            <h3 className="font-semibold mb-2">Enter Amount</h3>
-                            <p className="text-sm text-muted-foreground">
-                              Specify the token amount and review fees
-                            </p>
-                          </div>
-                          <div className="text-center">
-                            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                              <span className="text-primary font-bold">3</span>
-                            </div>
-                            <h3 className="font-semibold mb-2">
-                              Confirm Transfer
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Review details and approve the transaction
+                            <p className="text-sm">[Diagram Coming Soon]</p>
+                            <p className="text-xs mt-2 text-muted-foreground/70">
+                              Awaiting Gia Bao completion of the visual bridging
+                              flow diagram
                             </p>
                           </div>
                         </div>
-                        <div className="bg-muted/30 rounded-lg p-6">
-                          <h4 className="font-semibold mb-3">
+
+                        <div className="bg-muted/30 rounded-lg p-6 cursor-default">
+                          <h4 className="font-semibold mb-4">
                             Supported Networks
                           </h4>
-                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <Badge variant="secondary">Ethereum</Badge>
-                            <Badge variant="secondary">
-                              Binance Smart Chain
-                            </Badge>
-                            <Badge variant="secondary">Polygon</Badge>
-                            <Badge variant="secondary">Avalanche</Badge>
-                            <Badge variant="secondary">Arbitrum</Badge>
-                            <Badge variant="secondary">Optimism</Badge>
-                            <Badge variant="secondary">Fantom</Badge>
-                            <Badge variant="secondary">Solana</Badge>
+                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/1/light.png"
+                                alt="Ethereum"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">
+                                Ethereum
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/56/light.png"
+                                alt="BSC"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">BSC</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/137/light.png"
+                                alt="Polygon"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">
+                                Polygon
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/43114/light.png"
+                                alt="Avalanche"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">
+                                Avalanche
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/8453/light.png"
+                                alt="Base"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">Base</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/10/light.png"
+                                alt="Optimism"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">
+                                Optimism
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/792703809/light.png"
+                                alt="Solana"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">
+                                Solana
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/673ca438b041dcc7ecb0f0ce_Logo.png"
+                                alt="Sui"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">Sui</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/2020/light.png"
+                                alt="Ronin"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">Ronin</span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/2741/light.png"
+                                alt="Abstract"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">
+                                Abstract
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg border cursor-default">
+                              <img
+                                src="https://assets.relay.link/icons/square/1135/light.png"
+                                alt="Lisk"
+                                className="w-8 h-8 rounded-lg"
+                              />
+                              <span className="font-medium text-sm">Lisk</span>
+                            </div>
+                            <div className="flex items-center justify-center gap-2 p-3 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-lg border border-dashed border-blue-300 dark:border-blue-700 cursor-default">
+                              <span className="text-2xl">⋯</span>
+                              <div className="text-center">
+                                <p className="font-medium text-sm text-blue-800 dark:text-blue-400">
+                                  +50 More
+                                </p>
+                                <p className="text-xs text-blue-600 dark:text-blue-500">
+                                  Networks
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="text-center pt-2 cursor-default">
+                            <p className="text-sm text-muted-foreground">
+                              New networks are continuously being added to
+                              expand cross-chain capabilities
+                            </p>
                           </div>
                         </div>
                       </CardContent>
