@@ -279,58 +279,279 @@ const Background = () => {
                         </p>
                       </div>
 
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-4">
-                          <h4 className="font-semibold text-primary">
-                            Market Strengths
+                      <div className="grid md:grid-cols-2 gap-6 items-start">
+                        <div className="flex flex-col h-full">
+                          <h4 className="font-semibold text-primary mb-4">
+                            🚀 Market Strengths
                           </h4>
-                          <ul className="space-y-2">
-                            <li className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                              <span className="text-sm">
-                                High crypto adoption rates
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                              <span className="text-sm">
-                                Strong gaming and NFT communities
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                              <span className="text-sm">
-                                Growing DeFi participation
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                              <span className="text-sm">
-                                Tech-savvy user base
-                              </span>
-                            </li>
-                          </ul>
+                          <div className="grid gap-3 flex-1">
+                            {/* Adoption & Awareness */}
+                            <div className="p-4 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-sm mb-3 text-primary">
+                                📈 Adoption & Awareness
+                              </h5>
+                              <div className="space-y-2 mb-3">
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Top 3 globally in crypto awareness
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    High retail adoption rates
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-xs text-muted-foreground">
+                                Vietnam consistently ranks among top countries
+                                for crypto adoption
+                              </p>
+                            </div>
+
+                            {/* Gaming & NFTs */}
+                            <div className="p-4 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-sm mb-3 text-primary">
+                                🎮 Gaming & NFT Leadership
+                              </h5>
+                              <div className="space-y-2 mb-3">
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Axie Infinity ecosystem hub
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Strong P2E gaming culture
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-xs text-muted-foreground">
+                                Leading the play-to-earn revolution in Southeast
+                                Asia
+                              </p>
+                            </div>
+
+                            {/* Developer Ecosystem */}
+                            <div className="p-4 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-sm mb-3 text-primary">
+                                👨‍💻 Developer Ecosystem
+                              </h5>
+                              <div className="space-y-2 mb-3">
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Growing DeFi participation
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Active developer community
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-xs text-muted-foreground">
+                                Strong technical foundation for blockchain
+                                innovation
+                              </p>
+                            </div>
+
+                            {/* Growth Potential */}
+                            <div className="p-4 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-sm mb-3 text-primary">
+                                🌟 Growth Potential
+                              </h5>
+                              <div className="space-y-2 mb-3">
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Young tech-savvy population
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                                  <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
+                                  <span className="text-sm font-medium">
+                                    Rising cross-chain demand
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-xs text-muted-foreground">
+                                Emerging opportunities in Web3 infrastructure
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="mt-4 p-3 bg-green-50 dark:bg-green-950/20 rounded-lg border border-green-200 dark:border-green-800">
+                            <div className="flex items-start gap-2">
+                              <TrendingUp className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                              <div>
+                                <p className="text-sm font-medium text-green-800 dark:text-green-200">
+                                  Untapped Global Potential
+                                </p>
+                                <p className="text-xs text-green-700 dark:text-green-300 mt-1">
+                                  Vietnam's crypto leadership position creates
+                                  massive opportunities for bridging local
+                                  innovation with global markets.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
-                        <div className="space-y-4">
-                          <h4 className="font-semibold text-accent">
+                        <div className="flex flex-col h-full">
+                          <h4 className="font-semibold text-accent mb-4">
                             Popular Vietnamese Tokens
                           </h4>
-                          <div className="flex flex-wrap gap-2">
-                            <Badge variant="outline">AXS</Badge>
-                            <Badge variant="outline">SLP</Badge>
-                            <Badge variant="outline">VNDC</Badge>
-                            <Badge variant="outline">VNST</Badge>
-                            <Badge variant="outline">KAI</Badge>
-                            <Badge variant="outline">SIPHER</Badge>
-                            <Badge variant="outline">A8</Badge>
-                            <Badge variant="outline">C98</Badge>
-                            <Badge variant="outline">KNC</Badge>
+                          <div className="grid gap-4 flex-1">
+                            {/* Gaming Tokens */}
+                            <div className="p-5 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-base mb-6 text-primary">
+                                🎮 Gaming Ecosystem
+                              </h5>
+                              <div className="grid grid-cols-2 gap-4 mb-6">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/13029/small/axie_infinity_logo.png"
+                                    alt="AXS"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-base">
+                                    AXS
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/10366/small/SLP.png"
+                                    alt="SLP"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-base">
+                                    SLP
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453"
+                                    alt="SIPHER"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-base">
+                                    SIPHER
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/39170/standard/A8_Token-04_200x200.png?1720798300"
+                                    alt="A8"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-base">
+                                    A8
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-sm text-muted-foreground text-center">
+                                Axie Infinity, gaming tokens driving Vietnam's
+                                Web3 adoption
+                              </p>
+                            </div>
+
+                            {/* Stablecoins */}
+                            <div className="p-5 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-base mb-6 text-primary">
+                                💰 Vietnamese Stablecoins
+                              </h5>
+                              <div className="grid grid-cols-2 gap-4 mb-6 max-w-md mx-auto">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740"
+                                    alt="VNDC"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-base">
+                                    VNDC
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75"
+                                    alt="VNST"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-base">
+                                    VNST
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-sm text-muted-foreground text-center">
+                                VND-pegged stablecoins for local financial
+                                integration
+                              </p>
+                            </div>
+
+                            {/* DeFi Infrastructure */}
+                            <div className="p-5 bg-white dark:bg-background rounded-lg border">
+                              <h5 className="font-medium text-base mb-6 text-primary">
+                                🏗️ DeFi Infrastructure
+                              </h5>
+                              <div className="grid grid-cols-3 gap-3 mb-6">
+                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172"
+                                    alt="KAI"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-sm">
+                                    KAI
+                                  </span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/17117/small/logo.png"
+                                    alt="C98"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-sm">
+                                    C98
+                                  </span>
+                                </div>
+                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                  <img
+                                    src="https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562"
+                                    alt="KNC"
+                                    className="w-8 h-8 rounded-full"
+                                  />
+                                  <span className="font-medium text-sm">
+                                    KNC
+                                  </span>
+                                </div>
+                              </div>
+                              <p className="text-sm text-muted-foreground text-center">
+                                Blockchain infrastructure and DeFi protocol
+                                tokens
+                              </p>
+                            </div>
                           </div>
-                          <p className="text-sm text-muted-foreground mt-2">
-                            These tokens often struggle to access global
-                            liquidity and cross-chain opportunities.
-                          </p>
+
+                          <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-950/20 rounded-lg border border-amber-200 dark:border-amber-800">
+                            <div className="flex items-start gap-2">
+                              <AlertTriangle className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                              <div>
+                                <p className="text-sm font-medium text-amber-800 dark:text-amber-200">
+                                  Limited Cross-Chain Access
+                                </p>
+                                <p className="text-xs text-amber-700 dark:text-amber-300 mt-1">
+                                  Many Vietnamese tokens remain isolated on
+                                  single chains, limiting global liquidity and
+                                  DeFi opportunities.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </CardContent>
