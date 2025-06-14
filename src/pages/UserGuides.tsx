@@ -19,9 +19,44 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
+import { useEffect } from "react";
 
 const UserGuides = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    const handleTokenHover = (event: MouseEvent) => {
+      const tokenCard = event.currentTarget as HTMLElement;
+      const img = tokenCard.querySelector("img");
+
+      if (img) {
+        // Remove any existing animation
+        img.style.animation = "none";
+        // Force reflow
+        void img.offsetHeight;
+        // Add the animation
+        img.style.animation = "tokenIconSpin 0.8s ease-in-out";
+
+        // Clean up after animation completes
+        setTimeout(() => {
+          img.style.animation = "";
+        }, 800);
+      }
+    };
+
+    // Add event listeners to all token cards
+    const tokenCards = document.querySelectorAll(".token-icon-hover");
+    tokenCards.forEach((card) => {
+      card.addEventListener("mouseenter", handleTokenHover);
+    });
+
+    // Cleanup
+    return () => {
+      tokenCards.forEach((card) => {
+        card.removeEventListener("mouseenter", handleTokenHover);
+      });
+    };
+  }, []);
 
   return (
     <SidebarProvider>
@@ -87,7 +122,7 @@ const UserGuides = () => {
                       </CardHeader>
                       <CardContent>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://coin-images.coingecko.com/coins/images/13029/large/axie_infinity_logo.png?1696512817"
                               alt="AXS"
@@ -99,7 +134,7 @@ const UserGuides = () => {
                               Axie Infinity
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://coin-images.coingecko.com/coins/images/10366/large/SLP.png?1696510368"
                               alt="SLP"
@@ -111,7 +146,7 @@ const UserGuides = () => {
                               Smooth Love Potion
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740"
                               alt="VNDC"
@@ -123,7 +158,7 @@ const UserGuides = () => {
                               VND Coin
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75"
                               alt="VNST"
@@ -135,7 +170,7 @@ const UserGuides = () => {
                               VN Stable Token
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172"
                               alt="KAI"
@@ -147,7 +182,7 @@ const UserGuides = () => {
                               KardiaChain
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453"
                               alt="SIPHER"
@@ -159,7 +194,7 @@ const UserGuides = () => {
                               Sipher Token
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677"
                               alt="C98"
@@ -171,7 +206,7 @@ const UserGuides = () => {
                               Coin98
                             </span>
                           </div>
-                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center">
+                          <div className="bg-white dark:bg-gray-800 p-3 rounded border text-center token-icon-hover">
                             <img
                               src="https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562"
                               alt="KNC"
