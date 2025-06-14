@@ -179,7 +179,7 @@ export function AppSidebar() {
           url: "/benefits-users",
         },
         {
-          title: "For Developers",
+          title: "For Builders",
           url: "/benefits-developers",
         },
         {
@@ -236,11 +236,6 @@ export function AppSidebar() {
             <h2 className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               {t("hero.title")}
             </h2>
-            <p className="text-sm text-muted-foreground vietnamese-text">
-              {language === "vi"
-                ? t("hero.subtitle")
-                : t("hero.subtitleVietnamese")}
-            </p>
           </div>
         </Link>
       </SidebarHeader>
