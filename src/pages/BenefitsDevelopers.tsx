@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   Code,
-  Book,
+  Building,
   Wrench,
   Globe,
   ArrowRight,
@@ -21,6 +21,9 @@ import {
   Terminal,
   Layers,
   FileCode,
+  Lightbulb,
+  Rocket,
+  Target,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
@@ -28,97 +31,117 @@ import { Link } from "react-router-dom";
 const BenefitsDevelopers = () => {
   const { t, language } = useLanguage();
 
-  const developerTools = [
+  const builderOpportunities = [
     {
-      title: "SDKs and APIs for Cross-Chain dApps",
+      title: "Smart Contract Integration Opportunities",
       description:
-        "Comprehensive development kits that make building cross-chain applications as simple as single-chain development.",
+        "Build innovative smart contracts that leverage Lotus Bridge protocol for cross-chain functionality and Vietnamese token integration.",
       icon: Code,
       features: [
-        "TypeScript/JavaScript SDK",
-        "Python integration library",
-        "RESTful API endpoints",
-        "WebSocket real-time updates",
-        "GraphQL query interface",
+        "Cross-chain DeFi protocols",
+        "Vietnamese gaming token utilities",
+        "Multi-chain yield farming contracts",
+        "Cross-border payment solutions",
+        "NFT marketplace integration",
       ],
     },
     {
-      title: "Developer-Friendly Documentation",
+      title: "dApp Development Ecosystem",
       description:
-        "Extensive documentation localized for Vietnamese developers, with examples using popular local tokens and use cases.",
-      icon: Book,
-      features: [
-        "Vietnamese language documentation",
-        "Interactive code examples",
-        "Video tutorials with Vietnamese subtitles",
-        "Local token integration guides",
-        "Community-driven content",
-      ],
-    },
-    {
-      title: "Vietnamese Ecosystem Integration",
-      description:
-        "Pre-built integrations and tools specifically designed for the Vietnamese blockchain ecosystem and market needs.",
+        "Create revolutionary decentralized applications using Lotus Bridge as the backbone for seamless cross-chain user experiences.",
       icon: Globe,
       features: [
-        "Ronin network integration",
-        "KardiaChain compatibility",
-        "Vietnamese gaming dApp templates",
-        "Local payment gateway APIs",
-        "Cultural UX component library",
+        "Vietnamese-first dApp experiences",
+        "Gaming ecosystem applications",
+        "Cross-chain portfolio managers",
+        "Local remittance platforms",
+        "Cultural token communities",
+      ],
+    },
+    {
+      title: "DeFi Innovation Opportunities",
+      description:
+        "Pioneer new DeFi protocols and financial products that serve the Vietnamese market while connecting to global liquidity.",
+      icon: Layers,
+      features: [
+        "Vietnamese stablecoin protocols",
+        "Cross-chain lending platforms",
+        "Gaming token derivatives",
+        "Local asset tokenization",
+        "Yield optimization strategies",
       ],
     },
   ];
 
-  const codeExamples = [
+  const startupOpportunities = [
     {
-      title: "Bridge AXS from Ronin to Ethereum",
-      language: "JavaScript",
-      code: `// Bridge AXS tokens from Ronin to Ethereum
-import { LotusBridge } from '@lotus/sdk';
-
-const bridge = new LotusBridge({
-  apiKey: 'your-api-key'
-});
-
-const result = await bridge.transfer({
-  from: 'ronin',
-  to: 'ethereum',
-  token: 'AXS',
-  amount: '100',
-  fromAddress: '0x...',
-  toAddress: '0x...'
-});`,
+      title: "Cross-Chain Gaming Studios",
+      category: "Gaming & Entertainment",
+      description:
+        "Build gaming platforms that seamlessly integrate AXS, SLP, and other Vietnamese gaming tokens across multiple blockchains.",
+      marketSize: "$2B+ Vietnamese gaming market",
+      examples: [
+        "Play-to-earn ecosystems",
+        "Cross-chain NFT games",
+        "Gaming token bridges",
+      ],
+      icon: Target,
     },
     {
-      title: "Multi-Wallet Connection",
-      language: "TypeScript",
-      code: `// Connect multiple wallets across chains
-interface MultiWalletConfig {
-  ethereum: string;
-  ronin: string;
-  solana: string;
-}
-
-const wallets = await bridge.connectMultiWallet({
-  chains: ['ethereum', 'ronin', 'solana'],
-  autoConnect: true
-});`,
+      title: "Vietnamese DeFi Protocols",
+      category: "DeFi & Finance",
+      description:
+        "Create DeFi protocols specifically designed for Vietnamese users, featuring local tokens and cultural preferences.",
+      marketSize: "$500M+ Vietnamese crypto market",
+      examples: [
+        "VNDC/VNST yield farming",
+        "Local lending protocols",
+        "Cross-chain remittance",
+      ],
+      icon: Building,
     },
     {
-      title: "Vietnamese Token Query",
-      language: "Python",
-      code: `# Query Vietnamese token balances
-from lotus_bridge import LotusBridge
+      title: "Enterprise Blockchain Solutions",
+      category: "B2B & Enterprise",
+      description:
+        "Develop blockchain solutions for Vietnamese businesses looking to integrate cross-chain functionality.",
+      marketSize: "Growing enterprise adoption",
+      examples: [
+        "Supply chain tracking",
+        "Cross-border payments",
+        "Digital identity solutions",
+      ],
+      icon: Wrench,
+    },
+  ];
 
-bridge = LotusBridge(api_key='your-key')
-
-# Get balances for popular Vietnamese tokens
-tokens = ['AXS', 'SLP', 'VNDC', 'VNST', 'KAI']
-balances = bridge.get_multi_chain_balances(
-    address='0x...',
-    tokens=tokens
-)`,
+  const builderResources = [
+    {
+      title: "Lotus Bridge SDK",
+      description:
+        "Comprehensive development kit with Vietnamese documentation",
+      features: [
+        "TypeScript/JavaScript",
+        "Python bindings",
+        "Smart contract libraries",
+      ],
+      icon: Code,
+    },
+    {
+      title: "Grant Program",
+      description: "Funding for innovative projects building on Lotus Bridge",
+      features: [
+        "Up to $50K grants",
+        "Technical mentorship",
+        "Go-to-market support",
+      ],
+      icon: Rocket,
+    },
+    {
+      title: "Builder Community",
+      description: "Vietnamese developer community with local language support",
+      features: ["Discord channels", "Local meetups", "Hackathon events"],
+      icon: Terminal,
     },
   ];
 
@@ -132,30 +155,42 @@ balances = bridge.get_multi_chain_balances(
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    👨‍💻 Developer Benefits
+                    🏗️ Builder Opportunities
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Developers
+                    Benefits for Builders
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Build the future of Vietnamese blockchain applications with
-                    comprehensive tools, localized documentation, and native
-                    ecosystem integration.
+                    Leverage Lotus Bridge protocol to build innovative smart
+                    contracts, create revolutionary dApps, unlock new DeFi
+                    opportunities, and launch successful startups in the
+                    Vietnamese blockchain ecosystem.
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Developer Tools */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
+            {/* Builder Opportunities */}
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold mb-4">
+                    🚀 Building Opportunities
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Discover how to leverage Lotus Bridge protocol to create
+                    innovative solutions for the Vietnamese blockchain
+                    ecosystem.
+                  </p>
+                </div>
+
                 <div className="grid gap-8">
-                  {developerTools.map((tool, index) => {
-                    const IconComponent = tool.icon;
+                  {builderOpportunities.map((opportunity, index) => {
+                    const IconComponent = opportunity.icon;
                     return (
                       <Card key={index} className="relative overflow-hidden">
                         <div
@@ -182,27 +217,29 @@ balances = bridge.get_multi_chain_balances(
                                 }`}
                               />
                             </div>
+                            <CardTitle className="text-2xl">
+                              {opportunity.title}
+                            </CardTitle>
                           </div>
-                          <CardTitle className="text-2xl">
-                            {tool.title}
-                          </CardTitle>
                           <CardDescription className="text-lg">
-                            {tool.description}
+                            {opportunity.description}
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="pl-8">
                           <div className="grid md:grid-cols-2 gap-4">
-                            {tool.features.map((feature, featureIndex) => (
-                              <div
-                                key={featureIndex}
-                                className="flex items-center gap-2"
-                              >
-                                <div className="w-2 h-2 bg-primary rounded-full" />
-                                <span className="text-sm font-medium">
-                                  {feature}
-                                </span>
-                              </div>
-                            ))}
+                            {opportunity.features.map(
+                              (feature, featureIndex) => (
+                                <div
+                                  key={featureIndex}
+                                  className="flex items-center gap-2"
+                                >
+                                  <div className="w-2 h-2 bg-primary rounded-full" />
+                                  <span className="text-sm font-medium">
+                                    {feature}
+                                  </span>
+                                </div>
+                              )
+                            )}
                           </div>
                         </CardContent>
                       </Card>
@@ -212,103 +249,183 @@ balances = bridge.get_multi_chain_balances(
               </div>
             </section>
 
-            {/* Code Examples */}
-            <section className="py-16 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            {/* Startup Opportunities */}
+            <section className="py-10 px-6 bg-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">🇻🇳 Code Examples</h2>
+                  <h2 className="text-3xl font-bold mb-4">
+                    💡 Startup Opportunities
+                  </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Get started quickly with practical examples using popular
-                    Vietnamese tokens and chains.
+                    Entrepreneurial opportunities for ambitious builders looking
+                    to create the next generation of Vietnamese blockchain
+                    companies.
                   </p>
                 </div>
 
-                <div className="grid gap-8">
-                  {codeExamples.map((example, index) => (
-                    <Card key={index}>
-                      <CardHeader>
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <CardTitle className="text-xl">
-                              {example.title}
-                            </CardTitle>
-                            <CardDescription>
-                              Example implementation in {example.language}
-                            </CardDescription>
+                <div className="grid md:grid-cols-3 gap-8">
+                  {startupOpportunities.map((startup, index) => {
+                    const IconComponent = startup.icon;
+                    return (
+                      <Card key={index} className="relative overflow-hidden">
+                        <CardHeader>
+                          <div className="flex items-center gap-2 mb-3">
+                            <IconComponent className="h-6 w-6 text-primary" />
+                            <Badge variant="outline" className="text-xs">
+                              {startup.category}
+                            </Badge>
                           </div>
-                          <Badge variant="outline">{example.language}</Badge>
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
-                          <code>{example.code}</code>
-                        </pre>
-                      </CardContent>
-                    </Card>
-                  ))}
+                          <CardTitle className="text-xl">
+                            {startup.title}
+                          </CardTitle>
+                          <CardDescription className="text-base">
+                            {startup.description}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-4">
+                            <div>
+                              <h4 className="font-semibold text-green-600 mb-2">
+                                📈 Market Opportunity:
+                              </h4>
+                              <p className="text-sm text-muted-foreground">
+                                {startup.marketSize}
+                              </p>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2">
+                                🎯 Example Applications:
+                              </h4>
+                              <ul className="text-sm space-y-1">
+                                {startup.examples.map(
+                                  (example, exampleIndex) => (
+                                    <li key={exampleIndex}>• {example}</li>
+                                  )
+                                )}
+                              </ul>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
                 </div>
               </div>
             </section>
 
-            {/* Vietnamese Developer Community */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
+            {/* Builder Resources */}
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🌸 Vietnamese Developer Community
+                    🛠️ Builder Resources & Support
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Join a thriving community of Vietnamese blockchain
-                    developers building the future of Web3.
+                    Everything you need to start building on Lotus Bridge today,
+                    with dedicated support for Vietnamese developers.
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <Card>
+                <div className="grid md:grid-cols-3 gap-8">
+                  {builderResources.map((resource, index) => {
+                    const IconComponent = resource.icon;
+                    return (
+                      <Card key={index}>
+                        <CardHeader>
+                          <div className="flex items-center gap-3 mb-2">
+                            <IconComponent className="h-6 w-6 text-primary" />
+                            <CardTitle>{resource.title}</CardTitle>
+                          </div>
+                          <CardDescription>
+                            {resource.description}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <ul className="space-y-2">
+                            {resource.features.map((feature, featureIndex) => (
+                              <li
+                                key={featureIndex}
+                                className="flex items-center gap-2"
+                              >
+                                <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                                <span className="text-sm">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          <Button className="w-full mt-4" variant="outline">
+                            Learn More
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+
+            {/* Vietnamese Builder Community */}
+            <section className="py-10 px-6 bg-gradient-to-r from-red-50 to-yellow-50 border-t border-red-200">
+              <div className="container mx-auto max-w-5xl">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold mb-4">
+                    🇻🇳 Vietnamese Builder Community
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Join a thriving community of Vietnamese blockchain builders
+                    creating the future of Web3 in Vietnam.
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <Card className="text-center">
                     <CardHeader>
-                      <Terminal className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Developer Forum</CardTitle>
+                      <Terminal className="h-8 w-8 text-primary mx-auto mb-2" />
+                      <CardTitle className="text-lg">Builder Forum</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        Vietnamese-language developer forum with technical
-                        discussions, Q&A, and project showcases.
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Vietnamese-language technical discussions and project
+                        showcases
                       </p>
-                      <Button size="sm" variant="outline">
-                        Join Forum
-                      </Button>
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="text-center">
                     <CardHeader>
-                      <Layers className="h-8 w-8 text-accent mb-2" />
-                      <CardTitle>Hackathons & Events</CardTitle>
+                      <Layers className="h-8 w-8 text-accent mx-auto mb-2" />
+                      <CardTitle className="text-lg">Hackathons</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        Regular hackathons and meetups focused on Vietnamese
-                        blockchain innovation and Lotus Bridge integration.
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Regular events focused on Vietnamese blockchain
+                        innovation
                       </p>
-                      <Button size="sm" variant="outline">
-                        View Events
-                      </Button>
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="text-center">
                     <CardHeader>
-                      <FileCode className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Open Source</CardTitle>
+                      <Lightbulb className="h-8 w-8 text-primary mx-auto mb-2" />
+                      <CardTitle className="text-lg">Mentorship</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        Contribute to Lotus Bridge development and Vietnamese
-                        blockchain tooling through our open source initiatives.
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Connect with experienced Vietnamese blockchain
+                        entrepreneurs
                       </p>
-                      <Button size="sm" variant="outline">
-                        View GitHub
-                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="text-center">
+                    <CardHeader>
+                      <FileCode className="h-8 w-8 text-accent mx-auto mb-2" />
+                      <CardTitle className="text-lg">Open Source</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Contribute to Vietnamese blockchain tooling and
+                        libraries
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -316,61 +433,54 @@ balances = bridge.get_multi_chain_balances(
             </section>
 
             {/* Getting Started */}
-            <section className="py-16 px-6 bg-gradient-to-r from-primary/10 to-accent/10">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-10 px-6 bg-gradient-to-r from-primary/10 to-accent/10">
+              <div className="container mx-auto max-w-5xl">
                 <Card className="border-primary/20">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
                       🚀 Start Building Today
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Ready to build the next generation of Vietnamese
-                      blockchain applications?
+                      Ready to leverage Lotus Bridge protocol for your next
+                      breakthrough project?
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
                       <div className="text-left">
-                        <h4 className="font-semibold mb-2">📚 Documentation</h4>
+                        <h4 className="font-semibold mb-2">
+                          📚 Builder Documentation
+                        </h4>
                         <p className="text-sm text-muted-foreground">
-                          Comprehensive guides in Vietnamese and English
+                          Complete guides for smart contract integration and
+                          dApp development
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          🔧 Developer Tools
+                          💰 Grant Opportunities
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          SDKs, APIs, and testing environments
+                          Funding and support for innovative Vietnamese
+                          blockchain projects
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          💬 Community Support
+                          🤝 Partnership Program
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Active Vietnamese developer community
+                          Strategic partnerships for promising startups and
+                          projects
                         </p>
                       </div>
                       <div className="text-left">
-                        <h4 className="font-semibold mb-2">
-                          🎯 Use Case Examples
-                        </h4>
+                        <h4 className="font-semibold mb-2">🎯 Market Access</h4>
                         <p className="text-sm text-muted-foreground">
-                          Real-world Vietnamese market applications
+                          Direct access to Vietnamese crypto market and user
+                          base
                         </p>
                       </div>
-                    </div>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-primary to-accent text-white"
-                      >
-                        Access Developer Portal
-                      </Button>
-                      <Button size="lg" variant="outline">
-                        View Documentation
-                      </Button>
                     </div>
                   </CardContent>
                 </Card>
@@ -379,7 +489,7 @@ balances = bridge.get_multi_chain_balances(
 
             {/* Navigation */}
             <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-6xl">
+              <div className="container mx-auto max-w-5xl">
                 <div className="flex justify-between items-center">
                   <Link to="/benefits-users">
                     <Button

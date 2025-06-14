@@ -30,9 +30,9 @@ const BenefitsLiquidity = () => {
 
   const liquidityBenefits = [
     {
-      title: "New Liquidity Pools Tied to Real Usage",
+      title: "Opportunities For New Liquidity Pools",
       description:
-        "Participate in innovative liquidity pools that serve actual cross-chain transaction demand, not just speculation.",
+        "Cross-chain communication and cross-chain asset transfers being a foundation for creating new liquidity pools, enabling users to earn yields on diverse assets.",
       icon: DollarSign,
       features: [
         "Real utility-driven demand",
@@ -115,8 +115,8 @@ const BenefitsLiquidity = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
                     💰 Liquidity Provider Benefits
@@ -126,16 +126,15 @@ const BenefitsLiquidity = () => {
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                     Unlock new yield opportunities by providing liquidity to the
-                    Vietnamese blockchain ecosystem's first comprehensive
-                    cross-chain bridge.
+                    blockchain ecosystem's.
                   </p>
                 </div>
               </div>
             </section>
 
             {/* Core Benefits */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="grid gap-8">
                   {liquidityBenefits.map((benefit, index) => {
                     const IconComponent = benefit.icon;
@@ -165,10 +164,10 @@ const BenefitsLiquidity = () => {
                                 }`}
                               />
                             </div>
+                            <CardTitle className="text-2xl">
+                              {benefit.title}
+                            </CardTitle>
                           </div>
-                          <CardTitle className="text-2xl">
-                            {benefit.title}
-                          </CardTitle>
                           <CardDescription className="text-lg">
                             {benefit.description}
                           </CardDescription>
@@ -196,8 +195,8 @@ const BenefitsLiquidity = () => {
             </section>
 
             {/* Liquidity Pool Types */}
-            <section className="py-16 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-10 px-6 bg-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
                     🌸 Available Liquidity Pools
@@ -239,7 +238,7 @@ const BenefitsLiquidity = () => {
                             </h4>
                             <p className="text-lg font-bold">{pool.apr}</p>
                           </div>
-                          <div>
+                          <div className="text-right">
                             <h4 className="font-semibold text-blue-600 mb-1">
                               🔥 Demand
                             </h4>
@@ -270,8 +269,8 @@ const BenefitsLiquidity = () => {
             </section>
 
             {/* Yield Optimization */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
                     ⚡ Yield Optimization
@@ -285,8 +284,10 @@ const BenefitsLiquidity = () => {
                 <div className="grid md:grid-cols-3 gap-8">
                   <Card>
                     <CardHeader>
-                      <Target className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Smart Rebalancing</CardTitle>
+                      <div className="flex items-center gap-3 mb-2">
+                        <Target className="h-6 w-6 text-primary" />
+                        <CardTitle>Smart Rebalancing</CardTitle>
+                      </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-4">
@@ -303,8 +304,10 @@ const BenefitsLiquidity = () => {
 
                   <Card>
                     <CardHeader>
-                      <BarChart3 className="h-8 w-8 text-accent mb-2" />
-                      <CardTitle>Dynamic Fees</CardTitle>
+                      <div className="flex items-center gap-3 mb-2">
+                        <BarChart3 className="h-6 w-6 text-accent" />
+                        <CardTitle>Dynamic Fees</CardTitle>
+                      </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-4">
@@ -321,8 +324,10 @@ const BenefitsLiquidity = () => {
 
                   <Card>
                     <CardHeader>
-                      <Coins className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Bonus Rewards</CardTitle>
+                      <div className="flex items-center gap-3 mb-2">
+                        <Coins className="h-6 w-6 text-primary" />
+                        <CardTitle>Bonus Rewards</CardTitle>
+                      </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-4">
@@ -341,8 +346,8 @@ const BenefitsLiquidity = () => {
             </section>
 
             {/* Getting Started */}
-            <section className="py-16 px-6 bg-gradient-to-r from-primary/10 to-accent/10">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-10 px-6 bg-gradient-to-r from-primary/10 to-accent/10">
+              <div className="container mx-auto max-w-5xl">
                 <Card className="border-primary/20">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
@@ -388,17 +393,6 @@ const BenefitsLiquidity = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-primary to-accent text-white"
-                      >
-                        Start Providing Liquidity
-                      </Button>
-                      <Button size="lg" variant="outline">
-                        View Pool Analytics
-                      </Button>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -406,7 +400,7 @@ const BenefitsLiquidity = () => {
 
             {/* Navigation */}
             <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-6xl">
+              <div className="container mx-auto max-w-5xl">
                 <div className="flex justify-between items-center">
                   <Link to="/benefits-developers">
                     <Button
@@ -414,7 +408,7 @@ const BenefitsLiquidity = () => {
                       className="flex items-center gap-2"
                     >
                       <ArrowLeft className="h-4 w-4" />
-                      For Developers
+                      For Builders
                     </Button>
                   </Link>
                   <Link to="/ecosystem-benefits">

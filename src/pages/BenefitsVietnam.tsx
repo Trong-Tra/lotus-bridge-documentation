@@ -10,18 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Flag,
-  Building,
-  Users,
-  TrendingUp,
-  ArrowRight,
-  ArrowLeft,
-  Star,
-  Globe,
-  Lightbulb,
-} from "lucide-react";
+import { ArrowRight, ArrowLeft, Star, Globe, Lightbulb } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
 
@@ -67,37 +56,6 @@ const BenefitsVietnam = () => {
         "Mentorship and incubation programs",
         "Technical documentation in Vietnamese",
       ],
-    },
-  ];
-
-  const successMetrics = [
-    {
-      metric: "Developer Growth",
-      target: "500+",
-      description: "Vietnamese blockchain developers trained",
-      icon: Users,
-      color: "text-blue-600",
-    },
-    {
-      metric: "Market Cap Impact",
-      target: "$100M+",
-      description: "Vietnamese token market cap growth",
-      icon: TrendingUp,
-      color: "text-green-600",
-    },
-    {
-      metric: "Global Recognition",
-      target: "Top 10",
-      description: "Vietnam in global Web3 innovation rankings",
-      icon: Star,
-      color: "text-yellow-600",
-    },
-    {
-      metric: "Enterprise Adoption",
-      target: "50+",
-      description: "Vietnamese companies using Lotus Bridge",
-      icon: Building,
-      color: "text-purple-600",
     },
   ];
 
@@ -147,8 +105,8 @@ const BenefitsVietnam = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
                     🇻🇳 Vietnam's Crypto Industry
@@ -166,8 +124,8 @@ const BenefitsVietnam = () => {
             </section>
 
             {/* Core Benefits */}
-            <section className="py-16 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="grid gap-8">
                   {industryBenefits.map((benefit, index) => {
                     const IconComponent = benefit.icon;
@@ -197,11 +155,10 @@ const BenefitsVietnam = () => {
                                 }`}
                               />
                             </div>
-                            <Flag className="h-5 w-5 text-red-600" />
+                            <CardTitle className="text-2xl">
+                              {benefit.title}
+                            </CardTitle>
                           </div>
-                          <CardTitle className="text-2xl">
-                            {benefit.title}
-                          </CardTitle>
                           <CardDescription className="text-lg">
                             {benefit.description}
                           </CardDescription>
@@ -228,52 +185,9 @@ const BenefitsVietnam = () => {
               </div>
             </section>
 
-            {/* Success Metrics */}
-            <section className="py-16 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🎯 Success Targets
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Measurable goals for Vietnam's blockchain industry growth
-                    through Lotus Bridge.
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  {successMetrics.map((metric, index) => {
-                    const IconComponent = metric.icon;
-                    return (
-                      <Card key={index} className="text-center">
-                        <CardHeader>
-                          <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-100 to-yellow-100 rounded-full flex items-center justify-center">
-                            <IconComponent
-                              className={`h-8 w-8 ${metric.color}`}
-                            />
-                          </div>
-                          <CardTitle className="text-3xl font-bold mb-2">
-                            {metric.target}
-                          </CardTitle>
-                          <CardDescription className="text-lg font-semibold">
-                            {metric.metric}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-sm text-muted-foreground">
-                            {metric.description}
-                          </p>
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
-
             {/* Strategic Initiatives */}
-            <section className="py-16 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-10 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
                     🌸 Strategic Initiatives
@@ -316,93 +230,9 @@ const BenefitsVietnam = () => {
               </div>
             </section>
 
-            {/* Vietnamese Token Ecosystem */}
-            <section className="py-16 px-6 bg-gradient-to-r from-red-50 to-yellow-50 border-t border-red-200">
-              <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🇻🇳 Vietnamese Token Ecosystem Growth
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Showcasing Vietnamese blockchain projects and tokens on the
-                    global stage.
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-8">
-                  <Card className="border-red-200">
-                    <CardHeader>
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-500 rounded-full mx-auto mb-3 flex items-center justify-center">
-                          <span className="text-white font-bold">AX</span>
-                        </div>
-                        <CardTitle>Gaming Ecosystem</CardTitle>
-                        <CardDescription>
-                          AXS, SLP, Ronin Network
-                        </CardDescription>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <p className="text-sm text-muted-foreground mb-3">
-                        Global expansion of Vietnamese gaming tokens through
-                        cross-chain access
-                      </p>
-                      <Badge variant="outline" className="text-xs">
-                        Play-to-Earn
-                      </Badge>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-yellow-200">
-                    <CardHeader>
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-green-500 rounded-full mx-auto mb-3 flex items-center justify-center">
-                          <span className="text-white font-bold">VN</span>
-                        </div>
-                        <CardTitle>Stablecoin Infrastructure</CardTitle>
-                        <CardDescription>VNDC, VNST</CardDescription>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <p className="text-sm text-muted-foreground mb-3">
-                        Vietnamese stablecoins connecting local and global
-                        markets
-                      </p>
-                      <Badge variant="outline" className="text-xs">
-                        DeFi Infrastructure
-                      </Badge>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-red-200">
-                    <CardHeader>
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-purple-500 rounded-full mx-auto mb-3 flex items-center justify-center">
-                          <span className="text-white font-bold">KA</span>
-                        </div>
-                        <CardTitle>Native Blockchain</CardTitle>
-                        <CardDescription>
-                          KAI, C98, Vietnamese L1s
-                        </CardDescription>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <p className="text-sm text-muted-foreground mb-3">
-                        Vietnamese blockchain platforms gaining global
-                        interoperability
-                      </p>
-                      <Badge variant="outline" className="text-xs">
-                        Infrastructure
-                      </Badge>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </section>
-
             {/* Call to Action */}
-            <section className="py-16 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-10 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <Card className="bg-gradient-to-r from-red-500/10 to-yellow-500/10 border-red-200">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
@@ -420,21 +250,6 @@ const BenefitsVietnam = () => {
                       Vietnamese innovation to the world while building
                       sustainable value for our local ecosystem.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-red-600 to-yellow-600 text-white"
-                      >
-                        Join the Movement
-                      </Button>
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-red-300"
-                      >
-                        Partner with Us
-                      </Button>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -442,7 +257,7 @@ const BenefitsVietnam = () => {
 
             {/* Navigation */}
             <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-6xl">
+              <div className="container mx-auto max-w-5xl">
                 <div className="flex justify-between items-center">
                   <Link to="/benefits-liquidity">
                     <Button

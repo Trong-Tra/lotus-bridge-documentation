@@ -24,9 +24,44 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const BenefitsUsers = () => {
   const { t, language } = useLanguage();
+
+  useEffect(() => {
+    const handleTokenHover = (event: MouseEvent) => {
+      const tokenCard = event.currentTarget as HTMLElement;
+      const img = tokenCard.querySelector("img");
+
+      if (img) {
+        // Remove any existing animation
+        img.style.animation = "none";
+        // Force reflow
+        void img.offsetHeight;
+        // Add the animation
+        img.style.animation = "tokenIconSpin 0.8s ease-in-out";
+
+        // Clean up after animation completes
+        setTimeout(() => {
+          img.style.animation = "";
+        }, 800);
+      }
+    };
+
+    // Add event listeners to all token cards
+    const tokenCards = document.querySelectorAll(".token-icon-hover");
+    tokenCards.forEach((card) => {
+      card.addEventListener("mouseenter", handleTokenHover);
+    });
+
+    // Cleanup
+    return () => {
+      tokenCards.forEach((card) => {
+        card.removeEventListener("mouseenter", handleTokenHover);
+      });
+    };
+  }, []);
 
   const userBenefits = [
     {
@@ -100,8 +135,8 @@ const BenefitsUsers = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
                     👥 User Benefits
@@ -119,8 +154,8 @@ const BenefitsUsers = () => {
             </section>
 
             {/* Core Benefits */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="grid gap-8">
                   {userBenefits.map((benefit, index) => {
                     const IconComponent = benefit.icon;
@@ -150,10 +185,10 @@ const BenefitsUsers = () => {
                                 }`}
                               />
                             </div>
+                            <CardTitle className="text-2xl">
+                              {benefit.title}
+                            </CardTitle>
                           </div>
-                          <CardTitle className="text-2xl">
-                            {benefit.title}
-                          </CardTitle>
                           <CardDescription className="text-lg">
                             {benefit.description}
                           </CardDescription>
@@ -181,8 +216,8 @@ const BenefitsUsers = () => {
             </section>
 
             {/* User Scenarios */}
-            <section className="py-16 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-10 px-6 bg-muted/20">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
                     🇻🇳 Real Vietnamese User Scenarios
@@ -237,8 +272,8 @@ const BenefitsUsers = () => {
             </section>
 
             {/* Vietnamese Token Showcase */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
+            <section className="py-12 px-6">
+              <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
                     🌸 Vietnamese Token Integration
@@ -255,58 +290,66 @@ const BenefitsUsers = () => {
                       token: "AXS",
                       name: "Axie Infinity",
                       chain: "Ronin",
-                      color: "bg-blue-500",
+                      image:
+                        "https://coin-images.coingecko.com/coins/images/13029/large/axie_infinity_logo.png?1696512817",
                     },
                     {
                       token: "SLP",
                       name: "Smooth Love Potion",
                       chain: "Ronin",
-                      color: "bg-pink-500",
+                      image:
+                        "https://coin-images.coingecko.com/coins/images/10366/large/SLP.png?1696510368",
                     },
                     {
                       token: "VNDC",
                       name: "VND Coin",
                       chain: "Multiple",
-                      color: "bg-red-500",
+                      image:
+                        "https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740",
                     },
                     {
                       token: "VNST",
                       name: "Vietnam Stable Token",
                       chain: "Multiple",
-                      color: "bg-green-500",
+                      image:
+                        "https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75",
                     },
                     {
                       token: "KAI",
                       name: "KardiaChain",
                       chain: "Kardia",
-                      color: "bg-purple-500",
+                      image:
+                        "https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172",
                     },
                     {
                       token: "C98",
                       name: "Coin98",
                       chain: "Multiple",
-                      color: "bg-yellow-500",
+                      image:
+                        "https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677",
                     },
                     {
                       token: "KNC",
                       name: "Kyber Network",
                       chain: "Ethereum",
-                      color: "bg-indigo-500",
+                      image:
+                        "https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562",
                     },
                     {
                       token: "SIPHER",
                       name: "Sipher",
                       chain: "Ethereum",
-                      color: "bg-teal-500",
+                      image:
+                        "https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453",
                     },
                   ].map((token, index) => (
-                    <Card key={index} className="text-center">
+                    <Card key={index} className="text-center token-icon-hover">
                       <CardHeader>
-                        <div
-                          className={`w-12 h-12 ${token.color} rounded-full mx-auto mb-2 flex items-center justify-center text-white font-bold`}
-                        >
-                          {token.token.slice(0, 2)}
-                        </div>
+                        <img
+                          src={token.image}
+                          alt={token.token}
+                          className="w-12 h-12 mx-auto mb-2 rounded-full"
+                        />
                         <CardTitle className="text-lg">{token.token}</CardTitle>
                         <CardDescription>{token.name}</CardDescription>
                       </CardHeader>
@@ -323,7 +366,7 @@ const BenefitsUsers = () => {
 
             {/* Navigation */}
             <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-6xl">
+              <div className="container mx-auto max-w-5xl">
                 <div className="flex justify-between items-center">
                   <Link to="/ecosystem-benefits">
                     <Button
@@ -339,7 +382,7 @@ const BenefitsUsers = () => {
                   </Link>
                   <Link to="/benefits-developers">
                     <Button className="flex items-center gap-2">
-                      For Developers
+                      For Builders
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>

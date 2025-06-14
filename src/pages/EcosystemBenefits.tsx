@@ -117,7 +117,7 @@ const EcosystemBenefits = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Code className="h-5 w-5" />
-                          For Developers
+                          For Builders
                         </CardTitle>
                         <CardDescription>
                           Tools and resources for innovation
@@ -125,15 +125,16 @@ const EcosystemBenefits = () => {
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Comprehensive SDKs, APIs, and documentation empower
-                          developers to build the next generation of cross-chain
-                          applications.
+                          Leverage Lotus Bridge protocol to build innovative
+                          smart contracts, create revolutionary dApps, and
+                          launch successful startups in the Vietnamese
+                          blockchain ecosystem.
                         </p>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• SDKs and APIs for cross-chain dApps</li>
-                          <li>• Vietnamese-localized documentation</li>
-                          <li>• Developer community support</li>
-                          <li>• Integration examples and tutorials</li>
+                          <li>• Smart contract integration opportunities</li>
+                          <li>• dApp development ecosystem</li>
+                          <li>• DeFi innovation opportunities</li>
+                          <li>• Startup funding and support programs</li>
                         </ul>
                         <Button
                           variant="outline"
@@ -141,7 +142,7 @@ const EcosystemBenefits = () => {
                           asChild
                         >
                           <Link to="/benefits-developers">
-                            Discover Developer Tools
+                            Discover Builder Opportunities
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -186,7 +187,6 @@ const EcosystemBenefits = () => {
                     <Card className="border-orange-500/20 hover:border-orange-500/40 transition-colors">
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
-                          <Flag className="h-5 w-5" />
                           🇻🇳 For Vietnam's Crypto Industry
                         </CardTitle>
                         <CardDescription>
@@ -223,7 +223,6 @@ const EcosystemBenefits = () => {
                   <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
-                        <Globe className="h-5 w-5" />
                         🌐 Network Effect
                       </CardTitle>
                       <CardDescription>
