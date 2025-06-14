@@ -155,7 +155,7 @@ const Introduction = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Flower className="h-5 w-5" />
-                        🌸 The Lotus Symbol
+                        The Lotus Symbol
                       </CardTitle>
                       <CardDescription>
                         Cultural heritage meets technological innovation

@@ -56,7 +56,7 @@ export function IntroductionSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-primary">
                 <Zap className="w-6 h-6" />
-                🌸 Lotus Bridge Solution
+                Lotus Bridge Solution
               </CardTitle>
             </CardHeader>
             <CardContent>

@@ -17,12 +17,9 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between px-6">
         <div className="flex items-center gap-4">
-          <div className="w-8 h-8 lotus-gradient rounded-lg flex items-center justify-center lotus-bloom">
-            <span className="text-white font-bold">蓮</span>
-          </div>
           <div>
             <h1 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              {t("hero.title")} Documentation
+              Lotus Bridge Documentation
             </h1>
           </div>
         </div>

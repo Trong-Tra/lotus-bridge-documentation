@@ -279,12 +279,11 @@ const Index = () => {
             <footer className="bg-card border-t border-border/50 py-12 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center">
-                  <div className="w-16 h-16 lotus-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 lotus-bloom">
-                    <span className="text-2xl text-white font-bold">蓮</span>
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    🌸 Lotus Bridge
-                  </h3>
+                  <img
+                    src="/lotus-logo.png"
+                    alt="Lotus Bridge Logo"
+                    className="w-80 h-80 mx-auto object-contain mb-1"
+                  />
                   <p className="text-muted-foreground mb-4 vietnamese-text">
                     Built by Vietnam. Bridging the World.
                   </p>

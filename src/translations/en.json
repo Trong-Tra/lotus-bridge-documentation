@@ -34,7 +34,7 @@
         "documentation": "Documentation"
     },
     "hero": {
-        "title": "🌸 Lotus Bridge",
+        "title": "Lotus Bridge",
         "subtitleVietnamese": "Xây dựng bởi Việt Nam. Kết nối thế giới.",
         "mission": "From the heart of Vietnam blooms the Lotus — bridging blockchains, cultures, and futures. This is not just about swapping tokens. It's about freedom of movement, sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
         "getStarted": "Get Started",
@@ -46,7 +46,7 @@
         "title": "🌍 The Problem: A Fragmented World of Chains",
         "description": "Today's blockchain landscape is vast, vibrant, and… fractured. Each network speaks its own language, runs on its own logic, and is home to unique communities and ecosystems. But for the average user — especially those in emerging markets like Vietnam — navigating this complexity feels like crossing rivers with no bridges.",
         "solution": {
-            "title": "🌸 Enter Lotus Bridge – Blooming Unity From Diversity",
+            "title": "Enter Lotus Bridge – Blooming Unity From Diversity",
             "description": "Inspired by the Lotus — a sacred symbol of purity, resilience, and rebirth in Vietnamese culture — Lotus Bridge rises as a trustless, multi-chain, architecture-agnostic super-bridge."
         },
         "mission": {
@@ -319,7 +319,7 @@
             "It's about sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
             "Lotus Bridge doesn't just move assets — it moves the future of Vietnamese crypto, and with it, reshapes global DeFi."
         ],
-        "tagline": "🌸 Lotus Bridge - Built by Vietnam. Bridging the World."
+        "tagline": "Lotus Bridge - Built by Vietnam. Bridging the World."
     },
     "architecture": {
         "title": "Architecture & Core Concept",

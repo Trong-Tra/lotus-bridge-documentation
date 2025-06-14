@@ -159,7 +159,7 @@ const Background = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-primary">
                         <Flag className="h-5 w-5" />
-                        🌸 Enter Lotus Bridge – Blooming Unity From Diversity
+                        Enter Lotus Bridge – Blooming Unity From Diversity
                       </CardTitle>
                       <CardDescription>
                         A Vietnamese-inspired solution for global blockchain

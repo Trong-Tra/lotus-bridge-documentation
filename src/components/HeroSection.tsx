@@ -29,13 +29,12 @@ export function HeroSection() {
 
       <div className="relative z-10 text-center max-w-4xl px-6">
         {/* Logo with lotus symbol */}
-        <div className="mb-8">
-          <div className="w-24 h-24 mx-auto lotus-gradient rounded-2xl flex items-center justify-center lotus-bloom mb-6">
-            <span className="text-4xl text-white font-bold">蓮</span>
-          </div>
-          <h1 className="text-6xl font-bold leading-tight mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            🌸 Lotus Bridge
-          </h1>
+        <div className="mb-2">
+          <img
+            src="/lotus-logo.png"
+            alt="Lotus Bridge Logo"
+            className="w-96 h-96 mx-auto object-contain mb-1"
+          />
           <p className="text-xl text-muted-foreground vietnamese-text mb-2">
             Built by Vietnam. Bridging the World.
           </p>

@@ -224,19 +224,16 @@ export function AppSidebar() {
 
   return (
     <Sidebar className="border-r border-border/50">
-      <SidebarHeader className="p-6">
+      <SidebarHeader className="p-1">
         <Link
           to="/"
-          className="flex items-center gap-3 hover:opacity-90 transition-opacity"
+          className="flex justify-center hover:opacity-90 transition-opacity"
         >
-          <div className="w-10 h-10 lotus-gradient rounded-lg flex items-center justify-center lotus-bloom">
-            <span className="text-white font-bold text-lg">蓮</span>
-          </div>
-          <div>
-            <h2 className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              {t("hero.title")}
-            </h2>
-          </div>
+          <img
+            src="/lotus-logo.png"
+            alt="Lotus Bridge Logo"
+            className="w-32 h-32 object-contain"
+          />
         </Link>
       </SidebarHeader>
 
