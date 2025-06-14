@@ -1,4 +1,3 @@
-
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -10,7 +9,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
   MapPin,
   Calendar,
@@ -26,8 +26,12 @@ import {
   Code,
   Coins,
   TrendingUp,
+  ArrowRight,
+  ArrowLeft,
+  AlertTriangle,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
+import { Link } from "react-router-dom";
 
 const Roadmap = () => {
   const { t } = useLanguage();
@@ -49,598 +53,218 @@ const Roadmap = () => {
                     Development Roadmap
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    🚀 Lotus Bridge Roadmap
+                    Roadmap
                   </h1>
-                  <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                    Strategic milestones and feature releases planned for Lotus
-                    Bridge. From foundation to maturity, building the future of
-                    cross-chain infrastructure.
+                  <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Our journey to revolutionize cross-chain interactions with
+                    Vietnamese innovation at the forefront.
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Progress Overview */}
-            <section className="py-12 px-6 border-b">
-              <div className="container mx-auto max-w-6xl">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-green-500 mb-1">
-                      2
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Completed Phases
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary mb-1">
-                      1
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Current Phase
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent mb-1">2</div>
-                    <div className="text-sm text-muted-foreground">
-                      Upcoming Phases
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-muted-foreground mb-1">
-                      75%
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      Overall Progress
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Main Roadmap */}
+            {/* Main Content */}
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="space-y-8">
-                  {/* Phase 1: Foundation - Completed */}
-                  <Card className="border-green-200 bg-green-50/50 dark:border-green-800 dark:bg-green-950/20">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="flex items-center gap-3">
-                          <CheckCircle className="h-6 w-6 text-green-500" />
-                          Phase 1: Foundation
-                        </CardTitle>
-                        <div className="flex items-center gap-2">
-                          <Badge
-                            variant="secondary"
-                            className="bg-green-100 text-green-800"
-                          >
-                            Q1 2024
-                          </Badge>
-                          <Badge className="bg-green-500 text-white">
-                            Completed
-                          </Badge>
-                        </div>
+                  {/* Wireframe Placeholder */}
+                  <Card className="border-2 border-dashed border-muted-foreground/30">
+                    <CardHeader className="text-center">
+                      <div className="flex items-center justify-center gap-2 mb-4">
+                        <MapPin className="h-8 w-8 text-muted-foreground" />
+                        <div className="text-4xl">🏗️</div>
                       </div>
-                      <CardDescription>
-                        Core protocol development and initial infrastructure
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <Progress value={100} className="h-2" />
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-green-800 dark:text-green-400">
-                            Technical Achievements
-                          </h4>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Core protocol development and testing
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Ethereum ↔ Polygon bridge launch
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Smart contract architecture finalization
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Initial validator network setup
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-green-800 dark:text-green-400">
-                            Security & Community
-                          </h4>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Initial security audits completed
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Bug bounty program launched
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Community building initiatives
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Early adopter program
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Phase 2: Expansion - Completed */}
-                  <Card className="border-green-200 bg-green-50/50 dark:border-green-800 dark:bg-green-950/20">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="flex items-center gap-3">
-                          <CheckCircle className="h-6 w-6 text-green-500" />
-                          Phase 2: Expansion
-                        </CardTitle>
-                        <div className="flex items-center gap-2">
-                          <Badge
-                            variant="secondary"
-                            className="bg-green-100 text-green-800"
-                          >
-                            Q2-Q3 2024
-                          </Badge>
-                          <Badge className="bg-green-500 text-white">
-                            Completed
-                          </Badge>
-                        </div>
-                      </div>
-                      <CardDescription>
-                        Multi-chain support and advanced features
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <Progress value={100} className="h-2" />
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-green-800 dark:text-green-400">
-                            Network Expansion
-                          </h4>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              BSC, Avalanche, Arbitrum integration
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Advanced trading features
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              MEV protection implementation
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Cross-chain swap optimization
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-green-800 dark:text-green-400">
-                            Governance & Partnerships
-                          </h4>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Governance token launch
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              DAO formation and initial proposals
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Strategic DeFi protocol partnerships
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Vietnamese market partnerships
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Phase 3: Innovation - Current */}
-                  <Card className="border-primary/50 bg-primary/5">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="flex items-center gap-3">
-                          <div className="w-6 h-6 rounded-full bg-primary border-4 border-primary/20 flex items-center justify-center">
-                            <div className="w-2 h-2 rounded-full bg-white animate-pulse"></div>
-                          </div>
-                          Phase 3: Innovation
-                        </CardTitle>
-                        <div className="flex items-center gap-2">
-                          <Badge variant="secondary">Q4 2024 - Q2 2025</Badge>
-                          <Badge className="bg-primary text-white">
-                            In Progress
-                          </Badge>
-                        </div>
-                      </div>
-                      <CardDescription>
-                        Advanced consensus algorithm and zero-knowledge
-                        integration
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <Progress value={65} className="h-2" />
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-primary">
-                            Technical Innovation
-                          </h4>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Lotus Consensus Algorithm implementation
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <Clock className="h-4 w-4 text-primary mt-0.5" />
-                              Zero-knowledge proof integration
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <Clock className="h-4 w-4 text-primary mt-0.5" />
-                              Advanced state verification protocol
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <Clock className="h-4 w-4 text-primary mt-0.5" />
-                              Cross-architecture compatibility layer
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-primary">
-                            User Experience
-                          </h4>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                              Mobile app beta release
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <Clock className="h-4 w-4 text-primary mt-0.5" />
-                              Enhanced user interface
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <Clock className="h-4 w-4 text-primary mt-0.5" />
-                              Enterprise partnership features
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <Clock className="h-4 w-4 text-primary mt-0.5" />
-                              Institutional trading tools
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Phase 4: Ecosystem - Planned */}
-                  <Card className="border-accent/50 bg-accent/5">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="flex items-center gap-3">
-                          <Target className="h-6 w-6 text-accent" />
-                          Phase 4: Ecosystem
-                        </CardTitle>
-                        <div className="flex items-center gap-2">
-                          <Badge variant="secondary">Q3 2025 - Q2 2026</Badge>
-                          <Badge variant="outline">Planned</Badge>
-                        </div>
-                      </div>
-                      <CardDescription>
-                        Layer 2 solutions and comprehensive ecosystem
-                        development
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <Progress value={0} className="h-2" />
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-accent">
-                            Infrastructure Scaling
-                          </h4>
-                          <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Layer 2 solutions and rollup integrations
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Cross-chain smart contract execution
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Advanced validator network expansion
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              High-throughput transaction processing
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-accent">
-                            Developer Ecosystem
-                          </h4>
-                          <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Comprehensive developer SDK
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Integration tools and APIs
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Global expansion initiatives
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-accent mt-0.5"></div>
-                              Regulatory compliance framework
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Phase 5: Maturity - Future */}
-                  <Card className="border-muted-foreground/30 bg-muted/20">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="flex items-center gap-3">
-                          <Rocket className="h-6 w-6 text-muted-foreground" />
-                          Phase 5: Maturity
-                        </CardTitle>
-                        <div className="flex items-center gap-2">
-                          <Badge variant="secondary">Q3+ 2026</Badge>
-                          <Badge variant="outline">Future</Badge>
-                        </div>
-                      </div>
-                      <CardDescription>
-                        Advanced DeFi primitives and autonomous governance
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <Progress value={0} className="h-2" />
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-muted-foreground">
-                            Advanced Features
-                          </h4>
-                          <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Advanced DeFi primitives and yield farming
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Cross-chain NFT and gaming integrations
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              AI-powered routing optimization
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Quantum-resistant security upgrades
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="space-y-3">
-                          <h4 className="font-semibold text-muted-foreground">
-                            Autonomous Operations
-                          </h4>
-                          <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Fully autonomous protocol governance
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Self-upgrading smart contracts
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Research into next-generation technologies
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-4 h-4 rounded-full border-2 border-muted-foreground mt-0.5"></div>
-                              Global Web3 infrastructure leadership
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* Updated Genesis Launch Roadmap */}
-                <div className="mt-16">
-                  <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/30">
-                    <CardHeader>
-                      <CardTitle className="text-center text-xl">
-                        🌸 Updated Roadmap: Genesis Launch (v1.0.0)
+                      <CardTitle className="text-2xl text-muted-foreground">
+                        Development Roadmap
                       </CardTitle>
-                      <CardDescription className="text-center">
-                        Refined timeline focusing on core Vietnamese market
-                        needs and global expansion
+                      <CardDescription className="text-lg">
+                        Comprehensive development timeline and milestones coming
+                        soon
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {/* Current: Beta Launch */}
-                        <Card className="border-primary/50 bg-primary/5">
+                      <div className="bg-muted/30 rounded-lg p-8 text-center">
+                        <div className="text-muted-foreground">
+                          <div className="text-6xl mb-4">🗺️</div>
+                          <h3 className="font-semibold text-xl mb-3">
+                            Roadmap Timeline Diagrams
+                          </h3>
+                          <p className="text-sm mb-4">
+                            Detailed development phases, milestones, and feature
+                            rollouts
+                          </p>
+                          <Badge variant="outline" className="text-xs">
+                            Incoming Documentation
+                          </Badge>
+                        </div>
+                      </div>
+
+                      {/* Wireframe Content Preview */}
+                      <div className="grid md:grid-cols-4 gap-6">
+                        <Card className="border-dashed border-muted-foreground/20">
                           <CardHeader className="pb-3">
-                            <div className="flex items-center justify-between">
-                              <Badge className="bg-primary text-white">
-                                Current
-                              </Badge>
-                              <Calendar className="h-4 w-4 text-primary" />
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <Rocket className="h-6 w-6 text-muted-foreground" />
                             </div>
-                            <CardTitle className="text-sm">
-                              Q3 2025: Beta Launch
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Phase 1: Foundation
                             </CardTitle>
                           </CardHeader>
-                          <CardContent className="space-y-2">
-                            <div className="flex items-center gap-2 text-xs">
-                              <Zap className="h-3 w-3 text-primary" />
-                              <span>EVM + Solana support</span>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-3/4"></div>
+                              <div className="h-3 bg-muted/30 rounded w-1/2"></div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs">
-                              <Shield className="h-3 w-3 text-primary" />
-                              <span>Core security audits</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-xs">
-                              <Users className="h-3 w-3 text-primary" />
-                              <span>Vietnamese early adopters</span>
-                            </div>
-                            <Progress value={85} className="h-1 mt-2" />
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Timeline
+                            </Badge>
                           </CardContent>
                         </Card>
 
-                        {/* Upcoming: Tokenomics */}
-                        <Card className="border-accent/50 bg-accent/5">
+                        <Card className="border-dashed border-muted-foreground/20">
                           <CardHeader className="pb-3">
-                            <div className="flex items-center justify-between">
-                              <Badge
-                                variant="outline"
-                                className="border-accent text-accent"
-                              >
-                                Upcoming
-                              </Badge>
-                              <Calendar className="h-4 w-4 text-accent" />
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <Building2 className="h-6 w-6 text-muted-foreground" />
                             </div>
-                            <CardTitle className="text-sm">
-                              Q4 2025: Tokenomics
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Phase 2: Infrastructure
                             </CardTitle>
                           </CardHeader>
-                          <CardContent className="space-y-2">
-                            <div className="flex items-center gap-2 text-xs">
-                              <TrendingUp className="h-3 w-3 text-accent" />
-                              <span>LP incentive programs</span>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-5/6"></div>
+                              <div className="h-3 bg-muted/30 rounded w-2/3"></div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs">
-                              <Coins className="h-3 w-3 text-accent" />
-                              <span>LOTUS token launch</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-xs">
-                              <Target className="h-3 w-3 text-accent" />
-                              <span>Revenue sharing model</span>
-                            </div>
-                            <Progress value={25} className="h-1 mt-2" />
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Timeline
+                            </Badge>
                           </CardContent>
                         </Card>
 
-                        {/* Planned: Mobile Integration */}
-                        <Card className="border-muted-foreground/30 bg-muted/10">
+                        <Card className="border-dashed border-muted-foreground/20">
                           <CardHeader className="pb-3">
-                            <div className="flex items-center justify-between">
-                              <Badge variant="outline">Planned</Badge>
-                              <Calendar className="h-4 w-4 text-muted-foreground" />
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <Globe className="h-6 w-6 text-muted-foreground" />
                             </div>
-                            <CardTitle className="text-sm">
-                              Q1 2026: Mobile Integration
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Phase 3: Expansion
                             </CardTitle>
                           </CardHeader>
-                          <CardContent className="space-y-2">
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                              <Building2 className="h-3 w-3" />
-                              <span>Mobile wallet integration</span>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-4/5"></div>
+                              <div className="h-3 bg-muted/30 rounded w-3/5"></div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                              <Users className="h-3 w-3" />
-                              <span>Mobile-first experience</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                              <Globe className="h-3 w-3" />
-                              <span>Regional expansion</span>
-                            </div>
-                            <Progress value={0} className="h-1 mt-2" />
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Timeline
+                            </Badge>
                           </CardContent>
                         </Card>
 
-                        {/* Future: DAO Launch */}
-                        <Card className="border-muted-foreground/30 bg-muted/10">
+                        <Card className="border-dashed border-muted-foreground/20">
                           <CardHeader className="pb-3">
-                            <div className="flex items-center justify-between">
-                              <Badge variant="outline">Future</Badge>
-                              <Calendar className="h-4 w-4 text-muted-foreground" />
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <TrendingUp className="h-6 w-6 text-muted-foreground" />
                             </div>
-                            <CardTitle className="text-sm">
-                              Q2 2026: DAO Launch
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Phase 4: Optimization
                             </CardTitle>
                           </CardHeader>
-                          <CardContent className="space-y-2">
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                              <Users className="h-3 w-3" />
-                              <span>DAO governance model</span>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-2/3"></div>
+                              <div className="h-3 bg-muted/30 rounded w-1/3"></div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                              <Code className="h-3 w-3" />
-                              <span>Community voting</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                              <Target className="h-3 w-3" />
-                              <span>Protocol autonomy</span>
-                            </div>
-                            <Progress value={0} className="h-1 mt-2" />
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Timeline
+                            </Badge>
                           </CardContent>
                         </Card>
                       </div>
 
-                      <div className="bg-gradient-to-r from-background to-muted/20 rounded-lg p-6 border">
-                        <h4 className="font-semibold mb-3 text-center">
-                          🇻🇳 Vietnam-First, Global-Ready Strategy
+                      {/* Vietnamese Focus Section */}
+                      <Card className="border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20">
+                        <CardHeader>
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-2xl">🇻🇳</span>
+                            <CardTitle className="text-green-800 dark:text-green-400">
+                              Vietnamese Innovation Priority
+                            </CardTitle>
+                          </div>
+                          <CardDescription>
+                            Dedicated timeline for Vietnamese market features
+                            and ecosystem integration
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div className="space-y-2">
+                              <div className="h-3 bg-green-200/50 dark:bg-green-800/50 rounded"></div>
+                              <div className="h-3 bg-green-200/50 dark:bg-green-800/50 rounded w-4/5"></div>
+                              <div className="h-3 bg-green-200/50 dark:bg-green-800/50 rounded w-3/5"></div>
+                            </div>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-green-200/50 dark:bg-green-800/50 rounded w-5/6"></div>
+                              <div className="h-3 bg-green-200/50 dark:bg-green-800/50 rounded w-2/3"></div>
+                              <div className="h-3 bg-green-200/50 dark:bg-green-800/50 rounded w-1/2"></div>
+                            </div>
+                          </div>
+                          <Badge
+                            variant="outline"
+                            className="mt-3 text-xs text-green-700 dark:text-green-300"
+                          >
+                            Future Vietnamese Features
+                          </Badge>
+                        </CardContent>
+                      </Card>
+
+                      <div className="text-center py-6">
+                        <AlertTriangle className="h-8 w-8 text-orange-500 mx-auto mb-3" />
+                        <h4 className="font-semibold text-lg mb-2">
+                          Development in Progress
                         </h4>
-                        <div className="grid md:grid-cols-3 gap-4 text-sm">
-                          <div className="text-center">
-                            <div className="font-semibold text-primary mb-1">
-                              Local Foundation
-                            </div>
-                            <p className="text-muted-foreground text-xs">
-                              Build strong Vietnamese user base and partnerships
-                              first
-                            </p>
-                          </div>
-                          <div className="text-center">
-                            <div className="font-semibold text-accent mb-1">
-                              Regional Expansion
-                            </div>
-                            <p className="text-muted-foreground text-xs">
-                              Expand to Southeast Asia with cultural sensitivity
-                            </p>
-                          </div>
-                          <div className="text-center">
-                            <div className="font-semibold text-purple-600 mb-1">
-                              Global Leadership
-                            </div>
-                            <p className="text-muted-foreground text-xs">
-                              Position Vietnam as Web3 infrastructure leader
-                            </p>
-                          </div>
-                        </div>
+                        <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+                          Our comprehensive roadmap and timeline diagrams are
+                          currently being developed. This section will include
+                          detailed development phases, feature rollouts,
+                          Vietnamese market priorities, and community governance
+                          milestones.
+                        </p>
                       </div>
                     </CardContent>
                   </Card>
+
+                  <Separator />
+
+                  {/* Navigation */}
+                  <div className="flex justify-between items-center">
+                    <Button variant="outline" className="gap-2" asChild>
+                      <Link to="/security">
+                        <ArrowLeft className="h-4 w-4" />
+                        Back to Security
+                      </Link>
+                    </Button>
+
+                    <div className="text-center">
+                      <h3 className="text-lg font-semibold">
+                        Continue exploring
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Learn about our tokenomics
+                      </p>
+                    </div>
+
+                    <Button className="gap-2" asChild>
+                      <Link to="/tokenomics">
+                        Continue to Tokenomics
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </section>

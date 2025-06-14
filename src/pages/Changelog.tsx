@@ -1,4 +1,3 @@
-
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -15,16 +14,17 @@ import { Separator } from "@/components/ui/separator";
 import {
   Calendar,
   GitBranch,
-  Star,
-  AlertCircle,
   CheckCircle,
   Clock,
   Zap,
   Shield,
   Users,
   Globe,
+  ArrowRight,
+  ArrowLeft,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
+import { Link } from "react-router-dom";
 
 const Changelog = () => {
   const { t } = useLanguage();
@@ -43,13 +43,14 @@ const Changelog = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    {t("changelog.badge")}
+                    Version History
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    {t("changelog.title")}
+                    Changelog
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    {t("changelog.subtitle")}
+                    Track the development journey of Lotus Bridge from inception
+                    to the revolutionary cross-chain platform.
                   </p>
                 </div>
               </div>
@@ -59,451 +60,321 @@ const Changelog = () => {
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="space-y-8">
-                  {/* Latest Release */}
+                  {/* Current Development Version */}
                   <Card className="border-primary/20 bg-gradient-to-r from-primary/5 to-accent/5">
                     <CardHeader>
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+                          <div className="w-3 h-3 rounded-full bg-orange-500 animate-pulse"></div>
                           <CardTitle className="text-2xl">
-                            v2.1.0 - "Lotus Consensus"
+                            v0.1.0-alpha - "Lotus Foundation"
                           </CardTitle>
-                          <Badge>Latest</Badge>
+                          <Badge
+                            variant="outline"
+                            className="border-green-500 text-green-600"
+                          >
+                            Completed
+                          </Badge>
                         </div>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Calendar className="h-4 w-4" />
-                          December 15, 2024
+                          May 2025 - June 2025
                         </div>
                       </div>
                       <CardDescription>
-                        Major release introducing the Lotus Consensus Algorithm
-                        and enhanced security features
+                        First alpha version of Lotus Bridge - foundational
+                        architecture and core features
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      <div className="grid md:grid-cols-3 gap-6">
-                        <div className="space-y-3">
-                          <div className="flex items-center gap-2">
-                            <Star className="h-4 w-4 text-yellow-500" />
-                            <h4 className="font-semibold">
-                              {t("changelog.majorUpdates")}
-                            </h4>
-                          </div>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Lotus Consensus Algorithm (LCA) implementation
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Zero-knowledge proof integration for enhanced
-                                privacy
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>Advanced MEV protection mechanisms</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Real-time transaction monitoring dashboard
-                              </span>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="space-y-3">
-                          <div className="flex items-center gap-2">
-                            <Zap className="h-4 w-4 text-blue-500" />
-                            <h4 className="font-semibold">
-                              {t("changelog.improvements")}
-                            </h4>
-                          </div>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                40% reduction in transaction finality time
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Enhanced UI/UX with mobile-first design
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Optimized gas consumption (25% savings)
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Improved error handling and user feedback
-                              </span>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="space-y-3">
-                          <div className="flex items-center gap-2">
-                            <Shield className="h-4 w-4 text-green-500" />
-                            <h4 className="font-semibold">
-                              {t("changelog.security")}
-                            </h4>
-                          </div>
-                          <ul className="space-y-2 text-sm">
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>CertiK security audit completion</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Enhanced validator slashing conditions
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Emergency pause mechanism implementation
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
-                              <span>
-                                Bug bounty program expansion ($1M pool)
-                              </span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <Separator />
-
-                      <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
+                      <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
                         <div className="flex items-center gap-2 mb-2">
-                          <AlertCircle className="h-4 w-4 text-amber-600" />
-                          <span className="font-medium text-amber-800 dark:text-amber-400">
-                            {t("changelog.breaking")}
-                          </span>
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <h4 className="font-semibold text-green-800 dark:text-green-400">
+                            Development Completed
+                          </h4>
                         </div>
-                        <ul className="text-sm text-amber-700 dark:text-amber-300 space-y-1">
-                          <li>
-                            • API v1 endpoints deprecated - migrate to v2 before
-                            January 31, 2025
-                          </li>
-                          <li>
-                            • Legacy bridge contracts on testnets will be sunset
-                            on January 15, 2025
-                          </li>
-                          <li>
-                            • Minimum stake requirement increased to 100,000
-                            LOTUS for validators
-                          </li>
-                        </ul>
+                        <p className="text-sm text-green-700 dark:text-green-300">
+                          The first alpha version of Lotus Bridge has been
+                          successfully completed. All core architecture,
+                          documentation, and initial bridge capabilities have
+                          been fully implemented and tested.
+                        </p>
                       </div>
-                    </CardContent>
-                  </Card>
 
-                  {/* Previous Releases */}
-                  <Card>
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
-                          <CardTitle>
-                            v2.0.3 - "Stability & Performance"
-                          </CardTitle>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4" />
-                          November 28, 2024
-                        </div>
-                      </div>
-                      <CardDescription>
-                        Performance optimizations and stability improvements
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
                       <div className="grid md:grid-cols-2 gap-6">
-                        <div>
-                          <h4 className="font-semibold mb-3 text-green-600">
-                            {t("changelog.improvements")}
-                          </h4>
-                          <ul className="space-y-1 text-sm">
-                            <li>
-                              • Reduced average transaction time to 18 seconds
+                        <div className="space-y-3">
+                          <div className="flex items-center gap-2">
+                            <CheckCircle className="h-4 w-4 text-green-500" />
+                            <h4 className="font-semibold text-green-700 dark:text-green-400">
+                              Completed Features
+                            </h4>
+                          </div>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>
+                                Documentation website and user interface
+                              </span>
                             </li>
-                            <li>
-                              • Fixed intermittent connection issues with
-                              MetaMask
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Vietnamese token integration catalog</span>
                             </li>
-                            <li>
-                              • Enhanced error messages for failed transactions
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Core concept and architecture design</span>
                             </li>
-                            <li>• Improved validator node synchronization</li>
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>
+                                Bilingual support (English/Vietnamese)
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Core bridge protocol development</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Smart contract architecture</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Security framework implementation</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Cross-chain validation system</span>
+                            </li>
                           </ul>
                         </div>
-                        <div>
-                          <h4 className="font-semibold mb-3 text-blue-600">
-                            {t("changelog.bugFixes")}
-                          </h4>
-                          <ul className="space-y-1 text-sm">
-                            <li>
-                              • Resolved token balance display inconsistencies
+
+                        <div className="space-y-3">
+                          <div className="flex items-center gap-2">
+                            <CheckCircle className="h-4 w-4 text-green-500" />
+                            <h4 className="font-semibold text-green-700 dark:text-green-400">
+                              Additional Achievements
+                            </h4>
+                          </div>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>
+                                AXS, SLP, VNDC, VNST token support
+                                implementation
+                              </span>
                             </li>
-                            <li>
-                              • Fixed rare edge case in cross-chain state
-                              verification
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>
+                                Vietnamese gaming ecosystem integration
+                              </span>
                             </li>
-                            <li>
-                              • Corrected fee calculation for large transactions
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Local DeFi protocol partnerships</span>
                             </li>
-                            <li>• Fixed mobile responsive layout issues</li>
+                            <li className="flex items-start gap-2">
+                              <CheckCircle className="h-3 w-3 text-green-500 mt-1" />
+                              <span>Vietnamese community governance</span>
+                            </li>
                           </ul>
+                        </div>
+                      </div>
+
+                      <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                        <div className="flex items-center gap-2 mb-2">
+                          <Globe className="h-4 w-4 text-blue-600" />
+                          <h4 className="font-semibold text-blue-800 dark:text-blue-400">
+                            Supported Networks (Planned)
+                          </h4>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+                          <Badge variant="outline">Ethereum</Badge>
+                          <Badge variant="outline">BSC</Badge>
+                          <Badge variant="outline">Polygon</Badge>
+                          <Badge variant="outline">Solana</Badge>
+                          <Badge variant="outline">Ronin</Badge>
+                          <Badge variant="outline">Sui</Badge>
+                          <Badge variant="outline">Base</Badge>
+                          <Badge variant="outline">+ More</Badge>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  {/* Development Milestones */}
+                  <Card className="border-muted/50">
                     <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
-                          <CardTitle>
-                            v2.0.0 - "Multi-Chain Expansion"
-                          </CardTitle>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4" />
-                          October 15, 2024
-                        </div>
-                      </div>
+                      <CardTitle className="flex items-center gap-2">
+                        <GitBranch className="h-5 w-5" />
+                        Development Milestones
+                      </CardTitle>
                       <CardDescription>
-                        Major release with support for 6 additional blockchain
-                        networks
+                        Key achievements and upcoming targets for the first
+                        version
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div>
-                          <h4 className="font-semibold mb-3 text-purple-600">
-                            New Networks
-                          </h4>
-                          <ul className="space-y-1 text-sm">
-                            <li>• Arbitrum One mainnet support</li>
-                            <li>• Optimism mainnet integration</li>
-                            <li>• Fantom Opera network</li>
-                            <li>• Avalanche C-Chain support</li>
-                          </ul>
+                    <CardContent>
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4 p-4 rounded-lg bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">
+                          <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
+                          <div>
+                            <p className="font-medium text-green-800 dark:text-green-400">
+                              Project Inception & Documentation
+                            </p>
+                            <p className="text-sm text-green-700 dark:text-green-300">
+                              Completed foundation documentation, UI/UX design,
+                              and Vietnamese localization
+                            </p>
+                            <Badge variant="outline" className="mt-2 text-xs">
+                              May 2025
+                            </Badge>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="font-semibold mb-3 text-orange-600">
-                            Features
-                          </h4>
-                          <ul className="space-y-1 text-sm">
-                            <li>• Dynamic fee adjustment algorithm</li>
-                            <li>• Enhanced transaction batching</li>
-                            <li>• Improved validator incentive system</li>
-                            <li>• Advanced analytics dashboard</li>
-                          </ul>
+
+                        <div className="flex items-start gap-4 p-4 rounded-lg bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">
+                          <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
+                          <div>
+                            <p className="font-medium text-green-800 dark:text-green-400">
+                              Core Protocol Development
+                            </p>
+                            <p className="text-sm text-green-700 dark:text-green-300">
+                              Completed the foundational bridge architecture and
+                              smart contracts
+                            </p>
+                            <Badge variant="outline" className="mt-2 text-xs">
+                              May 2025
+                            </Badge>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-4 p-4 rounded-lg bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">
+                          <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
+                          <div>
+                            <p className="font-medium text-green-800 dark:text-green-400">
+                              Vietnamese Token Integration
+                            </p>
+                            <p className="text-sm text-green-700 dark:text-green-300">
+                              Completed native support for AXS, SLP, VNDC, VNST
+                              and other Vietnamese ecosystem tokens
+                            </p>
+                            <Badge variant="outline" className="mt-2 text-xs">
+                              June 2025
+                            </Badge>
+                          </div>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
+                  {/* Technical Improvements */}
                   <Card>
                     <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
-                          <CardTitle>
-                            v1.5.0 - "Governance & Community"
-                          </CardTitle>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4" />
-                          August 22, 2024
-                        </div>
-                      </div>
+                      <CardTitle className="flex items-center gap-2">
+                        <Zap className="h-5 w-5" />
+                        Recent Updates
+                      </CardTitle>
                       <CardDescription>
-                        Introduction of DAO governance and community features
+                        Latest improvements and fixes to the documentation and
+                        architecture
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div>
-                          <h4 className="font-semibold mb-3 text-indigo-600">
-                            Governance
-                          </h4>
-                          <ul className="space-y-1 text-sm">
-                            <li>• LOTUS token governance launch</li>
-                            <li>• Community voting on protocol upgrades</li>
-                            <li>• Proposal submission system</li>
-                            <li>• Validator nomination process</li>
-                          </ul>
+                    <CardContent>
+                      <div className="space-y-4">
+                        <div className="border-l-4 border-primary pl-4">
+                          <div className="flex items-center justify-between mb-2">
+                            <h4 className="font-medium">
+                              Enhanced Vietnamese Token Integration UI
+                            </h4>
+                            <span className="text-xs text-muted-foreground">
+                              June 2025
+                            </span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">
+                            Added hover animations and improved token card
+                            layouts for better user experience. Organized tokens
+                            into Gaming, Stablecoins, and DeFi Infrastructure
+                            categories.
+                          </p>
                         </div>
-                        <div>
-                          <h4 className="font-semibold mb-3 text-pink-600">
-                            Community
-                          </h4>
-                          <ul className="space-y-1 text-sm">
-                            <li>• Ambassador program launch</li>
-                            <li>• Developer grant program</li>
-                            <li>• Community Discord integration</li>
-                            <li>• Educational content hub</li>
-                          </ul>
+
+                        <div className="border-l-4 border-accent pl-4">
+                          <div className="flex items-center justify-between mb-2">
+                            <h4 className="font-medium">
+                              Documentation Structure Improvements
+                            </h4>
+                            <span className="text-xs text-muted-foreground">
+                              May 2025
+                            </span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">
+                            Streamlined navigation, removed duplicate content,
+                            and improved page transitions. Security and Roadmap
+                            pages converted to wireframe designs for clarity.
+                          </p>
+                        </div>
+
+                        <div className="border-l-4 border-green-500 pl-4">
+                          <div className="flex items-center justify-between mb-2">
+                            <h4 className="font-medium">
+                              Bilingual Support Implementation
+                            </h4>
+                            <span className="text-xs text-muted-foreground">
+                              May 2025
+                            </span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">
+                            Full Vietnamese and English language support with
+                            context-aware translations and cultural adaptations
+                            for the Vietnamese market.
+                          </p>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card>
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
-                          <CardTitle>v1.0.0 - "Genesis Launch"</CardTitle>
-                          <Badge variant="secondary">Genesis</Badge>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4" />
-                          June 1, 2024
-                        </div>
-                      </div>
-                      <CardDescription>
-                        Initial mainnet launch with Ethereum ↔ Polygon bridge
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-4 border-l-4 border-primary">
-                        <h4 className="font-semibold mb-2">
-                          Launch Highlights
-                        </h4>
-                        <ul className="space-y-1 text-sm">
-                          <li>
-                            • First cross-chain bridge built with Vietnamese
-                            innovation
-                          </li>
-                          <li>
-                            • Support for 15+ major tokens (USDC, USDT, ETH,
-                            WBTC)
-                          </li>
-                          <li>• Sub-30 second transaction finality</li>
-                          <li>• 99.9% uptime commitment</li>
-                          <li>• Security audit by Trail of Bits</li>
-                        </ul>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* Upcoming Releases */}
-                <div className="mt-16">
-                  <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold mb-4">
-                      Upcoming Releases
-                    </h2>
-                    <p className="text-muted-foreground">
-                      Planned features and improvements for future versions
+                  <div className="text-center py-8">
+                    <Shield className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                    <h3 className="text-lg font-semibold mb-2">
+                      Building with Vietnamese Innovation
+                    </h3>
+                    <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+                      Lotus Bridge is in active development with a focus on
+                      serving the Vietnamese blockchain community while
+                      providing world-class cross-chain infrastructure. Stay
+                      tuned for regular updates as we build towards our first
+                      major release.
                     </p>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <Card className="border-dashed border-2">
-                      <CardHeader>
-                        <div className="flex items-center gap-3">
-                          <Clock className="h-5 w-5 text-orange-500" />
-                          <CardTitle>v2.2.0 - "Layer 2 Integration"</CardTitle>
-                          <Badge variant="outline">Q1 2025</Badge>
-                        </div>
-                        <CardDescription>
-                          Enhanced Layer 2 support and rollup integrations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <ul className="space-y-2 text-sm">
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-orange-500 mt-1" />
-                            <span>Native zkSync Era support</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-orange-500 mt-1" />
-                            <span>Polygon zkEVM integration</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-orange-500 mt-1" />
-                            <span>Base network support</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-orange-500 mt-1" />
-                            <span>Ultra-low fee transactions</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
+                  <Separator />
 
-                    <Card className="border-dashed border-2">
-                      <CardHeader>
-                        <div className="flex items-center gap-3">
-                          <Globe className="h-5 w-5 text-blue-500" />
-                          <CardTitle>v2.3.0 - "Global Expansion"</CardTitle>
-                          <Badge variant="outline">Q2 2025</Badge>
-                        </div>
-                        <CardDescription>
-                          Support for additional blockchain ecosystems
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <ul className="space-y-2 text-sm">
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-blue-500 mt-1" />
-                            <span>Solana network integration</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-blue-500 mt-1" />
-                            <span>Cosmos ecosystem support</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-blue-500 mt-1" />
-                            <span>Near Protocol bridge</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <Clock className="h-3 w-3 text-blue-500 mt-1" />
-                            <span>Multi-language interface</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
+                  {/* Navigation */}
+                  <div className="flex justify-between items-center">
+                    <Button variant="outline" className="gap-2" asChild>
+                      <Link to="/tokenomics">
+                        <ArrowLeft className="h-4 w-4" />
+                        Back to Tokenomics
+                      </Link>
+                    </Button>
 
-                {/* Footer */}
-                <div className="mt-16 text-center">
-                  <div className="bg-muted/30 rounded-lg p-8">
-                    <h3 className="text-xl font-semibold mb-4">Stay Updated</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Follow our development progress and get notified about new
-                      releases
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-4">
-                      <Button className="gap-2">
-                        <GitBranch className="h-4 w-4" />
-                        Follow on GitHub
-                      </Button>
-                      <Button variant="outline" className="gap-2">
-                        <Users className="h-4 w-4" />
-                        Join Community
-                      </Button>
+                    <div className="text-center">
+                      <h3 className="text-lg font-semibold">
+                        Ready to explore?
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Start with our user guides
+                      </p>
                     </div>
+
+                    <Button className="gap-2" asChild>
+                      <Link to="/user-guides">
+                        User Guides
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </div>

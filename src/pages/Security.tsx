@@ -1,4 +1,3 @@
-
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -53,264 +52,150 @@ const Security = () => {
               </div>
             </section>
 
-            {/* Security Framework */}
+            {/* Main Content */}
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
-                <Card className="mb-8">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Shield className="h-5 w-5" />
-                      Security Framework
-                    </CardTitle>
-                    <CardDescription>
-                      Multi-layered security approach protecting user assets and
-                      network integrity
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <h4 className="font-semibold">
-                          Cryptographic Security
-                        </h4>
-                        <div className="space-y-3">
-                          <div className="flex items-start gap-3">
-                            <Lock className="h-4 w-4 text-green-500 mt-1" />
-                            <div>
-                              <p className="font-medium text-sm">
-                                Zero-Knowledge Proofs
-                              </p>
-                              <p className="text-xs text-muted-foreground">
-                                State transitions verified without revealing
-                                sensitive data
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <Lock className="h-4 w-4 text-green-500 mt-1" />
-                            <div>
-                              <p className="font-medium text-sm">
-                                Multi-Signature Validation
-                              </p>
-                              <p className="text-xs text-muted-foreground">
-                                Requires consensus from multiple validators for
-                                asset transfers
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <Lock className="h-4 w-4 text-green-500 mt-1" />
-                            <div>
-                              <p className="font-medium text-sm">
-                                Time-Locked Transactions
-                              </p>
-                              <p className="text-xs text-muted-foreground">
-                                Emergency pause mechanisms for suspicious
-                                activities
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <h4 className="font-semibold">Network Security</h4>
-                        <div className="space-y-3">
-                          <div className="flex items-start gap-3">
-                            <Shield className="h-4 w-4 text-blue-500 mt-1" />
-                            <div>
-                              <p className="font-medium text-sm">
-                                Byzantine Fault Tolerance
-                              </p>
-                              <p className="text-xs text-muted-foreground">
-                                Resistant to up to 33% of validators acting
-                                maliciously
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <Shield className="h-4 w-4 text-blue-500 mt-1" />
-                            <div>
-                              <p className="font-medium text-sm">
-                                Slashing Conditions
-                              </p>
-                              <p className="text-xs text-muted-foreground">
-                                Economic penalties for validator misbehavior
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <Shield className="h-4 w-4 text-blue-500 mt-1" />
-                            <div>
-                              <p className="font-medium text-sm">
-                                Decentralized Monitoring
-                              </p>
-                              <p className="text-xs text-muted-foreground">
-                                Real-time network health and threat detection
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </section>
-
-            {/* Security Audits */}
-            <section className="py-16 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🔍 Security Audits
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Independent security reviews by leading blockchain security
-                    firms
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-8">
-                  <Card>
+                <div className="space-y-8">
+                  {/* Wireframe Placeholder */}
+                  <Card className="border-2 border-dashed border-muted-foreground/30">
                     <CardHeader className="text-center">
-                      <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/20 flex items-center justify-center mx-auto mb-2">
-                        <CheckCircle className="h-6 w-6 text-green-600" />
+                      <div className="flex items-center justify-center gap-2 mb-4">
+                        <Shield className="h-8 w-8 text-muted-foreground" />
+                        <div className="text-4xl">🏗️</div>
                       </div>
-                      <CardTitle>Trail of Bits</CardTitle>
-                      <CardDescription>Smart Contract Audit</CardDescription>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <Badge variant="secondary" className="mb-2">
-                        Completed
-                      </Badge>
-                      <p className="text-sm text-muted-foreground">
-                        Comprehensive smart contract security review covering
-                        all core protocols
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardHeader className="text-center">
-                      <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/20 flex items-center justify-center mx-auto mb-2">
-                        <CheckCircle className="h-6 w-6 text-green-600" />
-                      </div>
-                      <CardTitle>Quantstamp</CardTitle>
-                      <CardDescription>
-                        Protocol Security Review
+                      <CardTitle className="text-2xl text-muted-foreground">
+                        Security Documentation
+                      </CardTitle>
+                      <CardDescription className="text-lg">
+                        Comprehensive security framework documentation coming
+                        soon
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="text-center">
-                      <Badge variant="secondary" className="mb-2">
-                        Completed
-                      </Badge>
-                      <p className="text-sm text-muted-foreground">
-                        Protocol-level security assessment and vulnerability
-                        analysis
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardHeader className="text-center">
-                      <div className="w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900/20 flex items-center justify-center mx-auto mb-2">
-                        <AlertTriangle className="h-6 w-6 text-yellow-600" />
+                    <CardContent className="space-y-6">
+                      <div className="bg-muted/30 rounded-lg p-8 text-center">
+                        <div className="text-muted-foreground">
+                          <div className="text-6xl mb-4">📋</div>
+                          <h3 className="font-semibold text-xl mb-3">
+                            Security Architecture Diagrams
+                          </h3>
+                          <p className="text-sm mb-4">
+                            Detailed security infrastructure and protocol
+                            implementations
+                          </p>
+                          <Badge variant="outline" className="text-xs">
+                            Incoming Documentation
+                          </Badge>
+                        </div>
                       </div>
-                      <CardTitle>CertiK</CardTitle>
-                      <CardDescription>Formal Verification</CardDescription>
-                    </CardHeader>
-                    <CardContent className="text-center">
-                      <Badge variant="outline" className="mb-2">
-                        In Progress
-                      </Badge>
-                      <p className="text-sm text-muted-foreground">
-                        Mathematical verification of protocol correctness and
-                        security properties
-                      </p>
+
+                      {/* Wireframe Content Preview */}
+                      <div className="grid md:grid-cols-3 gap-6">
+                        <Card className="border-dashed border-muted-foreground/20">
+                          <CardHeader className="pb-3">
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <Lock className="h-6 w-6 text-muted-foreground" />
+                            </div>
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Cryptographic Security
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-3/4"></div>
+                              <div className="h-3 bg-muted/30 rounded w-1/2"></div>
+                            </div>
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Diagram
+                            </Badge>
+                          </CardContent>
+                        </Card>
+
+                        <Card className="border-dashed border-muted-foreground/20">
+                          <CardHeader className="pb-3">
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <Shield className="h-6 w-6 text-muted-foreground" />
+                            </div>
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Multi-Layer Defense
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-5/6"></div>
+                              <div className="h-3 bg-muted/30 rounded w-2/3"></div>
+                            </div>
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Diagram
+                            </Badge>
+                          </CardContent>
+                        </Card>
+
+                        <Card className="border-dashed border-muted-foreground/20">
+                          <CardHeader className="pb-3">
+                            <div className="w-12 h-12 rounded-lg bg-muted/50 flex items-center justify-center mb-3">
+                              <CheckCircle className="h-6 w-6 text-muted-foreground" />
+                            </div>
+                            <CardTitle className="text-lg text-muted-foreground">
+                              Audit & Compliance
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <div className="h-3 bg-muted/30 rounded"></div>
+                              <div className="h-3 bg-muted/30 rounded w-4/5"></div>
+                              <div className="h-3 bg-muted/30 rounded w-3/5"></div>
+                            </div>
+                            <Badge variant="outline" className="mt-3 text-xs">
+                              Future Diagram
+                            </Badge>
+                          </CardContent>
+                        </Card>
+                      </div>
+
+                      <div className="text-center py-6">
+                        <AlertTriangle className="h-8 w-8 text-orange-500 mx-auto mb-3" />
+                        <h4 className="font-semibold text-lg mb-2">
+                          Development in Progress
+                        </h4>
+                        <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+                          Our security documentation and diagrams are currently
+                          being developed. This section will include
+                          comprehensive security architecture, threat models,
+                          audit reports, and implementation guidelines.
+                        </p>
+                      </div>
                     </CardContent>
                   </Card>
-                </div>
-              </div>
-            </section>
 
-            {/* Security Guarantee */}
-            <section className="py-20 px-6">
-              <div className="container mx-auto max-w-6xl">
-                <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-8">
-                  <div className="flex items-center gap-4 mb-6">
-                    <Shield className="h-8 w-8 text-green-600" />
-                    <div>
-                      <h3 className="text-2xl font-bold text-green-800 dark:text-green-400">
-                        Security Guarantee
+                  <Separator />
+
+                  {/* Navigation */}
+                  <div className="flex justify-between items-center">
+                    <Button variant="outline" className="gap-2" asChild>
+                      <Link to="/benefits-vietnam">
+                        <ArrowLeft className="h-4 w-4" />
+                        Back to Benefits for Vietnam
+                      </Link>
+                    </Button>
+
+                    <div className="text-center">
+                      <h3 className="text-lg font-semibold">
+                        Continue exploring
                       </h3>
-                      <p className="text-green-700 dark:text-green-300">
-                        Protection backed by comprehensive security measures
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <h4 className="font-semibold text-green-800 dark:text-green-400 mb-3">
-                        $10M Security Fund
-                      </h4>
-                      <p className="text-sm text-green-700 dark:text-green-300 mb-4">
-                        Lotus Bridge maintains a $10M security fund to protect
-                        users against potential exploits. This fund is managed
-                        by a multi-signature wallet with governance oversight.
+                      <p className="text-sm text-muted-foreground">
+                        Learn about our development roadmap
                       </p>
                     </div>
 
-                    <div>
-                      <h4 className="font-semibold text-green-800 dark:text-green-400 mb-3">
-                        Bug Bounty Program
-                      </h4>
-                      <p className="text-sm text-green-700 dark:text-green-300 mb-4">
-                        Active bug bounty program with rewards up to $100,000
-                        for critical vulnerabilities. Join our security
-                        community and help protect the ecosystem.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 pt-6 border-t border-green-200 dark:border-green-800">
-                    <h4 className="font-semibold text-green-800 dark:text-green-400 mb-3">
-                      🇻🇳 Vietnamese Security Standards
-                    </h4>
-                    <p className="text-sm text-green-700 dark:text-green-300">
-                      Our security protocols meet and exceed Vietnamese
-                      cybersecurity standards, ensuring compliance with local
-                      regulations while maintaining global security best
-                      practices.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Navigation */}
-            <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-6xl">
-                <div className="flex justify-between items-center">
-                  <Link to="/architecture">
-                    <Button
-                      variant="outline"
-                      className="flex items-center gap-2"
-                    >
-                      <ArrowLeft className="h-4 w-4" />
-                      Architecture
+                    <Button className="gap-2" asChild>
+                      <Link to="/roadmap">
+                        Continue to Roadmap
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
                     </Button>
-                  </Link>
-                  <Link to="/core-concept">
-                    <Button variant="outline">Back to Core Concept</Button>
-                  </Link>
-                  <Link to="/tokenomics">
-                    <Button className="flex items-center gap-2">
-                      Tokenomics
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </section>
