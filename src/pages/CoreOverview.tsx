@@ -22,9 +22,44 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const CoreOverview = () => {
   const { t, language } = useLanguage();
+
+  useEffect(() => {
+    const handleTokenHover = (event: MouseEvent) => {
+      const tokenCard = event.currentTarget as HTMLElement;
+      const img = tokenCard.querySelector("img");
+
+      if (img) {
+        // Remove any existing animation
+        img.style.animation = "none";
+        // Force reflow
+        void img.offsetHeight;
+        // Add the animation
+        img.style.animation = "tokenIconSpin 0.8s ease-in-out";
+
+        // Clean up after animation completes
+        setTimeout(() => {
+          img.style.animation = "";
+        }, 800);
+      }
+    };
+
+    // Add event listeners to all token cards
+    const tokenCards = document.querySelectorAll(".token-icon-hover");
+    tokenCards.forEach((card) => {
+      card.addEventListener("mouseenter", handleTokenHover);
+    });
+
+    // Cleanup
+    return () => {
+      tokenCards.forEach((card) => {
+        card.removeEventListener("mouseenter", handleTokenHover);
+      });
+    };
+  }, []);
 
   return (
     <SidebarProvider>
@@ -240,11 +275,11 @@ const CoreOverview = () => {
                   </div>
 
                   {/* Vietnamese Token Support */}
-                  <Card className="border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20">
+                  <Card className="border-pink-200 dark:border-pink-800 bg-pink-50/50 dark:bg-pink-950/20">
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-2xl">🇻🇳</span>
-                        <CardTitle className="text-green-800 dark:text-green-400">
+                        <CardTitle className="text-pink-800 dark:text-pink-400">
                           Vietnamese Token Integration
                         </CardTitle>
                       </div>
@@ -266,59 +301,59 @@ const CoreOverview = () => {
                       </div>
 
                       {/* Token Categories in Columns */}
-                      <div className="grid md:grid-cols-3 gap-6">
+                      <div className="grid md:grid-cols-3 gap-6 items-start">
                         {/* Gaming Ecosystem */}
-                        <div className="flex flex-col h-full">
-                          <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-4">
+                        <div className="flex flex-col">
+                          <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-4 text-center">
                             🎮 Gaming Ecosystem
                           </h4>
-                          <div className="grid grid-cols-2 gap-3 flex-1">
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                          <div className="space-y-3">
+                            <div className="bg-white dark:bg-pink-950/10 p-4 rounded border border-pink-200/30 dark:border-pink-800/30 text-center token-icon-hover h-24 flex flex-col justify-center transition-color">
                               <img
                                 src="https://coin-images.coingecko.com/coins/images/13029/large/axie_infinity_logo.png?1696512817"
                                 alt="AXS"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-blue-600 block text-sm">
+                              <strong className="text-blue-600 block text-xs">
                                 AXS
                               </strong>
                               <span className="text-xs text-muted-foreground">
                                 Axie Infinity
                               </span>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                            <div className="bg-white dark:bg-pink-950/10 p-4 rounded border border-pink-200/30 dark:border-pink-800/30 text-center token-icon-hover h-24 flex flex-col justify-center transition-colors">
                               <img
                                 src="https://coin-images.coingecko.com/coins/images/10366/large/SLP.png?1696510368"
                                 alt="SLP"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-green-600 block text-sm">
+                              <strong className="text-green-600 block text-xs">
                                 SLP
                               </strong>
                               <span className="text-xs text-muted-foreground">
                                 Smooth Love Potion
                               </span>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                            <div className="bg-white dark:bg-pink-950/10 p-4 rounded border border-pink-200/30 dark:border-pink-800/30 text-center token-icon-hover h-24 flex flex-col justify-center transition-colors">
                               <img
                                 src="https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453"
                                 alt="SIPHER"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-indigo-600 block text-sm">
+                              <strong className="text-indigo-600 block text-xs">
                                 SIPHER
                               </strong>
                               <span className="text-xs text-muted-foreground">
                                 Sipher Token
                               </span>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center h-fit">
+                            <div className="bg-white dark:bg-pink-950/10 p-4 rounded border border-pink-200/30 dark:border-pink-800/30 text-center token-icon-hover h-24 flex flex-col justify-center transition-colors hover:bg-pink-50/50 hover:border-pink-300/50">
                               <img
                                 src="https://assets.coingecko.com/coins/images/39170/standard/A8_Token-04_200x200.png?1720798300"
                                 alt="A8"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-purple-600 block text-sm">
+                              <strong className="text-purple-600 block text-xs">
                                 A8
                               </strong>
                               <span className="text-xs text-muted-foreground">
@@ -329,31 +364,31 @@ const CoreOverview = () => {
                         </div>
 
                         {/* Vietnamese Stablecoins */}
-                        <div className="flex flex-col h-full">
-                          <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-4">
+                        <div className="flex flex-col">
+                          <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-4 text-center">
                             💰 Vietnamese Stablecoins
                           </h4>
-                          <div className="space-y-3 flex-1">
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                          <div className="space-y-3">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
                               <img
                                 src="https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740"
                                 alt="VNDC"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-purple-600 block text-sm">
+                              <strong className="text-purple-600 block text-xs">
                                 VNDC
                               </strong>
                               <span className="text-xs text-muted-foreground">
                                 VND Coin
                               </span>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
                               <img
                                 src="https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75"
                                 alt="VNST"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-orange-600 block text-sm">
+                              <strong className="text-orange-600 block text-xs">
                                 VNST
                               </strong>
                               <span className="text-xs text-muted-foreground">
@@ -364,44 +399,44 @@ const CoreOverview = () => {
                         </div>
 
                         {/* DeFi Infrastructure */}
-                        <div className="flex flex-col h-full">
-                          <h4 className="font-semibold text-teal-800 dark:text-teal-400 mb-4">
+                        <div className="flex flex-col">
+                          <h4 className="font-semibold text-teal-800 dark:text-teal-400 mb-4 text-center">
                             🔧 DeFi Infrastructure
                           </h4>
-                          <div className="space-y-3 flex-1">
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                          <div className="space-y-3">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
                               <img
                                 src="https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172"
                                 alt="KAI"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-red-600 block text-sm">
+                              <strong className="text-red-600 block text-xs">
                                 KAI
                               </strong>
                               <span className="text-xs text-muted-foreground">
                                 KardiaChain
                               </span>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
                               <img
                                 src="https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677"
                                 alt="C98"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-yellow-600 block text-sm">
+                              <strong className="text-yellow-600 block text-xs">
                                 C98
                               </strong>
                               <span className="text-xs text-muted-foreground">
                                 Coin98
                               </span>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center">
+                            <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
                               <img
                                 src="https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562"
                                 alt="KNC"
-                                className="w-10 h-10 mx-auto mb-3 rounded-full"
+                                className="w-8 h-8 mx-auto mb-2 rounded-full"
                               />
-                              <strong className="text-teal-600 block text-sm">
+                              <strong className="text-teal-600 block text-xs">
                                 KNC
                               </strong>
                               <span className="text-xs text-muted-foreground">
@@ -412,9 +447,11 @@ const CoreOverview = () => {
                         </div>
                       </div>
 
-                      <div className="bg-background/50 p-6 rounded-lg border">
-                        <h4 className="font-semibold mb-3">Priority Support</h4>
-                        <p className="text-sm text-muted-foreground">
+                      <div className="bg-white dark:bg-pink-950/20 p-6 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
+                        <h4 className="font-semibold mb-3 text-pink-800 dark:text-pink-400">
+                          Priority Support
+                        </h4>
+                        <p className="text-sm text-pink-700 dark:text-pink-300">
                           Vietnamese tokens receive priority optimization for
                           routing, liquidity access, and fee structures,
                           ensuring the best possible experience for local users
