@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Search, Moon, Sun } from "lucide-react";
@@ -19,7 +20,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <div>
             <h1 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Lotus Bridge Documentation
+              {t("header.title")}
             </h1>
           </div>
         </div>
@@ -29,7 +30,7 @@ export function Header() {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <input
               type="text"
-              placeholder={`${t("common.search")} documentation...`}
+              placeholder={t("header.searchPlaceholder")}
               className="pl-10 pr-4 py-2 w-64 bg-muted/30 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
             />
           </div>
