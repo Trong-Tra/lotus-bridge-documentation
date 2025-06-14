@@ -22,9 +22,44 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Background = () => {
   const { t, language } = useLanguage();
+
+  useEffect(() => {
+    const handleTokenHover = (event: MouseEvent) => {
+      const tokenCard = event.currentTarget as HTMLElement;
+      const img = tokenCard.querySelector("img");
+
+      if (img) {
+        // Remove any existing animation
+        img.style.animation = "none";
+        // Force reflow
+        void img.offsetHeight;
+        // Add the animation
+        img.style.animation = "tokenIconSpin 0.8s ease-in-out";
+
+        // Clean up after animation completes
+        setTimeout(() => {
+          img.style.animation = "";
+        }, 800);
+      }
+    };
+
+    // Add event listeners to all token cards
+    const tokenCards = document.querySelectorAll(".token-icon-hover");
+    tokenCards.forEach((card) => {
+      card.addEventListener("mouseenter", handleTokenHover);
+    });
+
+    // Cleanup
+    return () => {
+      tokenCards.forEach((card) => {
+        card.removeEventListener("mouseenter", handleTokenHover);
+      });
+    };
+  }, []);
 
   return (
     <SidebarProvider>
@@ -413,7 +448,7 @@ const Background = () => {
                                 🎮 Gaming Ecosystem
                               </h5>
                               <div className="grid grid-cols-2 gap-4 mb-6">
-                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/13029/small/axie_infinity_logo.png"
                                     alt="AXS"
@@ -423,7 +458,7 @@ const Background = () => {
                                     AXS
                                   </span>
                                 </div>
-                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/10366/small/SLP.png"
                                     alt="SLP"
@@ -433,7 +468,7 @@ const Background = () => {
                                     SLP
                                   </span>
                                 </div>
-                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453"
                                     alt="SIPHER"
@@ -443,7 +478,7 @@ const Background = () => {
                                     SIPHER
                                   </span>
                                 </div>
-                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/39170/standard/A8_Token-04_200x200.png?1720798300"
                                     alt="A8"
@@ -466,7 +501,7 @@ const Background = () => {
                                 💰 Vietnamese Stablecoins
                               </h5>
                               <div className="grid grid-cols-2 gap-4 mb-6 max-w-md mx-auto">
-                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740"
                                     alt="VNDC"
@@ -476,7 +511,7 @@ const Background = () => {
                                     VNDC
                                   </span>
                                 </div>
-                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75"
                                     alt="VNST"
@@ -499,7 +534,7 @@ const Background = () => {
                                 🏗️ DeFi Infrastructure
                               </h5>
                               <div className="grid grid-cols-3 gap-3 mb-6">
-                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172"
                                     alt="KAI"
@@ -509,7 +544,7 @@ const Background = () => {
                                     KAI
                                   </span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/17117/small/logo.png"
                                     alt="C98"
@@ -519,7 +554,7 @@ const Background = () => {
                                     C98
                                   </span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm">
+                                <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562"
                                     alt="KNC"
