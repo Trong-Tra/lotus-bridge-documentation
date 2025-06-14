@@ -1,4 +1,3 @@
-
 {
   "common": {
     "search": "Tìm kiếm",
@@ -16,7 +15,8 @@
     "underDevelopment": "Đang phát triển",
     "futureUpdate": "Phần này sẽ được hoàn thành trong bản cập nhật tương lai",
     "contactTeam": "Liên hệ nhóm phát triển",
-    "joinDiscussion": "Tham gia thảo luận"
+    "joinDiscussion": "Tham gia thảo luận",
+    "builtWithVietnamesePride": "Được xây dựng với niềm tự hào Việt Nam"
   },
   "navigation": {
     "abstract": "Tóm tắt",
