@@ -1,3 +1,4 @@
+
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -13,117 +14,19 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   Users,
-  Wallet,
-  Globe,
-  Zap,
   ArrowRight,
   ArrowLeft,
-  Heart,
-  Target,
-  TrendingUp,
+  Zap,
+  Shield,
+  Wallet,
+  DollarSign,
+  Globe,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const BenefitsUsers = () => {
-  const { t, language } = useLanguage();
-
-  useEffect(() => {
-    const handleTokenHover = (event: MouseEvent) => {
-      const tokenCard = event.currentTarget as HTMLElement;
-      const img = tokenCard.querySelector("img");
-
-      if (img) {
-        // Remove any existing animation
-        img.style.animation = "none";
-        // Force reflow
-        void img.offsetHeight;
-        // Add the animation
-        img.style.animation = "tokenIconSpin 0.8s ease-in-out";
-
-        // Clean up after animation completes
-        setTimeout(() => {
-          img.style.animation = "";
-        }, 800);
-      }
-    };
-
-    // Add event listeners to all token cards
-    const tokenCards = document.querySelectorAll(".token-icon-hover");
-    tokenCards.forEach((card) => {
-      card.addEventListener("mouseenter", handleTokenHover);
-    });
-
-    // Cleanup
-    return () => {
-      tokenCards.forEach((card) => {
-        card.removeEventListener("mouseenter", handleTokenHover);
-      });
-    };
-  }, []);
-
-  const userBenefits = [
-    {
-      title: "Simplified Access to Global DeFi",
-      description:
-        "Navigate the complex DeFi landscape with ease, accessing protocols across multiple chains through a single, intuitive interface.",
-      icon: Globe,
-      features: [
-        "One-click access to multiple DeFi protocols",
-        "Unified portfolio management across chains",
-        "Simplified transaction routing",
-        "Reduced complexity for beginners",
-      ],
-    },
-    {
-      title: "Local-First Design with Vietnamese Token Support",
-      description:
-        "Enjoy a platform designed specifically for Vietnamese users, with native support for popular local tokens and cultural preferences.",
-      icon: Heart,
-      features: [
-        "Native AXS, SLP, VNDC, VNST support",
-        "Vietnamese language interface",
-        "Local payment method integration",
-        "Cultural UI/UX design elements",
-      ],
-    },
-    {
-      title: "Flexible Transaction Routing",
-      description:
-        "Experience unparalleled flexibility in how you move and use your assets across multiple blockchain networks.",
-      icon: Target,
-      features: [
-        "Cross-chain asset transfers",
-        "Multi-wallet transaction support",
-        "Optimal routing algorithms",
-        "Gas optimization across chains",
-      ],
-    },
-  ];
-
-  const scenarioCards = [
-    {
-      title: "🎮 Gaming Enthusiast",
-      scenario: "Move AXS tokens from Ronin to Ethereum for DeFi opportunities",
-      benefit: "Access global DeFi yields while keeping gaming assets active",
-      tokens: ["AXS", "SLP", "RON"],
-    },
-    {
-      title: "💰 DeFi Investor",
-      scenario:
-        "Swap VNDC for ETH across chains to participate in new protocols",
-      benefit: "Seamless Vietnamese stablecoin integration with global DeFi",
-      tokens: ["VNDC", "VNST", "ETH"],
-    },
-    {
-      title: "🚀 Crypto Trader",
-      scenario:
-        "Arbitrage opportunities between Vietnamese and international exchanges",
-      benefit: "Quick cross-chain transfers for time-sensitive trading",
-      tokens: ["KAI", "C98", "KNC"],
-    },
-  ];
+  const { t } = useLanguage();
 
   return (
     <SidebarProvider>
@@ -135,257 +38,157 @@ const BenefitsUsers = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-5xl">
+            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    👥 User Benefits
+                    👥 {t("navigation.benefitsUsers")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Users
+                    {t("benefits.users.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Discover how Lotus Bridge empowers Vietnamese users to
-                    access global DeFi opportunities with local-first design and
-                    seamless cross-chain functionality.
+                    {t("benefits.users.subtitle")}
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Core Benefits */}
-            <section className="py-12 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <div className="grid gap-8">
-                  {userBenefits.map((benefit, index) => {
-                    const IconComponent = benefit.icon;
-                    return (
-                      <Card key={index} className="relative overflow-hidden">
-                        <div
-                          className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${
-                            index % 2 === 0
-                              ? "from-primary to-accent"
-                              : "from-accent to-primary"
-                          }`}
-                        />
-                        <CardHeader className="pl-8">
-                          <div className="flex items-center gap-4 mb-2">
-                            <div
-                              className={`p-3 rounded-lg ${
-                                index % 2 === 0
-                                  ? "bg-primary/10"
-                                  : "bg-accent/10"
-                              }`}
-                            >
-                              <IconComponent
-                                className={`h-6 w-6 ${
-                                  index % 2 === 0
-                                    ? "text-primary"
-                                    : "text-accent"
-                                }`}
-                              />
-                            </div>
-                            <CardTitle className="text-2xl">
-                              {benefit.title}
-                            </CardTitle>
-                          </div>
-                          <CardDescription className="text-lg">
-                            {benefit.description}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="pl-8">
-                          <div className="grid md:grid-cols-2 gap-4">
-                            {benefit.features.map((feature, featureIndex) => (
-                              <div
-                                key={featureIndex}
-                                className="flex items-center gap-2"
-                              >
-                                <div className="w-2 h-2 bg-primary rounded-full" />
-                                <span className="text-sm font-medium">
-                                  {feature}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
+            {/* Benefits Content */}
+            <section className="py-20 px-6">
+              <div className="container mx-auto max-w-6xl">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Zap className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.users.seamlessExperience")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.users.seamlessDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li>• {t("benefits.users.crossArchitecture")}</li>
+                        <li>• {t("benefits.users.multiWalletSupport")}</li>
+                        <li>• {t("benefits.users.adaptiveProtocol")}</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
 
-            {/* User Scenarios */}
-            <section className="py-10 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-5xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🇻🇳 Real Vietnamese User Scenarios
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    See how Lotus Bridge creates value for different types of
-                    Vietnamese crypto users.
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-8">
-                  {scenarioCards.map((scenario, index) => (
-                    <Card key={index} className="relative overflow-hidden">
-                      <CardHeader>
-                        <CardTitle className="text-xl">
-                          {scenario.title}
-                        </CardTitle>
-                        <CardDescription className="text-base">
-                          {scenario.scenario}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-green-600 mb-2">
-                            ✅ Benefit:
-                          </h4>
-                          <p className="text-sm text-muted-foreground">
-                            {scenario.benefit}
-                          </p>
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <span className="text-2xl">🇻🇳</span>
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.users.vietnameseTokens")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.users.vietnameseDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid grid-cols-3 gap-2 mb-4">
+                        <div className="p-2 bg-muted/30 rounded text-center text-xs font-medium">
+                          AXS
                         </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">
-                            🪙 Supported Tokens:
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {scenario.tokens.map((token, tokenIndex) => (
-                              <Badge
-                                key={tokenIndex}
-                                variant="outline"
-                                className="text-xs"
-                              >
-                                {token}
-                              </Badge>
-                            ))}
-                          </div>
+                        <div className="p-2 bg-muted/30 rounded text-center text-xs font-medium">
+                          VNDC
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </section>
+                        <div className="p-2 bg-muted/30 rounded text-center text-xs font-medium">
+                          C98
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
 
-            {/* Vietnamese Token Showcase */}
-            <section className="py-12 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🌸 Vietnamese Token Integration
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Lotus Bridge natively supports the most popular tokens in
-                    the Vietnamese crypto ecosystem.
-                  </p>
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Wallet className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.users.multiWallet")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.users.multiWalletDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <DollarSign className="h-6 w-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.users.lowFees")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.users.lowFeesDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Shield className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.users.security")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.users.securityDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <Globe className="h-6 w-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.users.localization")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.users.localizationDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {[
-                    {
-                      token: "AXS",
-                      name: "Axie Infinity",
-                      chain: "Ronin",
-                      image:
-                        "https://coin-images.coingecko.com/coins/images/13029/large/axie_infinity_logo.png?1696512817",
-                    },
-                    {
-                      token: "SLP",
-                      name: "Smooth Love Potion",
-                      chain: "Ronin",
-                      image:
-                        "https://coin-images.coingecko.com/coins/images/10366/large/SLP.png?1696510368",
-                    },
-                    {
-                      token: "VNDC",
-                      name: "VND Coin",
-                      chain: "Multiple",
-                      image:
-                        "https://assets.coingecko.com/coins/images/9670/standard/vndc-gold-coin.png?1696509740",
-                    },
-                    {
-                      token: "VNST",
-                      name: "Vietnam Stable Token",
-                      chain: "Multiple",
-                      image:
-                        "https://vnst.io/_next/image?url=%2Fassets%2Fimages%2Fcryptos%2Fvnst.png&w=96&q=75",
-                    },
-                    {
-                      token: "KAI",
-                      name: "KardiaChain",
-                      chain: "Kardia",
-                      image:
-                        "https://assets.coingecko.com/coins/images/7942/standard/kai.png?1696508172",
-                    },
-                    {
-                      token: "C98",
-                      name: "Coin98",
-                      chain: "Multiple",
-                      image:
-                        "https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677",
-                    },
-                    {
-                      token: "KNC",
-                      name: "Kyber Network",
-                      chain: "Ethereum",
-                      image:
-                        "https://assets.coingecko.com/coins/images/14899/standard/RwdVsGcw_400x400.jpg?1696514562",
-                    },
-                    {
-                      token: "SIPHER",
-                      name: "Sipher",
-                      chain: "Ethereum",
-                      image:
-                        "https://assets.coingecko.com/coins/images/21070/standard/SipherToken.png?1696520453",
-                    },
-                  ].map((token, index) => (
-                    <Card key={index} className="text-center token-icon-hover">
-                      <CardHeader>
-                        <img
-                          src={token.image}
-                          alt={token.token}
-                          className="w-12 h-12 mx-auto mb-2 rounded-full"
-                        />
-                        <CardTitle className="text-lg">{token.token}</CardTitle>
-                        <CardDescription>{token.name}</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <Badge variant="outline" className="text-xs">
-                          {token.chain}
-                        </Badge>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </section>
+                <Separator className="my-12" />
 
-            {/* Navigation */}
-            <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-5xl">
+                {/* Navigation */}
                 <div className="flex justify-between items-center">
-                  <Link to="/ecosystem-benefits">
-                    <Button
-                      variant="outline"
-                      className="flex items-center gap-2"
-                    >
+                  <Button variant="outline" className="gap-2" asChild>
+                    <Link to="/ecosystem-benefits">
                       <ArrowLeft className="h-4 w-4" />
-                      Ecosystem Benefits
-                    </Button>
-                  </Link>
-                  <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
-                  </Link>
-                  <Link to="/benefits-developers">
-                    <Button className="flex items-center gap-2">
-                      For Builders
+                      {t("navigation.ecosystemBenefits")}
+                    </Link>
+                  </Button>
+
+                  <div className="text-center">
+                    <h3 className="text-lg font-semibold">
+                      {t("common.continue")}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {t("benefits.developers.title")}
+                    </p>
+                  </div>
+
+                  <Button className="gap-2" asChild>
+                    <Link to="/benefits-developers">
+                      {t("navigation.benefitsDevs")}
                       <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </section>

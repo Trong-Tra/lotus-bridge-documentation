@@ -10,7 +10,7 @@ export const SecurityHero = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">
-            🛡️ Security Framework
+            🛡️ {t("navigation.security")}
           </Badge>
           <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             {t("security.title")}

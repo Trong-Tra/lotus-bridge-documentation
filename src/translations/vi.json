@@ -2,7 +2,7 @@
 {
   "common": {
     "search": "Tìm kiếm",
-    "english": "Tiếng Anh", 
+    "english": "Tiếng Anh",
     "vietnamese": "Tiếng Việt",
     "loading": "Đang tải",
     "error": "Lỗi",
@@ -12,162 +12,218 @@
     "next": "Tiếp theo",
     "continue": "Tiếp tục",
     "documentation": "Tài liệu",
-    "comingSoon": "Sắp Ra Mắt"
+    "comingSoon": "Sắp ra mắt",
+    "underDevelopment": "Đang phát triển",
+    "futureUpdate": "Phần này sẽ được hoàn thành trong bản cập nhật tương lai",
+    "contactTeam": "Liên hệ nhóm phát triển",
+    "joinDiscussion": "Tham gia thảo luận"
   },
   "navigation": {
-    "abstract": "Tóm Tắt",
-    "introduction": "Giới Thiệu",
-    "background": "Bối Cảnh", 
-    "coreConcept": "Khái Niệm Cốt Lõi",
-    "coreOverview": "Tổng Quan Cốt Lõi",
-    "architecture": "Kiến Trúc",
-    "governance": "Khung Quản Trị",
-    "ecosystemBenefits": "Lợi Ích Hệ Sinh Thái",
-    "benefitsUsers": "Cho Người Dùng",
-    "benefitsDevs": "Cho Nhà Phát Triển",
-    "benefitsLiquidity": "Cho Nhà Cung Cấp Thanh Khoản", 
-    "benefitsVietnam": "Cho Ngành Crypto Việt Nam",
-    "security": "Bảo Mật",
-    "tokenomics": "Kinh Tế Token",
-    "roadmap": "Lộ Trình",
-    "changelog": "Nhật Ký Thay Đổi",
-    "faqs": "Câu Hỏi Thường Gặp",
-    "whatIsLotus": "Lotus Bridge Là Gì?",
-    "whyLotus": "Tại Sao Lotus?"
+    "abstract": "Tóm tắt",
+    "introduction": "Giới thiệu",
+    "background": "Bối cảnh",
+    "coreConcept": "Khái niệm cốt lõi",
+    "coreOverview": "Tổng quan cốt lõi",
+    "architecture": "Kiến trúc",
+    "governance": "Khung quản trị",
+    "ecosystemBenefits": "Lợi ích hệ sinh thái",
+    "benefitsUsers": "Cho người dùng",
+    "benefitsDevs": "Cho nhà phát triển",
+    "benefitsLiquidity": "Cho nhà cung cấp thanh khoản",
+    "benefitsVietnam": "Cho ngành Crypto Việt Nam",
+    "security": "Bảo mật",
+    "tokenomics": "Kinh tế token",
+    "roadmap": "Lộ trình",
+    "changelog": "Nhật ký thay đổi",
+    "faqs": "Câu hỏi thường gặp",
+    "whatIsLotus": "Lotus Bridge là gì?",
+    "whyLotus": "Tại sao chọn Lotus?"
   },
   "header": {
-    "title": "Tài Liệu Lotus Bridge",
+    "title": "Tài liệu Lotus Bridge",
     "searchPlaceholder": "Tìm kiếm tài liệu..."
   },
   "hero": {
-    "tagline": "Được Xây Dựng Bởi Việt Nam. Kết Nối Thế Giới.",
-    "subtitle": "Cầu Nối Chuỗi Chéo Phi Tập Trung",
-    "mission": "Lotus Bridge thể hiện sức bền và vẻ đẹp của hoa sen Việt Nam - vươn lên từ sự phức tạp để tạo ra những giải pháp đơn giản, tinh tế kết nối các hệ sinh thái blockchain trên toàn thế giới.",
-    "viewDocs": "Xem Tài Liệu",
-    "missionTitle": "Kết Nối Các Mạng Blockchain Với Sự Đổi Mới Của Việt Nam",
-    "developerGuide": "Hướng Dẫn Nhà Phát Triển"
+    "tagline": "Được xây dựng bởi Việt Nam. Kết nối thế giới.",
+    "subtitle": "Cầu nối chuỗi chéo phi tập trung",
+    "mission": "Lotus Bridge thể hiện sức bền và vẻ đẹp của hoa sen Việt Nam - vươn lên từ sự phức tạp để tạo ra những giải pháp đơn giản, thanh lịch kết nối các hệ sinh thái blockchain trên toàn thế giới.",
+    "viewDocs": "Xem tài liệu",
+    "missionTitle": "Kết nối các mạng Blockchain với sự đổi mới của Việt Nam",
+    "developerGuide": "Hướng dẫn nhà phát triển"
   },
-  "introduction": {
-    "title": "Giới Thiệu",
-    "subtitle": "Hiểu về Lotus Bridge - Một giao thức chuỗi chéo cách mạng có nguồn gốc từ văn hóa và sự đổi mới của Việt Nam.",
-    "whyLotusMatters": {
-      "title": "Tại Sao Lotus Quan Trọng",
-      "securityFirst": {
-        "title": "Bảo Mật Trên Hết",
-        "description": "Bảo mật cấp doanh nghiệp với xác thực đa lớp"
-      },
-      "globalReach": {
-        "title": "Tầm Với Toàn Cầu", 
-        "description": "Kết nối sự đổi mới của Việt Nam với các cơ hội trên toàn thế giới"
-      },
-      "userFriendly": {
-        "description": "Thiết kế trực quan tập trung vào nhu cầu người dùng Việt Nam"
-      }
+  "benefits": {
+    "users": {
+      "title": "Lợi ích cho người dùng",
+      "subtitle": "Cách Lotus Bridge cải thiện trải nghiệm cho người dùng blockchain Việt Nam và toàn cầu.",
+      "seamlessExperience": "Trải nghiệm chuỗi chéo liền mạch",
+      "seamlessDescription": "Di chuyển tài sản giữa các blockchain khác nhau chỉ với vài cú nhấp chuột, không cần kiến thức kỹ thuật.",
+      "vietnameseTokens": "Hỗ trợ token Việt Nam gốc",
+      "vietnameseDescription": "Hỗ trợ hạng nhất cho các token Việt Nam phổ biến thường bị bỏ qua bởi các cầu nối khác.",
+      "multiWallet": "Quản lý đa ví",
+      "multiWalletDescription": "Kết nối và quản lý nhiều ví trên các mạng blockchain khác nhau trong một giao diện.",
+      "lowFees": "Phí giao dịch cạnh tranh",
+      "lowFeesDescription": "Cấu trúc phí được tối ưu hóa để có giá cả phải chăng cho người dùng Việt Nam.",
+      "security": "Bảo mật cấp doanh nghiệp",
+      "securityDescription": "Giao thức bảo mật đa lớp bảo vệ tài sản của bạn trong quá trình chuyển chuỗi chéo.",
+      "localization": "Bản địa hóa tiếng Việt",
+      "localizationDescription": "Hỗ trợ đầy đủ tiếng Việt với các yếu tố thiết kế phù hợp văn hóa."
     },
-    "vietnameseRoots": {
-      "communityFirst": {
-        "title": "Cộng Đồng Trên Hết"
-      }
-    }
-  },
-  "features": {
-    "lightningFast": {
-      "title": "Siêu Nhanh",
-      "description": "Tối ưu hóa tốc độ và hiệu quả trên tất cả các mạng"
+    "developers": {
+      "title": "Lợi ích cho nhà phát triển",
+      "subtitle": "Công cụ và cơ hội mà Lotus Bridge cung cấp cho các nhà phát triển Việt Nam và quốc tế.",
+      "easyIntegration": "Tích hợp SDK đơn giản",
+      "easyDescription": "SDK toàn diện với tài liệu rõ ràng để phát triển dApp nhanh chóng.",
+      "vietnamese": "Cộng đồng nhà phát triển Việt Nam",
+      "vietnameseDescription": "Kết nối với các nhà phát triển địa phương và tiếp cận thông tin thị trường Việt Nam.",
+      "crossChain": "Phát triển dApp chuỗi chéo",
+      "crossChainDescription": "Xây dựng ứng dụng hoạt động liền mạch trên nhiều mạng blockchain.",
+      "grants": "Tài trợ phát triển",
+      "grantsDescription": "Cơ hội tài trợ cho các nhà phát triển Việt Nam xây dựng trên Lotus Bridge.",
+      "documentation": "Tài liệu toàn diện",
+      "documentationDescription": "Hướng dẫn chi tiết, hướng dẫn và ví dụ bằng cả tiếng Việt và tiếng Anh.",
+      "support": "Hỗ trợ nhà phát triển",
+      "supportDescription": "Truy cập trực tiếp vào nhóm cốt lõi và các kênh hỗ trợ cộng đồng tích cực."
+    },
+    "liquidity": {
+      "title": "Lợi ích cho nhà cung cấp thanh khoản",
+      "subtitle": "Cơ hội và ưu đãi cho các nhà cung cấp thanh khoản trong hệ sinh thái Lotus Bridge.",
+      "yields": "Cơ hội lợi suất cạnh tranh",
+      "yieldsDescription": "Kiếm lợi nhuận hấp dẫn bằng cách cung cấp thanh khoản cho chuyển chuỗi chéo.",
+      "vietnamese": "Cặp token Việt Nam",
+      "vietnameseDescription": "Cơ hội độc đáo để cung cấp thanh khoản cho các cặp token Việt Nam.",
+      "rewards": "Phần thưởng token quản trị",
+      "rewardsDescription": "Kiếm token quản trị Lotus Bridge thông qua các chương trình khai thác thanh khoản.",
+      "flexible": "Tùy chọn pool linh hoạt",
+      "flexibleDescription": "Chọn từ các loại pool và mức rủi ro khác nhau phù hợp với chiến lược của bạn.",
+      "impermanent": "Bảo vệ mất mát tạm thời",
+      "impermanentDescription": "Cơ chế tiên tiến để giảm thiểu rủi ro mất mát tạm thời.",
+      "analytics": "Phân tích thời gian thực",
+      "analyticsDescription": "Bảng điều khiển toàn diện để theo dõi hiệu suất thanh khoản và thu nhập của bạn."
+    },
+    "vietnam": {
+      "title": "Lợi ích cho ngành Crypto Việt Nam",
+      "subtitle": "Định vị Việt Nam là người dẫn đầu toàn cầu trong đổi mới blockchain đồng thời trao quyền cho tài năng địa phương và thể hiện sự xuất sắc của Việt Nam với thế giới.",
+      "global": "Tiếp cận thị trường toàn cầu",
+      "globalDescription": "Kết nối các dự án và token Việt Nam với các hệ sinh thái DeFi quốc tế và thanh khoản.",
+      "showcase": "Giới thiệu đổi mới Việt Nam",
+      "showcaseDescription": "Thể hiện sự xuất sắc kỹ thuật và đổi mới của Việt Nam trên sân khấu toàn cầu.",
+      "talent": "Phát triển tài năng địa phương",
+      "talentDescription": "Tạo cơ hội cho các nhà phát triển và chuyên gia blockchain Việt Nam phát triển.",
+      "ecosystem": "Tăng trưởng hệ sinh thái",
+      "ecosystemDescription": "Thúc đẩy sự phát triển của hệ sinh thái blockchain và DeFi Việt Nam thông qua kết nối tốt hơn.",
+      "compliance": "Thân thiện với quy định",
+      "complianceDescription": "Được thiết kế với các cân nhắc quy định và tuân thủ của Việt Nam.",
+      "partnerships": "Quan hệ đối tác chiến lược",
+      "partnershipsDescription": "Xây dựng kết nối giữa các dự án Việt Nam và mạng blockchain quốc tế."
     }
   },
   "security": {
-    "title": "Bảo Mật",
+    "title": "Bảo mật",
     "subtitle": "Phương pháp bảo mật đa lớp bảo vệ tài sản người dùng và tính toàn vẹn mạng với sự đổi mới của Việt Nam làm cốt lõi.",
-    "documentation": "Tài Liệu Bảo Mật",
+    "documentation": "Tài liệu bảo mật",
     "comingSoonDescription": "Tài liệu khung bảo mật toàn diện sắp ra mắt",
-    "cryptographicSecurity": "Bảo Mật Mật Mã",
-    "multiLayerDefense": "Phòng Thủ Đa Lớp",
-    "auditCompliance": "Kiểm Toán & Tuân Thủ",
-    "developmentInProgress": "Đang Phát Triển",
+    "cryptographicSecurity": "Bảo mật mật mã",
+    "multiLayerDefense": "Phòng thủ đa lớp",
+    "auditCompliance": "Kiểm toán & tuân thủ",
+    "developmentInProgress": "Đang phát triển",
     "progressDescription": "Tài liệu và sơ đồ bảo mật của chúng tôi hiện đang được phát triển. Phần này sẽ bao gồm kiến trúc bảo mật toàn diện, mô hình mối đe dọa, báo cáo kiểm toán và hướng dẫn triển khai."
   },
   "tokenomics": {
-    "title": "Kinh Tế Token",
-    "subtitle": "Kinh tế token bền vững được thiết kế để khuyến khích sự tham gia mạng và thúc đẩy việc áp dụng blockchain Việt Nam.",
-    "underDevelopment": "Đang Phát Triển",
-    "developmentDescription": "Mô hình kinh tế token Lotus Bridge hiện đang được hoàn thiện. Phần này sẽ được hoàn thành trong một bản cập nhật tương lai.",
-    "validatorIncentives": "Khuyến Khích Validator",
-    "validatorDescription": "Phần thưởng bền vững cho các validator mạng và nhà vận hành node Việt Nam",
-    "communityRewards": "Phần Thưởng Cộng Đồng",
-    "communityDescription": "Khai thác thanh khoản và khuyến khích tham gia quản trị",
-    "developmentFund": "Quỹ Phát Triển",
-    "fundDescription": "Phân bổ ngân quỹ để phát triển giao thức liên tục",
-    "feeStructure": "Cấu Trúc Phí",
+    "title": "Kinh tế token",
+    "subtitle": "Kinh tế token bền vững được thiết kế để khuyến khích sự tham gia mạng và thúc đẩy việc áp dụng blockchain của Việt Nam.",
+    "underDevelopment": "Đang phát triển",
+    "developmentDescription": "Mô hình kinh tế token Lotus Bridge hiện đang được hoàn thiện. Phần này sẽ được hoàn thành trong bản cập nhật tương lai.",
+    "validatorIncentives": "Ưu đãi validator",
+    "validatorDescription": "Phần thưởng bền vững cho các validator mạng và vận hành node Việt Nam",
+    "communityRewards": "Phần thưởng cộng đồng",
+    "communityDescription": "Ưu đãi khai thác thanh khoản và tham gia quản trị",
+    "developmentFund": "Quỹ phát triển",
+    "fundDescription": "Phân bổ ngân khố cho việc phát triển giao thức liên tục",
+    "feeStructure": "Cấu trúc phí",
     "feeDescription": "Mô hình phí minh bạch và cạnh tranh cho giao dịch chuỗi chéo",
-    "distributionPreview": "Xem Trước Phân Phối",
-    "distributionDescription": "Phân bổ token sơ bộ tập trung vào phát triển cộng đồng Việt Nam và tính bền vững dài hạn.",
-    "community": "Cộng Đồng (40%)",
-    "communityAllocation": "Người Dùng & Thanh Khoản Việt Nam",
-    "communityAllocationDescription": "Được phân bổ cho phát triển cộng đồng Việt Nam, khuyến khích thanh khoản và phần thưởng người dùng sớm",
-    "development": "Phát Triển (25%)",
-    "developmentAllocation": "Đội Ngũ & Phát Triển Tương Lai",
-    "developmentAllocationDescription": "Dành riêng cho đội ngũ cốt lõi, cố vấn và tiếp tục phát triển giao thức với lịch trình vesting",
-    "ecosystem": "Hệ Sinh Thái (35%)",
-    "ecosystemAllocation": "Validator & Đối Tác",
-    "ecosystemAllocationDescription": "Cho phần thưởng validator, đối tác chiến lược và các sáng kiến tăng trưởng hệ sinh thái",
-    "vietnameseFirst": "Kinh Tế Việt Nam Trước Tiên",
-    "vietnameseFirstDescription": "Quan tâm đến việc phát triển mô hình kinh tế token của chúng tôi?",
-    "vietnameseFirstContent": "Chúng tôi đang thiết kế một mô hình kinh tế token ưu tiên tăng trưởng cộng đồng Việt Nam đồng thời đảm bảo tính cạnh tranh toàn cầu và tính bền vững.",
-    "joinDiscussion": "Tham Gia Thảo Luận Kinh Tế Token"
+    "distributionPreview": "Xem trước phân phối",
+    "distributionDescription": "Phân bổ token sơ bộ tập trung vào phát triển cộng đồng Việt Nam và tính bền vững lâu dài.",
+    "community": "Cộng đồng (40%)",
+    "communityAllocation": "Người dùng & thanh khoản Việt Nam",
+    "communityAllocationDescription": "Được phân bổ cho phát triển cộng đồng Việt Nam, ưu đãi thanh khoản và phần thưởng người áp dụng sớm",
+    "development": "Phát triển (25%)",
+    "developmentAllocation": "Nhóm & phát triển tương lai",
+    "developmentAllocationDescription": "Dành riêng cho nhóm cốt lõi, cố vấn và phát triển giao thức liên tục với lịch vesting",
+    "ecosystem": "Hệ sinh thái (35%)",
+    "ecosystemAllocation": "Validator & quan hệ đối tác",
+    "ecosystemAllocationDescription": "Cho phần thưởng validator, quan hệ đối tác chiến lược và sáng kiến tăng trưởng hệ sinh thái",
+    "vietnameseFirst": "Kinh tế ưu tiên Việt Nam",
+    "vietnameseFirstDescription": "Quan tâm đến phát triển mô hình kinh tế token của chúng tôi?",
+    "vietnameseFirstContent": "Chúng tôi đang thiết kế mô hình kinh tế token ưu tiên tăng trưởng cộng đồng Việt Nam đồng thời đảm bảo tính cạnh tranh và bền vững toàn cầu.",
+    "joinDiscussion": "Tham gia thảo luận kinh tế token"
   },
   "roadmap": {
-    "title": "Lộ Trình",
+    "title": "Lộ trình",
     "subtitle": "Hành trình của chúng tôi từ sự đổi mới của Việt Nam đến lãnh đạo khả năng tương tác blockchain toàn cầu.",
-    "phase1": "Giai Đoạn 1: Nền Tảng",
+    "developmentRoadmap": "Lộ trình phát triển",
+    "timelineDescription": "Dòng thời gian phát triển toàn diện và các cột mốc sắp ra mắt",
+    "timelineDiagrams": "Sơ đồ dòng thời gian lộ trình",
+    "detailedPhases": "Các giai đoạn phát triển chi tiết, cột mốc và triển khai tính năng",
+    "phase1": "Giai đoạn 1: Nền tảng",
     "phase1Description": "Nghiên cứu thị trường Việt Nam và phát triển giao thức cốt lõi",
-    "phase2": "Giai Đoạn 2: Phát Triển",
+    "phase2": "Giai đoạn 2: Cơ sở hạ tầng",
     "phase2Description": "Ra mắt testnet và tích hợp cộng đồng Việt Nam",
-    "phase3": "Giai Đoạn 3: Ra Mắt",
+    "phase3": "Giai đoạn 3: Mở rộng",
     "phase3Description": "Triển khai mainnet và mở rộng toàn cầu",
-    "phase4": "Giai Đoạn 4: Tăng Trưởng",
-    "phase4Description": "Tính năng nâng cao và đối tác hệ sinh thái"
+    "phase4": "Giai đoạn 4: Tối ưu hóa",
+    "phase4Description": "Tính năng nâng cao và quan hệ đối tác hệ sinh thái",
+    "vietnameseInnovation": "Ưu tiên đổi mới Việt Nam",
+    "vietnameseTimelineDescription": "Dòng thời gian chuyên dụng cho các tính năng thị trường Việt Nam và tích hợp hệ sinh thái",
+    "futureVietnamese": "Tính năng Việt Nam tương lai",
+    "incomingDocumentation": "Tài liệu sắp tới",
+    "futureTimeline": "Dòng thời gian tương lai"
   },
   "changelog": {
-    "title": "Nhật Ký Thay Đổi",
+    "title": "Nhật ký thay đổi",
     "subtitle": "Theo dõi sự phát triển của tài liệu và tính năng Lotus Bridge.",
-    "initialRelease": "Phiên Bản Đầu Tiên",
-    "initialDescription": "Phiên bản đầu tiên của tài liệu và giao diện Lotus Bridge",
-    "features": "Tính Năng",
-    "improvements": "Cải Tiến",
-    "documentation": "Tài Liệu",
+    "version": "Phiên bản",
+    "releaseDate": "Ngày phát hành",
+    "initialRelease": "Phát hành ban đầu",
+    "initialDescription": "Phát hành ban đầu tài liệu và UI Lotus Bridge với tích hợp văn hóa Việt Nam toàn diện",
+    "features": "Tính năng",
+    "improvements": "Cải tiến",
+    "documentation": "Tài liệu",
     "initialFeatures": [
-      "Cấu trúc tài liệu hoàn chỉnh",
-      "Các yếu tố thiết kế văn hóa Việt Nam",
-      "Thiết kế bố cục đáp ứng",
-      "Nền tảng hỗ trợ đa ngôn ngữ"
+      "Cấu trúc tài liệu hoàn chỉnh với các yếu tố văn hóa Việt Nam",
+      "Thiết kế responsive được tối ưu cho cả desktop và mobile",
+      "Nền tảng hỗ trợ đa ngôn ngữ cho tiếng Anh và tiếng Việt",
+      "Tích hợp token Việt Nam và hệ thống hỗ trợ",
+      "Điều hướng tương tác với các yếu tố thiết kế văn hóa"
     ],
     "initialImprovements": [
-      "Hiệu suất tải được tối ưu hóa",
-      "Tăng cường khả năng đáp ứng di động",
-      "Cải thiện UX điều hướng"
+      "Hiệu suất tải được tối ưu trên tất cả các trang",
+      "Khả năng responsive mobile được cải thiện với tương tác thân thiện với cảm ứng",
+      "UX điều hướng được cải thiện với chuyển tiếp mượt mà",
+      "Hoạt ảnh văn hóa Việt Nam và hiệu ứng hình ảnh",
+      "Thiết kế dễ tiếp cận theo tiêu chuẩn quốc tế"
     ],
     "initialDocumentation": [
-      "Tổng quan dự án toàn diện",
-      "Hướng dẫn kiến trúc kỹ thuật",
-      "Phân tích thị trường Việt Nam",
-      "Tài liệu ý nghĩa văn hóa"
+      "Tổng quan dự án toàn diện với trọng tâm Việt Nam",
+      "Hướng dẫn kiến trúc kỹ thuật và wireframe",
+      "Phân tích thị trường Việt Nam và ý nghĩa văn hóa",
+      "Cấu trúc nội dung đa ngôn ngữ và hệ thống dịch",
+      "Hướng dẫn nhà phát triển với trọng tâm cộng đồng Việt Nam"
     ]
   },
   "faqs": {
-    "title": "Câu Hỏi Thường Gặp",
-    "subtitle": "Các câu hỏi phổ biến về Lotus Bridge và sự đổi mới blockchain Việt Nam.",
-    "general": "Chung",
-    "technical": "Kỹ Thuật",
-    "vietnamese": "Thị Trường Việt Nam",
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Những câu hỏi phổ biến về Lotus Bridge và sự đổi mới blockchain của Việt Nam.",
+    "general": "Tổng quát",
+    "technical": "Kỹ thuật",
+    "vietnamese": "Thị trường Việt Nam",
     "generalFaqs": [
       {
         "question": "Lotus Bridge là gì?",
-        "answer": "Lotus Bridge là một giao thức khả năng tương tác đa chuỗi thế hệ mới được xây dựng bởi các nhà phát triển Việt Nam để kết nối liền mạch các mạng blockchain khác nhau, với sự tập trung đặc biệt vào các token Việt Nam và nhu cầu thị trường."
+        "answer": "Lotus Bridge là giao thức khả năng tương tác đa chuỗi thế hệ tiếp theo được xây dựng bởi các nhà phát triển Việt Nam để kết nối liền mạch các mạng blockchain khác nhau, với trọng tâm đặc biệt vào token Việt Nam và nhu cầu thị trường."
       },
       {
         "question": "Tại sao nó được gọi là Lotus Bridge?",
-        "answer": "Hoa sen là biểu tượng thiêng liêng trong văn hóa Việt Nam, đại diện cho sức bền, sự thuần khiết và sự phát triển từ những điều kiện thách thức. Giống như hoa sen nổi lên từ vùng nước bùn, Lotus Bridge nổi lên từ sự phân mảnh blockchain để tạo ra các giải pháp thống nhất."
+        "answer": "Hoa sen là biểu tượng thiêng liêng trong văn hóa Việt Nam, đại diện cho sức bền, sự thuần khiết và tăng trưởng từ những điều kiện đầy thử thách. Giống như hoa sen vươn lên từ bùn lầy, Lotus Bridge nổi lên từ sự phân mảnh blockchain để tạo ra các giải pháp thống nhất."
       },
       {
         "question": "Lotus Bridge có an toàn không?",
@@ -177,7 +233,7 @@
     "technicalFaqs": [
       {
         "question": "Lotus Bridge hỗ trợ những blockchain nào?",
-        "answer": "Lotus Bridge là bất khả tri kiến trúc và có thể thích ứng với bất kỳ mạng blockchain nào. Hỗ trợ ban đầu bao gồm Ethereum, Solana, BNB Chain và Polygon, với kế hoạch mở rộng sang nhiều mạng hơn."
+        "answer": "Lotus Bridge không phụ thuộc kiến trúc và có thể thích ứng với bất kỳ mạng blockchain nào. Hỗ trợ ban đầu bao gồm Ethereum, Solana, BNB Chain và Polygon, với kế hoạch mở rộng sang nhiều mạng hơn."
       },
       {
         "question": "Cầu nối chuỗi chéo kiến trúc hoạt động như thế nào?",
@@ -195,79 +251,137 @@
       },
       {
         "question": "Những token Việt Nam nào được hỗ trợ?",
-        "answer": "Chúng tôi hỗ trợ các token Việt Nam phổ biến bao gồm AXS (Axie Infinity), SLP, VNDC, VNST, KAI (KardiaChain), SIPHER, A8, C98 (Coin98), KNC (Kyber Network) và nhiều hơn nữa."
+        "answer": "Chúng tôi hỗ trợ các token Việt Nam phổ biến bao gồm AXS (Axie Infinity), SLP, VNDC, VNST, KAI (KardiaChain), SIPHER, A8, C98 (Coin98), KNC (Kyber Network) và nhiều token khác."
       },
       {
         "question": "Điều này mang lại lợi ích gì cho người dùng Việt Nam?",
-        "answer": "Người dùng Việt Nam có được quyền truy cập dễ dàng vào các cơ hội DeFi toàn cầu, thanh khoản tốt hơn cho các token địa phương và trải nghiệm người dùng được thiết kế đặc biệt cho nhu cầu và sở thích của thị trường Việt Nam."
+        "answer": "Người dùng Việt Nam có thể dễ dàng tiếp cận các cơ hội DeFi toàn cầu, thanh khoản tốt hơn cho các token địa phương và trải nghiệm người dùng được thiết kế đặc biệt cho nhu cầu và sở thích của thị trường Việt Nam."
       }
     ]
   },
   "notFound": {
     "title": "404",
-    "subtitle": "Không Tìm Thấy Trang",
+    "subtitle": "Không tìm thấy trang",
     "description": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
-    "returnHome": "Trở Về Trang Chủ",
-    "browsePages": "Duyệt Trang",
-    "reportIssue": "Báo Cáo Vấn Đề"
+    "returnHome": "Quay về trang chủ",
+    "browsePages": "Duyệt trang",
+    "reportIssue": "Báo cáo vấn đề"
   },
   "abstract": {
-    "title": "Tóm Tắt",
-    "subtitle": "Tầm nhìn nền tảng và sứ mệnh cốt lõi của Lotus Bridge - Một giao thức khả năng tương tác đa chuỗi thế hệ mới có nguồn gốc từ sự đổi mới của Việt Nam.",
-    "projectOverview": "Tổng Quan Dự Án",
-    "vietnameseInnovation": "Sự Đổi Mới Việt Nam",
+    "title": "Tóm tắt",
+    "subtitle": "Tầm nhìn nền tảng và sứ mệnh cốt lõi của Lotus Bridge - Giao thức khả năng tương tác đa chuỗi thế hệ tiếp theo bắt nguồn từ sự đổi mới của Việt Nam.",
+    "projectOverview": "Tổng quan dự án",
+    "vietnameseInnovation": "Đổi mới Việt Nam",
     "vietnameseInnovationDescription": "Được xây dựng bởi Việt Nam, cho Việt Nam, kết nối thế giới",
-    "technicalExcellence": "Xuất Sắc Kỹ Thuật",
+    "technicalExcellence": "Xuất sắc kỹ thuật",
     "technicalExcellenceDescription": "Kiến trúc tiên tiến cho khả năng tương tác liền mạch",
-    "visionImpact": "Tầm Nhìn & Tác Động",
-    "visionImpactDescription": "Định vị Việt Nam như một trung tâm đổi mới Web3"
+    "visionImpact": "Tầm nhìn & tác động",
+    "visionImpactDescription": "Định vị Việt Nam là trung tâm đổi mới Web3"
+  },
+  "architecture": {
+    "title": "Kiến trúc",
+    "subtitle": "Tài liệu kiến trúc chi tiết và sơ đồ sắp ra mắt.",
+    "systemArchitecture": "Kiến trúc hệ thống",
+    "architectureDocumentation": "Tài liệu kiến trúc",
+    "architectureDescription": "Chúng tôi hiện đang chuẩn bị các sơ đồ kiến trúc toàn diện và tài liệu kỹ thuật. Phần này sẽ bao gồm kiến trúc hệ thống chi tiết, tương tác thành phần và thông số kỹ thuật.",
+    "architectureDiagrams": "Sơ đồ kiến trúc sắp ra mắt",
+    "technicalDiagrams": "Các sơ đồ kỹ thuật chi tiết và biểu đồ luồng hệ thống sẽ có sẵn tại đây.",
+    "includingModular": "Bao gồm kiến trúc lớp mô-đun, giao thức chuỗi chéo và tích hợp hệ sinh thái Việt Nam",
+    "networkLayer": "Lớp mạng",
+    "networkDescription": "Thích ứng giao thức đa chuỗi",
+    "securityLayer": "Lớp bảo mật",
+    "securityLayerDescription": "Xác thực cấp doanh nghiệp",
+    "localizationLayer": "Lớp bản địa hóa",
+    "localizationDescription": "Tích hợp hệ sinh thái Việt Nam",
+    "stayTuned": "Đang phát triển - hãy theo dõi!"
+  },
+  "governance": {
+    "title": "Khung quản trị",
+    "subtitle": "Khung quản trị phi tập trung được thiết kế cho nhu cầu thị trường Việt Nam và khả năng tương tác blockchain toàn cầu.",
+    "governanceFramework": "Quản trị Lotus Bridge",
+    "governanceDescription": "Khung quản trị phi tập trung được thiết kế cho nhu cầu thị trường Việt Nam và khả năng tương tác blockchain toàn cầu.",
+    "underDevelopment": "Đang phát triển",
+    "frameworkDescription": "Khung quản trị Lotus Bridge hiện đang trong quá trình phát triển tích cực. Phần này sẽ được hoàn thành trong bản cập nhật tương lai.",
+    "workingOn": "Nhóm của chúng tôi đang làm việc trên các giải pháp quản trị sáng tạo sẽ cung cấp:",
+    "decentralizedGovernance": "Quản trị phi tập trung",
+    "decentralizedDescription": "Cơ chế quản trị do cộng đồng điều khiển với sự tham gia của các bên liên quan Việt Nam",
+    "efficientDecision": "Ra quyết định hiệu quả",
+    "efficientDescription": "Hệ thống đề xuất và bỏ phiếu được đơn giản hóa để phát triển giao thức nhanh chóng",
+    "transparentProcesses": "Quy trình minh bạch",
+    "transparentDescription": "Quy trình quản trị mở và có thể kiểm toán với trách nhiệm giải trình rõ ràng",
+    "vietnameseCommunity": "Tập trung cộng đồng Việt Nam",
+    "vietnameseCommunityDescription": "Đại diện cộng đồng địa phương với tiêu chuẩn khả năng tương tác toàn cầu",
+    "developmentTimeline": "Dòng thời gian phát triển",
+    "timelineDescription": "Hãy theo dõi các cập nhật về phát triển khung quản trị của chúng tôi khi chúng tôi xây dựng tương lai của khả năng tương tác blockchain Việt Nam.",
+    "q3": "Quý 3 2025",
+    "researchDesign": "Nghiên cứu & thiết kế",
+    "researchDescription": "Nghiên cứu khung quản trị và phân tích yêu cầu thị trường Việt Nam",
+    "q4": "Quý 4 2025",
+    "developmentTesting": "Phát triển & thử nghiệm",
+    "developmentTestingDescription": "Triển khai giao thức quản trị với phản hồi từ các bên liên quan Việt Nam",
+    "q1": "Quý 1 2026",
+    "mainnetLaunch": "Ra mắt mainnet",
+    "mainnetDescription": "Triển khai khung quản trị đầy đủ với tích hợp token Việt Nam",
+    "joinDevelopment": "Tham gia phát triển",
+    "interestedContributing": "Quan tâm đến việc đóng góp cho phát triển quản trị Lotus Bridge?",
+    "welcomeDevelopers": "Chúng tôi chào đón các nhà phát triển, nhà nghiên cứu và những người đam mê blockchain Việt Nam tham gia định hình khung quản trị của chúng tôi."
+  },
+  "ecosystemBenefits": {
+    "title": "Lợi ích hệ sinh thái",
+    "subtitle": "Cách Lotus Bridge tạo ra giá trị cho các người tham gia khác nhau trong hệ sinh thái blockchain Việt Nam và toàn cầu."
+  },
+  "introduction": {
+    "title": "Giới thiệu",
+    "subtitle": "Hiểu về Lotus Bridge - Giao thức chuỗi chéo cách mạng bắt nguồn từ văn hóa và sự đổi mới của Việt Nam.",
+    "discoverLotus": "Khám phá Lotus Bridge",
+    "exploreDescription": "Khám phá các khái niệm cơ bản và sứ mệnh đằng sau giao thức chuỗi chéo cách mạng của chúng tôi",
+    "introDescription": "Lotus Bridge đại diện cho nhiều hơn chỉ đổi mới kỹ thuật—nó là một cây cầu giữa các nền văn hóa, nền kinh tế và tương lai. Được xây dựng bởi các nhà phát triển Việt Nam với tầm nhìn kết nối hệ sinh thái crypto sôi động của Việt Nam với các cơ hội toàn cầu.",
+    "whatIsLotus": "Lotus Bridge là gì?",
+    "understandingTech": "Hiểu về công nghệ và khả năng",
+    "discoverTech": "Khám phá cách Lotus Bridge hoạt động như một adapter động, phổ quát giữa các blockchain, cho phép tương tác chuỗi chéo liền mạch bất kể sự khác biệt kiến trúc.",
+    "crossArchitecture": "Khả năng cầu nối chuỗi chéo kiến trúc",
+    "multiWalletSupport": "Hỗ trợ và quản lý đa ví",
+    "adaptiveProtocol": "Công nghệ giao thức thích ứng",
+    "vietnameseTokenIntegration": "Tích hợp token Việt Nam",
+    "learnTechnology": "Tìm hiểu về công nghệ",
+    "whyLotus": "Tại sao chọn Lotus?",
+    "culturalSignificance": "Ý nghĩa văn hóa và sứ mệnh",
+    "culturalDescription": "Tìm hiểu về di sản văn hóa và giá trị đã truyền cảm hứng cho Lotus Bridge, và cách chúng tôi mang sự đổi mới của Việt Nam ra sân khấu toàn cầu.",
+    "vietnameseCulturalSymbolism": "Biểu tượng văn hóa Việt Nam",
+    "regionalEmpowerment": "Sứ mệnh trao quyền khu vực",
+    "globalBridgeBuilding": "Tầm nhìn xây dựng cầu nối toàn cầu",
+    "communityDriven": "Đổi mới do cộng đồng thúc đẩy",
+    "discoverMission": "Khám phá sứ mệnh của chúng tôi",
+    "lotusSymbol": "Biểu tượng hoa sen",
+    "culturalHeritage": "Di sản văn hóa gặp gỡ đổi mới công nghệ",
+    "resilience": "Sức bền",
+    "resilienceDescription": "Phát triển mạnh mẽ trong môi trường đầy thử thách, giống như hệ sinh thái crypto Việt Nam",
+    "purity": "Sự thuần khiết",
+    "purityDescription": "Giải pháp sạch, thanh lịch cắt xuyên qua sự phức tạp blockchain",
+    "growth": "Tăng trưởng",
+    "growthDescription": "Nở rộ từ gốc rễ khu vực đến tác động và đổi mới toàn cầu",
+    "readyExplore": "Sẵn sàng khám phá sâu hơn?",
+    "continueBackground": "Tiếp tục với bối cảnh ngành hoặc chuyển đến khái niệm cốt lõi",
+    "continueToBackground": "Tiếp tục đến bối cảnh"
   },
   "background": {
-    "title": "Bối Cảnh",
+    "title": "Bối cảnh",
     "subtitle": "Bối cảnh ngành và hệ sinh thái blockchain Việt Nam đã truyền cảm hứng cho Lotus Bridge."
   },
   "coreConcept": {
-    "title": "Khái Niệm Cốt Lõi",
+    "title": "Khái niệm cốt lõi",
     "subtitle": "Hiểu các nguyên tắc cơ bản đằng sau kiến trúc Lotus Bridge."
   },
   "coreOverview": {
-    "title": "Tổng Quan Cốt Lõi",
+    "title": "Tổng quan cốt lõi",
     "subtitle": "Tổng quan cấp cao về khả năng và tính năng của Lotus Bridge."
   },
-  "architecture": {
-    "title": "Kiến Trúc",
-    "subtitle": "Tài liệu kiến trúc chi tiết và sơ đồ sắp ra mắt."
-  },
-  "governance": {
-    "title": "Khung Quản Trị",
-    "subtitle": "Khung quản trị phi tập trung được thiết kế cho nhu cầu thị trường Việt Nam và khả năng tương tác blockchain toàn cầu."
-  },
-  "ecosystemBenefits": {
-    "title": "Lợi Ích Hệ Sinh Thái",
-    "subtitle": "Cách Lotus Bridge tạo ra giá trị cho các tham gia khác nhau trong hệ sinh thái blockchain Việt Nam và toàn cầu."
-  },
-  "benefitsUsers": {
-    "title": "Lợi Ích Cho Người Dùng",
-    "subtitle": "Cách Lotus Bridge cải thiện trải nghiệm cho người dùng blockchain Việt Nam và toàn cầu."
-  },
-  "benefitsDevs": {
-    "title": "Lợi Ích Cho Nhà Phát Triển",
-    "subtitle": "Các công cụ và cơ hội mà Lotus Bridge cung cấp cho các nhà phát triển Việt Nam và quốc tế."
-  },
-  "benefitsLiquidity": {
-    "title": "Lợi Ích Cho Nhà Cung Cấp Thanh Khoản",
-    "subtitle": "Cơ hội và khuyến khích cho các nhà cung cấp thanh khoản trong hệ sinh thái Lotus Bridge."
-  },
-  "benefitsVietnam": {
-    "title": "Lợi Ích Cho Ngành Crypto Việt Nam",
-    "subtitle": "Định vị Việt Nam như một nhà lãnh đạo toàn cầu trong đổi mới blockchain đồng thời trao quyền cho tài năng địa phương và thể hiện sự xuất sắc của Việt Nam với thế giới."
-  },
   "whatIsLotus": {
-    "title": "Lotus Bridge Là Gì?",
-    "subtitle": "Một adapter phổ quát, động giữa các blockchain vượt qua những hạn chế của cầu nối truyền thống."
+    "title": "Lotus Bridge là gì?",
+    "subtitle": "Một adapter động, phổ quát giữa các blockchain vượt qua các giới hạn cầu nối truyền thống."
   },
   "whyLotus": {
-    "title": "Tại Sao Lotus?",
+    "title": "Tại sao chọn Lotus?",
     "subtitle": "Ý nghĩa văn hóa và sứ mệnh đằng sau Lotus Bridge."
   }
 }

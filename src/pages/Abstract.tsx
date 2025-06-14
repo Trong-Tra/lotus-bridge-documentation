@@ -16,7 +16,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
 
 const Abstract = () => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <SidebarProvider>
@@ -32,15 +32,13 @@ const Abstract = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Executive Summary
+                    {t("abstract.title")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    🌸 Abstract
+                    🌸 {t("abstract.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    The foundational vision and core mission of Lotus Bridge - A
-                    next-generation multi-chain interoperability protocol rooted
-                    in Vietnamese innovation.
+                    {t("abstract.subtitle")}
                   </p>
                 </div>
               </div>
@@ -55,7 +53,7 @@ const Abstract = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Target className="h-5 w-5" />
-                        Project Overview
+                        {t("abstract.projectOverview")}
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
@@ -96,10 +94,10 @@ const Abstract = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Globe className="h-5 w-5" />
-                          Vietnamese Innovation
+                          {t("abstract.vietnameseInnovation")}
                         </CardTitle>
                         <CardDescription>
-                          Built by Vietnam, for Vietnam, bridging the world
+                          {t("abstract.vietnameseInnovationDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -137,10 +135,10 @@ const Abstract = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Zap className="h-5 w-5" />
-                          Technical Excellence
+                          {t("abstract.technicalExcellence")}
                         </CardTitle>
                         <CardDescription>
-                          Advanced architecture for seamless interoperability
+                          {t("abstract.technicalExcellenceDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -177,18 +175,18 @@ const Abstract = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Users className="h-5 w-5" />
-                        🇻🇳 Vision & Impact
+                        🇻🇳 {t("abstract.visionImpact")}
                       </CardTitle>
                       <CardDescription>
-                        Positioning Vietnam as a Web3 innovation hub
+                        {t("abstract.visionImpactDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="prose max-w-none dark:prose-invert">
                         <p>
-                          Lotus Bridge is more than a technical innovation—it’s
+                          Lotus Bridge is more than a technical innovation—it's
                           a symbol of connection between cultures, economies,
-                          and tomorrow’s digital world. By integrating
+                          and tomorrow's digital world. By integrating
                           Vietnamese tokens into the global liquidity stream,
                           Lotus Bridge empowers Vietnam to step confidently onto
                           the Web3 stage. With seamless user experience,
@@ -212,7 +210,7 @@ const Abstract = () => {
                   <div className="flex justify-between items-center">
                     <div>
                       <h3 className="text-lg font-semibold">
-                        Ready to dive deeper?
+                        {t("introduction.readyExplore")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
                         Explore the detailed introduction and technical
@@ -221,7 +219,7 @@ const Abstract = () => {
                     </div>
                     <Button className="gap-2" asChild>
                       <Link to="/introduction">
-                        Continue to Introduction
+                        {t("introduction.continueToBackground")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

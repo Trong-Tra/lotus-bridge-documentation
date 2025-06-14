@@ -2,8 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/hooks/useLanguage";
 
 export const SecurityNavigation = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-8 px-6 border-t">
       <div className="container mx-auto max-w-6xl">
@@ -11,20 +14,20 @@ export const SecurityNavigation = () => {
           <Button variant="outline" className="gap-2" asChild>
             <Link to="/benefits-vietnam">
               <ArrowLeft className="h-4 w-4" />
-              Back to Benefits for Vietnam
+              {t("common.back")} {t("navigation.benefitsVietnam")}
             </Link>
           </Button>
 
           <div className="text-center">
-            <h3 className="text-lg font-semibold">Continue exploring</h3>
+            <h3 className="text-lg font-semibold">{t("common.continue")}</h3>
             <p className="text-sm text-muted-foreground">
-              Learn about our development roadmap
+              {t("navigation.tokenomics")}
             </p>
           </div>
 
           <Button className="gap-2" asChild>
-            <Link to="/roadmap">
-              Continue to Roadmap
+            <Link to="/tokenomics">
+              {t("navigation.tokenomics")}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>

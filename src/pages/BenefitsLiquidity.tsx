@@ -1,3 +1,4 @@
+
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -12,98 +13,20 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
-  DollarSign,
-  TrendingUp,
-  Layers,
-  Zap,
+  Droplets,
   ArrowRight,
   ArrowLeft,
-  Target,
+  TrendingUp,
+  Award,
+  Settings,
+  Shield,
   BarChart3,
-  Coins,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
 
 const BenefitsLiquidity = () => {
-  const { t, language } = useLanguage();
-
-  const liquidityBenefits = [
-    {
-      title: "Opportunities For New Liquidity Pools",
-      description:
-        "Cross-chain communication and cross-chain asset transfers being a foundation for creating new liquidity pools, enabling users to earn yields on diverse assets.",
-      icon: DollarSign,
-      features: [
-        "Real utility-driven demand",
-        "Cross-chain arbitrage opportunities",
-        "Vietnamese token pair liquidity",
-        "Gaming ecosystem integration",
-        "Stable revenue from bridge fees",
-      ],
-    },
-    {
-      title: "Exposure to Multiple Ecosystems",
-      description:
-        "Diversify your liquidity provision across multiple blockchain ecosystems through a single, unified bridge protocol.",
-      icon: Layers,
-      features: [
-        "Multi-chain portfolio exposure",
-        "Reduced concentration risk",
-        "Access to Vietnamese gaming tokens",
-        "Cross-ecosystem arbitrage",
-        "Balanced risk distribution",
-      ],
-    },
-    {
-      title: "Dynamic Fee Structures and Yield Incentives",
-      description:
-        "Benefit from intelligent fee optimization and additional yield incentives designed to maximize liquidity provider returns.",
-      icon: TrendingUp,
-      features: [
-        "Dynamic fee adjustment",
-        "Volume-based incentives",
-        "Vietnamese market bonuses",
-        "Long-term staking rewards",
-        "Governance token distribution",
-      ],
-    },
-  ];
-
-  const poolTypes = [
-    {
-      name: "🎮 Gaming Token Pools",
-      description: "AXS/ETH, SLP/USDC cross-chain pairs",
-      apr: "15-25%",
-      risk: "Medium",
-      demand: "High",
-      tokens: ["AXS", "SLP", "RON", "ETH", "USDC"],
-    },
-    {
-      name: "🇻🇳 Vietnamese Stablecoin Pools",
-      description: "VNDC/VNST cross-chain liquidity",
-      apr: "8-12%",
-      risk: "Low",
-      demand: "Stable",
-      tokens: ["VNDC", "VNST", "USDT", "USDC"],
-    },
-    {
-      name: "⚡ Cross-Chain Bridge Pools",
-      description: "ETH/SOL, BNB/MATIC bridge liquidity",
-      apr: "20-35%",
-      risk: "High",
-      demand: "Very High",
-      tokens: ["ETH", "SOL", "BNB", "MATIC", "AVAX"],
-    },
-    {
-      name: "🚀 Vietnamese Innovation Pools",
-      description: "KAI/C98, KNC cross-ecosystem pairs",
-      apr: "18-28%",
-      risk: "Medium-High",
-      demand: "Growing",
-      tokens: ["KAI", "C98", "KNC", "SIPHER", "A8"],
-    },
-  ];
+  const { t } = useLanguage();
 
   return (
     <SidebarProvider>
@@ -115,311 +38,150 @@ const BenefitsLiquidity = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-5xl">
+            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    💰 Liquidity Provider Benefits
+                    💧 {t("navigation.benefitsLiquidity")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Liquidity Providers
+                    {t("benefits.liquidity.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Unlock new yield opportunities by providing liquidity to the
-                    blockchain ecosystem's.
+                    {t("benefits.liquidity.subtitle")}
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Core Benefits */}
-            <section className="py-12 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <div className="grid gap-8">
-                  {liquidityBenefits.map((benefit, index) => {
-                    const IconComponent = benefit.icon;
-                    return (
-                      <Card key={index} className="relative overflow-hidden">
-                        <div
-                          className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${
-                            index % 2 === 0
-                              ? "from-primary to-accent"
-                              : "from-accent to-primary"
-                          }`}
-                        />
-                        <CardHeader className="pl-8">
-                          <div className="flex items-center gap-4 mb-2">
-                            <div
-                              className={`p-3 rounded-lg ${
-                                index % 2 === 0
-                                  ? "bg-primary/10"
-                                  : "bg-accent/10"
-                              }`}
-                            >
-                              <IconComponent
-                                className={`h-6 w-6 ${
-                                  index % 2 === 0
-                                    ? "text-primary"
-                                    : "text-accent"
-                                }`}
-                              />
-                            </div>
-                            <CardTitle className="text-2xl">
-                              {benefit.title}
-                            </CardTitle>
-                          </div>
-                          <CardDescription className="text-lg">
-                            {benefit.description}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="pl-8">
-                          <div className="grid md:grid-cols-2 gap-4">
-                            {benefit.features.map((feature, featureIndex) => (
-                              <div
-                                key={featureIndex}
-                                className="flex items-center gap-2"
-                              >
-                                <div className="w-2 h-2 bg-primary rounded-full" />
-                                <span className="text-sm font-medium">
-                                  {feature}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
-
-            {/* Liquidity Pool Types */}
-            <section className="py-10 px-6 bg-muted/20">
-              <div className="container mx-auto max-w-5xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🌸 Available Liquidity Pools
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Diverse pool options catering to different risk appetites
-                    and focusing on Vietnamese market opportunities.
-                  </p>
-                </div>
-
+            {/* Benefits Content */}
+            <section className="py-20 px-6">
+              <div className="container mx-auto max-w-6xl">
                 <div className="grid md:grid-cols-2 gap-8">
-                  {poolTypes.map((pool, index) => (
-                    <Card key={index} className="relative overflow-hidden">
-                      <CardHeader>
-                        <div className="flex items-center justify-between mb-2">
-                          <CardTitle className="text-xl">{pool.name}</CardTitle>
-                          <Badge
-                            variant={
-                              pool.risk === "Low"
-                                ? "secondary"
-                                : pool.risk === "Medium"
-                                ? "default"
-                                : "destructive"
-                            }
-                            className="text-xs"
-                          >
-                            {pool.risk} Risk
-                          </Badge>
-                        </div>
-                        <CardDescription className="text-base">
-                          {pool.description}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="grid grid-cols-2 gap-4 mb-4">
-                          <div>
-                            <h4 className="font-semibold text-green-600 mb-1">
-                              📈 APR Range
-                            </h4>
-                            <p className="text-lg font-bold">{pool.apr}</p>
-                          </div>
-                          <div className="text-right">
-                            <h4 className="font-semibold text-blue-600 mb-1">
-                              🔥 Demand
-                            </h4>
-                            <p className="text-lg font-bold">{pool.demand}</p>
-                          </div>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">
-                            🪙 Pool Tokens:
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {pool.tokens.map((token, tokenIndex) => (
-                              <Badge
-                                key={tokenIndex}
-                                variant="outline"
-                                className="text-xs"
-                              >
-                                {token}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Yield Optimization */}
-            <section className="py-12 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    ⚡ Yield Optimization
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Advanced mechanisms to maximize returns for liquidity
-                    providers in the Vietnamese blockchain ecosystem.
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-8">
-                  <Card>
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
                     <CardHeader>
-                      <div className="flex items-center gap-3 mb-2">
-                        <Target className="h-6 w-6 text-primary" />
-                        <CardTitle>Smart Rebalancing</CardTitle>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <TrendingUp className="h-6 w-6 text-primary" />
                       </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.liquidity.yields")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.liquidity.yieldsDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <span className="text-2xl">🇻🇳</span>
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.liquidity.vietnamese")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.liquidity.vietnameseDescription")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        Automated pool rebalancing based on Vietnamese market
-                        conditions and cross-chain demand patterns.
-                      </p>
-                      <ul className="text-sm space-y-1">
-                        <li>• Vietnamese trading hours optimization</li>
-                        <li>• Gaming token demand cycles</li>
-                        <li>• Cross-chain arbitrage timing</li>
-                      </ul>
+                      <div className="grid grid-cols-3 gap-2">
+                        <div className="p-2 bg-muted/30 rounded text-center text-xs font-medium">
+                          AXS/ETH
+                        </div>
+                        <div className="p-2 bg-muted/30 rounded text-center text-xs font-medium">
+                          VNDC/USDT
+                        </div>
+                        <div className="p-2 bg-muted/30 rounded text-center text-xs font-medium">
+                          C98/BNB
+                        </div>
+                      </div>
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
                     <CardHeader>
-                      <div className="flex items-center gap-3 mb-2">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Award className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.liquidity.rewards")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.liquidity.rewardsDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <Settings className="h-6 w-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.liquidity.flexible")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.liquidity.flexibleDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Shield className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.liquidity.impermanent")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.liquidity.impermanentDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                         <BarChart3 className="h-6 w-6 text-accent" />
-                        <CardTitle>Dynamic Fees</CardTitle>
                       </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.liquidity.analytics")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.liquidity.analyticsDescription")}
+                      </CardDescription>
                     </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        Fee structures that adapt to Vietnamese market
-                        volatility and cross-chain transaction volume.
-                      </p>
-                      <ul className="text-sm space-y-1">
-                        <li>• Volume-based fee scaling</li>
-                        <li>• Peak demand surcharges</li>
-                        <li>• Vietnamese holiday adjustments</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardHeader>
-                      <div className="flex items-center gap-3 mb-2">
-                        <Coins className="h-6 w-6 text-primary" />
-                        <CardTitle>Bonus Rewards</CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground mb-4">
-                        Additional incentives for supporting Vietnamese
-                        blockchain innovation and ecosystem growth.
-                      </p>
-                      <ul className="text-sm space-y-1">
-                        <li>• Vietnamese token bonuses</li>
-                        <li>• Long-term loyalty rewards</li>
-                        <li>• Community governance tokens</li>
-                      </ul>
-                    </CardContent>
                   </Card>
                 </div>
-              </div>
-            </section>
 
-            {/* Getting Started */}
-            <section className="py-10 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <Card className="border-primary/20 bg-gradient-to-r from-primary/10 to-accent/10">
-                  <CardHeader className="text-center">
-                    <CardTitle className="text-3xl">
-                      🚀 Start Providing Liquidity
-                    </CardTitle>
-                    <CardDescription className="text-lg">
-                      Join the Vietnamese blockchain revolution and earn
-                      competitive yields
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
-                      <div className="text-left">
-                        <h4 className="font-semibold mb-2">💎 Premium APR</h4>
-                        <p className="text-sm text-muted-foreground">
-                          Competitive yields on Vietnamese and cross-chain pairs
-                        </p>
-                      </div>
-                      <div className="text-left">
-                        <h4 className="font-semibold mb-2">
-                          🛡️ Secure Protocol
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Multi-layer security with Vietnamese market focus
-                        </p>
-                      </div>
-                      <div className="text-left">
-                        <h4 className="font-semibold mb-2">
-                          📊 Real-Time Analytics
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Comprehensive dashboard with Vietnamese language
-                          support
-                        </p>
-                      </div>
-                      <div className="text-left">
-                        <h4 className="font-semibold mb-2">
-                          🎯 Targeted Opportunities
-                        </h4>
-                        <p className="text-sm text-muted-foreground">
-                          Pools designed for Vietnamese gaming and DeFi
-                          ecosystems
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </section>
+                <Separator className="my-12" />
 
-            {/* Navigation */}
-            <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-5xl">
+                {/* Navigation */}
                 <div className="flex justify-between items-center">
-                  <Link to="/benefits-developers">
-                    <Button
-                      variant="outline"
-                      className="flex items-center gap-2"
-                    >
+                  <Button variant="outline" className="gap-2" asChild>
+                    <Link to="/benefits-developers">
                       <ArrowLeft className="h-4 w-4" />
-                      For Builders
-                    </Button>
-                  </Link>
-                  <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
-                  </Link>
-                  <Link to="/benefits-vietnam">
-                    <Button className="flex items-center gap-2">
-                      For Vietnam's Industry
+                      {t("navigation.benefitsDevs")}
+                    </Link>
+                  </Button>
+
+                  <div className="text-center">
+                    <h3 className="text-lg font-semibold">
+                      {t("common.continue")}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {t("benefits.vietnam.title")}
+                    </p>
+                  </div>
+
+                  <Button className="gap-2" asChild>
+                    <Link to="/benefits-vietnam">
+                      {t("navigation.benefitsVietnam")}
                       <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </section>

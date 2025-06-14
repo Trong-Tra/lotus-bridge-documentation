@@ -12,7 +12,11 @@
     "next": "Next",
     "continue": "Continue",
     "documentation": "Documentation",
-    "comingSoon": "Coming Soon"
+    "comingSoon": "Coming Soon",
+    "underDevelopment": "Under Development",
+    "futureUpdate": "This section will be completed in a future update",
+    "contactTeam": "Contact Development Team",
+    "joinDiscussion": "Join Discussion"
   },
   "navigation": {
     "abstract": "Abstract",
@@ -47,33 +51,70 @@
     "missionTitle": "Bridging Blockchain Networks with Vietnamese Innovation",
     "developerGuide": "Developer Guide"
   },
-  "introduction": {
-    "title": "Introduction",
-    "subtitle": "Understanding Lotus Bridge - A revolutionary cross-chain protocol rooted in Vietnamese culture and innovation.",
-    "whyLotusMatters": {
-      "title": "Why Lotus Matters",
-      "securityFirst": {
-        "title": "Security First", 
-        "description": "Enterprise-grade security with multi-layer validation"
-      },
-      "globalReach": {
-        "title": "Global Reach",
-        "description": "Connecting Vietnamese innovation with worldwide opportunities"
-      },
-      "userFriendly": {
-        "description": "Intuitive design focused on Vietnamese user needs"
-      }
+  "benefits": {
+    "users": {
+      "title": "Benefits for Users",
+      "subtitle": "How Lotus Bridge improves the experience for Vietnamese and global blockchain users.",
+      "seamlessExperience": "Seamless Cross-Chain Experience",
+      "seamlessDescription": "Move assets between different blockchains with just a few clicks, no technical knowledge required.",
+      "vietnameseTokens": "Native Vietnamese Token Support",
+      "vietnameseDescription": "First-class support for popular Vietnamese tokens often overlooked by other bridges.",
+      "multiWallet": "Multi-Wallet Management",
+      "multiWalletDescription": "Connect and manage multiple wallets across different blockchain networks in one interface.",
+      "lowFees": "Competitive Transaction Fees",
+      "lowFeesDescription": "Optimized fee structure designed to be affordable for Vietnamese users.",
+      "security": "Enterprise-Grade Security",
+      "securityDescription": "Multi-layer security protocols protecting your assets during cross-chain transfers.",
+      "localization": "Vietnamese Localization",
+      "localizationDescription": "Full Vietnamese language support with culturally appropriate design elements."
     },
-    "vietnameseRoots": {
-      "communityFirst": {
-        "title": "Community First"
-      }
-    }
-  },
-  "features": {
-    "lightningFast": {
-      "title": "Lightning Fast",
-      "description": "Optimized for speed and efficiency across all networks"
+    "developers": {
+      "title": "Benefits for Developers",
+      "subtitle": "Tools and opportunities Lotus Bridge provides for Vietnamese and international developers.",
+      "easyIntegration": "Simple SDK Integration",
+      "easyDescription": "Comprehensive SDK with clear documentation for rapid dApp development.",
+      "vietnamese": "Vietnamese Developer Community",
+      "vietnameseDescription": "Connect with local developers and access Vietnamese market insights.",
+      "crossChain": "Cross-Chain dApp Development",
+      "crossChainDescription": "Build applications that work seamlessly across multiple blockchain networks.",
+      "grants": "Development Grants",
+      "grantsDescription": "Funding opportunities for Vietnamese developers building on Lotus Bridge.",
+      "documentation": "Comprehensive Documentation",
+      "documentationDescription": "Detailed guides, tutorials, and examples in both Vietnamese and English.",
+      "support": "Developer Support",
+      "supportDescription": "Direct access to core team and active community support channels."
+    },
+    "liquidity": {
+      "title": "Benefits for Liquidity Providers",
+      "subtitle": "Opportunities and incentives for liquidity providers in the Lotus Bridge ecosystem.",
+      "yields": "Competitive Yield Opportunities",
+      "yieldsDescription": "Earn attractive returns by providing liquidity for cross-chain transfers.",
+      "vietnamese": "Vietnamese Token Pairs",
+      "vietnameseDescription": "Unique opportunities to provide liquidity for Vietnamese token pairs.",
+      "rewards": "Governance Token Rewards",
+      "rewardsDescription": "Earn Lotus Bridge governance tokens through liquidity mining programs.",
+      "flexible": "Flexible Pool Options",
+      "flexibleDescription": "Choose from various pool types and risk levels that match your strategy.",
+      "impermanent": "Impermanent Loss Protection",
+      "impermanentDescription": "Advanced mechanisms to minimize impermanent loss risks.",
+      "analytics": "Real-Time Analytics",
+      "analyticsDescription": "Comprehensive dashboard to track your liquidity performance and earnings."
+    },
+    "vietnam": {
+      "title": "Benefits for Vietnam's Crypto Industry",
+      "subtitle": "Positioning Vietnam as a global leader in blockchain innovation while empowering local talent and showcasing Vietnamese excellence to the world.",
+      "global": "Global Market Access",
+      "globalDescription": "Connect Vietnamese projects and tokens to international DeFi ecosystems and liquidity.",
+      "showcase": "Vietnamese Innovation Showcase",
+      "showcaseDescription": "Demonstrate Vietnamese technical excellence and innovation on the global stage.",
+      "talent": "Local Talent Development",
+      "talentDescription": "Create opportunities for Vietnamese developers and blockchain professionals to grow.",
+      "ecosystem": "Ecosystem Growth",
+      "ecosystemDescription": "Foster the growth of Vietnam's blockchain and DeFi ecosystem through better connectivity.",
+      "compliance": "Regulatory Friendly",
+      "complianceDescription": "Designed with Vietnamese regulatory considerations and compliance in mind.",
+      "partnerships": "Strategic Partnerships",
+      "partnershipsDescription": "Build connections between Vietnamese projects and international blockchain networks."
     }
   },
   "security": {
@@ -119,39 +160,54 @@
   "roadmap": {
     "title": "Roadmap",
     "subtitle": "Our journey from Vietnamese innovation to global blockchain interoperability leadership.",
+    "developmentRoadmap": "Development Roadmap",
+    "timelineDescription": "Comprehensive development timeline and milestones coming soon",
+    "timelineDiagrams": "Roadmap Timeline Diagrams",
+    "detailedPhases": "Detailed development phases, milestones, and feature rollouts",
     "phase1": "Phase 1: Foundation",
     "phase1Description": "Vietnamese market research and core protocol development",
-    "phase2": "Phase 2: Development", 
+    "phase2": "Phase 2: Infrastructure", 
     "phase2Description": "Testnet launch and Vietnamese community integration",
-    "phase3": "Phase 3: Launch",
+    "phase3": "Phase 3: Expansion",
     "phase3Description": "Mainnet deployment and global expansion",
-    "phase4": "Phase 4: Growth",
-    "phase4Description": "Advanced features and ecosystem partnerships"
+    "phase4": "Phase 4: Optimization",
+    "phase4Description": "Advanced features and ecosystem partnerships",
+    "vietnameseInnovation": "Vietnamese Innovation Priority",
+    "vietnameseTimelineDescription": "Dedicated timeline for Vietnamese market features and ecosystem integration",
+    "futureVietnamese": "Future Vietnamese Features",
+    "incomingDocumentation": "Incoming Documentation",
+    "futureTimeline": "Future Timeline"
   },
   "changelog": {
     "title": "Changelog",
     "subtitle": "Track the evolution of Lotus Bridge documentation and features.",
+    "version": "Version",
+    "releaseDate": "Release Date",
     "initialRelease": "Initial Release",
-    "initialDescription": "Initial release of Lotus Bridge documentation and UI",
+    "initialDescription": "Initial release of Lotus Bridge documentation and UI with comprehensive Vietnamese cultural integration",
     "features": "Features",
     "improvements": "Improvements",
     "documentation": "Documentation",
     "initialFeatures": [
-      "Complete documentation structure",
-      "Vietnamese cultural design elements", 
-      "Responsive layout design",
-      "Multi-language support foundation"
+      "Complete documentation structure with Vietnamese cultural elements",
+      "Responsive design optimized for both desktop and mobile",
+      "Multi-language support foundation for English and Vietnamese",
+      "Vietnamese token integration and support system",
+      "Interactive navigation with cultural design elements"
     ],
     "initialImprovements": [
-      "Optimized loading performance",
-      "Enhanced mobile responsiveness",
-      "Improved navigation UX"
+      "Optimized loading performance across all pages",
+      "Enhanced mobile responsiveness with touch-friendly interactions",
+      "Improved navigation UX with smooth transitions",
+      "Vietnamese cultural animations and visual effects",
+      "Accessible design following international standards"
     ],
     "initialDocumentation": [
-      "Comprehensive project overview",
-      "Technical architecture guides",
-      "Vietnamese market analysis",
-      "Cultural significance documentation"
+      "Comprehensive project overview with Vietnamese focus",
+      "Technical architecture guides and wireframes",
+      "Vietnamese market analysis and cultural significance",
+      "Multi-language content structure and translation system",
+      "Developer guides with Vietnamese community focus"
     ]
   },
   "faqs": {
@@ -222,6 +278,92 @@
     "visionImpact": "Vision & Impact",
     "visionImpactDescription": "Positioning Vietnam as a Web3 innovation hub"
   },
+  "architecture": {
+    "title": "Architecture",
+    "subtitle": "Detailed architecture documentation and diagrams coming soon.",
+    "systemArchitecture": "System Architecture",
+    "architectureDocumentation": "Architecture Documentation",
+    "architectureDescription": "We are currently preparing comprehensive architecture diagrams and technical documentation. This section will include detailed system architecture, component interactions, and technical specifications.",
+    "architectureDiagrams": "Architecture Diagrams Coming Soon",
+    "technicalDiagrams": "Detailed technical diagrams and system flow charts will be available here.",
+    "includingModular": "Including modular layer architecture, cross-chain protocols, and Vietnamese ecosystem integration",
+    "networkLayer": "Network Layer",
+    "networkDescription": "Multi-chain protocol adaptation",
+    "securityLayer": "Security Layer", 
+    "securityLayerDescription": "Enterprise-grade validation",
+    "localizationLayer": "Localization Layer",
+    "localizationDescription": "Vietnamese ecosystem integration",
+    "stayTuned": "Under Development - Stay Tuned!"
+  },
+  "governance": {
+    "title": "Governance Framework",
+    "subtitle": "Decentralized governance framework designed for Vietnamese market needs and global blockchain interoperability.",
+    "governanceFramework": "Lotus Bridge Governance",
+    "governanceDescription": "Decentralized governance framework designed for Vietnamese market needs and global blockchain interoperability.",
+    "underDevelopment": "Under Development",
+    "frameworkDescription": "The Lotus Bridge governance framework is currently in active development. This section will be completed in a future update.",
+    "workingOn": "Our team is working on innovative governance solutions that will provide:",
+    "decentralizedGovernance": "Decentralized Governance",
+    "decentralizedDescription": "Community-driven governance mechanisms with Vietnamese stakeholder participation",
+    "efficientDecision": "Efficient Decision Making",
+    "efficientDescription": "Streamlined proposal and voting systems for rapid protocol evolution",
+    "transparentProcesses": "Transparent Processes",
+    "transparentDescription": "Open and auditable governance processes with clear accountability",
+    "vietnameseCommunity": "Vietnamese Community Focus",
+    "vietnameseCommunityDescription": "Local community representation with global interoperability standards",
+    "developmentTimeline": "Development Timeline",
+    "timelineDescription": "Stay tuned for updates on our governance framework development as we build the future of Vietnamese blockchain interoperability.",
+    "q3": "Q3 2025",
+    "researchDesign": "Research & Design",
+    "researchDescription": "Governance framework research and Vietnamese market requirements analysis",
+    "q4": "Q4 2025", 
+    "developmentTesting": "Development & Testing",
+    "developmentTestingDescription": "Implementation of governance protocols with Vietnamese stakeholder feedback",
+    "q1": "Q1 2026",
+    "mainnetLaunch": "Mainnet Launch",
+    "mainnetDescription": "Full governance framework deployment with Vietnamese token integration",
+    "joinDevelopment": "Join the Development",
+    "interestedContributing": "Interested in contributing to Lotus Bridge governance development?",
+    "welcomeDevelopers": "We welcome Vietnamese developers, researchers, and blockchain enthusiasts to participate in shaping our governance framework."
+  },
+  "ecosystemBenefits": {
+    "title": "Ecosystem Benefits",
+    "subtitle": "How Lotus Bridge creates value for different participants in the Vietnamese and global blockchain ecosystem."
+  },
+  "introduction": {
+    "title": "Introduction",
+    "subtitle": "Understanding Lotus Bridge - A revolutionary cross-chain protocol rooted in Vietnamese culture and innovation.",
+    "discoverLotus": "Discover Lotus Bridge",
+    "exploreDescription": "Explore the fundamental concepts and mission behind our revolutionary cross-chain protocol",
+    "introDescription": "Lotus Bridge represents more than just technical innovation—it's a bridge between cultures, economies, and futures. Built by Vietnamese developers with a vision to connect the vibrant Vietnamese crypto ecosystem with global opportunities.",
+    "whatIsLotus": "What is Lotus Bridge?",
+    "understandingTech": "Understanding the technology and capabilities",
+    "discoverTech": "Discover how Lotus Bridge functions as a dynamic, universal adapter between blockchains, enabling seamless cross-chain interactions regardless of architecture differences.",
+    "crossArchitecture": "Cross-architecture bridging capabilities",
+    "multiWalletSupport": "Multi-wallet support and management",
+    "adaptiveProtocol": "Adaptive protocol technology",
+    "vietnameseTokenIntegration": "Vietnamese token integration",
+    "learnTechnology": "Learn About the Technology",
+    "whyLotus": "Why Lotus?",
+    "culturalSignificance": "The cultural significance and mission",
+    "culturalDescription": "Learn about the cultural heritage and values that inspired Lotus Bridge, and how we're bringing Vietnamese innovation to the global stage.",
+    "vietnameseCulturalSymbolism": "Vietnamese cultural symbolism",
+    "regionalEmpowerment": "Regional empowerment mission",
+    "globalBridgeBuilding": "Global bridge building vision",
+    "communityDriven": "Community-driven innovation",
+    "discoverMission": "Discover Our Mission",
+    "lotusSymbol": "The Lotus Symbol",
+    "culturalHeritage": "Cultural heritage meets technological innovation",
+    "resilience": "Resilience",
+    "resilienceDescription": "Growing strong in challenging environments, just like Vietnam's crypto ecosystem",
+    "purity": "Purity",
+    "purityDescription": "Clean, elegant solutions that cut through blockchain complexity",
+    "growth": "Growth",
+    "growthDescription": "Blooming from regional roots to global impact and innovation",
+    "readyExplore": "Ready to explore deeper?",
+    "continueBackground": "Continue with industry background or jump to core concepts",
+    "continueToBackground": "Continue to Background"
+  },
   "background": {
     "title": "Background",
     "subtitle": "Industry context and the Vietnamese blockchain ecosystem that inspired Lotus Bridge."
@@ -233,34 +375,6 @@
   "coreOverview": {
     "title": "Core Overview",
     "subtitle": "High-level overview of Lotus Bridge capabilities and features."
-  },
-  "architecture": {
-    "title": "Architecture",
-    "subtitle": "Detailed architecture documentation and diagrams coming soon."
-  },
-  "governance": {
-    "title": "Governance Framework",
-    "subtitle": "Decentralized governance framework designed for Vietnamese market needs and global blockchain interoperability."
-  },
-  "ecosystemBenefits": {
-    "title": "Ecosystem Benefits",
-    "subtitle": "How Lotus Bridge creates value for different participants in the Vietnamese and global blockchain ecosystem."
-  },
-  "benefitsUsers": {
-    "title": "Benefits for Users",
-    "subtitle": "How Lotus Bridge improves the experience for Vietnamese and global blockchain users."
-  },
-  "benefitsDevs": {
-    "title": "Benefits for Developers", 
-    "subtitle": "Tools and opportunities Lotus Bridge provides for Vietnamese and international developers."
-  },
-  "benefitsLiquidity": {
-    "title": "Benefits for Liquidity Providers",
-    "subtitle": "Opportunities and incentives for liquidity providers in the Lotus Bridge ecosystem."
-  },
-  "benefitsVietnam": {
-    "title": "Benefits for Vietnam's Crypto Industry",
-    "subtitle": "Positioning Vietnam as a global leader in blockchain innovation while empowering local talent and showcasing Vietnamese excellence to the world."
   },
   "whatIsLotus": {
     "title": "What is Lotus Bridge?",

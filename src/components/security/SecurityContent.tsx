@@ -11,7 +11,6 @@ import {
   Lock,
   CheckCircle,
   AlertTriangle,
-  Layers,
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 
@@ -48,7 +47,7 @@ export const SecurityContent = () => {
                     implementations
                   </p>
                   <div className="inline-block px-3 py-1 bg-muted rounded-full text-xs">
-                    Incoming Documentation
+                    {t("roadmap.incomingDocumentation")}
                   </div>
                 </div>
               </div>

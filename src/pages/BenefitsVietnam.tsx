@@ -1,3 +1,4 @@
+
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -10,90 +11,22 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft, Star, Globe, Lightbulb } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import {
+  ArrowRight,
+  ArrowLeft,
+  Globe,
+  Star,
+  Users,
+  TrendingUp,
+  Shield,
+  Handshake,
+} from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
 
 const BenefitsVietnam = () => {
-  const { t, language } = useLanguage();
-
-  const industryBenefits = [
-    {
-      title: "Position Vietnam as a Web3 Innovation Hub",
-      description:
-        "Establish Vietnam as a leading force in blockchain interoperability and cross-chain innovation on the global stage.",
-      icon: Star,
-      features: [
-        "Global recognition for Vietnamese tech innovation",
-        "Attraction of international blockchain investments",
-        "Development of local Web3 talent and expertise",
-        "Vietnam-first approach to blockchain solutions",
-        "Cultural values integrated into technology",
-      ],
-    },
-    {
-      title: "Showcase Local Tokens on the Global Stage",
-      description:
-        "Bring Vietnamese tokens and projects into the global DeFi ecosystem, increasing their visibility and adoption worldwide.",
-      icon: Globe,
-      features: [
-        "AXS and SLP global market expansion",
-        "VNDC and VNST international recognition",
-        "KardiaChain ecosystem globalization",
-        "Vietnamese gaming tokens worldwide access",
-        "Local project international funding",
-      ],
-    },
-    {
-      title: "Empower Local Developers and Entrepreneurs",
-      description:
-        "Create opportunities for Vietnamese talent to build world-class blockchain applications and businesses.",
-      icon: Lightbulb,
-      features: [
-        "Vietnamese developer job opportunities",
-        "Startup ecosystem growth",
-        "Local blockchain education initiatives",
-        "Mentorship and incubation programs",
-        "Technical documentation in Vietnamese",
-      ],
-    },
-  ];
-
-  const initiatives = [
-    {
-      title: "🎓 Vietnamese Blockchain Education Program",
-      description:
-        "Comprehensive educational initiatives to build local blockchain expertise",
-      features: [
-        "University partnerships for blockchain courses",
-        "Vietnamese-language certification programs",
-        "Developer bootcamps and workshops",
-        "Research collaborations with local institutions",
-      ],
-    },
-    {
-      title: "🚀 Vietnam Web3 Startup Incubator",
-      description:
-        "Supporting Vietnamese entrepreneurs in building blockchain businesses",
-      features: [
-        "Seed funding for Vietnamese blockchain startups",
-        "Mentorship from global Web3 experts",
-        "Access to international investor networks",
-        "Vietnamese market-focused business development",
-      ],
-    },
-    {
-      title: "🌐 Global Vietnam Blockchain Conference",
-      description:
-        "Annual conference showcasing Vietnamese blockchain innovation",
-      features: [
-        "International speaker lineup",
-        "Vietnamese project showcases",
-        "Global investment partnerships",
-        "Cultural exchange and networking",
-      ],
-    },
-  ];
+  const { t } = useLanguage();
 
   return (
     <SidebarProvider>
@@ -105,178 +38,157 @@ const BenefitsVietnam = () => {
             <SidebarTrigger className="fixed top-4 left-4 z-50 md:hidden" />
 
             {/* Hero Section */}
-            <section className="py-12 px-6 bg-gradient-to-br from-background to-muted/20">
-              <div className="container mx-auto max-w-5xl">
+            <section className="py-20 px-6 bg-gradient-to-br from-background to-muted/20">
+              <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🇻🇳 Vietnam's Crypto Industry
+                    🇻🇳 {t("navigation.benefitsVietnam")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Vietnam's Crypto Industry
+                    {t("benefits.vietnam.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Positioning Vietnam as a global leader in blockchain
-                    innovation while empowering local talent and showcasing
-                    Vietnamese excellence to the world.
+                    {t("benefits.vietnam.subtitle")}
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Core Benefits */}
-            <section className="py-12 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <div className="grid gap-8">
-                  {industryBenefits.map((benefit, index) => {
-                    const IconComponent = benefit.icon;
-                    return (
-                      <Card key={index} className="relative overflow-hidden">
-                        <div
-                          className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${
-                            index % 2 === 0
-                              ? "from-red-500 to-yellow-500"
-                              : "from-yellow-500 to-red-500"
-                          }`}
-                        />
-                        <CardHeader className="pl-8">
-                          <div className="flex items-center gap-4 mb-2">
-                            <div
-                              className={`p-3 rounded-lg ${
-                                index % 2 === 0
-                                  ? "bg-red-50 border border-red-200"
-                                  : "bg-yellow-50 border border-yellow-200"
-                              }`}
-                            >
-                              <IconComponent
-                                className={`h-6 w-6 ${
-                                  index % 2 === 0
-                                    ? "text-red-600"
-                                    : "text-yellow-600"
-                                }`}
-                              />
-                            </div>
-                            <CardTitle className="text-2xl">
-                              {benefit.title}
-                            </CardTitle>
-                          </div>
-                          <CardDescription className="text-lg">
-                            {benefit.description}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent className="pl-8">
-                          <div className="grid md:grid-cols-2 gap-4">
-                            {benefit.features.map((feature, featureIndex) => (
-                              <div
-                                key={featureIndex}
-                                className="flex items-center gap-2"
-                              >
-                                <div className="w-2 h-2 bg-red-600 rounded-full" />
-                                <span className="text-sm font-medium">
-                                  {feature}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
+            {/* Benefits Content */}
+            <section className="py-20 px-6">
+              <div className="container mx-auto max-w-6xl">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Globe className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.vietnam.global")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.vietnam.globalDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
 
-            {/* Strategic Initiatives */}
-            <section className="py-10 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold mb-4">
-                    🌸 Strategic Initiatives
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Comprehensive programs to support Vietnam's blockchain
-                    ecosystem development.
-                  </p>
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <Star className="h-6 w-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.vietnam.showcase")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.vietnam.showcaseDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Users className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.vietnam.talent")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.vietnam.talentDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <TrendingUp className="h-6 w-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.vietnam.ecosystem")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.vietnam.ecosystemDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                        <Shield className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.vietnam.compliance")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.vietnam.complianceDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+
+                  <Card className="border-accent/20 hover:border-accent/40 transition-colors">
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                        <Handshake className="h-6 w-6 text-accent" />
+                      </div>
+                      <CardTitle className="text-xl">
+                        {t("benefits.vietnam.partnerships")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("benefits.vietnam.partnershipsDescription")}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
                 </div>
 
-                <div className="grid gap-8">
-                  {initiatives.map((initiative, index) => (
-                    <Card key={index}>
-                      <CardHeader>
-                        <CardTitle className="text-2xl">
-                          {initiative.title}
-                        </CardTitle>
-                        <CardDescription className="text-lg">
-                          {initiative.description}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="grid md:grid-cols-2 gap-4">
-                          {initiative.features.map((feature, featureIndex) => (
-                            <div
-                              key={featureIndex}
-                              className="flex items-center gap-2"
-                            >
-                              <div className="w-2 h-2 bg-primary rounded-full" />
-                              <span className="text-sm font-medium">
-                                {feature}
-                              </span>
-                            </div>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </section>
+                <Separator className="my-12" />
 
-            {/* Call to Action */}
-            <section className="py-10 px-6">
-              <div className="container mx-auto max-w-5xl">
-                <Card className="bg-gradient-to-r from-red-500/10 to-yellow-500/10 border-red-200">
+                {/* Call to Action */}
+                <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
                   <CardHeader className="text-center">
-                    <CardTitle className="text-3xl">
-                      🚀 Join Vietnam's Blockchain Revolution
+                    <CardTitle className="text-2xl flex items-center justify-center gap-2">
+                      <span className="text-3xl">🌸</span>
+                      {t("benefits.vietnam.showcase")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Be part of positioning Vietnam as a global Web3 leader
+                      {t("benefits.vietnam.globalDescription")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                      Whether you're a developer, entrepreneur, investor, or
-                      blockchain enthusiast, there's a place for you in
-                      Vietnam's blockchain future. Together, we can showcase
-                      Vietnamese innovation to the world while building
-                      sustainable value for our local ecosystem.
-                    </p>
+                    <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-white">
+                      {t("common.joinDiscussion")}
+                    </Button>
                   </CardContent>
                 </Card>
-              </div>
-            </section>
 
-            {/* Navigation */}
-            <section className="py-8 px-6 border-t">
-              <div className="container mx-auto max-w-5xl">
+                <Separator className="my-12" />
+
+                {/* Navigation */}
                 <div className="flex justify-between items-center">
-                  <Link to="/benefits-liquidity">
-                    <Button
-                      variant="outline"
-                      className="flex items-center gap-2"
-                    >
+                  <Button variant="outline" className="gap-2" asChild>
+                    <Link to="/benefits-liquidity">
                       <ArrowLeft className="h-4 w-4" />
-                      For Liquidity Providers
-                    </Button>
-                  </Link>
-                  <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
-                  </Link>
-                  <Link to="/security">
-                    <Button className="flex items-center gap-2">
-                      Security
+                      {t("navigation.benefitsLiquidity")}
+                    </Link>
+                  </Button>
+
+                  <div className="text-center">
+                    <h3 className="text-lg font-semibold">
+                      {t("common.continue")}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {t("navigation.security")}
+                    </p>
+                  </div>
+
+                  <Button className="gap-2" asChild>
+                    <Link to="/security">
+                      {t("navigation.security")}
                       <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </section>
