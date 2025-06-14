@@ -1,10 +1,8 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Vietnamese-inspired design system with lotus and Dong Son motifs */
-
 @layer base {
   :root {
     /* Lotus-inspired color palette */
@@ -172,13 +170,13 @@
   /* Vietnamese token animation */
   @keyframes vietnamese-token-spin {
     0% {
-      transform: rotate(0deg) scale(1);
+      transform: rotateY(0deg) scale(1);
     }
     50% {
-      transform: rotate(180deg) scale(1.15);
+      transform: rotateY(180deg) scale(1.1);
     }
     100% {
-      transform: rotate(360deg) scale(1);
+      transform: rotateY(360deg) scale(1);
     }
   }
 
@@ -280,4 +278,32 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary/50;
+}
+
+/* Custom animations for token icons */
+@keyframes tokenIconSpin {
+  0% {
+    transform: rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: rotateY(180deg) scale(1.4);
+  }
+  100% {
+    transform: rotateY(360deg) scale(1);
+  }
+}
+
+.token-icon-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.token-icon-hover:hover img {
+  animation: tokenIconSpin 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Triggered animation class that persists */
+.token-icon-hover.animate img {
+  animation: tokenIconSpin 0.8s ease-in-out;
+  animation-fill-mode: forwards;
 }
