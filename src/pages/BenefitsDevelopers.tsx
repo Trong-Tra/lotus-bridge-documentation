@@ -433,9 +433,9 @@ const BenefitsDevelopers = () => {
             </section>
 
             {/* Getting Started */}
-            <section className="py-10 px-6 bg-gradient-to-r from-primary/10 to-accent/10">
+            <section className="py-10 px-6">
               <div className="container mx-auto max-w-5xl">
-                <Card className="border-primary/20">
+                <Card className="border-primary/20 bg-gradient-to-r from-primary/10 to-accent/10">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
                       🚀 Start Building Today
