@@ -29,15 +29,13 @@ const DeveloperDocs = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-8">
                   <Badge variant="outline" className="mb-4">
-                    {t("developerDocs.badge")}
+                    {t("pages.developerDocs.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Developer Documentation
+                    {t("pages.developerDocs.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Build cross-chain dApps with our comprehensive SDK, APIs,
-                    and localized documentation. Vietnamese developers get
-                    first-class support and Vietnamese-first documentation.
+                    {t("pages.developerDocs.subtitle")}
                   </p>
                 </div>
               </div>
@@ -48,17 +46,18 @@ const DeveloperDocs = () => {
               <div className="container mx-auto max-w-6xl">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Smart Contract Integration</CardTitle>
+                    <CardTitle>
+                      {t("pages.developerDocs.smartContractIntegration")}
+                    </CardTitle>
                     <CardDescription>
-                      Integrate Lotus Bridge directly into your smart contracts
-                      for seamless cross-chain functionality
+                      {t("pages.developerDocs.smartContractDescription")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
                     {/* Bridge Contracts Section */}
                     <div>
                       <h4 className="font-semibold mb-4 text-lg">
-                        Bridge Contracts
+                        {t("pages.developerDocs.bridgeContracts")}
                       </h4>
                       <div className="grid gap-3">
                         <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
@@ -129,7 +128,7 @@ const DeveloperDocs = () => {
                     {/* Key Functions Section */}
                     <div>
                       <h4 className="font-semibold mb-4 text-lg">
-                        Key Functions
+                        {t("pages.developerDocs.smartContracts.keyFunctions")}
                       </h4>
 
                       {/* Bridge Function */}
@@ -226,7 +225,9 @@ const DeveloperDocs = () => {
                     {/* Example Integration */}
                     <div>
                       <h4 className="font-semibold mb-4 text-lg">
-                        Example Integration
+                        {t(
+                          "pages.developerDocs.smartContracts.exampleIntegration"
+                        )}
                       </h4>
                       <div className="bg-muted/30 rounded-lg p-4">
                         <h5 className="font-semibold mb-3">
@@ -288,13 +289,10 @@ contract MyDApp {
                         <div className="text-2xl">🚧</div>
                         <div>
                           <h5 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">
-                            More Documentation Coming Soon
+                            {t("pages.developerDocs.moreDocs")}
                           </h5>
                           <p className="text-sm text-blue-700 dark:text-blue-300">
-                            Additional developer resources including SDK
-                            documentation, REST API guides, and webhook
-                            integration examples are currently being prepared by
-                            our development team.
+                            {t("pages.developerDocs.moreDocsDescription")}
                           </p>
                         </div>
                       </div>

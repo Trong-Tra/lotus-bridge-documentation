@@ -146,64 +146,64 @@ export function AppSidebar() {
       ],
     },
     {
-      title: "Background",
+      title: t("navigation.background"),
       url: "/background",
       icon: GitBranch,
     },
     {
-      title: "Core Concept",
+      title: t("navigation.coreConcept"),
       url: "/core-concept",
       icon: Layers,
       subsections: [
         {
-          title: "Overview",
+          title: t("navigation.overview"),
           url: "/core-overview",
         },
         {
-          title: "Architecture",
+          title: t("navigation.architecture"),
           url: "/architecture",
         },
         {
-          title: "Governance",
+          title: t("navigation.governance"),
           url: "/governance",
         },
       ],
     },
     {
-      title: "Ecosystem Benefits",
+      title: t("navigation.ecosystemBenefits"),
       url: "/ecosystem-benefits",
       icon: Globe,
       subsections: [
         {
-          title: "For Users",
+          title: t("navigation.forUsers"),
           url: "/benefits-users",
         },
         {
-          title: "For Builders",
+          title: t("navigation.forBuilders"),
           url: "/benefits-developers",
         },
         {
-          title: "For Liquidity Providers",
+          title: t("navigation.forLiquidityProviders"),
           url: "/benefits-liquidity",
         },
         {
-          title: "For Vietnam's Industry",
+          title: t("navigation.forVietnamIndustry"),
           url: "/benefits-vietnam",
         },
       ],
     },
     {
-      title: "Security",
+      title: t("navigation.security"),
       url: "/security",
       icon: Shield,
     },
     {
-      title: "Tokenomics",
+      title: t("navigation.tokenomics"),
       url: "/tokenomics",
       icon: TrendingUp,
     },
     {
-      title: "Roadmap",
+      title: t("navigation.roadmap"),
       url: "/roadmap",
       icon: Calendar,
     },
@@ -423,35 +423,10 @@ export function AppSidebar() {
         <div className="text-center space-y-3">
           {/* Built with heart attribution */}
           <div className="text-xs text-muted-foreground">
-            Built with <span className="text-red-500 text-sm">❤️</span> in
-            Vietnam 2025
+            {t("sidebar.footer.content")}
           </div>
           <div className="text-xs text-muted-foreground font-medium">
-            VNUHCM-UIT The Blockchainists
-          </div>
-
-          {/* Language switcher */}
-          <div className="flex justify-center gap-2 pt-2">
-            <button
-              onClick={() => setLanguage("vi")}
-              className={`px-3 py-1 text-xs rounded-full transition-colors ${
-                language === "vi"
-                  ? "bg-primary/10 text-primary hover:bg-primary/20"
-                  : "bg-muted/50 text-muted-foreground hover:bg-muted"
-              }`}
-            >
-              🇻🇳 VI
-            </button>
-            <button
-              onClick={() => setLanguage("en")}
-              className={`px-3 py-1 text-xs rounded-full transition-colors ${
-                language === "en"
-                  ? "bg-primary/10 text-primary hover:bg-primary/20"
-                  : "bg-muted/50 text-muted-foreground hover:bg-muted"
-              }`}
-            >
-              🇺🇸 EN
-            </button>
+            {t("sidebar.footer.attribution")}
           </div>
         </div>
       </SidebarFooter>

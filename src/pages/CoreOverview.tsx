@@ -75,14 +75,13 @@ const CoreOverview = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    ⚡ Core Capabilities
+                    ⚡ {t("pages.coreOverview.hero.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Overview
+                    {t("pages.coreOverview.hero.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Discover what Lotus Bridge enables and how it revolutionizes
-                    cross-chain interactions.
+                    {t("pages.coreOverview.hero.description")}
                   </p>
                 </div>
               </div>
@@ -97,20 +96,16 @@ const CoreOverview = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Zap className="h-5 w-5" />
-                        What Lotus Bridge Enables
+                        {t("pages.coreOverview.capabilities.title")}
                       </CardTitle>
                       <CardDescription>
-                        Core capabilities that transform cross-chain
-                        interactions
+                        {t("pages.coreOverview.capabilities.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose prose-lg max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
-                          Lotus Bridge enables a comprehensive suite of
-                          cross-chain capabilities designed to make blockchain
-                          interoperability seamless, secure, and accessible to
-                          Vietnamese and global users alike.
+                          {t("pages.coreOverview.capabilities.content")}
                         </p>
                       </div>
                     </CardContent>
@@ -122,39 +117,63 @@ const CoreOverview = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <ArrowLeftRight className="h-5 w-5" />
-                          Token Bridging
+                          {t(
+                            "pages.coreOverview.crossChain.tokenBridging.title"
+                          )}
                         </CardTitle>
                         <CardDescription>
-                          Seamless cross-chain asset transfers
+                          {t(
+                            "pages.coreOverview.crossChain.tokenBridging.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
                           <strong>
-                            Token bridging between heterogeneous blockchains
+                            {t(
+                              "pages.coreOverview.crossChain.tokenBridging.details"
+                            )}
                           </strong>{" "}
-                          (e.g., Ethereum ↔ Solana).
+                          {t(
+                            "pages.coreOverview.crossChain.tokenBridging.example.chains"
+                          )}
                         </p>
                         <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-4 rounded-lg border">
-                          <h4 className="font-semibold mb-2">Example</h4>
+                          <h4 className="font-semibold mb-2">
+                            {t(
+                              "pages.coreOverview.crossChain.tokenBridging.example.title"
+                            )}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Move VNST from BSC to TON to access lower fees and
-                            faster transactions while maintaining full asset
-                            control.
+                            {t(
+                              "pages.coreOverview.crossChain.tokenBridging.example.description"
+                            )}
                           </p>
                         </div>
                         <ul className="space-y-2 text-sm">
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span>Architecture-agnostic bridging</span>
+                            <span>
+                              {t(
+                                "pages.coreOverview.crossChain.tokenBridging.features.architectureAgnostic"
+                              )}
+                            </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span>Secure custody mechanisms</span>
+                            <span>
+                              {t(
+                                "pages.coreOverview.crossChain.tokenBridging.features.secureCustody"
+                              )}
+                            </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span>Real-time transaction tracking</span>
+                            <span>
+                              {t(
+                                "pages.coreOverview.crossChain.tokenBridging.features.realTimeTracking"
+                              )}
+                            </span>
                           </li>
                         </ul>
                       </CardContent>
@@ -164,39 +183,54 @@ const CoreOverview = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Repeat className="h-5 w-5" />
-                          Cross-Chain Swaps
+                          {t("pages.coreOverview.crossChain.swaps.title")}
                         </CardTitle>
                         <CardDescription>
-                          Direct token exchanges across networks
+                          {t("pages.coreOverview.crossChain.swaps.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
                           <strong>
-                            Asset swaps within the same chain or across
-                            different chains.
+                            {t("pages.coreOverview.crossChain.swaps.details")}
                           </strong>
                         </p>
                         <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-4 rounded-lg border">
-                          <h4 className="font-semibold mb-2">Example</h4>
+                          <h4 className="font-semibold mb-2">
+                            {t(
+                              "pages.coreOverview.crossChain.swaps.example.title"
+                            )}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Instantly swap AXS on Ronin for ETH on Ethereum,
-                            accessing global liquidity from Vietnamese gaming
-                            tokens.
+                            {t(
+                              "pages.coreOverview.crossChain.swaps.example.description"
+                            )}
                           </p>
                         </div>
                         <ul className="space-y-2 text-sm">
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                            <span>Best-rate routing algorithms</span>
+                            <span>
+                              {t(
+                                "pages.coreOverview.crossChain.swaps.features.bestRateRouting"
+                              )}
+                            </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                            <span>Minimal slippage optimization</span>
+                            <span>
+                              {t(
+                                "pages.coreOverview.crossChain.swaps.features.minimalSlippage"
+                              )}
+                            </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                            <span>Atomic swap guarantees</span>
+                            <span>
+                              {t(
+                                "pages.coreOverview.crossChain.swaps.features.atomicSwapGuarantees"
+                              )}
+                            </span>
                           </li>
                         </ul>
                       </CardContent>
@@ -206,26 +240,27 @@ const CoreOverview = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Wallet className="h-5 w-5" />
-                          Multi-Wallet Management
+                          {t("pages.coreOverview.multiWallet.title")}
                         </CardTitle>
                         <CardDescription>
-                          Unified interface for multiple wallets
+                          {t("pages.coreOverview.multiWallet.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
                           <strong>
-                            Multi-wallet connection and management
+                            {t("pages.coreOverview.multiWallet.details")}
                           </strong>{" "}
-                          with address mapping across architectures.
+                          {t("pages.coreOverview.multiWallet.addressMapping")}
                         </p>
                         <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-4 rounded-lg border">
                           <h4 className="font-semibold mb-2">
-                            Popular Wallet Support
+                            {t("pages.coreOverview.multiWallet.support.title")}
                           </h4>
                           <p className="text-xs text-muted-foreground mb-3">
-                            Here are some popular wallets we recommend - many
-                            more are supported!
+                            {t(
+                              "pages.coreOverview.multiWallet.support.subtitle"
+                            )}
                           </p>
                           <div className="flex flex-wrap gap-2">
                             <Badge variant="outline">🦊 MetaMask</Badge>
@@ -234,8 +269,9 @@ const CoreOverview = () => {
                             <Badge variant="outline">🔗 WalletConnect</Badge>
                           </div>
                           <p className="text-xs text-muted-foreground mt-2 italic">
-                            + Many other wallets supported via WalletConnect
-                            protocol
+                            {t(
+                              "pages.coreOverview.multiWallet.support.additional"
+                            )}
                           </p>
                         </div>
                       </CardContent>
@@ -245,29 +281,56 @@ const CoreOverview = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Globe className="h-5 w-5" />
-                          Flexible Transactions
+                          {t("pages.coreOverview.flexibleTransactions.title")}
                         </CardTitle>
                         <CardDescription>
-                          Advanced transaction capabilities
+                          {t(
+                            "pages.coreOverview.flexibleTransactions.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
                           <strong>
-                            Transactions between same or different user
-                            addresses
+                            {t(
+                              "pages.coreOverview.flexibleTransactions.details"
+                            )}
                           </strong>{" "}
-                          with advanced routing options.
+                          {t(
+                            "pages.coreOverview.flexibleTransactions.routingOptions"
+                          )}
                         </p>
                         <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-4 rounded-lg border">
                           <h4 className="font-semibold mb-2">
-                            Transaction Types
+                            {t(
+                              "pages.coreOverview.flexibleTransactions.types.title"
+                            )}
                           </h4>
                           <ul className="text-sm space-y-2">
-                            <li>• Wallet-to-wallet (same address)</li>
-                            <li>• Cross-address transfers</li>
-                            <li>• Cross-chain bridge</li>
-                            <li>• Cross-chain swap</li>
+                            <li>
+                              •{" "}
+                              {t(
+                                "pages.coreOverview.flexibleTransactions.types.walletToWallet"
+                              )}
+                            </li>
+                            <li>
+                              •{" "}
+                              {t(
+                                "pages.coreOverview.flexibleTransactions.types.crossAddress"
+                              )}
+                            </li>
+                            <li>
+                              •{" "}
+                              {t(
+                                "pages.coreOverview.flexibleTransactions.types.crossChainBridge"
+                              )}
+                            </li>
+                            <li>
+                              •{" "}
+                              {t(
+                                "pages.coreOverview.flexibleTransactions.types.crossChainSwap"
+                              )}
+                            </li>
                           </ul>
                         </div>
                       </CardContent>
@@ -280,23 +343,24 @@ const CoreOverview = () => {
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-2xl">🇻🇳</span>
                         <CardTitle className="text-pink-800 dark:text-pink-400">
-                          Vietnamese Token Integration
+                          {t("pages.coreOverview.vietnameseTokens.title")}
                         </CardTitle>
                       </div>
                       <CardDescription>
-                        Native support for Vietnamese tokens often neglected by
-                        other platforms
+                        {t("pages.coreOverview.vietnameseTokens.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
                           <strong>
-                            Localization and native support for Vietnamese
-                            tokens
+                            {t(
+                              "pages.coreOverview.vietnameseTokens.localization"
+                            )}
                           </strong>{" "}
-                          with priority optimization for routing, liquidity
-                          access, and fee structures.
+                          {t(
+                            "pages.coreOverview.vietnameseTokens.priorityOptimization"
+                          )}
                         </p>
                       </div>
 
@@ -305,7 +369,10 @@ const CoreOverview = () => {
                         {/* Gaming Ecosystem */}
                         <div className="flex flex-col">
                           <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-4 text-center">
-                            🎮 Gaming Ecosystem
+                            🎮{" "}
+                            {t(
+                              "pages.coreOverview.vietnameseTokens.categories.gaming.title"
+                            )}
                           </h4>
                           <div className="space-y-3">
                             <div className="bg-white dark:bg-pink-950/10 p-4 rounded border border-pink-200/30 dark:border-pink-800/30 text-center token-icon-hover h-24 flex flex-col justify-center transition-color">
@@ -366,7 +433,10 @@ const CoreOverview = () => {
                         {/* Vietnamese Stablecoins */}
                         <div className="flex flex-col">
                           <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-4 text-center">
-                            💰 Vietnamese Stablecoins
+                            💰{" "}
+                            {t(
+                              "pages.coreOverview.vietnameseTokens.categories.stablecoins.title"
+                            )}
                           </h4>
                           <div className="space-y-3">
                             <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
@@ -401,7 +471,10 @@ const CoreOverview = () => {
                         {/* DeFi Infrastructure */}
                         <div className="flex flex-col">
                           <h4 className="font-semibold text-teal-800 dark:text-teal-400 mb-4 text-center">
-                            🔧 DeFi Infrastructure
+                            🔧{" "}
+                            {t(
+                              "pages.coreOverview.vietnameseTokens.categories.defi.title"
+                            )}
                           </h4>
                           <div className="space-y-3">
                             <div className="bg-white dark:bg-gray-800 p-4 rounded border text-center token-icon-hover h-24 flex flex-col justify-center">
@@ -449,13 +522,14 @@ const CoreOverview = () => {
 
                       <div className="bg-white dark:bg-pink-950/20 p-6 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                         <h4 className="font-semibold mb-3 text-pink-800 dark:text-pink-400">
-                          Priority Support
+                          {t(
+                            "pages.coreOverview.vietnameseTokens.prioritySupport.title"
+                          )}
                         </h4>
                         <p className="text-sm text-pink-700 dark:text-pink-300">
-                          Vietnamese tokens receive priority optimization for
-                          routing, liquidity access, and fee structures,
-                          ensuring the best possible experience for local users
-                          while facilitating global market access.
+                          {t(
+                            "pages.coreOverview.vietnameseTokens.prioritySupport.description"
+                          )}
                         </p>
                       </div>
                     </CardContent>
@@ -468,22 +542,24 @@ const CoreOverview = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/core-concept">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Core Concept
+                        {t("pages.coreOverview.navigation.backToConcept")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Explore the architecture
+                        {t("pages.coreOverview.navigation.explore.title")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Learn how our modular design enables these capabilities
+                        {t("pages.coreOverview.navigation.explore.description")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/architecture">
-                        Continue to Architecture
+                        {t(
+                          "pages.coreOverview.navigation.continueToArchitecture"
+                        )}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

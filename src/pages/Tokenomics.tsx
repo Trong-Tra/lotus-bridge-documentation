@@ -1,4 +1,3 @@
-
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -42,14 +41,13 @@ const Tokenomics = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    💰 Economic Model
+                    {t("pages.tokenomics.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Tokenomics
+                    {t("navigation.tokenomics")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Sustainable token economics designed to incentivize network
-                    participation and drive Vietnamese blockchain adoption.
+                    {t("pages.tokenomics.subtitle")}
                   </p>
                 </div>
               </div>
@@ -64,58 +62,51 @@ const Tokenomics = () => {
                       <Coins className="h-8 w-8 text-primary" />
                     </div>
                     <CardTitle className="text-2xl">
-                      🚧 Under Development
+                      {t("pages.tokenomics.underDevelopment")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      The Lotus Bridge tokenomics model is currently being
-                      finalized. This section will be completed in a future
-                      update.
+                      {t("pages.tokenomics.underDevelopmentDescription")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-muted-foreground mb-6">
-                      Our economics team is designing a sustainable model that
-                      will provide:
+                      {t("pages.tokenomics.economicsTeam")}
                     </p>
                     <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <TrendingUp className="h-5 w-5 text-primary" />
-                          Validator Incentives
+                          {t("pages.tokenomics.validatorIncentives")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Sustainable rewards for network validators and
-                          Vietnamese node operators
+                          {t("pages.tokenomics.validatorDescription")}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Users className="h-5 w-5 text-accent" />
-                          Community Rewards
+                          {t("pages.tokenomics.communityRewards")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Liquidity mining and governance participation
-                          incentives
+                          {t("pages.tokenomics.communityDescription")}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Building className="h-5 w-5 text-primary" />
-                          Development Fund
+                          {t("pages.tokenomics.developmentFund")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Treasury allocation for continuous protocol
-                          development
+                          {t("pages.tokenomics.developmentDescription")}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Zap className="h-5 w-5 text-accent" />
-                          Fee Structure
+                          {t("pages.tokenomics.feeStructure")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Transparent and competitive fee model for
-                          cross-chain transactions
+                          {t("pages.tokenomics.feeDescription")}
                         </p>
                       </div>
                     </div>
@@ -129,11 +120,10 @@ const Tokenomics = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🌸 Distribution Preview
+                    {t("pages.tokenomics.distributionPreview")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Preliminary token allocation focused on Vietnamese
-                    community development and long-term sustainability.
+                    {t("pages.tokenomics.distributionDescription")}
                   </p>
                 </div>
 
@@ -141,13 +131,14 @@ const Tokenomics = () => {
                   <Card className="border-dashed border-2">
                     <CardHeader className="text-center">
                       <PieChart className="h-8 w-8 text-primary mx-auto mb-2" />
-                      <CardTitle>Community (40%)</CardTitle>
-                      <CardDescription>Vietnamese Users & Liquidity</CardDescription>
+                      <CardTitle>{t("pages.tokenomics.community40")}</CardTitle>
+                      <CardDescription>
+                        {t("pages.tokenomics.communityLiquidity")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent className="text-center">
                       <p className="text-muted-foreground text-sm">
-                        Allocated for Vietnamese community development,
-                        liquidity incentives, and early adopter rewards
+                        {t("pages.tokenomics.communityAllocation")}
                       </p>
                     </CardContent>
                   </Card>
@@ -155,13 +146,16 @@ const Tokenomics = () => {
                   <Card className="border-dashed border-2">
                     <CardHeader className="text-center">
                       <Building className="h-8 w-8 text-accent mx-auto mb-2" />
-                      <CardTitle>Development (25%)</CardTitle>
-                      <CardDescription>Team & Future Development</CardDescription>
+                      <CardTitle>
+                        {t("pages.tokenomics.development25")}
+                      </CardTitle>
+                      <CardDescription>
+                        {t("pages.tokenomics.teamDevelopment")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent className="text-center">
                       <p className="text-muted-foreground text-sm">
-                        Reserved for core team, advisors, and continued
-                        protocol development with vesting schedules
+                        {t("pages.tokenomics.developmentAllocation")}
                       </p>
                     </CardContent>
                   </Card>
@@ -169,13 +163,14 @@ const Tokenomics = () => {
                   <Card className="border-dashed border-2">
                     <CardHeader className="text-center">
                       <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-                      <CardTitle>Ecosystem (35%)</CardTitle>
-                      <CardDescription>Validators & Partnerships</CardDescription>
+                      <CardTitle>{t("pages.tokenomics.ecosystem35")}</CardTitle>
+                      <CardDescription>
+                        {t("pages.tokenomics.validatorsPartnerships")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent className="text-center">
                       <p className="text-muted-foreground text-sm">
-                        For validator rewards, strategic partnerships, and
-                        ecosystem growth initiatives
+                        {t("pages.tokenomics.ecosystemAllocation")}
                       </p>
                     </CardContent>
                   </Card>
@@ -189,23 +184,21 @@ const Tokenomics = () => {
                 <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
                   <CardHeader className="text-center">
                     <CardTitle className="text-2xl">
-                      🇻🇳 Vietnamese-First Economics
+                      {t("pages.tokenomics.vietnameseFirstEconomics")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Interested in our tokenomics model development?
+                      {t("pages.tokenomics.interestedTokenomics")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-muted-foreground mb-6">
-                      We're designing a tokenomics model that prioritizes
-                      Vietnamese community growth while ensuring global
-                      competitiveness and sustainability.
+                      {t("pages.tokenomics.tokenomicsDesign")}
                     </p>
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-primary to-accent text-white"
                     >
-                      Join Tokenomics Discussion
+                      {t("pages.tokenomics.joinTokenomicsDiscussion")}
                     </Button>
                   </CardContent>
                 </Card>
@@ -226,7 +219,9 @@ const Tokenomics = () => {
                     </Button>
                   </Link>
                   <Link to="/core-concept">
-                    <Button variant="outline">Back to Core Concept</Button>
+                    <Button variant="outline">
+                      {t("pages.tokenomics.backToCoreConcept")}
+                    </Button>
                   </Link>
                   <Link to="/roadmap">
                     <Button className="flex items-center gap-2">

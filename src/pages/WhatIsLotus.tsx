@@ -40,14 +40,13 @@ const WhatIsLotus = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🌸 Universal Adapter
+                    {t("pages.whatIsLotus.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    What is Lotus Bridge?
+                    {t("pages.whatIsLotus.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    A dynamic, universal adapter between blockchains that
-                    transcends traditional bridging limitations.
+                    {t("pages.whatIsLotus.subtitle")}
                   </p>
                 </div>
               </div>
@@ -62,30 +61,21 @@ const WhatIsLotus = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Network className="h-5 w-5" />
-                        Dynamic Universal Adapter
+                        {t("pages.whatIsLotus.dynamicUniversalAdapter.title")}
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose prose-lg max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
-                          Lotus Bridge is a{" "}
-                          <strong>
-                            decentralized application (dApp) and infrastructure
-                            protocol
-                          </strong>{" "}
-                          that allows users to connect wallets and bridge assets
-                          across multiple blockchain networks—regardless of
-                          their architecture, consensus mechanisms, or token
-                          standards.
+                          {t(
+                            "pages.whatIsLotus.dynamicUniversalAdapter.description1"
+                          )}
                         </p>
 
                         <p className="text-lg leading-relaxed">
-                          With the ability to adapt to any exchange method
-                          supported by the connected networks,{" "}
-                          <strong>
-                            Lotus is more than a bridge: it is a dynamic,
-                            universal adapter between blockchains.
-                          </strong>
+                          {t(
+                            "pages.whatIsLotus.dynamicUniversalAdapter.description2"
+                          )}
                         </p>
                       </div>
                     </CardContent>
@@ -97,18 +87,21 @@ const WhatIsLotus = () => {
                       <CardHeader className="text-center pb-4">
                         <Globe className="h-12 w-12 text-primary mx-auto mb-2" />
                         <CardTitle className="text-lg">
-                          Cross-Architecture
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.crossArchitecture.title"
+                          )}
                         </CardTitle>
                         <CardDescription>
-                          Bridge between entirely different blockchain
-                          architectures
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.crossArchitecture.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground text-center">
-                          Connect Ethereum to Solana, BNB Chain to Polygon, and
-                          more - regardless of underlying technology
-                          differences.
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.crossArchitecture.details"
+                          )}
                         </p>
                       </CardContent>
                     </Card>
@@ -117,16 +110,21 @@ const WhatIsLotus = () => {
                       <CardHeader className="text-center pb-4">
                         <Layers className="h-12 w-12 text-accent mx-auto mb-2" />
                         <CardTitle className="text-lg">
-                          Multi-Wallet Support
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.multiWallet.title"
+                          )}
                         </CardTitle>
                         <CardDescription>
-                          Connect and manage multiple wallets simultaneously
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.multiWallet.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground text-center">
-                          Seamlessly interact with MetaMask, Phantom, and other
-                          wallets in a unified interface.
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.multiWallet.details"
+                          )}
                         </p>
                       </CardContent>
                     </Card>
@@ -135,16 +133,21 @@ const WhatIsLotus = () => {
                       <CardHeader className="text-center pb-4">
                         <Zap className="h-12 w-12 text-primary mx-auto mb-2" />
                         <CardTitle className="text-lg">
-                          Adaptive Protocol
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.adaptiveProtocol.title"
+                          )}
                         </CardTitle>
                         <CardDescription>
-                          Automatically adapts to available exchange methods
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.adaptiveProtocol.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
                         <p className="text-sm text-muted-foreground text-center">
-                          Dynamically selects the best bridging method based on
-                          network capabilities and user preferences.
+                          {t(
+                            "pages.whatIsLotus.keyCapabilities.adaptiveProtocol.details"
+                          )}
                         </p>
                       </CardContent>
                     </Card>
@@ -155,10 +158,10 @@ const WhatIsLotus = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Shield className="h-5 w-5" />
-                        Core Functions
+                        {t("pages.whatIsLotus.coreFunctions.title")}
                       </CardTitle>
                       <CardDescription>
-                        What Lotus Bridge enables for users
+                        {t("pages.whatIsLotus.coreFunctions.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -167,38 +170,60 @@ const WhatIsLotus = () => {
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <div>
-                              <h4 className="font-medium">Wallet Connection</h4>
+                              <h4 className="font-medium">
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.walletConnection.title"
+                                )}
+                              </h4>
                               <p className="text-sm text-muted-foreground">
-                                Connect wallets from different blockchain
-                                ecosystems
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.walletConnection.description"
+                                )}
                               </p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <div>
-                              <h4 className="font-medium">Asset Bridging</h4>
+                              <h4 className="font-medium">
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.assetBridging.title"
+                                )}
+                              </h4>
                               <p className="text-sm text-muted-foreground">
-                                Transfer assets across heterogeneous networks
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.assetBridging.description"
+                                )}
                               </p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <div>
-                              <h4 className="font-medium">Cross-Chain Swaps</h4>
+                              <h4 className="font-medium">
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.crossChainSwaps.title"
+                                )}
+                              </h4>
                               <p className="text-sm text-muted-foreground">
-                                Exchange tokens across different blockchain
-                                networks
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.crossChainSwaps.description"
+                                )}
                               </p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <div>
-                              <h4 className="font-medium">Governance</h4>
+                              <h4 className="font-medium">
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.governance.title"
+                                )}
+                              </h4>
                               <p className="text-sm text-muted-foreground">
-                                Governance system for emergency scenarios
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.governance.description"
+                                )}
                               </p>
                             </div>
                           </div>
@@ -208,29 +233,44 @@ const WhatIsLotus = () => {
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <div>
                               <h4 className="font-medium">
-                                Flexible Transfers
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.flexibleTransfers.title"
+                                )}
                               </h4>
                               <p className="text-sm text-muted-foreground">
-                                Send to same or different user addresses
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.flexibleTransfers.description"
+                                )}
                               </p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <div>
-                              <h4 className="font-medium">Token Standards</h4>
+                              <h4 className="font-medium">
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.tokenStandards.title"
+                                )}
+                              </h4>
                               <p className="text-sm text-muted-foreground">
-                                Support for various token standards and types
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.tokenStandards.description"
+                                )}
                               </p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <div>
-                              <h4 className="font-medium">Vietnamese Tokens</h4>
+                              <h4 className="font-medium">
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.vietnameseTokens.title"
+                                )}
+                              </h4>
                               <p className="text-sm text-muted-foreground">
-                                Native support for AXS, SLP, VNDC, VNST, and
-                                more
+                                {t(
+                                  "pages.whatIsLotus.coreFunctions.vietnameseTokens.description"
+                                )}
                               </p>
                             </div>
                           </div>
@@ -246,23 +286,22 @@ const WhatIsLotus = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/introduction">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Introduction
+                        {t("pages.whatIsLotus.navigation.backToIntroduction")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Understanding the mission
+                        {t("pages.whatIsLotus.navigation.understandingMission")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Learn why Lotus Bridge was created and its cultural
-                        significance
+                        {t("pages.whatIsLotus.navigation.learnWhy")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/why-lotus">
-                        Continue to Why Lotus?
+                        {t("pages.whatIsLotus.navigation.continueToWhy")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

@@ -46,18 +46,13 @@ const Index = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    {language === "vi"
-                      ? "Trung tâm tài liệu"
-                      : "Documentation Hub"}
+                    {t("documentationHub.badge")}
                   </Badge>
                   <h2 className="text-4xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Comprehensive Documentation
+                    {t("documentationHub.title")}
                   </h2>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Everything you need to understand, use, and build with Lotus
-                    Bridge. From Vietnamese token bridging to advanced
-                    cross-chain development - built with Vietnamese innovation
-                    for global adoption.
+                    {t("documentationHub.subtitle")}
                   </p>
                 </div>
 
@@ -98,9 +93,7 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          {language === "vi"
-                            ? "Xây dựng cùng chúng tôi"
-                            : "Build with Us"}
+                          {t("documentationHub.buttons.buildWithUs")}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -114,9 +107,7 @@ const Index = () => {
                         <CardTitle>{t("navigation.whitepaper")}</CardTitle>
                       </div>
                       <CardDescription>
-                        {language === "vi"
-                          ? "Tầm nhìn kỹ thuật, kiến trúc giao thức, tokenomics và phân tích bảo mật"
-                          : "Technical vision, protocol architecture, tokenomics, and security analysis"}
+                        {t("documentationHub.whitepaper.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -125,9 +116,7 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          {language === "vi"
-                            ? "Đọc Whitepaper"
-                            : "Read Whitepaper"}
+                          {t("documentationHub.buttons.readWhitepaper")}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -141,9 +130,7 @@ const Index = () => {
                         <CardTitle>{t("navigation.faqs")}</CardTitle>
                       </div>
                       <CardDescription>
-                        {language === "vi"
-                          ? "Câu hỏi thường gặp và hướng dẫn thuật ngữ toàn diện"
-                          : "Frequently asked questions and comprehensive terminology guide"}
+                        {t("documentationHub.faqs.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -152,9 +139,7 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          {language === "vi"
-                            ? "Tìm câu trả lời"
-                            : "Find Answers"}
+                          {t("documentationHub.buttons.findAnswers")}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -177,7 +162,7 @@ const Index = () => {
                           variant="outline"
                           className="w-full gap-2 group-hover:gap-3 transition-all"
                         >
-                          {language === "vi" ? "Xem cập nhật" : "View Updates"}
+                          {t("documentationHub.buttons.viewUpdates")}
                           <ArrowRight className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -199,9 +184,7 @@ const Index = () => {
                         variant="outline"
                         className="w-full gap-2 group-hover:gap-3 transition-all"
                       >
-                        {language === "vi"
-                          ? "Tham gia cộng đồng"
-                          : "Join Community"}
+                        {t("documentationHub.buttons.joinCommunity")}
                         <ArrowRight className="h-4 w-4" />
                       </Button>
                     </CardContent>
@@ -215,11 +198,10 @@ const Index = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-4xl font-bold leading-tight mb-6">
-                    Why Choose Lotus Bridge?
+                    {t("features.title")}
                   </h2>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Built with Vietnamese innovation and cutting-edge technology
-                    to provide the best cross-chain experience.
+                    {t("features.subtitle")}
                   </p>
                 </div>
 
@@ -229,11 +211,10 @@ const Index = () => {
                       <Zap className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">
-                      Lightning Fast
+                      {t("features.lightningFast.title")}
                     </h3>
                     <p className="text-muted-foreground">
-                      Sub-15 second finality with our innovative Lotus Consensus
-                      Algorithm
+                      {t("features.lightningFast.description")}
                     </p>
                   </div>
 
@@ -241,10 +222,11 @@ const Index = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <Shield className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">Ultra Secure</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {t("features.ultraSecure.title")}
+                    </h3>
                     <p className="text-muted-foreground">
-                      Multi-layered security with formal verification and $10M
-                      security fund
+                      {t("features.ultraSecure.description")}
                     </p>
                   </div>
 
@@ -252,10 +234,11 @@ const Index = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <Target className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">Low Costs</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {t("features.lowCosts.title")}
+                    </h3>
                     <p className="text-muted-foreground">
-                      Optimized gas consumption with fees starting from just
-                      0.05%
+                      {t("features.lowCosts.description")}
                     </p>
                   </div>
 
@@ -264,11 +247,10 @@ const Index = () => {
                       <Users className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">
-                      User Friendly
+                      {t("features.userFriendly.title")}
                     </h3>
                     <p className="text-muted-foreground">
-                      Intuitive interface designed for both beginners and
-                      advanced users
+                      {t("features.userFriendly.description")}
                     </p>
                   </div>
                 </div>
@@ -285,19 +267,19 @@ const Index = () => {
                     className="w-80 h-80 mx-auto object-contain mb-1"
                   />
                   <p className="text-muted-foreground mb-4 vietnamese-text">
-                    Built by Vietnam. Bridging the World.
+                    {t("footer.tagline")}
                   </p>
 
                   {/* Contact Information from docs.txt */}
                   <div className="mb-6 space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      For media inquiries, partnerships:
+                      {t("footer.contact.inquiries")}
                     </p>
                     <a
                       href="mailto:team@lotusbridge.io"
                       className="text-primary hover:text-primary/80 transition-colors font-medium"
                     >
-                      trongtrawork@gmail.com
+                      {t("footer.contact.email")}
                     </a>
                   </div>
                 </div>

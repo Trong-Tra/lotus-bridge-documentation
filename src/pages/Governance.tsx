@@ -41,14 +41,13 @@ const Governance = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🏛️ Governance Framework
+                    {t("pages.governance.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Lotus Bridge Governance
+                    {t("pages.governance.lotusGovernance")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Decentralized governance framework designed for Vietnamese
-                    market needs and global blockchain interoperability.
+                    {t("pages.governance.governanceDescription")}
                   </p>
                 </div>
               </div>
@@ -63,58 +62,55 @@ const Governance = () => {
                       <Building className="h-8 w-8 text-primary" />
                     </div>
                     <CardTitle className="text-2xl">
-                      🚧 Under Development
+                      {t("pages.governance.underDevelopment")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      The Lotus Bridge governance framework is currently in
-                      active development. This section will be completed in a
-                      future update.
+                      {t("pages.governance.underDevelopmentDescription")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-muted-foreground mb-6">
-                      Our team is working on innovative governance solutions
-                      that will provide:
+                      {t("pages.governance.innovativeGovernance")}
                     </p>
                     <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Vote className="h-5 w-5 text-primary" />
-                          Decentralized Governance
+                          {t("pages.governance.decentralizedGovernanceTitle")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Community-driven governance mechanisms with Vietnamese
-                          stakeholder participation
+                          {t(
+                            "pages.governance.decentralizedGovernanceDescription"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Zap className="h-5 w-5 text-accent" />
-                          Efficient Decision Making
+                          {t("pages.governance.efficientDecisionMaking")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Streamlined proposal and voting systems for rapid
-                          protocol evolution
+                          {t("pages.governance.efficientDecisionDescription")}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Shield className="h-5 w-5 text-primary" />
-                          Transparent Processes
+                          {t("pages.governance.transparentProcesses")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Open and auditable governance processes with clear
-                          accountability
+                          {t(
+                            "pages.governance.transparentProcessesDescription"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2 flex items-center gap-2">
                           <Users className="h-5 w-5 text-accent" />
-                          Vietnamese Community Focus
+                          {t("pages.governance.vietnameseCommunityFocus")}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Local community representation with global
-                          interoperability standards
+                          {t("pages.governance.vietnameseCommunityDescription")}
                         </p>
                       </div>
                     </div>
@@ -128,12 +124,10 @@ const Governance = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🌸 Development Timeline
+                    {t("pages.governance.developmentTimeline")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Stay tuned for updates on our governance framework
-                    development as we build the future of Vietnamese blockchain
-                    interoperability.
+                    {t("pages.governance.timelineDescription")}
                   </p>
                 </div>
 
@@ -141,13 +135,14 @@ const Governance = () => {
                   <Card>
                     <CardHeader>
                       <Clock className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Q3 2025</CardTitle>
-                      <CardDescription>Research & Design</CardDescription>
+                      <CardTitle>{t("pages.governance.q3_2025")}</CardTitle>
+                      <CardDescription>
+                        {t("pages.governance.researchDesign")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Governance framework research and Vietnamese market
-                        requirements analysis
+                        {t("pages.governance.researchDescription")}
                       </p>
                     </CardContent>
                   </Card>
@@ -155,13 +150,14 @@ const Governance = () => {
                   <Card>
                     <CardHeader>
                       <Building className="h-8 w-8 text-accent mb-2" />
-                      <CardTitle>Q4 2025</CardTitle>
-                      <CardDescription>Development & Testing</CardDescription>
+                      <CardTitle>{t("pages.governance.q4_2025")}</CardTitle>
+                      <CardDescription>
+                        {t("pages.governance.developmentTesting")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Implementation of governance protocols with Vietnamese
-                        stakeholder feedback
+                        {t("pages.governance.developmentDescription")}
                       </p>
                     </CardContent>
                   </Card>
@@ -169,13 +165,14 @@ const Governance = () => {
                   <Card>
                     <CardHeader>
                       <Zap className="h-8 w-8 text-primary mb-2" />
-                      <CardTitle>Q1 2026</CardTitle>
-                      <CardDescription>Mainnet Launch</CardDescription>
+                      <CardTitle>{t("pages.governance.q1_2026")}</CardTitle>
+                      <CardDescription>
+                        {t("pages.governance.mainnetLaunch")}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        Full governance framework deployment with Vietnamese
-                        token integration
+                        {t("pages.governance.mainnetDescription")}
                       </p>
                     </CardContent>
                   </Card>
@@ -189,24 +186,21 @@ const Governance = () => {
                 <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
                   <CardHeader className="text-center">
                     <CardTitle className="text-2xl">
-                      🇻🇳 Join the Development
+                      {t("pages.governance.joinDevelopment")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Interested in contributing to Lotus Bridge governance
-                      development?
+                      {t("pages.governance.joinDevelopmentDescription")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-muted-foreground mb-6">
-                      We welcome Vietnamese developers, researchers, and
-                      blockchain enthusiasts to participate in shaping our
-                      governance framework.
+                      {t("pages.governance.vietnameseDevelopers")}
                     </p>
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-primary to-accent text-white"
                     >
-                      Contact Development Team
+                      {t("pages.governance.contactTeam")}
                     </Button>
                   </CardContent>
                 </Card>
@@ -227,7 +221,9 @@ const Governance = () => {
                     </Button>
                   </Link>
                   <Link to="/core-concept">
-                    <Button variant="outline">Back to Core Concept</Button>
+                    <Button variant="outline">
+                      {t("pages.governance.backToCoreConcept")}
+                    </Button>
                   </Link>
                   <Link to="/ecosystem-benefits">
                     <Button className="flex items-center gap-2">

@@ -39,14 +39,13 @@ const Introduction = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🌸 Vietnamese Innovation
+                    {t("introduction.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Introduction
+                    {t("navigation.introduction")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Understanding Lotus Bridge - A revolutionary cross-chain
-                    protocol rooted in Vietnamese culture and innovation.
+                    {t("introduction.subtitle")}
                   </p>
                 </div>
               </div>
@@ -60,54 +59,64 @@ const Introduction = () => {
                   <Card className="border-primary/20">
                     <CardHeader className="text-center">
                       <CardTitle className="text-2xl">
-                        Discover Lotus Bridge
+                        {t("introduction.overview.title")}
                       </CardTitle>
                       <CardDescription>
-                        Explore the fundamental concepts and mission behind our
-                        revolutionary cross-chain protocol
+                        {t("introduction.overview.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose prose-lg max-w-none dark:prose-invert text-center">
                         <p className="text-lg leading-relaxed">
-                          Lotus Bridge represents more than just technical
-                          innovation—it's a bridge between cultures, economies,
-                          and futures. Built by Vietnamese developers with a
-                          vision to connect the vibrant Vietnamese crypto
-                          ecosystem with global opportunities.
+                          {t("introduction.overview.content")}
                         </p>
                       </div>
                     </CardContent>
                   </Card>
 
-                  {/* Section Navigation */}
-                  <div className="grid md:grid-cols-2 gap-6">
+                  {/* Introduction Cards */}
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
                     <Card className="border-primary/20 hover:border-primary/40 transition-colors">
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Target className="h-5 w-5" />
-                          What is Lotus Bridge?
+                          {t("introduction.whatIsLotus.title")}
                         </CardTitle>
                         <CardDescription>
-                          Understanding the technology and capabilities
+                          {t("introduction.whatIsLotus.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Discover how Lotus Bridge functions as a dynamic,
-                          universal adapter between blockchains, enabling
-                          seamless cross-chain interactions regardless of
-                          architecture differences.
+                          {t("introduction.whatIsLotus.content")}
                         </p>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Cross-architecture bridging capabilities</li>
-                          <li>• Multi-wallet support and management</li>
-                          <li>• Adaptive protocol technology</li>
-                          <li>• Vietnamese token integration</li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "introduction.whatIsLotus.features.crossArchitecture"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t("introduction.whatIsLotus.features.multiWallet")}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "introduction.whatIsLotus.features.adaptiveProtocol"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "introduction.whatIsLotus.features.vietnameseTokens"
+                            )}
+                          </li>
                         </ul>
                         <Button className="w-full mt-4" asChild>
                           <Link to="/what-is-lotus">
-                            Learn About the Technology
+                            {t("introduction.whatIsLotus.learnMore")}
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -118,23 +127,38 @@ const Introduction = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Heart className="h-5 w-5" />
-                          Why Lotus?
+                          {t("introduction.whyLotus.title")}
                         </CardTitle>
                         <CardDescription>
-                          The cultural significance and mission
+                          {t("introduction.whyLotus.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Learn about the cultural heritage and values that
-                          inspired Lotus Bridge, and how we're bringing
-                          Vietnamese innovation to the global stage.
+                          {t("introduction.whyLotus.content")}
                         </p>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Vietnamese cultural symbolism</li>
-                          <li>• Regional empowerment mission</li>
-                          <li>• Global bridge building vision</li>
-                          <li>• Community-driven innovation</li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "introduction.whyLotus.features.culturalSymbolism"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "introduction.whyLotus.features.regionalEmpowerment"
+                            )}
+                          </li>
+                          <li>
+                            • {t("introduction.whyLotus.features.globalVision")}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "introduction.whyLotus.features.communityDriven"
+                            )}
+                          </li>
                         </ul>
                         <Button
                           variant="outline"
@@ -142,7 +166,7 @@ const Introduction = () => {
                           asChild
                         >
                           <Link to="/why-lotus">
-                            Discover Our Mission
+                            {t("introduction.whyLotus.discoverMission")}
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -155,10 +179,10 @@ const Introduction = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Flower className="h-5 w-5" />
-                        The Lotus Symbol
+                        {t("introduction.lotusSymbol.title")}
                       </CardTitle>
                       <CardDescription>
-                        Cultural heritage meets technological innovation
+                        {t("introduction.lotusSymbol.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -167,30 +191,35 @@ const Introduction = () => {
                           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
                             <span className="text-2xl">🌸</span>
                           </div>
-                          <h4 className="font-semibold mb-2">Resilience</h4>
+                          <h4 className="font-semibold mb-2">
+                            {t("introduction.lotusSymbol.resilience.title")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Growing strong in challenging environments, just
-                            like Vietnam's crypto ecosystem
+                            {t(
+                              "introduction.lotusSymbol.resilience.description"
+                            )}
                           </p>
                         </div>
                         <div className="text-center">
                           <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-3">
                             <span className="text-2xl">💎</span>
                           </div>
-                          <h4 className="font-semibold mb-2">Purity</h4>
+                          <h4 className="font-semibold mb-2">
+                            {t("introduction.lotusSymbol.purity.title")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Clean, elegant solutions that cut through blockchain
-                            complexity
+                            {t("introduction.lotusSymbol.purity.description")}
                           </p>
                         </div>
                         <div className="text-center">
                           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
                             <span className="text-2xl">🌱</span>
                           </div>
-                          <h4 className="font-semibold mb-2">Growth</h4>
+                          <h4 className="font-semibold mb-2">
+                            {t("introduction.lotusSymbol.growth.title")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Blooming from regional roots to global impact and
-                            innovation
+                            {t("introduction.lotusSymbol.growth.description")}
                           </p>
                         </div>
                       </div>
@@ -204,23 +233,22 @@ const Introduction = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/abstract">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Abstract
+                        {t("introduction.navigation.backToAbstract")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Ready to explore deeper?
+                        {t("introduction.navigation.readyExplore")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Continue with industry background or jump to core
-                        concepts
+                        {t("introduction.navigation.continueDescription")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/background">
-                        Continue to Background
+                        {t("introduction.navigation.continueToBackground")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

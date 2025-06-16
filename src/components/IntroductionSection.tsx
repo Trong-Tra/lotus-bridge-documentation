@@ -11,15 +11,13 @@ export function IntroductionSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4 px-4 py-2">
-            🌸 Vietnamese Innovation
+            🌸 {t("introductionSection.badge")}
           </Badge>
           <h2 className="text-4xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            🌍 The Problem: A Fragmented World of Chains
+            {t("introductionSection.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto vietnamese-text">
-            Today's blockchain landscape is vast, vibrant, and… fractured. For
-            users in emerging markets like Vietnam, navigating this complexity
-            feels like crossing rivers with no bridges.
+            {t("introductionSection.description")}
           </p>
         </div>
 
@@ -29,24 +27,22 @@ export function IntroductionSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-destructive">
                 <Shield className="w-6 h-6" />
-                Current Challenges
+                {t("introductionSection.currentChallenges.title")}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-3 text-muted-foreground">
                 <p>
-                  • Multiple steps, tools, wallets needed for cross-chain swaps
+                  • {t("introductionSection.currentChallenges.challenges.0")}
                 </p>
                 <p>
-                  • Vietnamese tokens like VNDC, VNST, KNC, C98 often excluded
+                  • {t("introductionSection.currentChallenges.challenges.1")}
                 </p>
                 <p>
-                  • Clunky, risky, or impossible transactions between different
-                  architectures
+                  • {t("introductionSection.currentChallenges.challenges.2")}
                 </p>
                 <p>
-                  • Global adoption stunted by exclusion, liquidity siloed,
-                  users confused
+                  • {t("introductionSection.currentChallenges.challenges.3")}
                 </p>
               </div>
             </CardContent>
@@ -56,18 +52,17 @@ export function IntroductionSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-primary">
                 <Zap className="w-6 h-6" />
-                Lotus Bridge Solution
+                {t("introductionSection.lotusSolution.title")}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                A trustless, multi-chain, architecture-agnostic super-bridge
-                that blooms unity from diversity.
+                {t("introductionSection.lotusSolution.description")}
               </p>
               <div className="space-y-2 text-sm">
-                <p>• Universal bridge layer adapting to any network</p>
-                <p>• Cross-architecture connector (Ethereum ↔ Solana)</p>
-                <p>• Multi-wallet portal for seamless asset bridging</p>
+                <p>• {t("introductionSection.lotusSolution.features.0")}</p>
+                <p>• {t("introductionSection.lotusSolution.features.1")}</p>
+                <p>• {t("introductionSection.lotusSolution.features.2")}</p>
               </div>
             </CardContent>
           </Card>
@@ -79,15 +74,12 @@ export function IntroductionSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <Heart className="w-6 h-6 text-primary" />
-                🇻🇳 Built for Vietnam. Bridging the World.
+                {t("introductionSection.builtForVietnam.title")}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Lotus Bridge is the first bridge built by Vietnamese for
-                Vietnamese, designed with cultural, economic, and technological
-                sensitivity. Supports local tokens often neglected by other
-                platforms — including SLP, VNST, SIPHER, KNC, KAI, and more.
+                {t("introductionSection.builtForVietnam.description")}
               </p>
             </CardContent>
           </Card>
@@ -96,16 +88,12 @@ export function IntroductionSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <Globe className="w-6 h-6 text-accent" />
-                💡 Infrastructure of Tomorrow
+                {t("introductionSection.infrastructureTomorrow.title")}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Lotus Bridge is not a temporary product. It's an infrastructure
-                layer. Its architecture-agnostic model means it's future-proof —
-                adaptable to whatever blockchain innovations emerge. It's
-                functional, essential, and deeply integrated into user habits
-                and DeFi flows.
+                {t("introductionSection.infrastructureTomorrow.description")}
               </p>
             </CardContent>
           </Card>
@@ -114,7 +102,7 @@ export function IntroductionSection() {
         {/* Vietnamese Roots Section */}
         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 mb-16">
           <h3 className="text-2xl font-bold mb-6 text-center">
-            🌱 The Symbolism of the Lotus
+            {t("introductionSection.symbolismLotus.title")}
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
@@ -122,11 +110,12 @@ export function IntroductionSection() {
                 <span className="text-white text-2xl">🌸</span>
               </div>
               <h4 className="font-semibold mb-2 vietnamese-text">
-                Universal Bridge Layer
+                {t("introductionSection.symbolismLotus.universalBridge.title")}
               </h4>
               <p className="text-sm text-muted-foreground">
-                Able to adapt to any exchange method used in any network it
-                connects to
+                {t(
+                  "introductionSection.symbolismLotus.universalBridge.description"
+                )}
               </p>
             </div>
             <div className="text-center">
@@ -134,11 +123,14 @@ export function IntroductionSection() {
                 <span className="text-white text-2xl">⚡</span>
               </div>
               <h4 className="font-semibold mb-2 vietnamese-text">
-                Cross-Architecture Connector
+                {t(
+                  "introductionSection.symbolismLotus.crossArchitecture.title"
+                )}
               </h4>
               <p className="text-sm text-muted-foreground">
-                Swap and send across chains that don't even share address
-                formats or VM compatibilities
+                {t(
+                  "introductionSection.symbolismLotus.crossArchitecture.description"
+                )}
               </p>
             </div>
             <div className="text-center">
@@ -146,21 +138,18 @@ export function IntroductionSection() {
                 <span className="text-white text-2xl">🌐</span>
               </div>
               <h4 className="font-semibold mb-2 vietnamese-text">
-                Multi-Wallet Portal
+                {t("introductionSection.symbolismLotus.multiWallet.title")}
               </h4>
               <p className="text-sm text-muted-foreground">
-                Bridging and swapping across tokens, user identities, Vietnamese
-                and global assets
+                {t(
+                  "introductionSection.symbolismLotus.multiWallet.description"
+                )}
               </p>
             </div>
           </div>
           <div className="mt-8 text-center">
             <p className="text-muted-foreground italic">
-              "In Vietnamese culture, the lotus rises pure from murky waters. It
-              represents resilience, rebirth, and peace. In blockchain, that
-              water is fragmentation, isolation, and complexity. Lotus Bridge
-              blooms as the answer — creating order from chaos, clarity from
-              confusion."
+              "{t("introductionSection.symbolismLotus.quote")}"
             </p>
           </div>
         </div>
@@ -168,17 +157,19 @@ export function IntroductionSection() {
         {/* Why Lotus Matters */}
         <div>
           <h3 className="text-3xl font-bold text-center mb-12">
-            {t("introduction.whyLotusMatters.title")}
+            {t("introductionSection.whyLotusMatters.title")}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="text-center hover:shadow-lg transition-all duration-300">
               <CardContent className="pt-6">
                 <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h4 className="font-semibold mb-2">
-                  {t("introduction.whyLotusMatters.securityFirst.title")}
+                  {t("introductionSection.whyLotusMatters.securityFirst.title")}
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  {t("introduction.whyLotusMatters.securityFirst.description")}
+                  {t(
+                    "introductionSection.whyLotusMatters.securityFirst.description"
+                  )}
                 </p>
               </CardContent>
             </Card>
@@ -199,10 +190,12 @@ export function IntroductionSection() {
               <CardContent className="pt-6">
                 <Globe className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h4 className="font-semibold mb-2">
-                  {t("introduction.whyLotusMatters.globalReach.title")}
+                  {t("introductionSection.whyLotusMatters.globalReach.title")}
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  {t("introduction.whyLotusMatters.globalReach.description")}
+                  {t(
+                    "introductionSection.whyLotusMatters.globalReach.description"
+                  )}
                 </p>
               </CardContent>
             </Card>
@@ -211,10 +204,14 @@ export function IntroductionSection() {
               <CardContent className="pt-6">
                 <Heart className="w-12 h-12 text-accent mx-auto mb-4" />
                 <h4 className="font-semibold mb-2">
-                  {t("introduction.vietnameseRoots.communityFirst.title")}
+                  {t(
+                    "introductionSection.whyLotusMatters.vietnameseRoots.title"
+                  )}
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  {t("introduction.whyLotusMatters.userFriendly.description")}
+                  {t(
+                    "introductionSection.whyLotusMatters.vietnameseRoots.description"
+                  )}
                 </p>
               </CardContent>
             </Card>

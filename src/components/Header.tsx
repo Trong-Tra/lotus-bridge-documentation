@@ -19,7 +19,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <div>
             <h1 className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Lotus Bridge Documentation
+              {t("header.title")}
             </h1>
           </div>
         </div>
@@ -41,6 +41,7 @@ export function Header() {
             size="sm"
             onClick={toggleTheme}
             className="w-10 h-10 p-0"
+            title={isDark ? t("header.lightMode") : t("header.darkMode")}
           >
             {isDark ? (
               <Sun className="w-4 h-4" />

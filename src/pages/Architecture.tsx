@@ -38,14 +38,13 @@ const Architecture = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🏗️ System Architecture
+                    {t("pages.architecture.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Lotus Bridge Architecture
+                    {t("pages.architecture.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Detailed architecture documentation and diagrams coming
-                    soon.
+                    {t("pages.architecture.subtitle")}
                   </p>
                 </div>
               </div>
@@ -60,13 +59,10 @@ const Architecture = () => {
                       <Layers className="h-16 w-16 text-primary" />
                     </div>
                     <CardTitle className="text-3xl mb-4">
-                      Architecture Documentation
+                      {t("pages.architecture.documentationTitle")}
                     </CardTitle>
                     <CardDescription className="text-lg max-w-2xl mx-auto">
-                      We are currently preparing comprehensive architecture
-                      diagrams and technical documentation. This section will
-                      include detailed system architecture, component
-                      interactions, and technical specifications.
+                      {t("pages.architecture.documentationDescription")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">

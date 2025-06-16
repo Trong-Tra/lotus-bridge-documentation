@@ -39,14 +39,13 @@ const Security = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🛡️ Security Framework
+                    {t("pages.security.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Security
+                    {t("navigation.security")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Multi-layered security approach protecting user assets and
-                    network integrity with Vietnamese innovation at its core.
+                    {t("pages.security.subtitle")}
                   </p>
                 </div>
               </div>
@@ -64,11 +63,10 @@ const Security = () => {
                         <div className="text-4xl">🏗️</div>
                       </div>
                       <CardTitle className="text-2xl text-muted-foreground">
-                        Security Documentation
+                        {t("pages.security.documentationTitle")}
                       </CardTitle>
                       <CardDescription className="text-lg">
-                        Comprehensive security framework documentation coming
-                        soon
+                        {t("pages.security.documentationDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
@@ -76,14 +74,15 @@ const Security = () => {
                         <div className="text-muted-foreground">
                           <div className="text-6xl mb-4">📋</div>
                           <h3 className="font-semibold text-xl mb-3">
-                            Security Architecture Diagrams
+                            {t("pages.security.architectureDiagramsTitle")}
                           </h3>
                           <p className="text-sm mb-4">
-                            Detailed security infrastructure and protocol
-                            implementations
+                            {t(
+                              "pages.security.architectureDiagramsDescription"
+                            )}
                           </p>
                           <Badge variant="outline" className="text-xs">
-                            Incoming Documentation
+                            {t("pages.security.incomingDocumentation")}
                           </Badge>
                         </div>
                       </div>
@@ -96,7 +95,7 @@ const Security = () => {
                               <Lock className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Cryptographic Security
+                              {t("pages.security.cryptographicSecurity")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -106,7 +105,7 @@ const Security = () => {
                               <div className="h-3 bg-muted/30 rounded w-1/2"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Diagram
+                              {t("pages.security.futureDiagram")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -117,7 +116,7 @@ const Security = () => {
                               <Shield className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Multi-Layer Defense
+                              {t("pages.security.multiLayerDefense")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -127,7 +126,7 @@ const Security = () => {
                               <div className="h-3 bg-muted/30 rounded w-2/3"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Diagram
+                              {t("pages.security.futureDiagram")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -138,7 +137,7 @@ const Security = () => {
                               <CheckCircle className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Audit & Compliance
+                              {t("pages.security.auditCompliance")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -148,7 +147,7 @@ const Security = () => {
                               <div className="h-3 bg-muted/30 rounded w-3/5"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Diagram
+                              {t("pages.security.futureDiagram")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -157,13 +156,10 @@ const Security = () => {
                       <div className="text-center py-6">
                         <AlertTriangle className="h-8 w-8 text-orange-500 mx-auto mb-3" />
                         <h4 className="font-semibold text-lg mb-2">
-                          Development in Progress
+                          {t("pages.security.developmentInProgressTitle")}
                         </h4>
                         <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-                          Our security documentation and diagrams are currently
-                          being developed. This section will include
-                          comprehensive security architecture, threat models,
-                          audit reports, and implementation guidelines.
+                          {t("pages.security.developmentInProgressDescription")}
                         </p>
                       </div>
                     </CardContent>
@@ -176,22 +172,22 @@ const Security = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/benefits-vietnam">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Benefits for Vietnam
+                        {t("pages.security.backToBenefits")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Continue exploring
+                        {t("pages.security.continueExploring")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Learn about our development roadmap
+                        {t("pages.security.learnAboutRoadmap")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/roadmap">
-                        Continue to Roadmap
+                        {t("pages.security.continueToRoadmap")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

@@ -36,19 +36,17 @@ export function HeroSection() {
             className="w-96 h-96 mx-auto object-contain mb-1"
           />
           <p className="text-xl text-muted-foreground vietnamese-text mb-2">
-            Built by Vietnam. Bridging the World.
+            {t("hero.subtitleVietnamese")}
           </p>
           <p className="text-lg text-muted-foreground">
-            Decentralized Cross-Chain Bridge
+            {t("hero.decentralizedBridge")}
           </p>
         </div>
 
         {/* Mission statement */}
         <div className="mb-12 max-w-2xl mx-auto">
           <h2 className="text-2xl font-semibold mb-4 text-foreground">
-            {language === "vi"
-              ? "Kết nối các mạng Blockchain với sự đổi mới của Việt Nam"
-              : "Bridging Blockchain Networks with Vietnamese Innovation"}
+            {t("hero.bridgingBlockchains")}
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed vietnamese-text">
             {t("hero.mission")}
@@ -70,7 +68,7 @@ export function HeroSection() {
             className="px-8 py-4 text-lg bridge-transition"
           >
             <Code className="w-5 h-5 mr-2" />
-            {language === "vi" ? "Hướng dẫn nhà phát triển" : "Developer Guide"}
+            {t("hero.developerGuide")}
           </Button>
         </div>
 

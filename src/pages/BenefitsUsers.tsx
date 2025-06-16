@@ -65,62 +65,57 @@ const BenefitsUsers = () => {
 
   const userBenefits = [
     {
-      title: "Simplified Access to Global DeFi",
-      description:
-        "Navigate the complex DeFi landscape with ease, accessing protocols across multiple chains through a single, intuitive interface.",
+      title: t("pages.benefitsUsers.simplifiedAccess"),
+      description: t("pages.benefitsUsers.simplifiedDescription"),
       icon: Globe,
       features: [
-        "One-click access to multiple DeFi protocols",
-        "Unified portfolio management across chains",
-        "Simplified transaction routing",
-        "Reduced complexity for beginners",
+        t("pages.benefitsUsers.unifiedPortfolio"),
+        t("pages.benefitsUsers.simplifiedRouting"),
+        t("pages.benefitsUsers.reducedComplexity"),
+        t("pages.benefitsUsers.oneClickAccess"),
       ],
     },
     {
-      title: "Local-First Design with Vietnamese Token Support",
-      description:
-        "Enjoy a platform designed specifically for Vietnamese users, with native support for popular local tokens and cultural preferences.",
+      title: t("pages.benefitsUsers.localFirst"),
+      description: t("pages.benefitsUsers.localDescription"),
       icon: Heart,
       features: [
-        "Native AXS, SLP, VNDC, VNST support",
-        "Vietnamese language interface",
-        "Local payment method integration",
-        "Cultural UI/UX design elements",
+        t("pages.benefitsUsers.vietnameseInterface"),
+        t("pages.benefitsUsers.localPayment"),
+        t("pages.benefitsUsers.nativeTokenSupport"),
+        t("pages.benefitsUsers.culturalDesign"),
       ],
     },
     {
-      title: "Flexible Transaction Routing",
-      description:
-        "Experience unparalleled flexibility in how you move and use your assets across multiple blockchain networks.",
+      title: t("pages.benefitsUsers.flexibleRouting"),
+      description: t("pages.benefitsUsers.flexibleDescription"),
       icon: Target,
       features: [
-        "Cross-chain asset transfers",
-        "Multi-wallet transaction support",
-        "Optimal routing algorithms",
-        "Gas optimization across chains",
+        t("pages.benefitsUsers.optimalRouting"),
+        t("pages.benefitsUsers.gasOptimization"),
+        t("pages.benefitsUsers.crossChainTransfers"),
+        t("pages.benefitsUsers.multiWalletSupport"),
       ],
     },
   ];
 
   const scenarioCards = [
     {
-      title: "🎮 Gaming Enthusiast",
-      scenario: "Move AXS tokens from Ronin to Ethereum for DeFi opportunities",
-      benefit: "Access global DeFi yields while keeping gaming assets active",
+      title: t("pages.benefitsUsers.scenarios.gaming.title"),
+      scenario: t("pages.benefitsUsers.scenarios.gaming.scenario"),
+      benefit: t("pages.benefitsUsers.scenarios.gaming.benefit"),
       tokens: ["AXS", "SLP", "RON"],
     },
     {
-      title: "💰 DeFi Investor",
-      scenario:
-        "Swap VNDC for ETH across chains to participate in new protocols",
-      benefit: "Seamless Vietnamese stablecoin integration with global DeFi",
+      title: t("pages.benefitsUsers.scenarios.defi.title"),
+      scenario: t("pages.benefitsUsers.scenarios.defi.scenario"),
+      benefit: t("pages.benefitsUsers.scenarios.defi.benefit"),
       tokens: ["VNDC", "VNST", "ETH"],
     },
     {
-      title: "🚀 Crypto Trader",
-      scenario:
-        "Arbitrage opportunities between Vietnamese and international exchanges",
-      benefit: "Quick cross-chain transfers for time-sensitive trading",
+      title: t("pages.benefitsUsers.scenarios.trader.title"),
+      scenario: t("pages.benefitsUsers.scenarios.trader.scenario"),
+      benefit: t("pages.benefitsUsers.scenarios.trader.benefit"),
       tokens: ["KAI", "C98", "KNC"],
     },
   ];
@@ -139,15 +134,13 @@ const BenefitsUsers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    👥 User Benefits
+                    {t("pages.benefitsUsers.hero.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Users
+                    {t("pages.benefitsUsers.hero.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Discover how Lotus Bridge empowers Vietnamese users to
-                    access global DeFi opportunities with local-first design and
-                    seamless cross-chain functionality.
+                    {t("pages.benefitsUsers.hero.description")}
                   </p>
                 </div>
               </div>
@@ -220,11 +213,10 @@ const BenefitsUsers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🇻🇳 Real Vietnamese User Scenarios
+                    🇻🇳 {t("pages.benefitsUsers.scenarios.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    See how Lotus Bridge creates value for different types of
-                    Vietnamese crypto users.
+                    {t("pages.benefitsUsers.scenarios.description")}
                   </p>
                 </div>
 
@@ -242,7 +234,7 @@ const BenefitsUsers = () => {
                       <CardContent>
                         <div className="mb-4">
                           <h4 className="font-semibold text-green-600 mb-2">
-                            ✅ Benefit:
+                            ✅ {t("pages.benefitsUsers.scenarios.benefitLabel")}
                           </h4>
                           <p className="text-sm text-muted-foreground">
                             {scenario.benefit}
@@ -250,7 +242,7 @@ const BenefitsUsers = () => {
                         </div>
                         <div>
                           <h4 className="font-semibold mb-2">
-                            🪙 Supported Tokens:
+                            🪙 {t("pages.benefitsUsers.scenarios.tokensLabel")}
                           </h4>
                           <div className="flex flex-wrap gap-2">
                             {scenario.tokens.map((token, tokenIndex) => (
@@ -276,11 +268,10 @@ const BenefitsUsers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🌸 Vietnamese Token Integration
+                    🌸 {t("pages.benefitsUsers.tokenIntegration.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Lotus Bridge natively supports the most popular tokens in
-                    the Vietnamese crypto ecosystem.
+                    {t("pages.benefitsUsers.tokenIntegration.description")}
                   </p>
                 </div>
 
@@ -374,15 +365,17 @@ const BenefitsUsers = () => {
                       className="flex items-center gap-2"
                     >
                       <ArrowLeft className="h-4 w-4" />
-                      Ecosystem Benefits
+                      {t("pages.benefitsUsers.navigation.backToEcosystem")}
                     </Button>
                   </Link>
                   <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
+                    <Button variant="outline">
+                      {t("pages.benefitsUsers.navigation.backToOverview")}
+                    </Button>
                   </Link>
                   <Link to="/benefits-developers">
                     <Button className="flex items-center gap-2">
-                      For Builders
+                      {t("pages.benefitsUsers.navigation.continueToBuilders")}
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>

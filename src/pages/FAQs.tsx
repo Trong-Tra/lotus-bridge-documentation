@@ -1,4 +1,3 @@
-
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Header } from "@/components/Header";
@@ -44,13 +43,13 @@ const FAQs = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    {t("faqs.badge")}
+                    {t("pages.faqs.helpCenter")} ❓
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    {t("faqs.title")}
+                    {t("pages.faqs.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    {t("faqs.subtitle")}
+                    {t("pages.faqs.faqsDescription")}
                   </p>
                 </div>
               </div>
@@ -66,42 +65,42 @@ const FAQs = () => {
                       className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
                     >
                       <HelpCircle className="h-4 w-4 mr-2" />
-                      General
+                      {t("pages.faqs.general")}
                     </TabsTrigger>
                     <TabsTrigger
                       value="technical"
                       className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
                     >
                       <Code className="h-4 w-4 mr-2" />
-                      Technical
+                      {t("pages.faqs.technical")}
                     </TabsTrigger>
                     <TabsTrigger
                       value="security"
                       className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
                     >
                       <Shield className="h-4 w-4 mr-2" />
-                      Security
+                      {t("pages.faqs.security")}
                     </TabsTrigger>
                     <TabsTrigger
                       value="fees"
                       className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
                     >
                       <Zap className="h-4 w-4 mr-2" />
-                      Fees
+                      {t("pages.faqs.fees")}
                     </TabsTrigger>
                     <TabsTrigger
                       value="vietnamese"
                       className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
                     >
                       🇻🇳
-                      Vietnamese
+                      {t("pages.faqs.vietnamese")}
                     </TabsTrigger>
                     <TabsTrigger
                       value="support"
                       className="tab-header text-sm px-3 py-2 h-full flex items-center justify-center"
                     >
                       <Users className="h-4 w-4 mr-2" />
-                      Support
+                      {t("pages.faqs.support")}
                     </TabsTrigger>
                   </TabsList>
 
@@ -110,10 +109,10 @@ const FAQs = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <HelpCircle className="h-5 w-5" />
-                          General Questions
+                          {t("pages.faqs.generalQuestions")}
                         </CardTitle>
                         <CardDescription>
-                          Common questions about Lotus Bridge
+                          {t("pages.faqs.generalDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -165,8 +164,8 @@ const FAQs = () => {
                               How long do transactions take?
                             </AccordionTrigger>
                             <AccordionContent>
-                              Transaction times vary by network pair: Ethereum
-                              ↔ Polygon: 30-60 seconds, BSC ↔ Avalanche: 45-90
+                              Transaction times vary by network pair: Ethereum ↔
+                              Polygon: 30-60 seconds, BSC ↔ Avalanche: 45-90
                               seconds, Arbitrum ↔ Optimism: 20-45 seconds. Times
                               may be longer during network congestion.
                             </AccordionContent>
@@ -193,10 +192,10 @@ const FAQs = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Code className="h-5 w-5" />
-                          Technical Questions
+                          {t("pages.faqs.technicalQuestions")}
                         </CardTitle>
                         <CardDescription>
-                          Technical details and implementation
+                          {t("pages.faqs.technicalDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -234,9 +233,9 @@ const FAQs = () => {
                             <AccordionContent>
                               Developers can integrate using our REST API,
                               GraphQL endpoint, or directly interact with smart
-                              contracts. We provide SDKs for JavaScript,
-                              Python, and Go. Full documentation and examples
-                              are available in our Developer Docs section.
+                              contracts. We provide SDKs for JavaScript, Python,
+                              and Go. Full documentation and examples are
+                              available in our Developer Docs section.
                             </AccordionContent>
                           </AccordionItem>
 
@@ -263,10 +262,10 @@ const FAQs = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Shield className="h-5 w-5" />
-                          Security Questions
+                          {t("pages.faqs.securityQuestions")}
                         </CardTitle>
                         <CardDescription>
-                          Security measures and fund protection
+                          {t("pages.faqs.securityDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -333,10 +332,10 @@ const FAQs = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Zap className="h-5 w-5" />
-                          Fees & Costs
+                          {t("pages.faqs.feesAndCosts")}
                         </CardTitle>
                         <CardDescription>
-                          Understanding bridge fees and gas costs
+                          {t("pages.faqs.feesDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -349,8 +348,8 @@ const FAQs = () => {
                               Bridge fees are 0.1% of transaction value, with a
                               minimum of $1 and maximum of $50. This covers
                               validator rewards, protocol maintenance, and
-                              security measures. Fees are automatically
-                              deducted from the bridged amount.
+                              security measures. Fees are automatically deducted
+                              from the bridged amount.
                             </AccordionContent>
                           </AccordionItem>
 
@@ -402,10 +401,10 @@ const FAQs = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           🇻🇳
-                          Vietnamese Community
+                          {t("pages.faqs.vietnameseCommunity")}
                         </CardTitle>
                         <CardDescription>
-                          Questions specific to Vietnamese users and market
+                          {t("pages.faqs.vietnameseDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -486,10 +485,10 @@ const FAQs = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Users className="h-5 w-5" />
-                          Support & Help
+                          {t("pages.faqs.supportAndHelp")}
                         </CardTitle>
                         <CardDescription>
-                          Getting help when you need it
+                          {t("pages.faqs.supportDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -570,33 +569,39 @@ const FAQs = () => {
                   <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
                     <CardHeader className="text-center">
                       <CardTitle className="text-2xl">
-                        Still Have Questions?
+                        {t("pages.faqs.stillHaveQuestions")}
                       </CardTitle>
                       <CardDescription className="text-lg">
-                        Our community and support team are here to help
+                        {t("pages.faqs.communitySupport")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="text-center">
                       <div className="grid md:grid-cols-3 gap-6 mb-6">
                         <div className="text-center">
                           <MessageCircle className="h-8 w-8 mx-auto mb-2 text-primary" />
-                          <h4 className="font-semibold">Discord Community</h4>
+                          <h4 className="font-semibold">
+                            {t("pages.faqs.discordCommunity")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Join 5,000+ users for real-time help
+                            {t("pages.faqs.discordDescription")}
                           </p>
                         </div>
                         <div className="text-center">
                           <Users className="h-8 w-8 mx-auto mb-2 text-accent" />
-                          <h4 className="font-semibold">Vietnamese Support</h4>
+                          <h4 className="font-semibold">
+                            {t("pages.faqs.vietnameseSupport")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Native language support available
+                            {t("pages.faqs.vietnameseSupportDescription")}
                           </p>
                         </div>
                         <div className="text-center">
                           <HelpCircle className="h-8 w-8 mx-auto mb-2 text-primary" />
-                          <h4 className="font-semibold">Developer Docs</h4>
+                          <h4 className="font-semibold">
+                            {t("pages.faqs.developerDocs")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            Comprehensive technical documentation
+                            {t("pages.faqs.developerDocsDescription")}
                           </p>
                         </div>
                       </div>

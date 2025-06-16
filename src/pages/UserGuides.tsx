@@ -75,12 +75,10 @@ const UserGuides = () => {
                     {t("userGuides.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    User Guides
+                    {t("pages.userGuides.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Step-by-step instructions on how to bridge assets across
-                    supported blockchain networks, with guidance tailored for
-                    both general users and Viet Nam region-specific tokens
+                    {t("pages.userGuides.subtitle")}
                   </p>
                 </div>
               </div>
@@ -112,12 +110,11 @@ const UserGuides = () => {
                         <div className="flex items-center gap-2 mb-2">
                           <span className="text-2xl">🇻🇳</span>
                           <CardTitle className="text-green-800 dark:text-green-400">
-                            Vietnamese Token Support
+                            {t("pages.userGuides.vietnameseTokenSupport")}
                           </CardTitle>
                         </div>
                         <CardDescription>
-                          Lotus Bridge provides native support for Vietnamese
-                          tokens often neglected by other platforms
+                          {t("pages.userGuides.nativeSupport")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -227,49 +224,44 @@ const UserGuides = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <ArrowRightLeft className="h-5 w-5" />
-                          Real-World Use Cases
+                          {t("pages.userGuides.realWorldUseCases")}
                         </CardTitle>
                         <CardDescription>
-                          Examples of how to use Lotus Bridge for common
-                          Vietnamese token scenarios
+                          {t("pages.userGuides.realWorldDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <div className="grid md:grid-cols-2 gap-4">
                           <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded border border-blue-200 dark:border-blue-800">
                             <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">
-                              🔄 Cross-chain Asset Transfer
+                              🔄 {t("pages.userGuides.crossChainAssetTransfer")}
                             </h4>
                             <p className="text-sm text-blue-700 dark:text-blue-300">
-                              "Move your VNDC from Ethereum to Solana to access
-                              lower fees and faster transactions"
+                              {t("pages.userGuides.crossChainExample")}
                             </p>
                           </div>
                           <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded border border-green-200 dark:border-green-800">
                             <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">
-                              ⚡ Chain-to-chain Swaps
+                              ⚡ {t("pages.userGuides.chainToChainSwaps")}
                             </h4>
                             <p className="text-sm text-green-700 dark:text-green-300">
-                              "Instantly swap AXS on Ronin for ETH on Ethereum
-                              without multiple steps"
+                              {t("pages.userGuides.chainSwapsExample")}
                             </p>
                           </div>
                           <div className="bg-purple-50 dark:bg-purple-950/20 p-4 rounded border border-purple-200 dark:border-purple-800">
                             <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">
-                              💼 Multi-wallet Management
+                              💼 {t("pages.userGuides.multiWalletManagement")}
                             </h4>
                             <p className="text-sm text-purple-700 dark:text-purple-300">
-                              "Bridge and swap between addresses you control on
-                              different chains"
+                              {t("pages.userGuides.multiWalletExample")}
                             </p>
                           </div>
                           <div className="bg-orange-50 dark:bg-orange-950/20 p-4 rounded border border-orange-200 dark:border-orange-800">
                             <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-2">
-                              🌏 Localized DeFi
+                              🌏 {t("pages.userGuides.localizedDefi")}
                             </h4>
                             <p className="text-sm text-orange-700 dark:text-orange-300">
-                              "Participate in DeFi protocols using regionally
-                              popular Vietnamese tokens"
+                              {t("pages.userGuides.localizedDefiExample")}
                             </p>
                           </div>
                         </div>
@@ -281,11 +273,12 @@ const UserGuides = () => {
                       <CardHeader>
                         <div className="flex items-center gap-2 mb-2">
                           <Wallet className="h-5 w-5 text-primary" />
-                          <CardTitle>Wallet Recommendations</CardTitle>
+                          <CardTitle>
+                            {t("pages.userGuides.walletRecommendations")}
+                          </CardTitle>
                         </div>
                         <CardDescription>
-                          Choose the best wallet for your network and experience
-                          level
+                          {t("pages.userGuides.walletDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
@@ -300,26 +293,50 @@ const UserGuides = () => {
                                 </span>
                                 <div>
                                   <h4 className="font-semibold text-blue-800 dark:text-blue-400 group-hover:text-blue-900 dark:group-hover:text-blue-300 transition-colors duration-300">
-                                    MetaMask
+                                    {t(
+                                      "pages.userGuides.wallets.metamask.name"
+                                    )}
                                   </h4>
                                   <Badge
                                     variant="secondary"
                                     className="text-xs group-hover:bg-blue-200 dark:group-hover:bg-blue-900 transition-colors duration-300"
                                   >
-                                    Beginner Friendly
+                                    {t(
+                                      "pages.userGuides.wallets.metamask.badge"
+                                    )}
                                   </Badge>
                                 </div>
                               </div>
                               <p className="text-sm text-blue-700 dark:text-blue-300 mb-3 group-hover:text-blue-800 dark:group-hover:text-blue-200 transition-colors duration-300">
-                                Perfect for newcomers to DeFi. Simple interface
-                                with excellent tutorials and widespread
-                                compatibility.
+                                {t(
+                                  "pages.userGuides.wallets.metamask.description"
+                                )}
                               </p>
                               <div className="text-xs text-blue-600 dark:text-blue-400 space-y-1 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors duration-300">
-                                <div>✓ Easy setup and onboarding</div>
-                                <div>✓ Wide ecosystem support</div>
-                                <div>✓ Excellent for basic usage</div>
-                                <div>✓ Great educational resources</div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.metamask.features.0"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.metamask.features.1"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.metamask.features.2"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.metamask.features.3"
+                                  )}
+                                </div>
                               </div>
                             </div>
 
@@ -331,25 +348,46 @@ const UserGuides = () => {
                                 </span>
                                 <div>
                                   <h4 className="font-semibold text-purple-800 dark:text-purple-400 group-hover:text-purple-900 dark:group-hover:text-purple-300 transition-colors duration-300">
-                                    Rabby Wallet
+                                    {t("pages.userGuides.wallets.rabby.name")}
                                   </h4>
                                   <Badge
                                     variant="secondary"
                                     className="text-xs group-hover:bg-purple-200 dark:group-hover:bg-purple-900 transition-colors duration-300"
                                   >
-                                    EVM Advanced
+                                    {t("pages.userGuides.wallets.rabby.badge")}
                                   </Badge>
                                 </div>
                               </div>
                               <p className="text-sm text-purple-700 dark:text-purple-300 mb-3 group-hover:text-purple-800 dark:group-hover:text-purple-200 transition-colors duration-300">
-                                Superior UI/UX with better asset management
-                                across EVM chains. Perfect for power users.
+                                {t(
+                                  "pages.userGuides.wallets.rabby.description"
+                                )}
                               </p>
                               <div className="text-xs text-purple-600 dark:text-purple-400 space-y-1 group-hover:text-purple-700 dark:group-hover:text-purple-300 transition-colors duration-300">
-                                <div>✓ Beautiful, intuitive interface</div>
-                                <div>✓ Advanced multi-chain view</div>
-                                <div>✓ Better asset control</div>
-                                <div>✓ Enhanced security features</div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.rabby.features.0"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.rabby.features.1"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.rabby.features.2"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.rabby.features.3"
+                                  )}
+                                </div>
                               </div>
                             </div>
 
@@ -361,25 +399,48 @@ const UserGuides = () => {
                                 </span>
                                 <div>
                                   <h4 className="font-semibold text-indigo-800 dark:text-indigo-400 group-hover:text-indigo-900 dark:group-hover:text-indigo-300 transition-colors duration-300">
-                                    Phantom
+                                    {t("pages.userGuides.wallets.phantom.name")}
                                   </h4>
                                   <Badge
                                     variant="secondary"
                                     className="text-xs group-hover:bg-indigo-200 dark:group-hover:bg-indigo-900 transition-colors duration-300"
                                   >
-                                    Solana
+                                    {t(
+                                      "pages.userGuides.wallets.phantom.badge"
+                                    )}
                                   </Badge>
                                 </div>
                               </div>
                               <p className="text-sm text-indigo-700 dark:text-indigo-300 mb-3 group-hover:text-indigo-800 dark:group-hover:text-indigo-200 transition-colors duration-300">
-                                The most popular and trusted wallet for Solana
-                                ecosystem with native SPL token support.
+                                {t(
+                                  "pages.userGuides.wallets.phantom.description"
+                                )}
                               </p>
                               <div className="text-xs text-indigo-600 dark:text-indigo-400 space-y-1 group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors duration-300">
-                                <div>✓ Solana native integration</div>
-                                <div>✓ Lightning fast transactions</div>
-                                <div>✓ Built-in NFT support</div>
-                                <div>✓ DeFi protocol optimization</div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.phantom.features.0"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.phantom.features.1"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.phantom.features.2"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.phantom.features.3"
+                                  )}
+                                </div>
                               </div>
                             </div>
 
@@ -391,25 +452,46 @@ const UserGuides = () => {
                                 </span>
                                 <div>
                                   <h4 className="font-semibold text-teal-800 dark:text-teal-400 group-hover:text-teal-900 dark:group-hover:text-teal-300 transition-colors duration-300">
-                                    Slush Wallet
+                                    {t("pages.userGuides.wallets.slush.name")}
                                   </h4>
                                   <Badge
                                     variant="secondary"
                                     className="text-xs group-hover:bg-teal-200 dark:group-hover:bg-teal-900 transition-colors duration-300"
                                   >
-                                    Sui Network
+                                    {t("pages.userGuides.wallets.slush.badge")}
                                   </Badge>
                                 </div>
                               </div>
                               <p className="text-sm text-teal-700 dark:text-teal-300 mb-3 group-hover:text-teal-800 dark:group-hover:text-teal-200 transition-colors duration-300">
-                                Official wallet developed by Mysten Labs for
-                                optimal Sui blockchain experience.
+                                {t(
+                                  "pages.userGuides.wallets.slush.description"
+                                )}
                               </p>
                               <div className="text-xs text-teal-600 dark:text-teal-400 space-y-1 group-hover:text-teal-700 dark:group-hover:text-teal-300 transition-colors duration-300">
-                                <div>✓ Official Mysten Labs support</div>
-                                <div>✓ Sui blockchain optimized</div>
-                                <div>✓ Advanced object management</div>
-                                <div>✓ Move language integration</div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.slush.features.0"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.slush.features.1"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.slush.features.2"
+                                  )}
+                                </div>
+                                <div>
+                                  ✓{" "}
+                                  {t(
+                                    "pages.userGuides.wallets.slush.features.3"
+                                  )}
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -418,7 +500,7 @@ const UserGuides = () => {
                         {/* Connection Steps */}
                         <div className="space-y-4 border-t pt-6">
                           <h4 className="font-semibold text-lg mb-4">
-                            How to Connect Your Wallet:
+                            {t("pages.userGuides.connectionSteps.title")}
                           </h4>
                           <div className="grid md:grid-cols-3 gap-4">
                             <div className="flex items-start gap-3">
@@ -427,11 +509,14 @@ const UserGuides = () => {
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Install Your Preferred Wallet
+                                  {t(
+                                    "pages.userGuides.connectionSteps.step1.title"
+                                  )}
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Download the recommended wallet for your
-                                  target network from official sources
+                                  {t(
+                                    "pages.userGuides.connectionSteps.step1.description"
+                                  )}
                                 </p>
                               </div>
                             </div>
@@ -441,11 +526,14 @@ const UserGuides = () => {
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Click "Connect Wallet"
+                                  {t(
+                                    "pages.userGuides.connectionSteps.step2.title"
+                                  )}
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Find the connect button in the top right
-                                  corner of the Lotus Bridge interface
+                                  {t(
+                                    "pages.userGuides.connectionSteps.step2.description"
+                                  )}
                                 </p>
                               </div>
                             </div>
@@ -455,18 +543,21 @@ const UserGuides = () => {
                               </div>
                               <div>
                                 <p className="font-medium">
-                                  Approve Connection
+                                  {t(
+                                    "pages.userGuides.connectionSteps.step3.title"
+                                  )}
                                 </p>
                                 <p className="text-sm text-muted-foreground">
-                                  Authorize Lotus Bridge to view your wallet
-                                  address and interact securely
+                                  {t(
+                                    "pages.userGuides.connectionSteps.step3.description"
+                                  )}
                                 </p>
                               </div>
                             </div>
                           </div>
                           <div className="flex justify-center pt-4">
                             <Button size="lg" className="px-8">
-                              View Detailed Setup Guides
+                              {t("pages.userGuides.viewDetailedGuides")}
                             </Button>
                           </div>
                         </div>
@@ -479,10 +570,12 @@ const UserGuides = () => {
                       <CardHeader>
                         <div className="flex items-center gap-2 mb-2">
                           <ArrowRightLeft className="h-5 w-5 text-primary" />
-                          <CardTitle>How to Bridge Tokens</CardTitle>
+                          <CardTitle>
+                            {t("pages.userGuides.howToBridgeTokens")}
+                          </CardTitle>
                         </div>
                         <CardDescription>
-                          Complete walkthrough of the token bridging process
+                          {t("pages.userGuides.bridgeTokensDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
@@ -620,8 +713,7 @@ const UserGuides = () => {
                           </div>
                           <div className="text-center pt-2 cursor-default">
                             <p className="text-sm text-muted-foreground">
-                              New networks are continuously being added to
-                              expand cross-chain capabilities
+                              {t("pages.userGuides.newNetworksNote")}
                             </p>
                           </div>
                         </div>
@@ -634,10 +726,12 @@ const UserGuides = () => {
                       <CardHeader>
                         <div className="flex items-center gap-2 mb-2">
                           <Shield className="h-5 w-5 text-amber-600" />
-                          <CardTitle>Security Best Practices</CardTitle>
+                          <CardTitle>
+                            {t("pages.userGuides.security.title")}
+                          </CardTitle>
                         </div>
                         <CardDescription>
-                          Protect your assets while using cross-chain bridges
+                          {t("pages.userGuides.security.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
@@ -646,11 +740,12 @@ const UserGuides = () => {
                             <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
                             <div>
                               <p className="font-medium">
-                                Always verify the bridge URL
+                                {t("pages.userGuides.security.verifyUrl.title")}
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                Bookmark the official URL and avoid clicking
-                                links from unknown sources
+                                {t(
+                                  "pages.userGuides.security.verifyUrl.description"
+                                )}
                               </p>
                             </div>
                           </div>
@@ -658,11 +753,14 @@ const UserGuides = () => {
                             <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
                             <div>
                               <p className="font-medium">
-                                Double-check transaction details
+                                {t(
+                                  "pages.userGuides.security.doubleCheck.title"
+                                )}
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                Verify recipient address, amount, and network
-                                before confirming
+                                {t(
+                                  "pages.userGuides.security.doubleCheck.description"
+                                )}
                               </p>
                             </div>
                           </div>
@@ -670,11 +768,14 @@ const UserGuides = () => {
                             <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
                             <div>
                               <p className="font-medium">
-                                Start with small amounts
+                                {t(
+                                  "pages.userGuides.security.startSmall.title"
+                                )}
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                Test with smaller transfers before bridging
-                                large amounts
+                                {t(
+                                  "pages.userGuides.security.startSmall.description"
+                                )}
                               </p>
                             </div>
                           </div>
@@ -682,11 +783,14 @@ const UserGuides = () => {
                             <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
                             <div>
                               <p className="font-medium">
-                                Keep transaction records
+                                {t(
+                                  "pages.userGuides.security.keepRecords.title"
+                                )}
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                Save transaction hashes and timestamps for
-                                reference
+                                {t(
+                                  "pages.userGuides.security.keepRecords.description"
+                                )}
                               </p>
                             </div>
                           </div>
@@ -700,73 +804,118 @@ const UserGuides = () => {
                       <CardHeader>
                         <div className="flex items-center gap-2 mb-2">
                           <AlertTriangle className="h-5 w-5 text-orange-500" />
-                          <CardTitle>Common Issues & Solutions</CardTitle>
+                          <CardTitle>
+                            {t("pages.userGuides.commonIssues.title")}
+                          </CardTitle>
                         </div>
                         <CardDescription>
-                          Quick fixes for the most common problems
+                          {t("pages.userGuides.commonIssues.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         <div className="space-y-4">
                           <div className="border rounded-lg p-4">
                             <h4 className="font-semibold mb-2">
-                              Transaction Stuck or Pending
+                              {t(
+                                "pages.userGuides.commonIssues.transactionStuck.title"
+                              )}
                             </h4>
                             <p className="text-sm text-muted-foreground mb-3">
-                              Your transaction has been confirmed on the source
-                              chain but hasn't appeared on the destination
-                              chain.
+                              {t(
+                                "pages.userGuides.commonIssues.transactionStuck.description"
+                              )}
                             </p>
                             <div className="space-y-2 text-sm">
                               <p>
-                                • Check the transaction status in our bridge
-                                explorer
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.transactionStuck.solutions.0"
+                                )}
                               </p>
                               <p>
-                                • Allow up to 30 minutes for completion during
-                                high network congestion
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.transactionStuck.solutions.1"
+                                )}
                               </p>
                               <p>
-                                • Contact support if stuck for more than 1 hour
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.transactionStuck.solutions.2"
+                                )}
                               </p>
                             </div>
                           </div>
 
                           <div className="border rounded-lg p-4">
                             <h4 className="font-semibold mb-2">
-                              Insufficient Gas Fees
+                              {t(
+                                "pages.userGuides.commonIssues.insufficientGas.title"
+                              )}
                             </h4>
                             <p className="text-sm text-muted-foreground mb-3">
-                              Transaction failed due to low gas fees or
-                              insufficient native tokens.
+                              {t(
+                                "pages.userGuides.commonIssues.insufficientGas.description"
+                              )}
                             </p>
                             <div className="space-y-2 text-sm">
                               <p>
-                                • Ensure you have enough native tokens (ETH,
-                                BNB, etc.) for gas
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.insufficientGas.solutions.0"
+                                )}
                               </p>
                               <p>
-                                • Increase gas limit if transaction keeps
-                                failing
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.insufficientGas.solutions.1"
+                                )}
                               </p>
-                              <p>• Try during off-peak hours for lower fees</p>
+                              <p>
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.insufficientGas.solutions.2"
+                                )}
+                              </p>
                             </div>
                           </div>
 
                           <div className="border rounded-lg p-4">
                             <h4 className="font-semibold mb-2">
-                              Wallet Connection Issues
+                              {t(
+                                "pages.userGuides.commonIssues.walletConnection.title"
+                              )}
                             </h4>
                             <p className="text-sm text-muted-foreground mb-3">
-                              Unable to connect wallet or wallet not detected.
+                              {t(
+                                "pages.userGuides.commonIssues.walletConnection.description"
+                              )}
                             </p>
                             <div className="space-y-2 text-sm">
-                              <p>• Refresh the page and try reconnecting</p>
-                              <p>• Check if wallet extension is enabled</p>
                               <p>
-                                • Switch to the correct network in your wallet
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.walletConnection.solutions.0"
+                                )}
                               </p>
-                              <p>• Clear browser cache and cookies</p>
+                              <p>
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.walletConnection.solutions.1"
+                                )}
+                              </p>
+                              <p>
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.walletConnection.solutions.2"
+                                )}
+                              </p>
+                              <p>
+                                •{" "}
+                                {t(
+                                  "pages.userGuides.commonIssues.walletConnection.solutions.3"
+                                )}
+                              </p>
                             </div>
                           </div>
                         </div>

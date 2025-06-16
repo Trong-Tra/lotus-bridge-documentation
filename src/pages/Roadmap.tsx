@@ -50,14 +50,13 @@ const Roadmap = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Development Roadmap
+                    {t("pages.roadmap.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Roadmap
+                    {t("pages.roadmap.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Our journey to revolutionize cross-chain interactions with
-                    Vietnamese innovation at the forefront.
+                    {t("pages.roadmap.subtitle")}
                   </p>
                 </div>
               </div>
@@ -75,11 +74,10 @@ const Roadmap = () => {
                         <div className="text-4xl">🏗️</div>
                       </div>
                       <CardTitle className="text-2xl text-muted-foreground">
-                        Development Roadmap
+                        {t("pages.roadmap.developmentRoadmap")}
                       </CardTitle>
                       <CardDescription className="text-lg">
-                        Comprehensive development timeline and milestones coming
-                        soon
+                        {t("pages.roadmap.roadmapDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
@@ -87,14 +85,13 @@ const Roadmap = () => {
                         <div className="text-muted-foreground">
                           <div className="text-6xl mb-4">🗺️</div>
                           <h3 className="font-semibold text-xl mb-3">
-                            Roadmap Timeline Diagrams
+                            {t("pages.roadmap.timelineDiagrams")}
                           </h3>
                           <p className="text-sm mb-4">
-                            Detailed development phases, milestones, and feature
-                            rollouts
+                            {t("pages.roadmap.detailedPhases")}
                           </p>
                           <Badge variant="outline" className="text-xs">
-                            Incoming Documentation
+                            {t("pages.roadmap.incomingDocumentation")}
                           </Badge>
                         </div>
                       </div>
@@ -107,7 +104,7 @@ const Roadmap = () => {
                               <Rocket className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Phase 1: Foundation
+                              {t("pages.roadmap.phaseFoundation")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -117,7 +114,7 @@ const Roadmap = () => {
                               <div className="h-3 bg-muted/30 rounded w-1/2"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Timeline
+                              {t("pages.roadmap.futureTimeline")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -128,7 +125,7 @@ const Roadmap = () => {
                               <Building2 className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Phase 2: Infrastructure
+                              {t("pages.roadmap.phaseInfrastructure")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -138,7 +135,7 @@ const Roadmap = () => {
                               <div className="h-3 bg-muted/30 rounded w-2/3"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Timeline
+                              {t("pages.roadmap.futureTimeline")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -149,7 +146,7 @@ const Roadmap = () => {
                               <Globe className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Phase 3: Expansion
+                              {t("pages.roadmap.phaseExpansion")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -159,7 +156,7 @@ const Roadmap = () => {
                               <div className="h-3 bg-muted/30 rounded w-3/5"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Timeline
+                              {t("pages.roadmap.futureTimeline")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -170,7 +167,7 @@ const Roadmap = () => {
                               <TrendingUp className="h-6 w-6 text-muted-foreground" />
                             </div>
                             <CardTitle className="text-lg text-muted-foreground">
-                              Phase 4: Optimization
+                              {t("pages.roadmap.phaseOptimization")}
                             </CardTitle>
                           </CardHeader>
                           <CardContent>
@@ -180,7 +177,7 @@ const Roadmap = () => {
                               <div className="h-3 bg-muted/30 rounded w-1/3"></div>
                             </div>
                             <Badge variant="outline" className="mt-3 text-xs">
-                              Future Timeline
+                              {t("pages.roadmap.futureTimeline")}
                             </Badge>
                           </CardContent>
                         </Card>
@@ -192,12 +189,11 @@ const Roadmap = () => {
                           <div className="flex items-center gap-2 mb-2">
                             <span className="text-2xl">🇻🇳</span>
                             <CardTitle className="text-green-800 dark:text-green-400">
-                              Vietnamese Innovation Priority
+                              {t("pages.roadmap.vietnameseInnovationPriority")}
                             </CardTitle>
                           </div>
                           <CardDescription>
-                            Dedicated timeline for Vietnamese market features
-                            and ecosystem integration
+                            {t("pages.roadmap.vietnameseTimelineDescription")}
                           </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -217,7 +213,7 @@ const Roadmap = () => {
                             variant="outline"
                             className="mt-3 text-xs text-green-700 dark:text-green-300"
                           >
-                            Future Vietnamese Features
+                            {t("pages.roadmap.futureVietnameseFeatures")}
                           </Badge>
                         </CardContent>
                       </Card>
@@ -225,14 +221,10 @@ const Roadmap = () => {
                       <div className="text-center py-6">
                         <AlertTriangle className="h-8 w-8 text-orange-500 mx-auto mb-3" />
                         <h4 className="font-semibold text-lg mb-2">
-                          Development in Progress
+                          {t("pages.roadmap.developmentInProgress")}
                         </h4>
                         <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-                          Our comprehensive roadmap and timeline diagrams are
-                          currently being developed. This section will include
-                          detailed development phases, feature rollouts,
-                          Vietnamese market priorities, and community governance
-                          milestones.
+                          {t("pages.roadmap.roadmapDevelopment")}
                         </p>
                       </div>
                     </CardContent>
@@ -245,22 +237,22 @@ const Roadmap = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/security">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Security
+                        {t("pages.roadmap.backToSecurity")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Continue exploring
+                        {t("pages.roadmap.continueExploring")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Learn about our tokenomics
+                        {t("pages.roadmap.learnTokenomics")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/tokenomics">
-                        Continue to Tokenomics
+                        {t("pages.roadmap.continueToTokenomics")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

@@ -75,14 +75,13 @@ const Background = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🌍 Industry Landscape
+                    🌍 {t("pages.background.problemStatement")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Background
+                    {t("pages.background.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Understanding the blockchain ecosystem challenges that Lotus
-                    Bridge was designed to solve.
+                    {t("pages.background.subtitle")}
                   </p>
                 </div>
               </div>
@@ -96,58 +95,57 @@ const Background = () => {
                   <Card className="border-destructive/20">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-destructive">
-                        <Globe className="h-5 w-5" />
-                        🌍 The Problem: A Fragmented World of Chains
+                        {t("pages.background.fragmentedWorldTitle")}
                       </CardTitle>
                       <CardDescription>
-                        Understanding the blockchain interoperability crisis
+                        {t("pages.background.blockchainCrisisDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <p className="text-muted-foreground leading-relaxed">
-                        Today's blockchain landscape is vast, vibrant, and…
-                        fractured. Ethereum. Solana. BNB Chain. Polygon. Cosmos.
-                        Each network speaks its own language, runs on its own
-                        logic, and is home to unique communities and ecosystems.
+                        {t("pages.background.landscapeDescription")}
                       </p>
                       <p className="text-muted-foreground leading-relaxed">
-                        But for the average user — especially those in emerging
-                        markets like Vietnam — navigating this complexity feels
-                        like crossing rivers with no bridges.
+                        {t("pages.background.userNavigationDescription")}
                       </p>
                       <div className="grid md:grid-cols-2 gap-4">
                         <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
                           <h4 className="font-semibold text-destructive mb-2">
-                            Current Challenges
+                            {t("pages.background.currentChallengesTitle")}
                           </h4>
                           <ul className="space-y-1 text-sm text-muted-foreground">
                             <li>
-                              • You want to swap an asset from Solana to
-                              Ethereum? You'll need multiple steps, tools,
-                              wallets, bridges
+                              •{" "}
+                              {t(
+                                "pages.background.currentChallenges.multipleSteps"
+                              )}
                             </li>
                             <li>
-                              • Often clunky, risky, or downright impossible if
-                              networks have fundamentally different
-                              architectures
+                              •{" "}
+                              {t(
+                                "pages.background.currentChallenges.clumsyRisky"
+                              )}
                             </li>
                             <li>
-                              • Vietnamese tokens like VNDC, VNST, KNC, and C98?
-                              Often excluded from global bridging conversations
+                              •{" "}
+                              {t(
+                                "pages.background.currentChallenges.vietnameseTokens"
+                              )}
                             </li>
                             <li>
-                              • Global adoption? Stunted by exclusion.
-                              Liquidity? Siloed. Users? Confused.
+                              •{" "}
+                              {t(
+                                "pages.background.currentChallenges.globalAdoption"
+                              )}
                             </li>
                           </ul>
                         </div>
                         <div className="bg-muted/50 p-4 rounded-lg border">
-                          <h4 className="font-semibold mb-2">The Result</h4>
+                          <h4 className="font-semibold mb-2">
+                            {t("pages.background.resultTitle")}
+                          </h4>
                           <p className="text-sm text-muted-foreground">
-                            The dream of a unified Web3 world remains out of
-                            reach. Each blockchain becomes an island, and users
-                            are left to navigate treacherous waters between
-                            them.
+                            {t("pages.background.resultDescription")}
                           </p>
                         </div>
                       </div>
@@ -159,49 +157,42 @@ const Background = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-primary">
                         <Flag className="h-5 w-5" />
-                        Enter Lotus Bridge – Blooming Unity From Diversity
+                        {t("pages.background.lotusEnterTitle")}
                       </CardTitle>
                       <CardDescription>
-                        A Vietnamese-inspired solution for global blockchain
-                        interoperability
+                        {t("pages.background.vietnameseSolutionDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <p className="text-muted-foreground leading-relaxed">
-                        Inspired by the Lotus — a sacred symbol of purity,
-                        resilience, and rebirth in Vietnamese culture — Lotus
-                        Bridge rises as a trustless, multi-chain,
-                        architecture-agnostic super-bridge.
+                        {t("pages.background.lotusInspiredDescription")}
                       </p>
                       <div className="grid md:grid-cols-3 gap-4">
                         <div className="text-center p-4 bg-background/50 rounded-lg border">
                           <Globe className="h-8 w-8 text-primary mx-auto mb-2" />
                           <h4 className="font-semibold mb-2">
-                            Universal Bridge Layer
+                            {t("pages.background.universalBridgeLayer")}
                           </h4>
                           <p className="text-sm text-muted-foreground">
-                            Able to adapt to any exchange method used in any
-                            network it connects to.
+                            {t("pages.background.universalDescription")}
                           </p>
                         </div>
                         <div className="text-center p-4 bg-background/50 rounded-lg border">
                           <Network className="h-8 w-8 text-primary mx-auto mb-2" />
                           <h4 className="font-semibold mb-2">
-                            Cross-Architecture Connector
+                            {t("pages.background.crossArchitectureConnector")}
                           </h4>
                           <p className="text-sm text-muted-foreground">
-                            Swap and send across chains that don't even share
-                            address formats or VM compatibilities.
+                            {t("pages.background.crossArchitectureDescription")}
                           </p>
                         </div>
                         <div className="text-center p-4 bg-background/50 rounded-lg border">
                           <TrendingUp className="h-8 w-8 text-primary mx-auto mb-2" />
                           <h4 className="font-semibold mb-2">
-                            Multi-Wallet Portal
+                            {t("pages.background.multiWalletPortal")}
                           </h4>
                           <p className="text-sm text-muted-foreground">
-                            Bridging and swapping across tokens, user
-                            identities, Vietnamese and global assets.
+                            {t("pages.background.multiWalletDescription")}
                           </p>
                         </div>
                       </div>
@@ -214,10 +205,12 @@ const Background = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-red-600 dark:text-red-400">
                           <Network className="h-5 w-5" />
-                          Technical Limitations
+                          {t("pages.background.technicalLimitations")}
                         </CardTitle>
                         <CardDescription>
-                          What existing bridges struggle with
+                          {t(
+                            "pages.background.technicalLimitationsDescription"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -225,25 +218,33 @@ const Background = () => {
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-red-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Limited to EVM-compatible chains
+                              {t(
+                                "pages.background.technicalLimitationsList.evmLimited"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-red-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Complex user interactions required
+                              {t(
+                                "pages.background.technicalLimitationsList.complexInteractions"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-red-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              High risk of funds loss or delays
+                              {t(
+                                "pages.background.technicalLimitationsList.highRisk"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-red-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Poor support for diverse architectures
+                              {t(
+                                "pages.background.technicalLimitationsList.poorArchitectureSupport"
+                              )}
                             </span>
                           </li>
                         </ul>
@@ -254,10 +255,10 @@ const Background = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400">
                           <Globe className="h-5 w-5" />
-                          Market Barriers
+                          {t("pages.background.marketBarriers")}
                         </CardTitle>
                         <CardDescription>
-                          Challenges for regional adoption
+                          {t("pages.background.marketBarriersDescription")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -265,25 +266,33 @@ const Background = () => {
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-yellow-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Regional tokens lack global access
+                              {t(
+                                "pages.background.marketBarriersList.regionalTokensLack"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-yellow-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Poor localization and UX
+                              {t(
+                                "pages.background.marketBarriersList.poorLocalization"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-yellow-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Fragmented liquidity pools
+                              {t(
+                                "pages.background.marketBarriersList.fragmentedLiquidity"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-yellow-500 mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Limited developer resources
+                              {t(
+                                "pages.background.marketBarriersList.limitedDeveloper"
+                              )}
                             </span>
                           </li>
                         </ul>
@@ -295,127 +304,135 @@ const Background = () => {
                   <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
-                        <Flag className="h-5 w-5" />
-                        🇻🇳 Vietnam's Crypto Leadership
+                        {t("pages.background.vietnamCryptoLeadership")}
                       </CardTitle>
                       <CardDescription>
-                        A thriving ecosystem with untapped potential
+                        {t("pages.background.vietnamPotentialDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
                           <strong>
-                            Vietnam has emerged as one of the most crypto-savvy
-                            nations
+                            {t("pages.background.vietnamCryptoNation")}
                           </strong>
-                          , yet local users face barriers in accessing global
-                          liquidity with Vietnamese-origin tokens.
+                          , {t("pages.background.vietnamBarriers")}
                         </p>
                       </div>
 
                       <div className="grid md:grid-cols-2 gap-6 items-start">
                         <div className="flex flex-col h-full">
                           <h4 className="font-semibold text-primary mb-4">
-                            🚀 Market Strengths
+                            {t("pages.background.marketStrengths")}
                           </h4>
                           <div className="grid gap-3 flex-1">
                             {/* Adoption & Awareness */}
                             <div className="p-4 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-sm mb-3 text-primary">
-                                📈 Adoption & Awareness
+                                {t("pages.background.adoptionAwareness")}
                               </h5>
                               <div className="space-y-2 mb-3">
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Top 3 globally in crypto awareness
+                                    {t(
+                                      "pages.background.adoptionItems.top3Global"
+                                    )}
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    High retail adoption rates
+                                    {t(
+                                      "pages.background.adoptionItems.highRetailAdoption"
+                                    )}
                                   </span>
                                 </div>
                               </div>
                               <p className="text-xs text-muted-foreground">
-                                Vietnam consistently ranks among top countries
-                                for crypto adoption
+                                {t("pages.background.adoptionDescription")}
                               </p>
                             </div>
 
                             {/* Gaming & NFTs */}
                             <div className="p-4 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-sm mb-3 text-primary">
-                                🎮 Gaming & NFT Leadership
+                                {t("pages.background.gamingNftLeadership")}
                               </h5>
                               <div className="space-y-2 mb-3">
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Axie Infinity ecosystem hub
+                                    {t("pages.background.gamingItems.axieHub")}
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Strong P2E gaming culture
+                                    {t(
+                                      "pages.background.gamingItems.strongP2E"
+                                    )}
                                   </span>
                                 </div>
                               </div>
                               <p className="text-xs text-muted-foreground">
-                                Leading the play-to-earn revolution in Southeast
-                                Asia
+                                {t("pages.background.gamingDescription")}
                               </p>
                             </div>
 
                             {/* Developer Ecosystem */}
                             <div className="p-4 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-sm mb-3 text-primary">
-                                👨‍💻 Developer Ecosystem
+                                {t("pages.background.developerEcosystem")}
                               </h5>
                               <div className="space-y-2 mb-3">
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Growing DeFi participation
+                                    {t(
+                                      "pages.background.developerItems.growingDefi"
+                                    )}
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Active developer community
+                                    {t(
+                                      "pages.background.developerItems.activeDeveloper"
+                                    )}
                                   </span>
                                 </div>
                               </div>
                               <p className="text-xs text-muted-foreground">
-                                Strong technical foundation for blockchain
-                                innovation
+                                {t("pages.background.developerDescription")}
                               </p>
                             </div>
 
                             {/* Growth Potential */}
                             <div className="p-4 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-sm mb-3 text-primary">
-                                🌟 Growth Potential
+                                {t("pages.background.growthPotential")}
                               </h5>
                               <div className="space-y-2 mb-3">
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Young tech-savvy population
+                                    {t(
+                                      "pages.background.growthItems.youngPopulation"
+                                    )}
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2 p-2 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50">
                                   <div className="w-2 h-2 rounded-full bg-pink-600 flex-shrink-0"></div>
                                   <span className="text-sm font-medium">
-                                    Rising cross-chain demand
+                                    {t(
+                                      "pages.background.growthItems.risingDemand"
+                                    )}
                                   </span>
                                 </div>
                               </div>
                               <p className="text-xs text-muted-foreground">
-                                Emerging opportunities in Web3 infrastructure
+                                {t("pages.background.growthDescription")}
                               </p>
                             </div>
                           </div>
@@ -425,12 +442,10 @@ const Background = () => {
                               <TrendingUp className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                               <div>
                                 <p className="text-sm font-medium text-green-800 dark:text-green-200">
-                                  Untapped Global Potential
+                                  {t("pages.background.untappedPotential")}
                                 </p>
                                 <p className="text-xs text-green-700 dark:text-green-300 mt-1">
-                                  Vietnam's crypto leadership position creates
-                                  massive opportunities for bridging local
-                                  innovation with global markets.
+                                  {t("pages.background.untappedDescription")}
                                 </p>
                               </div>
                             </div>
@@ -439,15 +454,16 @@ const Background = () => {
 
                         <div className="flex flex-col h-full">
                           <h4 className="font-semibold text-accent mb-4">
-                            Popular Vietnamese Tokens
+                            {t("pages.background.popularVietnameseTokens")}
                           </h4>
                           <div className="grid gap-4 flex-1">
                             {/* Gaming Tokens */}
                             <div className="p-5 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-base mb-6 text-primary">
-                                🎮 Gaming Ecosystem
+                                {t("pages.background.gamingEcosystem")}
                               </h5>
                               <div className="grid grid-cols-2 gap-4 mb-6">
+                                {/* AXS, SLP, SIPHER, A8 cards remain unchanged since they contain images */}
                                 <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
                                   <img
                                     src="https://assets.coingecko.com/coins/images/13029/small/axie_infinity_logo.png"
@@ -490,15 +506,16 @@ const Background = () => {
                                 </div>
                               </div>
                               <p className="text-sm text-muted-foreground text-center">
-                                Axie Infinity, gaming tokens driving Vietnam's
-                                Web3 adoption
+                                {t(
+                                  "pages.background.gamingEcosystemDescription"
+                                )}
                               </p>
                             </div>
 
                             {/* Stablecoins */}
                             <div className="p-5 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-base mb-6 text-primary">
-                                💰 Vietnamese Stablecoins
+                                {t("pages.background.vietnameseStablecoins")}
                               </h5>
                               <div className="grid grid-cols-2 gap-4 mb-6 max-w-md mx-auto">
                                 <div className="flex items-center gap-3 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
@@ -523,15 +540,14 @@ const Background = () => {
                                 </div>
                               </div>
                               <p className="text-sm text-muted-foreground text-center">
-                                VND-pegged stablecoins for local financial
-                                integration
+                                {t("pages.background.stablesDescription")}
                               </p>
                             </div>
 
                             {/* DeFi Infrastructure */}
                             <div className="p-5 bg-white dark:bg-background rounded-lg border">
                               <h5 className="font-medium text-base mb-6 text-primary">
-                                🏗️ DeFi Infrastructure
+                                {t("pages.background.defiInfrastructure")}
                               </h5>
                               <div className="grid grid-cols-3 gap-3 mb-6">
                                 <div className="flex flex-col items-center gap-2 p-3 bg-pink-50/50 dark:bg-pink-950/20 rounded-lg border border-pink-200/50 dark:border-pink-800/50 hover:border-primary/50 transition-colors cursor-pointer shadow-sm token-icon-hover">
@@ -566,8 +582,7 @@ const Background = () => {
                                 </div>
                               </div>
                               <p className="text-sm text-muted-foreground text-center">
-                                Blockchain infrastructure and DeFi protocol
-                                tokens
+                                {t("pages.background.defiDescription")}
                               </p>
                             </div>
                           </div>
@@ -577,12 +592,10 @@ const Background = () => {
                               <AlertTriangle className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
                               <div>
                                 <p className="text-sm font-medium text-amber-800 dark:text-amber-200">
-                                  Limited Cross-Chain Access
+                                  {t("pages.background.limitedCrossChain")}
                                 </p>
                                 <p className="text-xs text-amber-700 dark:text-amber-300 mt-1">
-                                  Many Vietnamese tokens remain isolated on
-                                  single chains, limiting global liquidity and
-                                  DeFi opportunities.
+                                  {t("pages.background.limitedDescription")}
                                 </p>
                               </div>
                             </div>
@@ -597,48 +610,46 @@ const Background = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-green-600 dark:text-green-400">
                         <TrendingUp className="h-5 w-5" />
-                        The Critical Gap
+                        {t("pages.background.criticalGap")}
                       </CardTitle>
                       <CardDescription>
-                        Why Lotus Bridge was needed
+                        {t("pages.background.criticalGapDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="prose max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
-                          Lotus Bridge addresses this critical gap by offering a{" "}
+                          {t("pages.background.criticalGapSolution")}{" "}
                           <strong>
-                            highly adaptable, regionally-conscious, and
-                            technologically advanced bridge
+                            {t("pages.background.highlyAdaptable")}
                           </strong>{" "}
-                          that connects Vietnamese innovation with global
-                          opportunities.
+                          {t("pages.background.criticalGapResult")}
                         </p>
                       </div>
 
                       <div className="grid md:grid-cols-3 gap-4">
                         <div className="text-center p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
                           <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">
-                            Adaptable
+                            {t("pages.background.adaptable")}
                           </h4>
                           <p className="text-xs text-green-600 dark:text-green-400">
-                            Works across any blockchain architecture
+                            {t("pages.background.adaptableDescription")}
                           </p>
                         </div>
                         <div className="text-center p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
                           <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">
-                            Regional
+                            {t("pages.background.regional")}
                           </h4>
                           <p className="text-xs text-green-600 dark:text-green-400">
-                            Built with Vietnamese needs in mind
+                            {t("pages.background.regionalDescription")}
                           </p>
                         </div>
                         <div className="text-center p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
                           <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">
-                            Advanced
+                            {t("pages.background.advanced")}
                           </h4>
                           <p className="text-xs text-green-600 dark:text-green-400">
-                            Cutting-edge technology and security
+                            {t("pages.background.advancedDescription")}
                           </p>
                         </div>
                       </div>
@@ -652,23 +663,22 @@ const Background = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/why-lotus">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Why Lotus?
+                        {t("pages.background.navigation.backToWhyLotus")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Discover the solution
+                        {t("pages.background.navigation.discoverSolution")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Learn about Lotus Bridge's core concepts and
-                        architecture
+                        {t("pages.background.navigation.solutionDescription")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/core-concept">
-                        Continue to Core Concept
+                        {t("pages.background.navigation.continueToCoreConcept")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

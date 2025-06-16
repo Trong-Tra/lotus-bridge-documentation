@@ -33,83 +33,161 @@ const BenefitsDevelopers = () => {
 
   const builderOpportunities = [
     {
-      title: "Smart Contract Integration Opportunities",
-      description:
-        "Build innovative smart contracts that leverage Lotus Bridge protocol for cross-chain functionality and Vietnamese token integration.",
+      title: t(
+        "pages.benefitsDevelopers.builderOpportunities.smartContract.title"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.builderOpportunities.smartContract.description"
+      ),
       icon: Code,
       features: [
-        "Cross-chain DeFi protocols",
-        "Vietnamese gaming token utilities",
-        "Multi-chain yield farming contracts",
-        "Cross-border payment solutions",
-        "NFT marketplace integration",
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.smartContract.features.crossChainDefi"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.smartContract.features.gamingTokenUtilities"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.smartContract.features.yieldFarming"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.smartContract.features.paymentSolutions"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.smartContract.features.nftIntegration"
+        ),
       ],
     },
     {
-      title: "dApp Development Ecosystem",
-      description:
-        "Create revolutionary decentralized applications using Lotus Bridge as the backbone for seamless cross-chain user experiences.",
+      title: t(
+        "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.title"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.description"
+      ),
       icon: Globe,
       features: [
-        "Vietnamese-first dApp experiences",
-        "Gaming ecosystem applications",
-        "Cross-chain portfolio managers",
-        "Local remittance platforms",
-        "Cultural token communities",
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.features.vietnameseFirst"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.features.gamingApplications"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.features.portfolioManagers"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.features.remittancePlatforms"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.dappDevelopment.features.tokenCommunities"
+        ),
       ],
     },
     {
-      title: "DeFi Innovation Opportunities",
-      description:
-        "Pioneer new DeFi protocols and financial products that serve the Vietnamese market while connecting to global liquidity.",
+      title: t(
+        "pages.benefitsDevelopers.builderOpportunities.defiInnovation.title"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.builderOpportunities.defiInnovation.description"
+      ),
       icon: Layers,
       features: [
-        "Vietnamese stablecoin protocols",
-        "Cross-chain lending platforms",
-        "Gaming token derivatives",
-        "Local asset tokenization",
-        "Yield optimization strategies",
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.defiInnovation.features.stablecoinProtocols"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.defiInnovation.features.lendingPlatforms"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.defiInnovation.features.gamingDerivatives"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.defiInnovation.features.assetTokenization"
+        ),
+        t(
+          "pages.benefitsDevelopers.builderOpportunities.defiInnovation.features.yieldOptimization"
+        ),
       ],
     },
   ];
 
   const startupOpportunities = [
     {
-      title: "Cross-Chain Gaming Studios",
-      category: "Gaming & Entertainment",
-      description:
-        "Build gaming platforms that seamlessly integrate AXS, SLP, and other Vietnamese gaming tokens across multiple blockchains.",
-      marketSize: "$2B+ Vietnamese gaming market",
+      title: t(
+        "pages.benefitsDevelopers.startupOpportunities.gamingStudios.title"
+      ),
+      category: t(
+        "pages.benefitsDevelopers.startupOpportunities.gamingStudios.category"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.startupOpportunities.gamingStudios.description"
+      ),
+      marketSize: t(
+        "pages.benefitsDevelopers.startupOpportunities.gamingStudios.marketSize"
+      ),
       examples: [
-        "Play-to-earn ecosystems",
-        "Cross-chain NFT games",
-        "Gaming token bridges",
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.gamingStudios.examples.playToEarn"
+        ),
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.gamingStudios.examples.crossChainNft"
+        ),
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.gamingStudios.examples.gamingBridges"
+        ),
       ],
       icon: Target,
     },
     {
-      title: "Vietnamese DeFi Protocols",
-      category: "DeFi & Finance",
-      description:
-        "Create DeFi protocols specifically designed for Vietnamese users, featuring local tokens and cultural preferences.",
-      marketSize: "$500M+ Vietnamese crypto market",
+      title: t(
+        "pages.benefitsDevelopers.startupOpportunities.defiProtocols.title"
+      ),
+      category: t(
+        "pages.benefitsDevelopers.startupOpportunities.defiProtocols.category"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.startupOpportunities.defiProtocols.description"
+      ),
+      marketSize: t(
+        "pages.benefitsDevelopers.startupOpportunities.defiProtocols.marketSize"
+      ),
       examples: [
-        "VNDC/VNST yield farming",
-        "Local lending protocols",
-        "Cross-chain remittance",
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.defiProtocols.examples.yieldFarming"
+        ),
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.defiProtocols.examples.lendingProtocols"
+        ),
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.defiProtocols.examples.crossChainRemittance"
+        ),
       ],
       icon: Building,
     },
     {
-      title: "Enterprise Blockchain Solutions",
-      category: "B2B & Enterprise",
-      description:
-        "Develop blockchain solutions for Vietnamese businesses looking to integrate cross-chain functionality.",
-      marketSize: "Growing enterprise adoption",
+      title: t(
+        "pages.benefitsDevelopers.startupOpportunities.enterprise.title"
+      ),
+      category: t(
+        "pages.benefitsDevelopers.startupOpportunities.enterprise.category"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.startupOpportunities.enterprise.description"
+      ),
+      marketSize: t(
+        "pages.benefitsDevelopers.startupOpportunities.enterprise.marketSize"
+      ),
       examples: [
-        "Supply chain tracking",
-        "Cross-border payments",
-        "Digital identity solutions",
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.enterprise.examples.supplyChain"
+        ),
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.enterprise.examples.crossBorderPayments"
+        ),
+        t(
+          "pages.benefitsDevelopers.startupOpportunities.enterprise.examples.digitalIdentity"
+        ),
       ],
       icon: Wrench,
     },
@@ -117,30 +195,51 @@ const BenefitsDevelopers = () => {
 
   const builderResources = [
     {
-      title: "Lotus Bridge SDK",
-      description:
-        "Comprehensive development kit with Vietnamese documentation",
+      title: t("pages.benefitsDevelopers.technicalResources.sdkTools.title"),
+      description: t(
+        "pages.benefitsDevelopers.technicalResources.sdkTools.description"
+      ),
       features: [
-        "TypeScript/JavaScript",
-        "Python bindings",
-        "Smart contract libraries",
+        t(
+          "pages.benefitsDevelopers.technicalResources.sdkTools.features.typescript"
+        ),
+        t(
+          "pages.benefitsDevelopers.technicalResources.sdkTools.features.python"
+        ),
+        t(
+          "pages.benefitsDevelopers.technicalResources.sdkTools.features.smartContract"
+        ),
       ],
       icon: Code,
     },
     {
-      title: "Grant Program",
-      description: "Funding for innovative projects building on Lotus Bridge",
+      title: t(
+        "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.grants.title"
+      ),
+      description: t(
+        "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.grants.description"
+      ),
       features: [
-        "Up to $50K grants",
-        "Technical mentorship",
-        "Go-to-market support",
+        t(
+          "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.grants.features.funding"
+        ),
+        t(
+          "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.mentorship.title"
+        ),
+        t(
+          "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.incubation.title"
+        ),
       ],
       icon: Rocket,
     },
     {
-      title: "Builder Community",
-      description: "Vietnamese developer community with local language support",
-      features: ["Discord channels", "Local meetups", "Hackathon events"],
+      title: t("pages.benefitsDevelopers.community.title"),
+      description: t("pages.benefitsDevelopers.community.description"),
+      features: [
+        t("pages.benefitsDevelopers.community.features.discordChannels"),
+        t("pages.benefitsDevelopers.community.features.localMeetups"),
+        t("pages.benefitsDevelopers.community.features.hackathonEvents"),
+      ],
       icon: Terminal,
     },
   ];
@@ -159,16 +258,13 @@ const BenefitsDevelopers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🏗️ Builder Opportunities
+                    {t("pages.benefitsDevelopers.hero.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Builders
+                    {t("pages.benefitsDevelopers.hero.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Leverage Lotus Bridge protocol to build innovative smart
-                    contracts, create revolutionary dApps, unlock new DeFi
-                    opportunities, and launch successful startups in the
-                    Vietnamese blockchain ecosystem.
+                    {t("pages.benefitsDevelopers.hero.description")}
                   </p>
                 </div>
               </div>
@@ -179,12 +275,12 @@ const BenefitsDevelopers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🚀 Building Opportunities
+                    {t("pages.benefitsDevelopers.builderOpportunities.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Discover how to leverage Lotus Bridge protocol to create
-                    innovative solutions for the Vietnamese blockchain
-                    ecosystem.
+                    {t(
+                      "pages.benefitsDevelopers.builderOpportunities.description"
+                    )}
                   </p>
                 </div>
 
@@ -254,12 +350,12 @@ const BenefitsDevelopers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    💡 Startup Opportunities
+                    {t("pages.benefitsDevelopers.startupOpportunities.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Entrepreneurial opportunities for ambitious builders looking
-                    to create the next generation of Vietnamese blockchain
-                    companies.
+                    {t(
+                      "pages.benefitsDevelopers.startupOpportunities.description"
+                    )}
                   </p>
                 </div>
 
@@ -286,7 +382,9 @@ const BenefitsDevelopers = () => {
                           <div className="space-y-4">
                             <div>
                               <h4 className="font-semibold text-green-600 mb-2">
-                                📈 Market Opportunity:
+                                {t(
+                                  "pages.benefitsDevelopers.startupOpportunities.marketOpportunityLabel"
+                                )}
                               </h4>
                               <p className="text-sm text-muted-foreground">
                                 {startup.marketSize}
@@ -294,7 +392,9 @@ const BenefitsDevelopers = () => {
                             </div>
                             <div>
                               <h4 className="font-semibold mb-2">
-                                🎯 Example Applications:
+                                {t(
+                                  "pages.benefitsDevelopers.startupOpportunities.exampleApplicationsLabel"
+                                )}
                               </h4>
                               <ul className="text-sm space-y-1">
                                 {startup.examples.map(
@@ -318,11 +418,12 @@ const BenefitsDevelopers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🛠️ Builder Resources & Support
+                    {t("pages.benefitsDevelopers.technicalResources.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Everything you need to start building on Lotus Bridge today,
-                    with dedicated support for Vietnamese developers.
+                    {t(
+                      "pages.benefitsDevelopers.technicalResources.description"
+                    )}
                   </p>
                 </div>
 
@@ -353,7 +454,7 @@ const BenefitsDevelopers = () => {
                             ))}
                           </ul>
                           <Button className="w-full mt-4" variant="outline">
-                            Learn More
+                            {t("common.learnMore")}
                           </Button>
                         </CardContent>
                       </Card>
@@ -368,11 +469,10 @@ const BenefitsDevelopers = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🇻🇳 Vietnamese Builder Community
+                    {t("pages.benefitsDevelopers.community.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Join a thriving community of Vietnamese blockchain builders
-                    creating the future of Web3 in Vietnam.
+                    {t("pages.benefitsDevelopers.community.description")}
                   </p>
                 </div>
 
@@ -380,12 +480,15 @@ const BenefitsDevelopers = () => {
                   <Card className="text-center">
                     <CardHeader>
                       <Terminal className="h-8 w-8 text-primary mx-auto mb-2" />
-                      <CardTitle className="text-lg">Builder Forum</CardTitle>
+                      <CardTitle className="text-lg">
+                        {t("pages.benefitsDevelopers.community.forums.title")}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-3">
-                        Vietnamese-language technical discussions and project
-                        showcases
+                        {t(
+                          "pages.benefitsDevelopers.community.forums.description"
+                        )}
                       </p>
                     </CardContent>
                   </Card>
@@ -393,12 +496,17 @@ const BenefitsDevelopers = () => {
                   <Card className="text-center">
                     <CardHeader>
                       <Layers className="h-8 w-8 text-accent mx-auto mb-2" />
-                      <CardTitle className="text-lg">Hackathons</CardTitle>
+                      <CardTitle className="text-lg">
+                        {t(
+                          "pages.benefitsDevelopers.community.hackathons.title"
+                        )}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-3">
-                        Regular events focused on Vietnamese blockchain
-                        innovation
+                        {t(
+                          "pages.benefitsDevelopers.community.hackathons.description"
+                        )}
                       </p>
                     </CardContent>
                   </Card>
@@ -406,12 +514,17 @@ const BenefitsDevelopers = () => {
                   <Card className="text-center">
                     <CardHeader>
                       <Lightbulb className="h-8 w-8 text-primary mx-auto mb-2" />
-                      <CardTitle className="text-lg">Mentorship</CardTitle>
+                      <CardTitle className="text-lg">
+                        {t(
+                          "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.mentorship.title"
+                        )}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-3">
-                        Connect with experienced Vietnamese blockchain
-                        entrepreneurs
+                        {t(
+                          "pages.benefitsDevelopers.vietnameseDeveloperProgram.features.mentorship.description"
+                        )}
                       </p>
                     </CardContent>
                   </Card>
@@ -419,12 +532,17 @@ const BenefitsDevelopers = () => {
                   <Card className="text-center">
                     <CardHeader>
                       <FileCode className="h-8 w-8 text-accent mx-auto mb-2" />
-                      <CardTitle className="text-lg">Open Source</CardTitle>
+                      <CardTitle className="text-lg">
+                        {t(
+                          "pages.benefitsDevelopers.community.openSource.title"
+                        )}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-3">
-                        Contribute to Vietnamese blockchain tooling and
-                        libraries
+                        {t(
+                          "pages.benefitsDevelopers.community.openSource.description"
+                        )}
                       </p>
                     </CardContent>
                   </Card>
@@ -438,47 +556,60 @@ const BenefitsDevelopers = () => {
                 <Card className="border-primary/20 bg-gradient-to-r from-primary/10 to-accent/10">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
-                      🚀 Start Building Today
+                      {t("pages.benefitsDevelopers.gettingStarted.title")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Ready to leverage Lotus Bridge protocol for your next
-                      breakthrough project?
+                      {t("pages.benefitsDevelopers.gettingStarted.description")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          📚 Builder Documentation
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.builderDocumentation.title"
+                          )}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Complete guides for smart contract integration and
-                          dApp development
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.builderDocumentation.description"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          💰 Grant Opportunities
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.grantOpportunities.title"
+                          )}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Funding and support for innovative Vietnamese
-                          blockchain projects
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.grantOpportunities.description"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          🤝 Partnership Program
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.partnershipProgram.title"
+                          )}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Strategic partnerships for promising startups and
-                          projects
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.partnershipProgram.description"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
-                        <h4 className="font-semibold mb-2">🎯 Market Access</h4>
+                        <h4 className="font-semibold mb-2">
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.marketAccess.title"
+                          )}
+                        </h4>
                         <p className="text-sm text-muted-foreground">
-                          Direct access to Vietnamese crypto market and user
-                          base
+                          {t(
+                            "pages.benefitsDevelopers.gettingStarted.marketAccess.description"
+                          )}
                         </p>
                       </div>
                     </div>
@@ -497,15 +628,19 @@ const BenefitsDevelopers = () => {
                       className="flex items-center gap-2"
                     >
                       <ArrowLeft className="h-4 w-4" />
-                      For Users
+                      {t("pages.benefitsDevelopers.navigation.backToUsers")}
                     </Button>
                   </Link>
                   <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
+                    <Button variant="outline">
+                      {t("pages.benefitsDevelopers.navigation.backToOverview")}
+                    </Button>
                   </Link>
                   <Link to="/benefits-liquidity">
                     <Button className="flex items-center gap-2">
-                      For Liquidity Providers
+                      {t(
+                        "pages.benefitsDevelopers.navigation.continueToLiquidity"
+                      )}
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>

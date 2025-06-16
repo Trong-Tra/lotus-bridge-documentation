@@ -32,15 +32,13 @@ const Abstract = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    Executive Summary
+                    {t("pages.abstract.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    🌸 Abstract
+                    {t("pages.abstract.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    The foundational vision and core mission of Lotus Bridge - A
-                    next-generation multi-chain interoperability protocol rooted
-                    in Vietnamese innovation.
+                    {t("pages.abstract.subtitle")}
                   </p>
                 </div>
               </div>
@@ -55,36 +53,19 @@ const Abstract = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Target className="h-5 w-5" />
-                        Project Overview
+                        {t("pages.abstract.projectOverview.title")}
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose prose-lg max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
-                          Lotus Bridge is a{" "}
-                          <strong>
-                            next-generation multi-chain interoperability
-                            protocol
-                          </strong>
-                          , purpose-built to seamlessly connect heterogeneous
-                          blockchain networks. Designed by Vietnamese developers
-                          for the Vietnamese market and beyond, Lotus Bridge
-                          transcends the limitations of traditional bridges by
-                          enabling secure and flexible token transfers, swaps,
-                          and wallet-to-wallet communication across entirely
-                          different blockchain architectures—such as from
-                          Ethereum to Solana.
+                          {t("pages.abstract.projectOverview.content")}
                         </p>
 
                         <p className="text-lg leading-relaxed">
-                          With <strong>multi-wallet support</strong> and a
-                          localized focus on tokens popular in Vietnam, Lotus
-                          Bridge is positioned to become a foundational layer
-                          for Viet Nam DeFi innovation, paving the way for
-                          Vietnamese developers and entrepreneurs to build
-                          cross-chain applications that can tap into global
-                          liquidity while maintaining a seamless user
-                          experience.
+                          {t(
+                            "pages.abstract.projectOverview.foundationalLayer"
+                          )}
                         </p>
                       </div>
                     </CardContent>
@@ -96,10 +77,10 @@ const Abstract = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Globe className="h-5 w-5" />
-                          Vietnamese Innovation
+                          {t("pages.abstract.vietnameseInnovation.title")}
                         </CardTitle>
                         <CardDescription>
-                          Built by Vietnam, for Vietnam, bridging the world
+                          {t("pages.abstract.vietnameseInnovation.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -107,26 +88,33 @@ const Abstract = () => {
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
                             <span>
-                              Designed with Vietnamese market needs in mind
+                              {t(
+                                "pages.abstract.vietnameseInnovation.marketNeeds"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
                             <span>
-                              Native support for Vietnamese tokens (AXS, SLP,
-                              VNDC, VNST, KAI, SIPHER, A8, C98, KNC)
+                              {t(
+                                "pages.abstract.vietnameseInnovation.nativeSupport"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
                             <span>
-                              Localized documentation and user experience
+                              {t(
+                                "pages.abstract.vietnameseInnovation.localizedUX"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
                             <span>
-                              Empowering Vietnamese developers and entrepreneurs
+                              {t(
+                                "pages.abstract.vietnameseInnovation.communityDriven"
+                              )}
                             </span>
                           </li>
                         </ul>
@@ -137,10 +125,10 @@ const Abstract = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Zap className="h-5 w-5" />
-                          Technical Excellence
+                          {t("pages.abstract.technicalExcellence.title")}
                         </CardTitle>
                         <CardDescription>
-                          Advanced architecture for seamless interoperability
+                          {t("pages.abstract.technicalExcellence.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
@@ -148,23 +136,33 @@ const Abstract = () => {
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
                             <span>
-                              Architecture-agnostic bridging (Ethereum ↔ Solana)
+                              {t(
+                                "pages.abstract.technicalExcellence.architectureAgnostic"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
                             <span>
-                              Multi-wallet connectivity and management
+                              {t(
+                                "pages.abstract.technicalExcellence.multiWallet"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
-                            <span>Secure and flexible token transfers</span>
+                            <span>
+                              {t(
+                                "pages.abstract.technicalExcellence.secureTransfers"
+                              )}
+                            </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
                             <span>
-                              Future-proof scalability and adaptability
+                              {t(
+                                "pages.abstract.technicalExcellence.futureProof"
+                              )}
                             </span>
                           </li>
                         </ul>
@@ -177,31 +175,15 @@ const Abstract = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Users className="h-5 w-5" />
-                        🇻🇳 Vision & Impact
+                        {t("pages.abstract.visionImpact.title")}
                       </CardTitle>
                       <CardDescription>
-                        Positioning Vietnam as a Web3 innovation hub
+                        {t("pages.abstract.visionImpact.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="prose max-w-none dark:prose-invert">
-                        <p>
-                          Lotus Bridge is more than a technical innovation—it’s
-                          a symbol of connection between cultures, economies,
-                          and tomorrow’s digital world. By integrating
-                          Vietnamese tokens into the global liquidity stream,
-                          Lotus Bridge empowers Vietnam to step confidently onto
-                          the Web3 stage. With seamless user experience,
-                          uncompromising security, and scalable infrastructure,
-                          we are laying the groundwork for Vietnam to emerge as
-                          a{" "}
-                          <strong>
-                            leading hub of Web3 innovation—pioneering
-                            cross-chain interoperability and shaping the future
-                            of decentralized finance
-                          </strong>
-                          .
-                        </p>
+                        <p>{t("pages.abstract.visionImpact.content")}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -212,16 +194,15 @@ const Abstract = () => {
                   <div className="flex justify-between items-center">
                     <div>
                       <h3 className="text-lg font-semibold">
-                        Ready to dive deeper?
+                        {t("pages.abstract.navigation.readyToDive")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Explore the detailed introduction and technical
-                        architecture
+                        {t("pages.abstract.navigation.exploreDetailed")}
                       </p>
                     </div>
                     <Button className="gap-2" asChild>
                       <Link to="/introduction">
-                        Continue to Introduction
+                        {t("pages.abstract.navigation.continueToIntroduction")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

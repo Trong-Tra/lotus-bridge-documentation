@@ -41,15 +41,13 @@ const WhyLotus = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🇻🇳 Vietnamese Innovation
+                    🇻🇳 {t("pages.whyLotus.vietnameseInnovation")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Why Lotus?
+                    {t("pages.whyLotus.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Named after Vietnam's national flower, symbolizing
-                    resilience, purity, and growth from challenging
-                    environments.
+                    {t("pages.whyLotus.subtitle")}
                   </p>
                 </div>
               </div>
@@ -64,30 +62,26 @@ const WhyLotus = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Flower className="h-5 w-5" />
-                        The Lotus Symbol
+                        {t("pages.whyLotus.culturalSignificance")}
                       </CardTitle>
                       <CardDescription>
-                        Cultural heritage meets technological innovation
+                        {t("pages.whyLotus.culturalDescription")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose prose-lg max-w-none dark:prose-invert">
                         <p className="text-lg leading-relaxed">
-                          Named after the{" "}
-                          <strong>national flower of Vietnam</strong>, the Lotus
-                          symbolizes resilience, purity, and growth from murky
-                          environments—perfectly reflecting the mission of Lotus
-                          Bridge.
+                          {t("pages.whyLotus.lotusSymbolIntro")}{" "}
+                          <strong>
+                            {t("pages.whyLotus.nationalFlowerStrong")}
+                          </strong>
+                          , {t("pages.whyLotus.symbolismDescription")}
                         </p>
 
                         <p className="text-lg leading-relaxed">
-                          In a fragmented blockchain ecosystem, Lotus Bridge
-                          offers a{" "}
-                          <strong>
-                            unified, elegant, and powerful solution
-                          </strong>{" "}
-                          tailored to the needs of both Vietnamese users and the
-                          global crypto community.
+                          {t("pages.whyLotus.fragmentedEcosystem")}{" "}
+                          <strong>{t("pages.whyLotus.unifiedSolution")}</strong>{" "}
+                          {t("pages.whyLotus.tailoredNeeds")}
                         </p>
                       </div>
                     </CardContent>
@@ -99,10 +93,10 @@ const WhyLotus = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Heart className="h-5 w-5" />
-                          Our Mission
+                          {t("pages.whyLotus.mission.title")}
                         </CardTitle>
                         <CardDescription>
-                          Bridging cultures and economies through technology
+                          {t("pages.whyLotus.mission.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
@@ -110,25 +104,31 @@ const WhyLotus = () => {
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Bring Vietnamese tokens into global liquidity flow
+                              {t(
+                                "pages.whyLotus.mission.items.bringVietnameseTokens"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Offer seamless user experience across chains
+                              {t(
+                                "pages.whyLotus.mission.items.seamlessExperience"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Provide robust security and reliability
+                              {t("pages.whyLotus.mission.items.robustSecurity")}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Ensure future-proof scalability
+                              {t(
+                                "pages.whyLotus.mission.items.futureProofScalability"
+                              )}
                             </span>
                           </li>
                         </ul>
@@ -139,10 +139,10 @@ const WhyLotus = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Target className="h-5 w-5" />
-                          Our Vision
+                          {t("pages.whyLotus.vision.title")}
                         </CardTitle>
                         <CardDescription>
-                          Empowering regional innovation globally
+                          {t("pages.whyLotus.vision.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
@@ -150,25 +150,29 @@ const WhyLotus = () => {
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Position Vietnam as a Web3 innovation hub
+                              {t("pages.whyLotus.vision.items.positionVietnam")}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Showcase Vietnamese culture and technology
+                              {t(
+                                "pages.whyLotus.vision.items.showcaseVietnamese"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Bridge regional and global crypto communities
+                              {t(
+                                "pages.whyLotus.vision.items.bridgeRegionalGlobal"
+                              )}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                             <span className="text-sm">
-                              Foster inclusive financial innovation
+                              {t("pages.whyLotus.vision.items.fosterInclusive")}
                             </span>
                           </li>
                         </ul>
@@ -181,45 +185,51 @@ const WhyLotus = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Globe className="h-5 w-5" />
-                        🇻🇳 Unique Value Proposition
+                        {t("pages.whyLotus.valueProposition.title")}
                       </CardTitle>
                       <CardDescription>
-                        What makes Lotus Bridge special in the crowded bridge
-                        market
+                        {t("pages.whyLotus.valueProposition.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-4">
                           <h4 className="font-semibold text-primary">
-                            Regional Focus
+                            {t(
+                              "pages.whyLotus.valueProposition.regionalFocus.title"
+                            )}
                           </h4>
                           <ul className="space-y-2">
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Native support for Vietnamese tokens (AXS, SLP,
-                                VNDC, VNST, KAI, SIPHER, A8, C98, KNC)
+                                {t(
+                                  "pages.whyLotus.valueProposition.regionalFocus.items.nativeSupport"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Localized user experience and documentation
+                                {t(
+                                  "pages.whyLotus.valueProposition.regionalFocus.items.localizedUX"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Built by Vietnamese developers for Vietnamese
-                                needs
+                                {t(
+                                  "pages.whyLotus.valueProposition.regionalFocus.items.builtByVietnamese"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Emergency governance by trusted key holders to
-                                safeguard the network in critical situations
+                                {t(
+                                  "pages.whyLotus.valueProposition.regionalFocus.items.emergencyGovernance"
+                                )}
                               </span>
                             </li>
                           </ul>
@@ -227,25 +237,33 @@ const WhyLotus = () => {
 
                         <div className="space-y-4">
                           <h4 className="font-semibold text-accent">
-                            Technical Innovation
+                            {t(
+                              "pages.whyLotus.valueProposition.technicalInnovation.title"
+                            )}
                           </h4>
                           <ul className="space-y-2">
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Architecture-agnostic bridging capabilities
+                                {t(
+                                  "pages.whyLotus.valueProposition.technicalInnovation.items.architectureAgnostic"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Multi-wallet connectivity and management
+                                {t(
+                                  "pages.whyLotus.valueProposition.technicalInnovation.items.multiWallet"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                               <span className="text-sm">
-                                Dynamic adaptation to network capabilities
+                                {t(
+                                  "pages.whyLotus.valueProposition.technicalInnovation.items.dynamicAdaptation"
+                                )}
                               </span>
                             </li>
                           </ul>
@@ -255,13 +273,12 @@ const WhyLotus = () => {
                       <div className="mt-6 p-6 bg-background/50 rounded-lg border">
                         <div className="text-center">
                           <h4 className="font-semibold mb-2">
-                            🌸 Growing from Challenges
+                            {t("pages.whyLotus.growingFromChallenges.title")}
                           </h4>
                           <p className="text-sm text-muted-foreground">
-                            Just as the lotus flower blooms beautifully despite
-                            growing in muddy water, Lotus Bridge creates elegant
-                            solutions in the fragmented blockchain landscape,
-                            turning complexity into opportunity.
+                            {t(
+                              "pages.whyLotus.growingFromChallenges.description"
+                            )}
                           </p>
                         </div>
                       </div>
@@ -275,23 +292,22 @@ const WhyLotus = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/what-is-lotus">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to What is Lotus?
+                        {t("pages.whyLotus.navigation.backToWhatIsLotus")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Understanding the landscape
+                        {t("pages.whyLotus.navigation.understandingLandscape")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Learn about the blockchain industry challenges we're
-                        solving
+                        {t("pages.whyLotus.navigation.landscapeDescription")}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/background">
-                        Continue to Background
+                        {t("pages.whyLotus.navigation.continueToBackground")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

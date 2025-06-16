@@ -30,77 +30,110 @@ const BenefitsLiquidity = () => {
 
   const liquidityBenefits = [
     {
-      title: "Opportunities For New Liquidity Pools",
-      description:
-        "Cross-chain communication and cross-chain asset transfers being a foundation for creating new liquidity pools, enabling users to earn yields on diverse assets.",
+      title: t("pages.benefitsLiquidity.benefits.opportunities.title"),
+      description: t(
+        "pages.benefitsLiquidity.benefits.opportunities.description"
+      ),
       icon: DollarSign,
       features: [
-        "Real utility-driven demand",
-        "Cross-chain arbitrage opportunities",
-        "Vietnamese token pair liquidity",
-        "Gaming ecosystem integration",
-        "Stable revenue from bridge fees",
+        t(
+          "pages.benefitsLiquidity.benefits.opportunities.features.realUtility"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.opportunities.features.arbitrageOpportunities"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.opportunities.features.vietnameseTokenLiquidity"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.opportunities.features.gamingIntegration"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.opportunities.features.stableRevenue"
+        ),
       ],
     },
     {
-      title: "Exposure to Multiple Ecosystems",
-      description:
-        "Diversify your liquidity provision across multiple blockchain ecosystems through a single, unified bridge protocol.",
+      title: t("pages.benefitsLiquidity.benefits.exposure.title"),
+      description: t("pages.benefitsLiquidity.benefits.exposure.description"),
       icon: Layers,
       features: [
-        "Multi-chain portfolio exposure",
-        "Reduced concentration risk",
-        "Access to Vietnamese gaming tokens",
-        "Cross-ecosystem arbitrage",
-        "Balanced risk distribution",
+        t(
+          "pages.benefitsLiquidity.benefits.exposure.features.multiChainPortfolio"
+        ),
+        t("pages.benefitsLiquidity.benefits.exposure.features.reducedRisk"),
+        t(
+          "pages.benefitsLiquidity.benefits.exposure.features.vietnameseGamingTokens"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.exposure.features.crossEcosystemArbitrage"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.exposure.features.balancedRiskDistribution"
+        ),
       ],
     },
     {
-      title: "Dynamic Fee Structures and Yield Incentives",
-      description:
-        "Benefit from intelligent fee optimization and additional yield incentives designed to maximize liquidity provider returns.",
+      title: t("pages.benefitsLiquidity.benefits.dynamicFees.title"),
+      description: t(
+        "pages.benefitsLiquidity.benefits.dynamicFees.description"
+      ),
       icon: TrendingUp,
       features: [
-        "Dynamic fee adjustment",
-        "Volume-based incentives",
-        "Vietnamese market bonuses",
-        "Long-term staking rewards",
-        "Governance token distribution",
+        t(
+          "pages.benefitsLiquidity.benefits.dynamicFees.features.dynamicAdjustment"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.dynamicFees.features.volumeIncentives"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.dynamicFees.features.vietnameseMarketBonus"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.dynamicFees.features.longTermStaking"
+        ),
+        t(
+          "pages.benefitsLiquidity.benefits.dynamicFees.features.governanceDistribution"
+        ),
       ],
     },
   ];
 
   const poolTypes = [
     {
-      name: "🎮 Gaming Token Pools",
-      description: "AXS/ETH, SLP/USDC cross-chain pairs",
-      apr: "15-25%",
-      risk: "Medium",
-      demand: "High",
+      name: `🎮 ${t("pages.benefitsLiquidity.poolTypes.gaming.name")}`,
+      description: t("pages.benefitsLiquidity.poolTypes.gaming.description"),
+      apr: t("pages.benefitsLiquidity.poolTypes.gaming.apr"),
+      risk: t("pages.benefitsLiquidity.poolTypes.gaming.risk"),
+      demand: t("pages.benefitsLiquidity.poolTypes.gaming.demand"),
       tokens: ["AXS", "SLP", "RON", "ETH", "USDC"],
     },
     {
-      name: "🇻🇳 Vietnamese Stablecoin Pools",
-      description: "VNDC/VNST cross-chain liquidity",
-      apr: "8-12%",
-      risk: "Low",
-      demand: "Stable",
+      name: `🇻🇳 ${t("pages.benefitsLiquidity.poolTypes.stablecoins.name")}`,
+      description: t(
+        "pages.benefitsLiquidity.poolTypes.stablecoins.description"
+      ),
+      apr: t("pages.benefitsLiquidity.poolTypes.stablecoins.apr"),
+      risk: t("pages.benefitsLiquidity.poolTypes.stablecoins.risk"),
+      demand: t("pages.benefitsLiquidity.poolTypes.stablecoins.demand"),
       tokens: ["VNDC", "VNST", "USDT", "USDC"],
     },
     {
-      name: "⚡ Cross-Chain Bridge Pools",
-      description: "ETH/SOL, BNB/MATIC bridge liquidity",
-      apr: "20-35%",
-      risk: "High",
-      demand: "Very High",
+      name: `⚡ ${t("pages.benefitsLiquidity.poolTypes.bridge.name")}`,
+      description: t("pages.benefitsLiquidity.poolTypes.bridge.description"),
+      apr: t("pages.benefitsLiquidity.poolTypes.bridge.apr"),
+      risk: t("pages.benefitsLiquidity.poolTypes.bridge.risk"),
+      demand: t("pages.benefitsLiquidity.poolTypes.bridge.demand"),
       tokens: ["ETH", "SOL", "BNB", "MATIC", "AVAX"],
     },
     {
-      name: "🚀 Vietnamese Innovation Pools",
-      description: "KAI/C98, KNC cross-ecosystem pairs",
-      apr: "18-28%",
-      risk: "Medium-High",
-      demand: "Growing",
+      name: `🚀 ${t("pages.benefitsLiquidity.poolTypes.innovation.name")}`,
+      description: t(
+        "pages.benefitsLiquidity.poolTypes.innovation.description"
+      ),
+      apr: t("pages.benefitsLiquidity.poolTypes.innovation.apr"),
+      risk: t("pages.benefitsLiquidity.poolTypes.innovation.risk"),
+      demand: t("pages.benefitsLiquidity.poolTypes.innovation.demand"),
       tokens: ["KAI", "C98", "KNC", "SIPHER", "A8"],
     },
   ];
@@ -119,14 +152,13 @@ const BenefitsLiquidity = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    💰 Liquidity Provider Benefits
+                    💰 {t("pages.benefitsLiquidity.hero.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Liquidity Providers
+                    {t("pages.benefitsLiquidity.hero.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Unlock new yield opportunities by providing liquidity to the
-                    blockchain ecosystem's.
+                    {t("pages.benefitsLiquidity.hero.description")}
                   </p>
                 </div>
               </div>
@@ -199,11 +231,10 @@ const BenefitsLiquidity = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🌸 Available Liquidity Pools
+                    🌸 {t("pages.benefitsLiquidity.poolTypes.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Diverse pool options catering to different risk appetites
-                    and focusing on Vietnamese market opportunities.
+                    {t("pages.benefitsLiquidity.poolTypes.description")}
                   </p>
                 </div>
 
@@ -273,11 +304,10 @@ const BenefitsLiquidity = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    ⚡ Yield Optimization
+                    ⚡ {t("pages.benefitsLiquidity.yieldOptimization.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Advanced mechanisms to maximize returns for liquidity
-                    providers in the Vietnamese blockchain ecosystem.
+                    {t("pages.benefitsLiquidity.yieldOptimization.description")}
                   </p>
                 </div>
 
@@ -286,18 +316,38 @@ const BenefitsLiquidity = () => {
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <Target className="h-6 w-6 text-primary" />
-                        <CardTitle>Smart Rebalancing</CardTitle>
+                        <CardTitle>
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.smartRebalancing.title"
+                          )}
+                        </CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-4">
-                        Automated pool rebalancing based on Vietnamese market
-                        conditions and cross-chain demand patterns.
+                        {t(
+                          "pages.benefitsLiquidity.yieldOptimization.smartRebalancing.description"
+                        )}
                       </p>
                       <ul className="text-sm space-y-1">
-                        <li>• Vietnamese trading hours optimization</li>
-                        <li>• Gaming token demand cycles</li>
-                        <li>• Cross-chain arbitrage timing</li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.smartRebalancing.features.tradingHours"
+                          )}
+                        </li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.smartRebalancing.features.gamingCycles"
+                          )}
+                        </li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.smartRebalancing.features.arbitrageTiming"
+                          )}
+                        </li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -306,18 +356,38 @@ const BenefitsLiquidity = () => {
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <BarChart3 className="h-6 w-6 text-accent" />
-                        <CardTitle>Dynamic Fees</CardTitle>
+                        <CardTitle>
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.dynamicFees.title"
+                          )}
+                        </CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-4">
-                        Fee structures that adapt to Vietnamese market
-                        volatility and cross-chain transaction volume.
+                        {t(
+                          "pages.benefitsLiquidity.yieldOptimization.dynamicFees.description"
+                        )}
                       </p>
                       <ul className="text-sm space-y-1">
-                        <li>• Volume-based fee scaling</li>
-                        <li>• Peak demand surcharges</li>
-                        <li>• Vietnamese holiday adjustments</li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.dynamicFees.features.volumeScaling"
+                          )}
+                        </li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.dynamicFees.features.peakDemandSurcharges"
+                          )}
+                        </li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.dynamicFees.features.holidayAdjustments"
+                          )}
+                        </li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -326,18 +396,38 @@ const BenefitsLiquidity = () => {
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <Coins className="h-6 w-6 text-primary" />
-                        <CardTitle>Bonus Rewards</CardTitle>
+                        <CardTitle>
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.bonusRewards.title"
+                          )}
+                        </CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-4">
-                        Additional incentives for supporting Vietnamese
-                        blockchain innovation and ecosystem growth.
+                        {t(
+                          "pages.benefitsLiquidity.yieldOptimization.bonusRewards.description"
+                        )}
                       </p>
                       <ul className="text-sm space-y-1">
-                        <li>• Vietnamese token bonuses</li>
-                        <li>• Long-term loyalty rewards</li>
-                        <li>• Community governance tokens</li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.bonusRewards.features.vietnameseTokenBonus"
+                          )}
+                        </li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.bonusRewards.features.loyaltyRewards"
+                          )}
+                        </li>
+                        <li>
+                          •{" "}
+                          {t(
+                            "pages.benefitsLiquidity.yieldOptimization.bonusRewards.features.governanceTokens"
+                          )}
+                        </li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -351,45 +441,64 @@ const BenefitsLiquidity = () => {
                 <Card className="border-primary/20 bg-gradient-to-r from-primary/10 to-accent/10">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
-                      🚀 Start Providing Liquidity
+                      🚀 {t("pages.benefitsLiquidity.gettingStarted.title")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Join the Vietnamese blockchain revolution and earn
-                      competitive yields
+                      {t("pages.benefitsLiquidity.gettingStarted.description")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
                       <div className="text-left">
-                        <h4 className="font-semibold mb-2">💎 Premium APR</h4>
+                        <h4 className="font-semibold mb-2">
+                          💎{" "}
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.premiumApr.title"
+                          )}
+                        </h4>
                         <p className="text-sm text-muted-foreground">
-                          Competitive yields on Vietnamese and cross-chain pairs
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.premiumApr.description"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          🛡️ Secure Protocol
+                          🛡️{" "}
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.secureProtocol.title"
+                          )}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Multi-layer security with Vietnamese market focus
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.secureProtocol.description"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          📊 Real-Time Analytics
+                          📊{" "}
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.realTimeAnalytics.title"
+                          )}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Comprehensive dashboard with Vietnamese language
-                          support
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.realTimeAnalytics.description"
+                          )}
                         </p>
                       </div>
                       <div className="text-left">
                         <h4 className="font-semibold mb-2">
-                          🎯 Targeted Opportunities
+                          🎯{" "}
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.targetedOpportunities.title"
+                          )}
                         </h4>
                         <p className="text-sm text-muted-foreground">
-                          Pools designed for Vietnamese gaming and DeFi
-                          ecosystems
+                          {t(
+                            "pages.benefitsLiquidity.gettingStarted.features.targetedOpportunities.description"
+                          )}
                         </p>
                       </div>
                     </div>
@@ -408,15 +517,19 @@ const BenefitsLiquidity = () => {
                       className="flex items-center gap-2"
                     >
                       <ArrowLeft className="h-4 w-4" />
-                      For Builders
+                      {t("pages.benefitsLiquidity.navigation.backToDevelopers")}
                     </Button>
                   </Link>
                   <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
+                    <Button variant="outline">
+                      {t("pages.benefitsLiquidity.navigation.backToOverview")}
+                    </Button>
                   </Link>
                   <Link to="/benefits-vietnam">
                     <Button className="flex items-center gap-2">
-                      For Vietnam's Industry
+                      {t(
+                        "pages.benefitsLiquidity.navigation.continueToVietnam"
+                      )}
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>

@@ -19,78 +19,132 @@ const BenefitsVietnam = () => {
 
   const industryBenefits = [
     {
-      title: "Position Vietnam as a Web3 Innovation Hub",
-      description:
-        "Establish Vietnam as a leading force in blockchain interoperability and cross-chain innovation on the global stage.",
+      title: t("pages.benefitsVietnam.industryBenefits.web3Innovation.title"),
+      description: t(
+        "pages.benefitsVietnam.industryBenefits.web3Innovation.description"
+      ),
       icon: Star,
       features: [
-        "Global recognition for Vietnamese tech innovation",
-        "Attraction of international blockchain investments",
-        "Development of local Web3 talent and expertise",
-        "Vietnam-first approach to blockchain solutions",
-        "Cultural values integrated into technology",
+        t(
+          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.globalRecognition"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.internationalInvestment"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.localTalent"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.vietnameseApproach"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.culturalValues"
+        ),
       ],
     },
     {
-      title: "Showcase Local Tokens on the Global Stage",
-      description:
-        "Bring Vietnamese tokens and projects into the global DeFi ecosystem, increasing their visibility and adoption worldwide.",
+      title: t("pages.benefitsVietnam.industryBenefits.globalShowcase.title"),
+      description: t(
+        "pages.benefitsVietnam.industryBenefits.globalShowcase.description"
+      ),
       icon: Globe,
       features: [
-        "AXS and SLP global market expansion",
-        "VNDC and VNST international recognition",
-        "KardiaChain ecosystem globalization",
-        "Vietnamese gaming tokens worldwide access",
-        "Local project international funding",
+        t(
+          "pages.benefitsVietnam.industryBenefits.globalShowcase.features.axsSlpExpansion"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.globalShowcase.features.stablecoinRecognition"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.globalShowcase.features.kardiachainGlobalization"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.globalShowcase.features.gamingTokensAccess"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.globalShowcase.features.projectFunding"
+        ),
       ],
     },
     {
-      title: "Empower Local Developers and Entrepreneurs",
-      description:
-        "Create opportunities for Vietnamese talent to build world-class blockchain applications and businesses.",
+      title: t(
+        "pages.benefitsVietnam.industryBenefits.talentEmpowerment.title"
+      ),
+      description: t(
+        "pages.benefitsVietnam.industryBenefits.talentEmpowerment.description"
+      ),
       icon: Lightbulb,
       features: [
-        "Vietnamese developer job opportunities",
-        "Startup ecosystem growth",
-        "Local blockchain education initiatives",
-        "Mentorship and incubation programs",
-        "Technical documentation in Vietnamese",
+        t(
+          "pages.benefitsVietnam.industryBenefits.talentEmpowerment.features.jobOpportunities"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.talentEmpowerment.features.startupGrowth"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.talentEmpowerment.features.blockchainEducation"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.talentEmpowerment.features.mentorshipPrograms"
+        ),
+        t(
+          "pages.benefitsVietnam.industryBenefits.talentEmpowerment.features.vietnameseDocumentation"
+        ),
       ],
     },
   ];
 
   const initiatives = [
     {
-      title: "🎓 Vietnamese Blockchain Education Program",
-      description:
-        "Comprehensive educational initiatives to build local blockchain expertise",
+      title: t("pages.benefitsVietnam.initiatives.education.title"),
+      description: t("pages.benefitsVietnam.initiatives.education.description"),
       features: [
-        "University partnerships for blockchain courses",
-        "Vietnamese-language certification programs",
-        "Developer bootcamps and workshops",
-        "Research collaborations with local institutions",
+        t(
+          "pages.benefitsVietnam.initiatives.education.features.universityPartnerships"
+        ),
+        t(
+          "pages.benefitsVietnam.initiatives.education.features.certificationPrograms"
+        ),
+        t("pages.benefitsVietnam.initiatives.education.features.bootcamps"),
+        t(
+          "pages.benefitsVietnam.initiatives.education.features.researchCollaborations"
+        ),
       ],
     },
     {
-      title: "🚀 Vietnam Web3 Startup Incubator",
-      description:
-        "Supporting Vietnamese entrepreneurs in building blockchain businesses",
+      title: t("pages.benefitsVietnam.initiatives.incubator.title"),
+      description: t("pages.benefitsVietnam.initiatives.incubator.description"),
       features: [
-        "Seed funding for Vietnamese blockchain startups",
-        "Mentorship from global Web3 experts",
-        "Access to international investor networks",
-        "Vietnamese market-focused business development",
+        t("pages.benefitsVietnam.initiatives.incubator.features.seedFunding"),
+        t(
+          "pages.benefitsVietnam.initiatives.incubator.features.expertMentorship"
+        ),
+        t(
+          "pages.benefitsVietnam.initiatives.incubator.features.investorNetworks"
+        ),
+        t(
+          "pages.benefitsVietnam.initiatives.incubator.features.businessDevelopment"
+        ),
       ],
     },
     {
-      title: "🌐 Global Vietnam Blockchain Conference",
-      description:
-        "Annual conference showcasing Vietnamese blockchain innovation",
+      title: t("pages.benefitsVietnam.initiatives.conference.title"),
+      description: t(
+        "pages.benefitsVietnam.initiatives.conference.description"
+      ),
       features: [
-        "International speaker lineup",
-        "Vietnamese project showcases",
-        "Global investment partnerships",
-        "Cultural exchange and networking",
+        t(
+          "pages.benefitsVietnam.initiatives.conference.features.internationalSpeakers"
+        ),
+        t(
+          "pages.benefitsVietnam.initiatives.conference.features.projectShowcases"
+        ),
+        t(
+          "pages.benefitsVietnam.initiatives.conference.features.investmentPartnerships"
+        ),
+        t(
+          "pages.benefitsVietnam.initiatives.conference.features.culturalExchange"
+        ),
       ],
     },
   ];
@@ -109,15 +163,13 @@ const BenefitsVietnam = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🇻🇳 Vietnam's Crypto Industry
+                    {t("pages.benefitsVietnam.hero.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Benefits for Vietnam's Crypto Industry
+                    {t("pages.benefitsVietnam.hero.title")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Positioning Vietnam as a global leader in blockchain
-                    innovation while empowering local talent and showcasing
-                    Vietnamese excellence to the world.
+                    {t("pages.benefitsVietnam.hero.description")}
                   </p>
                 </div>
               </div>
@@ -190,11 +242,10 @@ const BenefitsVietnam = () => {
               <div className="container mx-auto max-w-5xl">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold mb-4">
-                    🌸 Strategic Initiatives
+                    {t("pages.benefitsVietnam.initiatives.title")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Comprehensive programs to support Vietnam's blockchain
-                    ecosystem development.
+                    {t("pages.benefitsVietnam.initiatives.description")}
                   </p>
                 </div>
 
@@ -236,19 +287,15 @@ const BenefitsVietnam = () => {
                 <Card className="bg-gradient-to-r from-red-500/10 to-yellow-500/10 border-red-200">
                   <CardHeader className="text-center">
                     <CardTitle className="text-3xl">
-                      🚀 Join Vietnam's Blockchain Revolution
+                      {t("pages.benefitsVietnam.callToAction.title")}
                     </CardTitle>
                     <CardDescription className="text-lg">
-                      Be part of positioning Vietnam as a global Web3 leader
+                      {t("pages.benefitsVietnam.callToAction.subtitle")}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                      Whether you're a developer, entrepreneur, investor, or
-                      blockchain enthusiast, there's a place for you in
-                      Vietnam's blockchain future. Together, we can showcase
-                      Vietnamese innovation to the world while building
-                      sustainable value for our local ecosystem.
+                      {t("pages.benefitsVietnam.callToAction.description")}
                     </p>
                   </CardContent>
                 </Card>
@@ -265,15 +312,17 @@ const BenefitsVietnam = () => {
                       className="flex items-center gap-2"
                     >
                       <ArrowLeft className="h-4 w-4" />
-                      For Liquidity Providers
+                      {t("pages.benefitsVietnam.navigation.backToLiquidity")}
                     </Button>
                   </Link>
                   <Link to="/ecosystem-benefits">
-                    <Button variant="outline">Back to Overview</Button>
+                    <Button variant="outline">
+                      {t("pages.benefitsVietnam.navigation.backToOverview")}
+                    </Button>
                   </Link>
                   <Link to="/security">
                     <Button className="flex items-center gap-2">
-                      Security
+                      {t("pages.benefitsVietnam.navigation.continueToSecurity")}
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>

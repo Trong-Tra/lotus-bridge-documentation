@@ -40,14 +40,13 @@ const CoreConcept = () => {
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <Badge variant="outline" className="mb-4">
-                    🔧 Technical Foundation
+                    {t("pages.coreConcept.badge")}
                   </Badge>
                   <h1 className="text-5xl font-bold leading-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Core Concept
+                    {t("navigation.coreConcept")}
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                    Deep dive into the technical architecture and innovative
-                    concepts that power Lotus Bridge.
+                    {t("pages.coreConcept.subtitle")}
                   </p>
                 </div>
               </div>
@@ -61,21 +60,16 @@ const CoreConcept = () => {
                   <Card className="border-primary/20">
                     <CardHeader className="text-center">
                       <CardTitle className="text-2xl">
-                        Technical Innovation
+                        {t("pages.coreConcept.technicalInnovation.title")}
                       </CardTitle>
                       <CardDescription>
-                        Explore the foundational concepts that make Lotus Bridge
-                        possible
+                        {t("pages.coreConcept.technicalInnovation.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="prose prose-lg max-w-none dark:prose-invert text-center">
                         <p className="text-lg leading-relaxed">
-                          Lotus Bridge's core concept revolves around creating a
-                          truly universal adapter that transcends the
-                          limitations of existing bridge solutions. Our modular
-                          architecture enables seamless interoperability across
-                          any blockchain network.
+                          {t("pages.coreConcept.technicalInnovation.content")}
                         </p>
                       </div>
                     </CardContent>
@@ -87,27 +81,45 @@ const CoreConcept = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Zap className="h-5 w-5" />
-                          Overview
+                          {t("pages.coreConcept.sections.overview.title")}
                         </CardTitle>
                         <CardDescription>
-                          Core capabilities and features
+                          {t("pages.coreConcept.sections.overview.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Discover what Lotus Bridge enables and how it
-                          revolutionizes cross-chain interactions with
-                          Vietnamese token support.
+                          {t("pages.coreConcept.sections.overview.content")}
                         </p>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Token bridging capabilities</li>
-                          <li>• Cross-chain asset swaps</li>
-                          <li>• Multi-wallet management</li>
-                          <li>• Vietnamese token integration</li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.overview.features.tokenBridging"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.overview.features.crossChainSwaps"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.overview.features.multiWalletManagement"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.overview.features.vietnameseTokenIntegration"
+                            )}
+                          </li>
                         </ul>
                         <Button className="w-full mt-4" asChild>
                           <Link to="/core-overview">
-                            Explore Capabilities
+                            {t("pages.coreConcept.sections.overview.button")}
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -118,24 +130,49 @@ const CoreConcept = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Layers className="h-5 w-5" />
-                          Architecture
+                          {t("pages.coreConcept.sections.architecture.title")}
                         </CardTitle>
                         <CardDescription>
-                          Modular design and components
+                          {t(
+                            "pages.coreConcept.sections.architecture.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Understand the five-layer modular architecture that
-                          enables Lotus Bridge's universal adaptability and
-                          robust security.
+                          {t("pages.coreConcept.sections.architecture.content")}
                         </p>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Network Adapter Layer</li>
-                          <li>• Bridge Orchestration Layer</li>
-                          <li>• Wallet Management Layer</li>
-                          <li>• Localization Layer</li>
-                          <li>• Security & Validation Layer</li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.architecture.layers.networkAdapter"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.architecture.layers.bridgeOrchestration"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.architecture.layers.walletManagement"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.architecture.layers.localization"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.architecture.layers.securityValidation"
+                            )}
+                          </li>
                         </ul>
                         <Button
                           variant="outline"
@@ -143,7 +180,9 @@ const CoreConcept = () => {
                           asChild
                         >
                           <Link to="/architecture">
-                            Study Architecture
+                            {t(
+                              "pages.coreConcept.sections.architecture.button"
+                            )}
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -154,28 +193,51 @@ const CoreConcept = () => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                           <Clock className="h-5 w-5" />
-                          Governance
+                          {t("pages.coreConcept.sections.governance.title")}
                         </CardTitle>
                         <CardDescription>
-                          Future governance protocol
+                          {t(
+                            "pages.coreConcept.sections.governance.description"
+                          )}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          Learn about the planned Lotus Bridge Governance
-                          protocol that will help preventing and stopping
-                          malicious activities while enhancing community
-                          participation.
+                          {t("pages.coreConcept.sections.governance.content")}
                         </p>
                         <div className="flex items-center gap-2 text-xs text-orange-600 dark:text-orange-400">
                           <Clock className="h-3 w-3" />
-                          <span>Coming in future update</span>
+                          <span>
+                            {t(
+                              "pages.coreConcept.sections.governance.comingSoon"
+                            )}
+                          </span>
                         </div>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Governance System</li>
-                          <li>• Community voting mechanisms</li>
-                          <li>• Transparent decision making</li>
-                          <li>• Vietnamese stakeholder participation</li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.governance.features.governanceSystem"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.governance.features.communityVoting"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.governance.features.transparentDecisionMaking"
+                            )}
+                          </li>
+                          <li>
+                            •{" "}
+                            {t(
+                              "pages.coreConcept.sections.governance.features.vietnameseStakeholder"
+                            )}
+                          </li>
                         </ul>
                         <Button
                           variant="outline"
@@ -183,7 +245,7 @@ const CoreConcept = () => {
                           asChild
                         >
                           <Link to="/governance">
-                            Learn About Governance
+                            {t("pages.coreConcept.sections.governance.button")}
                             <ArrowRight className="h-4 w-4 ml-2" />
                           </Link>
                         </Button>
@@ -196,61 +258,85 @@ const CoreConcept = () => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Network className="h-5 w-5" />
-                        🚀 Key Innovations
+                        {t("pages.coreConcept.keyInnovations.title")}
                       </CardTitle>
                       <CardDescription>
-                        What makes Lotus Bridge unique in the cross-chain
-                        ecosystem
+                        {t("pages.coreConcept.keyInnovations.description")}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-4">
                           <h4 className="font-semibold text-primary">
-                            Universal Adaptability
+                            {t(
+                              "pages.coreConcept.keyInnovations.universalAdaptability.title"
+                            )}
                           </h4>
                           <ul className="space-y-2 text-sm">
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                               <span>
-                                Architecture-agnostic bridging (Ethereum ↔
-                                Solana)
+                                {t(
+                                  "pages.coreConcept.keyInnovations.universalAdaptability.features.architectureAgnostic"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                               <span>
-                                Dynamic adaptation to network capabilities
+                                {t(
+                                  "pages.coreConcept.keyInnovations.universalAdaptability.features.dynamicAdaptation"
+                                )}
                               </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                              <span>Future-proof scalability design</span>
+                              <span>
+                                {t(
+                                  "pages.coreConcept.keyInnovations.universalAdaptability.features.futureProofScalability"
+                                )}
+                              </span>
                             </li>
                           </ul>
                         </div>
 
                         <div className="space-y-4">
                           <h4 className="font-semibold text-accent">
-                            Vietnamese Focus
+                            {t(
+                              "pages.coreConcept.keyInnovations.vietnameseFocus.title"
+                            )}
                           </h4>
                           <ul className="space-y-2 text-sm">
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                              <span>Native support for Vietnamese tokens</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                              <span>Localized user experience design</span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
-                              <span>Regional market understanding</span>
+                              <span>
+                                {t(
+                                  "pages.coreConcept.keyInnovations.vietnameseFocus.features.nativeTokenSupport"
+                                )}
+                              </span>
                             </li>
                             <li className="flex items-start gap-2">
                               <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
                               <span>
-                                Governance system for emergency scenarios
+                                {t(
+                                  "pages.coreConcept.keyInnovations.vietnameseFocus.features.localizedUx"
+                                )}
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                              <span>
+                                {t(
+                                  "pages.coreConcept.keyInnovations.vietnameseFocus.features.regionalMarketUnderstanding"
+                                )}
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></div>
+                              <span>
+                                {t(
+                                  "pages.coreConcept.keyInnovations.vietnameseFocus.features.emergencyGovernance"
+                                )}
                               </span>
                             </li>
                           </ul>
@@ -266,22 +352,24 @@ const CoreConcept = () => {
                     <Button variant="outline" className="gap-2" asChild>
                       <Link to="/background">
                         <ArrowLeft className="h-4 w-4" />
-                        Back to Background
+                        {t("pages.coreConcept.navigation.backToBackground")}
                       </Link>
                     </Button>
 
                     <div className="text-center">
                       <h3 className="text-lg font-semibold">
-                        Explore practical applications
+                        {t("pages.coreConcept.navigation.exploreApplications")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Discover real-world use cases and scenarios
+                        {t(
+                          "pages.coreConcept.navigation.exploreApplicationsDescription"
+                        )}
                       </p>
                     </div>
 
                     <Button className="gap-2" asChild>
                       <Link to="/core-overview">
-                        Continue to Core Overview
+                        {t("pages.coreConcept.navigation.continueToOverview")}
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
