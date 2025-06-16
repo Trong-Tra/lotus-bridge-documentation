@@ -1,1260 +1,1700 @@
 {
-    "common": {
-        "loading": "Loading...",
-        "error": "Error",
-        "success": "Success",
-        "cancel": "Cancel",
-        "confirm": "Confirm",
-        "save": "Save",
-        "edit": "Edit",
-        "delete": "Delete",
-        "back": "Back",
-        "next": "Next",
-        "previous": "Previous",
-        "home": "Home",
-        "language": "Language",
-        "english": "English",
-        "vietnamese": "Vietnamese",
-        "search": "Search",
-        "readMore": "Read More",
-        "learnMore": "Learn More",
-        "getStarted": "Get Started",
-        "viewAll": "View All",
-        "comingSoon": "Coming Soon",
-        "newFeature": "New Feature",
-        "beta": "Beta"
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "home": "Home",
+    "language": "Language",
+    "english": "English",
+    "vietnamese": "Vietnamese",
+    "search": "Search",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All",
+    "comingSoon": "Coming Soon",
+    "newFeature": "New Feature",
+    "beta": "Beta"
+  },
+  "navigation": {
+    "home": "Home",
+    "userGuides": "User Guides",
+    "developerDocs": "Developer Documentation",
+    "whitepaper": "Whitepaper",
+    "faqs": "FAQs",
+    "changelog": "Changelog",
+    "documentation": "Documentation",
+    "introduction": "Introduction",
+    "whatIsLotus": "What is Lotus?",
+    "whyLotus": "Why Lotus?",
+    "background": "Background",
+    "coreConcept": "Core Concept",
+    "overview": "Overview",
+    "architecture": "Architecture",
+    "governance": "Governance",
+    "ecosystemBenefits": "Ecosystem Benefits",
+    "forUsers": "For Users",
+    "forBuilders": "For Builders",
+    "forLiquidityProviders": "For Liquidity Providers",
+    "forVietnamIndustry": "For Vietnam's Industry",
+    "security": "Security",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "benefitsUsers": "Benefits for Users",
+    "benefitsDevelopers": "Benefits for Developers",
+    "benefitsVietnam": "Benefits for Vietnam",
+    "benefitsLiquidity": "Benefits for Liquidity Providers"
+  },
+  "sidebar": {
+    "footer": {
+      "content": "",
+      "attribution": "VNUHCM-UIT The Blockchainists"
+    }
+  },
+  "hero": {
+    "title": "Lotus Bridge",
+    "subtitleVietnamese": "Built by Vietnam. Bridging the World.",
+    "mission": "From the heart of Vietnam blooms the Lotus — bridging blockchains, cultures, and futures. This is not just about swapping tokens. It's about freedom of movement, sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
+    "getStarted": "Get Started",
+    "viewDocs": "View Documentation",
+    "learnMore": "Learn More",
+    "developerGuide": "Developer Guide",
+    "bridgingBlockchains": "Bridging Blockchain Networks with Vietnamese Innovation",
+    "decentralizedBridge": "Decentralized Cross-Chain Bridge"
+  },
+  "introductionSection": {
+    "badge": "Vietnamese Innovation",
+    "title": "🌍 The Problem: A Fragmented World of Chains",
+    "description": "Today's blockchain landscape is vast, vibrant, and… fractured. Each network speaks its own language, runs on its own logic, and is home to unique communities and ecosystems. But for the average user — especially those in emerging markets like Vietnam — navigating this complexity feels like crossing rivers with no bridges.",
+    "currentChallenges": {
+      "title": "Current Challenges",
+      "challenges": {
+        "0": "Multiple steps, tools, wallets needed for cross-chain swaps",
+        "1": "Vietnamese tokens like VNDC, VNST, KNC, C98 often excluded",
+        "2": "Clunky, risky, or impossible transactions between differentarchitectures",
+        "3": "Global adoption stunted by exclusion, liquidity siloed, users confused"
+      }
+    },
+    "lotusSolution": {
+      "title": "Lotus Bridge Solution",
+      "description": "A trustless, multi-chain, architecture-agnostic super-bridge that blooms unity from diversity.",
+      "features": {
+        "0": "Universal bridge layer adapting to any network",
+        "1": "Cross-architecture connector (Ethereum ↔ Solana)",
+        "2": "Multi-wallet portal for seamless asset bridging"
+      }
+    },
+    "builtForVietnam": {
+      "title": "🇻🇳 Built for Vietnam. Bridging the World.",
+      "description": "Lotus Bridge is the first bridge built by Vietnamese for Vietnamese, designed with cultural, economic, and technological sensitivity. Supports local tokens often neglected by other platforms — including SLP, VNST, SIPHER, KNC, KAI, and more."
+    },
+    "infrastructureTomorrow": {
+      "title": "💡 Infrastructure of Tomorrow",
+      "description": "Lotus Bridge is not a temporary product. It's an infrastructure layer. Its architecture-agnostic model means it's future-proof — adaptable to whatever blockchain innovations emerge. It's functional, essential, and deeply integrated into user habits and DeFi flows."
+    },
+    "symbolismLotus": {
+      "title": "🌱 The Symbolism of the Lotus",
+      "universalBridge": {
+        "title": "Universal Bridge Layer",
+        "description": "Able to adapt to any exchange method used in any network it connects to"
+      },
+      "crossArchitecture": {
+        "title": "Cross-Architecture Connector",
+        "description": "Swap and send across chains that don't even share address formats or VM compatibility"
+      },
+      "multiWallet": {
+        "title": "Multi-Wallet Portal",
+        "description": "Bridging and swapping across tokens, user identities, Vietnamese and global assets."
+      },
+      "quote": "In Vietnamese culture, the lotus rises pure from murky waters. It represents resilience, rebirth, and peace. In blockchain, that water is fragmentation, isolation, and complexity. Lotus Bridge blooms as the answer — creating order from chaos, clarity from confusion"
+    },
+    "whyLotusMatters": {
+      "title": "Why Lotus Bridge Matters",
+      "securityFirst": {
+        "title": "Security First",
+        "description": "Multi-signature validation and rigorous security audits"
+      },
+      "globalReach": {
+        "title": "Global Reach",
+        "description": "Support for major blockchain networks worldwide"
+      },
+      "vietnameseRoots": {
+        "title": "🇻🇳 Vietname root",
+        "description": "Drawing inspiration from traditional Vietnamese craftsmanship and values"
+      }
+    }
+  },
+  "features": {
+    "title": "Why Choose Lotus Bridge?",
+    "subtitle": "Built with Vietnamese innovation and cutting-edge technology to provide the best cross-chain experience.",
+    "lightningFast": {
+      "title": "Lightning Fast",
+      "description": "Sub-15 second finality with our innovative Lotus Consensus Algorithm"
+    },
+    "ultraSecure": {
+      "title": "Ultra Secure",
+      "description": "Multi-layered security with formal verification and $10M security fund"
+    },
+    "lowCosts": {
+      "title": "Low Costs",
+      "description": "Optimized gas consumption with fees starting from just 0.05%"
+    },
+    "userFriendly": {
+      "title": "User Friendly",
+      "description": "Intuitive interface designed for both beginners and advanced users"
+    }
+  },
+  "userGuides": {
+    "badge": "User Documentation",
+    "gettingStarted": "Begin",
+    "tokenBridging": "Bridging token",
+    "securityBestPractices": "Best Security Practices",
+    "troubleshooting": "Troubleshooting"
+  },
+  "developerDocs": {
+    "title": "Developer Documentation",
+    "subtitle": "Detailed technical documentation for developers looking to integrate with or build on Lotus Bridge. Includes SDKs, APIs, and integration guides"
+  },
+  "quickStart": {
+    "community": {
+      "title": "Community",
+      "description": "Join our Discord, follow on Twitter, and connect with the Lotus community"
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Track the evolution of Lotus Bridge with detailed release notes, new features, improvements, and important updates.",
+    "badge": "Version History",
+    "latestRelease": "Latest Release",
+    "upcomingReleases": "Upcoming Releases",
+    "stayUpdated": "Stay Updated",
+    "stayUpdatedDescription": "Follow our development progress and get notified about new releases",
+    "followGithub": "Follow on GitHub",
+    "joinCommunity": "Join Community",
+    "releaseHighlights": "Release Highlights",
+    "majorUpdates": "Major Updates",
+    "improvements": "Improvements",
+    "bugFixes": "Bug Fixes",
+    "breaking": "Breaking Changes",
+    "deprecated": "Deprecated",
+    "security": "Security Updates",
+    "performance": "Performance",
+    "viewAll": "View All Changes",
+    "downloadRelease": "Download Release"
+  },
+  "faqs": {
+    "title": "FAQs & Glossary",
+    "subtitle": "Find answers to common questions and understand key concepts about cross-chain bridging and Lotus Bridge.",
+    "badge": "Help & Support",
+    "searchPlaceholder": "Search FAQs and terms...",
+    "generalQuestions": "General Questions",
+    "bridging": "Bridging",
+    "security": "Security",
+    "technical": "Technical",
+    "glossary": "Glossary",
+    "noResults": "No results found. Try searching for different terms.",
+    "stillNeedHelp": "Still need help?",
+    "contactSupport": "Contact Support",
+    "joinDiscord": "Join Discord",
+    "browseAllFAQs": "Browse All FAQs"
+  },
+  "whitepaper": {
+    "title": "Lotus Bridge Whitepaper",
+    "subtitle": "Comprehensive technical documentation detailing the architecture, economics, and vision behind Lotus Bridge's cross-chain infrastructure.",
+    "badge": "Technical Documentation",
+    "downloadPdf": "Download PDF",
+    "viewOnline": "View Online",
+    "share": "Share",
+    "bookmark": "Bookmark",
+    "lastUpdated": "Last Updated",
+    "readingTime": "min read",
+    "tableOfContents": "Table of Contents",
+    "abstract": "Abstract",
+    "introduction": "Introduction",
+    "architecture": "Architecture",
+    "governance": "Governance Framework",
+    "security": "Security Model",
+    "economics": "Token Economics",
+    "roadmap": "Roadmap",
+    "conclusion": "Conclusion",
+    "references": "References",
+    "appendix": "Appendix"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Oops! Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "returnHome": "Return to Home",
+    "browsePages": "Browse Pages",
+    "reportIssue": "Report Issue"
+  },
+  "documentationHub": {
+    "buttons": {
+      "buildWithUs": "Build with Us",
+      "readWhitepaper": "Read Whitepaper",
+      "findAnswers": "Find Answers",
+      "viewUpdates": "View Updates",
+      "joinCommunity": "Join Community"
+    }
+  },
+  "footer": {
+    "title": "Lotus Bridge",
+    "subtitle": "Bridging blockchain networks with Vietnamese innovation",
+    "copyright": "Built with 💚 in Vietnam • © 2024 Lotus Bridge Team",
+    "tagline": "Built by Vietnam. Bridging the World.",
+    "contact": {
+      "inquiries": "For media inquiries, partnerships:",
+      "email": "trongtrawork@gmail.com"
+    }
+  },
+  "header": {
+    "title": "Lotus Bridge Documentation",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode"
+  },
+  "introduction": {
+    "badge": "🌸 Vietnam Innovation",
+    "subtitle": "Understanding Lotus Bridge – A revolutionary cross-chain protocol rooted in Vietnam’s culture and creativity",
+    "title": "🌍 The Problem: A Fragmented Blockchain World",
+    "description": "Today’s blockchain landscape is vast, vibrant — and fragmented. Each network speaks its own language, follows its own logic, and hosts unique communities and ecosystems. But for everyday users — especially those in emerging markets like Vietnam — navigating this complexity feels like trying to cross a river without a bridge.",
+    "overview": {
+      "title": "Explore Lotus Bridge",
+      "description": "Discover the core concepts and mission behind our revolutionary cross-chain protocol.",
+      "content": "Lotus Bridge represents more than just technical innovation — it's a bridge between cultures, economies, and the future. Built by Vietnamese developers with a vision to connect Vietnam’s vibrant crypto ecosystem to global opportunities."
+    },
+    "lotusSymbol": {
+      "title": "The Lotus Symbol",
+      "description": "Learn about the core concepts and mission behind our revolutionary cross-chain protocol.",
+      "resilience": {
+        "title": "Resilience",
+        "description": "Thriving in challenging environments — just like Vietnam’s crypto ecosystem"
+      },
+      "purity": {
+        "title": "Purity",
+        "description": "A clean, elegant solution that cuts through blockchain complexit"
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Blossoming from local roots to global impact and innovation"
+      }
     },
     "navigation": {
-        "home": "Home",
-        "userGuides": "User Guides",
-        "developerDocs": "Developer Documentation",
-        "whitepaper": "Whitepaper",
-        "faqs": "FAQs",
-        "changelog": "Changelog",
-        "documentation": "Documentation",
-        "introduction": "Introduction",
-        "whatIsLotus": "What is Lotus?",
-        "whyLotus": "Why Lotus?",
-        "background": "Background",
-        "coreConcept": "Core Concept",
-        "overview": "Overview",
-        "architecture": "Architecture",
-        "governance": "Governance",
-        "ecosystemBenefits": "Ecosystem Benefits",
-        "forUsers": "For Users",
-        "forBuilders": "For Builders",
-        "forLiquidityProviders": "For Liquidity Providers",
-        "forVietnamIndustry": "For Vietnam's Industry",
-        "security": "Security",
-        "tokenomics": "Tokenomics",
-        "roadmap": "Roadmap",
-        "benefitsUsers": "Benefits for Users",
-        "benefitsDevelopers": "Benefits for Developers",
-        "benefitsVietnam": "Benefits for Vietnam",
-        "benefitsLiquidity": "Benefits for Liquidity Providers"
+      "readyExplore": "Ready to explore deeper?",
+      "continueDescription": "Continue with industry background or jump into core concepts",
+      "backToAbstract": "Back to Abstract",
+      "continueToBackground": "Continue to Background"
     },
-    "sidebar": {
-        "footer": {
-            "builtWith": "Built with",
-            "heart": "❤️",
-            "inVietnam": "in Vietnam 2025",
-            "attribution": "VNUHCM-UIT The Blockchainists"
-        }
+    "solution": {
+      "title": "Enter Lotus Bridge – Blooming Unity from Diversity",
+      "description": "Inspired by the lotus flower — a sacred symbol of purity, resilience, and rebirth in Vietnamese culture — Lotus Bridge emerges as a multi-chain superbridge: architecture-agnostic, trustless, and unifying."
     },
-    "hero": {
-        "title": "Lotus Bridge",
-        "subtitleVietnamese": "Built by Vietnam. Bridging the World.",
-        "mission": "From the heart of Vietnam blooms the Lotus — bridging blockchains, cultures, and futures. This is not just about swapping tokens. It's about freedom of movement, sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
-        "getStarted": "Get Started",
-        "viewDocs": "View Documentation",
-        "learnMore": "Learn More",
-        "developerGuide": "Developer Guide",
-        "bridgingBlockchains": "Bridging Blockchain Networks with Vietnamese Innovation",
-        "decentralizedBridge": "Decentralized Cross-Chain Bridge"
-    },
-    "introductionSection": {
-        "badge": "Vietnamese Innovation",
-        "title": "🌍 The Problem: A Fragmented World of Chains",
-        "description": "Today's blockchain landscape is vast, vibrant, and… fractured. Each network speaks its own language, runs on its own logic, and is home to unique communities and ecosystems. But for the average user — especially those in emerging markets like Vietnam — navigating this complexity feels like crossing rivers with no bridges.",
-        "currentChallenges": {
-            "title": "Current Challenges",
-            "challenges": [
-                "Multiple steps, tools, wallets needed for cross-chain swaps",
-                "Vietnamese tokens like VNDC, VNST, KNC, C98 often excluded",
-                "Clunky, risky, or impossible transactions between differentarchitectures",
-                "Global adoption stunted by exclusion, liquidity siloed, users confused"
-            ]
-        },
-        "lotusSolution": {
-            "title": "Lotus Bridge Solution",
-            "description": "A trustless, multi-chain, architecture-agnostic super-bridge that blooms unity from diversity.",
-            "features": [
-                "Universal bridge layer adapting to any network",
-                "Cross-architecture connector (Ethereum ↔ Solana)",
-                "Multi-wallet portal for seamless asset bridging"
-            ]
-        },
-        "builtForVietnam": {
-            "title": "🇻🇳 Built for Vietnam. Bridging the World.",
-            "description": "Lotus Bridge is the first bridge built by Vietnamese for Vietnamese, designed with cultural, economic, and technological sensitivity. Supports local tokens often neglected by other platforms — including SLP, VNST, SIPHER, KNC, KAI, and more."
-        },
-        "infrastructureTomorrow": {
-            "title": "💡 Infrastructure of Tomorrow",
-            "description": "Lotus Bridge is not a temporary product. It's an infrastructure layer. Its architecture-agnostic model means it's future-proof — adaptable to whatever blockchain innovations emerge. It's functional, essential, and deeply integrated into user habits and DeFi flows."
-        },
-        "symbolismLotus": {
-            "title": "🌱 The Symbolism of the Lotus",
-            "universalBridge": {
-                "title": "Universal Bridge Layer",
-                "description": "Able to adapt to any exchange method used in any network it connects to"
-            },
-            "crossArchitecture": {
-                "title": "Cross-Architecture Connector",
-                "description": "Swap and send across chains that don't even share address formats or VM compatibility"
-            },
-            "multiWallet": {
-                "title": "Multi-Wallet Portal",
-                "description": "Bridging and swapping across tokens, user identities, Vietnamese and global assets."
-            },
-            "quote": "In Vietnamese culture, the lotus rises pure from murky waters. It represents resilience, rebirth, and peace. In blockchain, that water is fragmentation, isolation, and complexity. Lotus Bridge blooms as the answer — creating order from chaos, clarity from confusion"
-        },
-        "whyLotusMatters": {
-            "title": "Why Lotus Bridge Matters",
-            "securityFirst": {
-                "title": "Security First",
-                "description": "Multi-signature validation and rigorous security audits"
-            },
-            "vietnameseRoots": {
-                "title": "🇻🇳 Vietname root",
-                "description": "Drawing inspiration from traditional Vietnamese craftsmanship and values"
-            },
-            "globalReach": {
-                "title": "Global Reach",
-                "description": "Support for major blockchain networks worldwide"
-            }
-        }
-    },
-    "features": {
-        "title": "Why Choose Lotus Bridge?",
-        "subtitle": "Built with Vietnamese innovation and cutting-edge technology to provide the best cross-chain experience.",
-        "lightningFast": {
-            "title": "Lightning Fast",
-            "description": "Sub-15 second finality with our innovative Lotus Consensus Algorithm"
-        },
-        "ultraSecure": {
-            "title": "Ultra Secure",
-            "description": "Multi-layered security with formal verification and $10M security fund"
-        },
-        "lowCosts": {
-            "title": "Low Costs",
-            "description": "Optimized gas consumption with fees starting from just 0.05%"
-        },
-        "userFriendly": {
-            "title": "User Friendly",
-            "description": "Intuitive interface designed for both beginners and advanced users"
-        }
-    },
-    "documentationHub": {
-        "badge": "Documentation Hub",
-        "title": "Comprehensive Documentation",
-        "subtitle": "Everything you need to understand, use, and build with Lotus Bridge. From Vietnamese token bridging to advanced cross-chain development - built with Vietnamese innovation for global adoption.",
-        "whitepaper": {
-            "description": "Technical vision, protocol architecture, tokenomics, and security analysis"
-        },
-        "faqs": {
-            "description": "Frequently asked questions and comprehensive terminology guide"
-        },
-        "buttons": {
-            "buildWithUs": "Build with Us",
-            "readWhitepaper": "Read Whitepaper",
-            "findAnswers": "Find Answers",
-            "viewUpdates": "View Updates",
-            "joinCommunity": "Join Community"
-        }
-    },
-    "footer": {
-        "title": "Lotus Bridge",
-        "subtitle": "Bridging blockchain networks with Vietnamese innovation",
-        "copyright": "Built with 💚 in Vietnam • © 2024 Lotus Bridge Team",
-        "tagline": "Built by Vietnam. Bridging the World.",
-        "contact": {
-            "inquiries": "For media inquiries, partnerships:",
-            "email": "trongtrawork@gmail.com"
-        }
-    },
-    "quickStart": {
-        "connectWallet": {
-            "title": "Connect Wallet",
-            "description": "Link your crypto wallet to get started with bridging"
-        },
-        "documentation": {
-            "title": "Documentation",
-            "description": "Comprehensive guides for developers and users"
-        },
-        "community": {
-            "title": "Community",
-            "description": "Join our Discord, follow on Twitter, and connect with the Lotus community"
-        }
-    },
-    "changelog": {
-        "title": "Changelog",
-        "subtitle": "Track the evolution of Lotus Bridge with detailed release notes, new features, improvements, and important updates.",
-        "badge": "Version History",
-        "latestRelease": "Latest Release",
-        "upcomingReleases": "Upcoming Releases",
-        "stayUpdated": "Stay Updated",
-        "stayUpdatedDescription": "Follow our development progress and get notified about new releases",
-        "followGithub": "Follow on GitHub",
-        "joinCommunity": "Join Community",
-        "releaseHighlights": "Release Highlights",
-        "majorUpdates": "Major Updates",
-        "improvements": "Improvements",
-        "bugFixes": "Bug Fixes",
-        "breaking": "Breaking Changes",
-        "deprecated": "Deprecated",
-        "security": "Security Updates",
-        "performance": "Performance",
-        "viewAll": "View All Changes",
-        "downloadRelease": "Download Release"
-    },
-    "faqs": {
-        "title": "FAQs & Glossary",
-        "subtitle": "Find answers to common questions and understand key concepts about cross-chain bridging and Lotus Bridge.",
-        "badge": "Help & Support",
-        "searchPlaceholder": "Search FAQs and terms...",
-        "generalQuestions": "General Questions",
-        "bridging": "Bridging",
-        "security": "Security",
-        "technical": "Technical",
-        "glossary": "Glossary",
-        "noResults": "No results found. Try searching for different terms.",
-        "stillNeedHelp": "Still need help?",
-        "contactSupport": "Contact Support",
-        "joinDiscord": "Join Discord",
-        "browseAllFAQs": "Browse All FAQs"
-    },
-    "whitepaper": {
-        "title": "Lotus Bridge Whitepaper",
-        "subtitle": "Comprehensive technical documentation detailing the architecture, economics, and vision behind Lotus Bridge's cross-chain infrastructure.",
-        "badge": "Technical Documentation",
-        "downloadPdf": "Download PDF",
-        "viewOnline": "View Online",
-        "share": "Share",
-        "bookmark": "Bookmark",
-        "lastUpdated": "Last Updated",
-        "readingTime": "min read",
-        "tableOfContents": "Table of Contents",
-        "abstract": "Abstract",
-        "introduction": "Introduction",
-        "architecture": "Architecture",
-        "governance": "Governance Framework",
-        "security": "Security Model",
-        "economics": "Token Economics",
-        "roadmap": "Roadmap",
-        "conclusion": "Conclusion",
-        "references": "References",
-        "appendix": "Appendix"
-    },
-    "notFound": {
-        "title": "404",
-        "subtitle": "Oops! Page not found",
-        "description": "The page you're looking for doesn't exist or has been moved.",
-        "returnHome": "Return to Home",
-        "browsePages": "Browse Pages",
-        "reportIssue": "Report Issue"
-    },
-    "vietnameseFeatures": {
-        "title": "🇻🇳 Built for Vietnam. Bridging the World.",
-        "subtitle": "The first bridge built by Vietnamese for Vietnamese, designed with cultural, economic, and technological sensitivity.",
-        "localTokens": {
-            "title": "Vietnamese Token Support",
-            "description": "Supports local tokens often neglected by other platforms — including SLP, VNST, SIPHER, KNC, KAI, VNDC, and C98.",
-            "tokens": [
-                "VNDC",
-                "VNST",
-                "KNC",
-                "C98",
-                "SLP",
-                "SIPHER",
-                "KAI"
-            ]
-        },
-        "localizedUX": {
-            "title": "Fully Localized UX",
-            "description": "Intuitive, educational, accessible interface designed for Vietnamese users"
-        },
-        "liquidityEnvironment": {
-            "title": "Vietnamese Liquidity Focus",
-            "description": "Designed for the unique liquidity environment of Vietnam"
-        },
-        "developerToolkit": {
-            "title": "Vietnamese Developer Toolkit",
-            "description": "SDKs, APIs, and localized documentation for Vietnamese developers"
-        }
-    },
-    "symbolism": {
-        "title": "🌱 The Symbolism of the Lotus",
-        "description": "In Vietnamese culture, the lotus rises pure from murky waters. It represents resilience, rebirth, and peace. In blockchain, that water is fragmentation, isolation, and complexity. Lotus Bridge blooms as the answer — creating order from chaos, clarity from confusion.",
-        "movement": "It is more than a bridge. It is a movement."
+    "mission": {
+      "title": "Mission",
+      "description": "To democratize cross-chain transactions by building secure, efficient, and culturally inspired infrastructure that connects global blockchain networks while honoring Vietnam’s values of community, resilience, and innovation."
     },
     "vision": {
-        "title": "💡 The Vision: A Resilient Future, Rooted in Innovation",
-        "description": "Lotus Bridge is not a temporary product. It's an infrastructure layer.",
-        "features": {
-            "futureProof": "Its architecture-agnostic model means it's future-proof — adaptable to whatever blockchain innovations emerge.",
-            "marketResilience": "In a market downturn, when hype-driven projects fail, Lotus Bridge survives — because it's functional, essential, and deeply integrated into user habits and DeFi flows.",
-            "liquidityFreedom": "It enables liquidity freedom — unlocking new strategies for traders, builders, and protocols.",
-            "developerToolkit": "It provides a toolkit for Vietnamese developers to build on top of, with SDKs, APIs, and localized documentation."
+      "title": "Vision",
+      "description": "To establish Vietnam as a leading force in blockchain interoperability, creating a world where value flows seamlessly across networks — like the Mekong River through our homeland."
+    },
+    "vietnameseRoots": {
+      "title": "Vietnamese Roots & Global Impact",
+      "culturalHeritage": {
+        "title": "Cultural Heritage",
+        "description": "Inspired by Vietnam’s traditional craftsmanship and core values."
+      },
+      "communityFirst": {
+        "title": "Community First",
+        "description": "Built by the community, for the community — with transparency at its core."
+      },
+      "innovationSpirit": {
+        "title": "Spirit of Innovation",
+        "description": "Pushing the boundaries of technology while staying true to our values."
+      }
+    },
+    "whyLotus": {
+      "title": "Why Lotus Bridge Matters",
+      "description": "Explore the benefits of Lotus Bridge",
+      "content": "Lotus Bridge isn’t just a temporary solution — it’s foundational infrastructure. Its architecture is designed to adapt to any future blockchain innovation.",
+      "securityFirst": {
+        "title": "Security First",
+        "description": "Multi-signature authentication and rigorous security audit"
+      },
+      "costEffective": {
+        "title": "Cost-Effective",
+        "description": "Minimal fees without compromising security or spee"
+      },
+      "userFriendly": {
+        "title": "User-Friendly",
+        "description": "An intuitive interface designed for both beginners and advanced users"
+      },
+      "globalReach": {
+        "title": "Global Reach",
+        "description": "Supports major blockchain networks across the globe"
+      }
+    },
+    "whatIsLotus": {
+      "title": "What is Lotus Bridge?",
+      "description": "Learn about the technology and capabilities of Lotus Bridge",
+      "content": "Discover how Lotus Bridge functions as a dynamic, universal adapter across blockchains, enabling seamless cross-chain interaction regardless of architectural differences.",
+      "features": {
+        "crossArchitecture": "Cross-Architecture Connectivity",
+        "multiWalletSupport": "Multi-Wallet Support",
+        "adaptiveProtocol": "Adaptive Protocol"
+      }
+    }
+  },
+  "pages": {
+    "abstract": {
+      "badge": "Executive Summary",
+      "title": "🌸 Abstract",
+      "subtitle": "The foundational vision and core mission of Lotus Bridge - A next-generation multi-chain interoperability protocol rooted in Vietnamese innovation.",
+      "projectOverview": {
+        "title": "Project Overview",
+        "content": "Lotus Bridge is a next-generation multi-chain interoperability protocol, purpose-built to seamlessly connect heterogeneous blockchain networks. Designed by Vietnamese developers for the Vietnamese market and beyond, Lotus Bridge transcends the limitations of traditional bridges by enabling secure and flexible token transfers, swaps, and wallet-to-wallet communication across entirely different blockchain architectures—such as from Ethereum to Solana.",
+        "foundationalLayer": "With multi-wallet support and a localized focus on tokens popular in Vietnam, Lotus Bridge is positioned to become a foundational layer for Vietnamese DeFi innovation, paving the way for Vietnamese developers and entrepreneurs to build cross-chain applications that can tap into global liquidity while maintaining a seamless user experience."
+      },
+      "vietnameseInnovation": {
+        "title": "Vietnamese Innovation",
+        "description": "Built by Vietnam, for Vietnam, bridging the world",
+        "marketNeeds": "Designed with Vietnamese market needs in mind",
+        "nativeSupport": "Native support for Vietnamese tokens (AXS, SLP, VNDC, VNST, KAI, SIPHER, A8, C98, KNC)",
+        "localizedUX": "Localized user experience and cultural sensitivity",
+        "communityDriven": "Community-driven development with Vietnamese stakeholder participation"
+      },
+      "technicalExcellence": {
+        "title": "Technical Excellence",
+        "description": "Advanced architecture for seamless interoperability",
+        "architectureAgnostic": "Architecture-agnostic bridging (Ethereum ↔ Solana)",
+        "multiWallet": "Multi-wallet connectivity and management",
+        "secureTransfers": "Secure and flexible token transfers",
+        "futureProof": "Future-proof scalability and adaptability"
+      },
+      "visionImpact": {
+        "title": "🇻🇳 Vision & Impact",
+        "description": "Positioning Vietnam as a Web3 innovation hub",
+        "content": "Lotus Bridge is more than a technical innovation—it's a symbol of connection between cultures, economies, and tomorrow's digital world. By integrating Vietnamese tokens into the global liquidity stream, Lotus Bridge empowers Vietnam to step confidently onto the Web3 stage. With seamless user experience, uncompromising security, and scalable infrastructure, we are laying the groundwork for Vietnam to emerge as a leading hub of Web3 innovation—pioneering cross-chain interoperability and shaping the future of decentralized finance."
+      },
+      "navigation": {
+        "readyToDive": "Ready to dive deeper?",
+        "exploreDetailed": "Explore the detailed introduction and technical architecture",
+        "continueToIntroduction": "Continue to Introduction"
+      }
+    },
+    "whatIsLotus": {
+      "badge": "🌸 Global Adapter",
+      "title": "What is Lotus Bridge?",
+      "subtitle": "A flexible, global adapter across blockchains that transcends the limitations of traditional bridging.",
+      "dynamicUniversalAdapter": {
+        "title": "Dynamic Universal Adapter",
+        "description1": "Lotus Bridge is a decentralized application (dApp) and infrastructure protocol that enables users to connect wallets and bridge assets across multiple blockchain networks—regardless of their architecture, consensus mechanisms, or token standards.",
+        "description2": "With the ability to adapt to any exchange method supported by the connected networks, Lotus is not just a bridge: it is a dynamic, universal adapter between blockchains."
+      },
+      "keyCapabilities": {
+        "crossArchitecture": {
+          "title": "Cross-Architecture",
+          "description": "Bridge between completely different blockchain architectures",
+          "details": "Connect Ethereum to Solana, BNB Chain to Polygon, and much more - regardless of underlying technological differences."
+        },
+        "multiWallet": {
+          "title": "Multi-Wallet Support",
+          "description": "Connect and manage multiple wallets simultaneously",
+          "details": "Seamlessly interact with MetaMask, Phantom, and other wallets in a unified interface."
+        },
+        "adaptiveProtocol": {
+          "title": "Adaptive Protocol",
+          "description": "Automatically adapts to available exchange methods",
+          "details": "Dynamically selects the best bridging method based on network capabilities and user preferences."
         }
-    },
-    "impact": {
-        "title": "🌐 Why This Matters for Vietnam — and Beyond",
-        "forUsers": {
-            "title": "For Vietnamese users",
-            "benefits": [
-                "One interface to rule them all",
-                "Access global liquidity with local tokens",
-                "Transfer wealth between chains, addresses, and formats without complexity"
-            ]
+      },
+      "coreFunctions": {
+        "title": "Core Functions",
+        "description": "What Lotus Bridge enables for users",
+        "walletConnection": {
+          "title": "Wallet Connection",
+          "description": "Connect wallets from different blockchain ecosystems"
         },
-        "forDevelopers": {
-            "title": "For developers",
-            "benefits": [
-                "Build cross-chain dApps faster",
-                "Local-first focus brings a Vietnamese innovation layer into global projects"
-            ]
+        "assetBridging": {
+          "title": "Asset Bridging",
+          "description": "Transfer assets across heterogeneous networks"
         },
-        "forLiquidityProviders": {
-            "title": "For liquidity providers",
-            "benefits": [
-                "Plug into a multi-chain bridge that constantly moves volume",
-                "Yield opportunities across volatile markets, secured by real-world utility"
-            ]
+        "crossChainSwaps": {
+          "title": "Cross-Chain Swaps",
+          "description": "Exchange tokens across different blockchain networks"
         },
-        "forTheWorld": {
-            "title": "For the world",
-            "benefits": [
-                "Vietnam becomes a key player in Web3 infrastructure — not just a consumer market, but a technology exporter",
-                "Lotus Bridge becomes the model for regional-first DeFi innovation — where culture meets code, and local strength drives global growth"
-            ]
+        "governance": {
+          "title": "Governance",
+          "description": "Governance system for emergency scenarios"
+        },
+        "flexibleTransfers": {
+          "title": "Flexible Transfers",
+          "description": "Send to same address or different user addresses"
+        },
+        "tokenStandards": {
+          "title": "Token Standards",
+          "description": "Support for different token standards and types"
+        },
+        "vietnameseTokens": {
+          "title": "Vietnamese Tokens",
+          "description": "Native support for AXS, SLP, VNDC, VNST, and more"
         }
+      },
+      "navigation": {
+        "backToIntroduction": "Back to Introduction",
+        "understandingMission": "Understanding the mission",
+        "learnWhy": "Learn why Lotus Bridge was created and its cultural significance",
+        "continueToWhy": "Continue to Why Lotus?"
+      }
     },
-    "finalMessage": {
-        "title": "🚀 Final Message: Lotus Bridge Is the Infrastructure of Tomorrow",
-        "subtitle": "This is not just about swapping tokens.",
-        "points": [
-            "It's about freedom of movement.",
-            "It's about sovereignty for users, liquidity for protocols, visibility for local tokens, and economic growth for Vietnam.",
-            "Lotus Bridge doesn't just move assets — it moves the future of Vietnamese crypto, and with it, reshapes global DeFi."
-        ],
-        "tagline": "Lotus Bridge - Built by Vietnam. Bridging the World."
+    "userGuides": {
+      "title": "User Guides",
+      "subtitle": "Step-by-step guides to help you navigate and use Lotus Bridge effectively. From wallet connection to advanced bridging strategies.",
+      "vietnameseTokenSupport": "Vietnamese Token Support",
+      "nativeSupport": "Lotus Bridge offers native support for Vietnamese tokens often overlooked by other platforms.",
+      "crossChainAssetTransfer": "Cross-Chain Asset Transfer",
+      "crossChainExample": "Move your VNDC from Ethereum to Solana to enjoy lower fees and faster transactions.",
+      "chainToChainSwaps": "Chain-to-Chain Swaps",
+      "chainSwapsExample": "Instantly swap AXS on Ronin for ETH on Ethereum without multiple steps.",
+      "multiWalletManagement": "Multi-Wallet Management",
+      "multiWalletExample": "Bridge and swap between addresses you control across different chains.",
+      "localizedDefi": "Localized DeFi",
+      "localizedDefiExample": "Participate in DeFi protocols using Vietnamese tokens popular in the region.",
+      "realWorldUseCases": "Real-World Use Cases",
+      "realWorldDescription": "Examples of how to use Lotus Bridge in common Vietnamese token scenarios.",
+      "viewDetailedGuides": "View Detailed Setup Guides",
+      "howToBridgeTokens": "How to Bridge Tokens",
+      "bridgeTokensDescription": "Complete step-by-step guide for bridging tokens across networks.",
+      "newNetworksNote": "New networks are continuously added to expand cross-chain capabilities.",
+      "security": {
+        "title": "Best Security Practices",
+        "description": "Protect your assets when using cross-chain bridges",
+        "verifyUrl": {
+          "title": "Always Verify Bridge URLs",
+          "description": "Bookmark the official URL and avoid clicking on links from unknown sources."
+        },
+        "doubleCheck": {
+          "title": "Double-Check Transaction Details",
+          "description": "Verify recipient address, amount, and network before confirming."
+        },
+        "startSmall": {
+          "title": "Start with Small Amounts",
+          "description": "Test with smaller transactions before bridging large amounts."
+        },
+        "keepRecords": {
+          "title": "Keep Transaction Records",
+          "description": "Save transaction hashes and timestamps for reference."
+        }
+      },
+      "commonIssues": {
+        "title": "Common Issues & Solutions",
+        "description": "Quick fixes for the most common problems",
+        "transactionStuck": {
+          "title": "Stuck or Pending Transaction",
+          "description": "Your transaction was confirmed on the source chain but hasn't appeared on the destination chain.",
+          "solutions": {
+            "0": "Check the transaction status in our bridge explorer",
+            "1": "Allow up to 30 minutes during periods of high network congestion",
+            "2": "Contact support if it remains stuck for more than 1 hour"
+          }
+        },
+        "insufficientGas": {
+          "title": "Insufficient Gas Fees",
+          "description": "Transaction failed due to low gas fees or lack of native tokens.",
+          "solutions": {
+            "0": "Make sure you have enough native tokens (ETH, BNB, etc.) to cover gas fees",
+            "1": "Increase the gas limit if the transaction keeps failing",
+            "2": "Try during off-peak hours for lower fees"
+          }
+        },
+        "walletConnection": {
+          "title": "Wallet Connection Issues",
+          "description": "Unable to connect wallet or wallet not detected.",
+          "solutions": {
+            "0": "Refresh the page and try connecting again",
+            "1": "Check if your wallet extension is enabled",
+            "2": "Switch to the correct network in your wallet",
+            "3": "Clear your browser's cache and cookies"
+          }
+        }
+      },
+      "walletRecommendations": "Wallet Recommendations",
+      "walletDescription": "Choose the best wallet for your network and experience level",
+      "wallets": {
+        "metamask": {
+          "name": "MetaMask",
+          "badge": "Beginner-Friendly",
+          "description": "Perfect for newcomers to DeFi. Simple interface with great guides and broad compatibility.",
+          "features": {
+            "0": "Easy setup and onboarding",
+            "1": "Wide ecosystem support",
+            "2": "Great for basic usage",
+            "3": "Excellent educational resources"
+          }
+        },
+        "rabby": {
+          "name": "Rabby Wallet",
+          "badge": "Advanced EVM",
+          "description": "Superior UI/UX with better asset management across EVM chains. Ideal for pro users.",
+          "features": {
+            "0": "Clean, intuitive interface",
+            "1": "Enhanced multi-chain view",
+            "2": "Improved asset control",
+            "3": "Advanced security features"
+          }
+        },
+        "phantom": {
+          "name": "Phantom",
+          "badge": "Solana",
+          "description": "The most popular and trusted wallet for the Solana ecosystem, with native SPL token support.",
+          "features": {
+            "0": "Native Solana integration",
+            "1": "Lightning-fast transactions",
+            "2": "Built-in NFT support",
+            "3": "Optimized for DeFi protocols"
+          }
+        },
+        "slush": {
+          "name": "Slush Wallet",
+          "badge": "Sui Network",
+          "description": "The official wallet developed by Mysten Labs for an optimized Sui blockchain experience.",
+          "features": {
+            "0": "Official support from Mysten Labs",
+            "1": "Optimized for the Sui blockchain",
+            "2": "Advanced object management",
+            "3": "Integrated Move language support"
+          }
+        }
+      },
+      "connectionSteps": {
+        "title": "How to Connect Your Wallet:",
+        "step1": {
+          "title": "Install Your Preferred Wallet",
+          "description": "Download the recommended wallet for your target network from official sources"
+        },
+        "step2": {
+          "title": "Click \"Connect Wallet\"",
+          "description": "Locate the connect button at the top-right corner of the Lotus Bridge interface"
+        },
+        "step3": {
+          "title": "Approve the Connection",
+          "description": "Review permissions and authorize Lotus Bridge to interact with your wallet securely"
+        }
+      }
     },
-    "architecture": {
-        "title": "Architecture & Core Concept",
-        "subtitle": "Modular architecture consisting of specialized layers",
-        "layers": {
-            "networkAdapter": {
-                "title": "Network Adapter Layer",
-                "description": "Interfaces with various blockchain protocols, extracting transaction methods and enabling compatibility across chains"
+    "whyLotus": {
+      "title": "Why Choose Lotus?",
+      "subtitle": "Named after Vietnam’s national flower, symbolizing resilience, purity, and the ability to thrive in challenging environments.",
+      "vietnameseInnovation": "Vietnamese Innovation",
+      "lotusFlower": "lotus flower",
+      "nationalFlower": "Vietnam’s national flower",
+      "culturalSignificance": "Cultural Significance & Innovation",
+      "culturalDescription": "Named after the lotus — Vietnam’s national flower — representing resilience, purity, and the ability to bloom beautifully even in challenging conditions.",
+      "architecturalExcellence": "delivers a unique, architecture-agnostic superbridge that can adapt to any blockchain, regardless of its technical structure.",
+      "architecturalAdvantage": "This architectural advantage makes Lotus Bridge future-proof and seamlessly integrable with emerging blockchain technologies.",
+      "ourMission": "Our Mission",
+      "missionDescription": "Connecting culture and economies through technology",
+      "bringVietnameseTokens": "Bring Vietnamese tokens into global liquidity flows",
+      "seamlessExperience": "Deliver a seamless user experience across chains",
+      "provideRobustSecurity": "Provide strong security and reliability",
+      "ensureFutureProof": "Ensure future-proof scalability",
+      "ourVision": "Our Vision",
+      "visionDescription": "Empowering regional innovation on a global scale",
+      "positionVietnam": "Position Vietnam as a Web3 innovation leader",
+      "showcaseTokens": "Showcase Vietnamese tokens globally",
+      "empowerDevelopers": "Empower local developers and entrepreneurs",
+      "driveAdoption": "Drive regional DeFi adoption",
+      "builtForVietnam": "Built for Vietnam. Built for the World.",
+      "builtDescription": "A local-first approach with global ambition",
+      "nativeTokenSupport": "Native support for Vietnamese tokens (AXS, SLP, VNDC, VNST, KAI, SIPHER, A8, C98, KNC)",
+      "localizedUx": "Localized user experience and documentation",
+      "builtByVietnamese": "Built by Vietnamese developers for Vietnamese needs",
+      "globalStandards": "Aligned with international standards and security best practices",
+      "lotusSymbolIntro": "Named after",
+      "nationalFlowerStrong": "Vietnam’s national flower",
+      "symbolismDescription": "the lotus symbolizes resilience, purity, and the ability to grow from muddy waters — perfectly reflecting Lotus Bridge’s mission.",
+      "fragmentedEcosystem": "In a fragmented blockchain ecosystem, Lotus Bridge provides a",
+      "unifiedSolution": "unified, elegant, and powerful solution",
+      "tailoredNeeds": "tailored to the needs of both Vietnamese users and the global crypto community.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "Connecting culture and economies through technology",
+        "items": {
+          "bringVietnameseTokens": "Integrate Vietnamese tokens into global liquidity flows",
+          "seamlessExperience": "Deliver a seamless user experience across chains",
+          "robustSecurity": "Provide strong security and reliability",
+          "futureProofScalability": "Ensure future-proof scalability"
+        }
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "Empowering regional innovation on a global scale",
+        "items": {
+          "positionVietnam": "Position Vietnam as a Web3 innovation hub",
+          "showcaseVietnamese": "Showcase Vietnamese culture and technology",
+          "bridgeRegionalGlobal": "Bridge regional and global crypto communities",
+          "fosterInclusive": "Foster inclusive financial innovation"
+        }
+      },
+      "valueProposition": {
+        "title": "🇻🇳 Unique Value Proposition",
+        "description": "What makes Lotus Bridge special in a crowded bridge market",
+        "regionalFocus": {
+          "title": "Regional Focus",
+          "items": {
+            "nativeSupport": "Native support for Vietnamese tokens (AXS, SLP, VNDC, VNST, KAI, SIPHER, A8, C98, KNC)",
+            "localizedUX": "Localized user experience and documentation",
+            "builtByVietnamese": "Built by Vietnamese developers for Vietnamese needs",
+            "emergencyGovernance": "Emergency governance by trusted keyholders to safeguard the network in critical situations"
+          }
+        },
+        "technicalInnovation": {
+          "title": "Technical Innovation",
+          "items": {
+            "architectureAgnostic": "Architecture-agnostic bridging capabilities",
+            "multiWallet": "Multi-wallet connection and management",
+            "dynamicAdaptation": "Dynamic adaptation to network capabilities"
+          }
+        }
+      },
+      "growingFromChallenges": {
+        "title": "🌸 Growing from Challenges",
+        "description": "Just like the lotus blooms beautifully from muddy waters, Lotus Bridge creates elegant solutions in a fragmented blockchain landscape, turning complexity into opportunity."
+      },
+      "navigation": {
+        "backToWhatIsLotus": "Back to What is Lotus?",
+        "understandingLandscape": "Understanding the Landscape",
+        "landscapeDescription": "Learn about the blockchain industry challenges we aim to solve",
+        "continueToBackground": "Continue to Background"
+      }
+    },
+    "background": {
+      "title": "Background & Context",
+      "subtitle": "Understand the challenges that led to the creation of Lotus Bridge — and why Vietnamese innovation matters in the global DeFi landscape.",
+      "problemStatement": "The Problem: Fragmented Cross-Chain Landscape",
+      "fragmentedDescription": "The current state of blockchain interoperability and why we need better solutions",
+      "fragmentedWorldTitle": "🌍 The Problem: A Fragmented Blockchain World",
+      "blockchainCrisisDescription": "Understanding the blockchain interoperability crisis",
+      "landscapeDescription": "Today’s blockchain landscape is vast, vibrant — and fragmented. Ethereum. Solana. BNB Chain. Polygon. Cosmos. Each network speaks its own language, follows its own logic, and hosts unique communities and ecosystems.",
+      "userNavigationDescription": "But for everyday users — especially in emerging markets like Vietnam — navigating this complexity is like trying to cross a river without a bridge.",
+      "currentChallengesTitle": "Current Challenges",
+      "currentChallenges": {
+        "multipleSteps": "Want to swap assets from Solana to Ethereum? You’ll need multiple steps, tools, wallets, and bridges.",
+        "clumsyRisky": "Often clunky, risky, or outright impossible when networks have fundamentally different architectures.",
+        "vietnameseTokens": "Vietnamese tokens like VNDC, VNST, KNC, and C98? Frequently excluded from global bridging conversations.",
+        "globalAdoption": "Global adoption? Blocked by exclusion. Liquidity? Isolated. Users? Confused."
+      },
+      "resultTitle": "The Result",
+      "resultDescription": "The dream of a unified Web3 world remains out of reach. Each blockchain becomes an isolated island, and users must navigate the treacherous waters between them.",
+      "lotusEnterTitle": "Enter Lotus Bridge – Blooming Unity from Diversity",
+      "vietnameseSolutionDescription": "A Vietnam-inspired solution for global blockchain interoperability",
+      "lotusInspiredDescription": "Inspired by the lotus — a sacred symbol of purity, resilience, and rebirth in Vietnamese culture — Lotus Bridge emerges as a multi-chain superbridge: architecture-agnostic and trustless.",
+      "universalBridgeLayer": "Universal Bridge Layer",
+      "universalDescription": "Adaptable to any exchange mechanism used by the networks it connects.",
+      "crossArchitectureConnector": "Cross-Architecture Connector",
+      "crossArchitectureDescription": "Swap and send across chains that don’t share address formats or VM compatibility.",
+      "multiWalletPortal": "Multi-Wallet Portal",
+      "multiWalletDescription": "Bridge and swap across tokens, user identities, and both Vietnamese and global assets.",
+      "technicalLimitations": "Technical Limitations",
+      "technicalLimitationsDescription": "What current bridges struggle with",
+      "technicalLimitationsList": {
+        "evmLimited": "Limited to EVM-compatible chains",
+        "complexInteractions": "Require complex user interactions",
+        "highRisk": "High risk of loss or delay",
+        "poorArchitectureSupport": "Poor support for diverse architectures"
+      },
+      "marketBarriers": "Market Barriers",
+      "marketBarriersDescription": "Challenges to regional adoption",
+      "marketBarriersList": {
+        "regionalTokensLack": "Regional tokens lack global access",
+        "poorLocalization": "Poor localization and user experience",
+        "fragmentedLiquidity": "Fragmented liquidity pools",
+        "limitedDeveloper": "Limited developer resources"
+      },
+      "vietnamCryptoLeadership": "🇻🇳 Vietnam’s Crypto Leadership",
+      "vietnamPotentialDescription": "A thriving ecosystem with untapped potential",
+      "vietnamCryptoNation": "Vietnam has emerged as one of the most crypto-savvy nations",
+      "vietnamBarriers": "yet local users still face barriers accessing global liquidity with Vietnam-origin tokens.",
+      "marketStrengths": "🚀 Market Strengths",
+      "adoptionAwareness": "📈 Adoption & Awareness",
+      "adoptionItems": {
+        "top3Global": "Top 3 globally in crypto awareness",
+        "highRetailAdoption": "High retail adoption rate"
+      },
+      "adoptionDescription": "Vietnam consistently ranks among the top countries in crypto adoption",
+      "gamingNftLeadership": "🎮 Gaming & NFT Leadership",
+      "gamingItems": {
+        "axieHub": "Hub of the Axie Infinity ecosystem",
+        "strongP2E": "Strong play-to-earn gaming culture"
+      },
+      "gamingDescription": "Leading the play-to-earn revolution in Southeast Asia",
+      "developerEcosystem": "👨‍💻 Developer Ecosystem",
+      "developerItems": {
+        "growingDefi": "Growing participation in DeFi",
+        "activeDeveloper": "Active developer community"
+      },
+      "developerDescription": "A strong technical foundation for blockchain innovation",
+      "growthPotential": "🌟 Growth Potential",
+      "growthItems": {
+        "youngPopulation": "Young, tech-savvy population",
+        "risingDemand": "Rising demand for cross-chain solutions"
+      },
+      "growthDescription": "Emerging opportunities in Web3 infrastructure",
+      "untappedPotential": "Untapped Global Potential",
+      "untappedDescription": "Vietnam’s leadership in crypto presents a major opportunity to connect local innovation with global markets.",
+      "popularVietnameseTokens": "Popular Vietnamese Tokens",
+      "gamingEcosystem": "🎮 Gaming Ecosystem",
+      "gamingEcosystemDescription": "Axie Infinity and gaming tokens are driving Vietnam’s Web3 adoption",
+      "vietnameseStablecoins": "💰 Vietnamese Stablecoins",
+      "stablesDescription": "VND-pegged stablecoins enabling local financial integration",
+      "defiInfrastructure": "🏗️ DeFi Infrastructure",
+      "defiDescription": "Blockchain infrastructure tokens and DeFi protocols",
+      "limitedCrossChain": "Limited Cross-Chain Access",
+      "limitedDescription": "Many Vietnamese tokens remain isolated on single chains, limiting global liquidity and DeFi opportunities.",
+      "criticalGap": "Critical Gap",
+      "criticalGapDescription": "Why Lotus Bridge is necessary",
+      "criticalGapSolution": "Lotus Bridge addresses this critical gap by providing a",
+      "highlyAdaptable": "highly adaptable, region-conscious, and technologically advanced bridge",
+      "criticalGapResult": "that connects Vietnamese innovation with global opportunity.",
+      "adaptable": "Adaptable",
+      "adaptableDescription": "Operates across any blockchain architecture",
+      "regional": "Regional",
+      "regionalDescription": "Built with Vietnam’s needs in mind",
+      "advanced": "Advanced",
+      "advancedDescription": "Cutting-edge technology and security",
+      "navigation": {
+        "backToWhyLotus": "Back to Why Lotus?",
+        "discoverSolution": "Discover the Solution",
+        "solutionDescription": "Explore the core concepts and architecture of Lotus Bridge",
+        "continueToCoreConcept": "Continue to Core Concepts"
+      }
+    },
+    "coreConcept": {
+      "badge": "🔧 Technical Foundation",
+      "subtitle": "Deep dive into the technical architecture and innovative concepts that power Lotus Bridge.",
+      "technicalInnovation": {
+        "title": "Technical Innovation",
+        "description": "Explore the foundational concepts that make Lotus Bridge possible",
+        "content": "Lotus Bridge's core concept revolves around creating a truly universal adapter that transcends the limitations of existing bridge solutions. Our modular architecture enables seamless interoperability across any blockchain network."
+      },
+      "sections": {
+        "overview": {
+            "title": "Overview",
+            "description": "Core capabilities and features",
+            "content": "Discover what Lotus Bridge enables and how it revolutionizes cross-chain interactions with support for Vietnamese tokens.",
+            "features": {
+              "tokenBridging": "Token bridging capabilities",
+              "crossChainSwaps": "Cross-chain asset swaps",
+              "multiWalletManagement": "Multi-wallet management",
+              "vietnameseTokenIntegration": "Vietnamese token integration"
             },
-            "bridgeOrchestration": {
-                "title": "Bridge Orchestration Layer",
-                "description": "Coordinates transaction logic, handles validation, and manages state transitions between networks"
-            },
-            "walletManagement": {
-                "title": "Wallet Management Layer",
-                "description": "Supports multi-wallet connectivity and address mapping across architectures"
-            },
-            "localization": {
-                "title": "Localization Layer",
-                "description": "Provides localized content, user flows, and token compatibility tailored to the Vietnamese ecosystem"
-            },
-            "security": {
-                "title": "Security & Validation Layer",
-                "description": "Incorporates decentralized validation mechanisms, rate-limiting, fraud detection, and fail-safes"
-            }
+            "button": "Explore Capabilities"
+        },
+        "architecture": {
+          "title": "Architecture",
+          "description": "Design and modular components",
+          "content": "Understand the five-layer modular architecture enabling Lotus Bridge’s universal adaptability and strong security.",
+          "layers": {
+            "networkAdapter": "Network Adapter Layer",
+            "bridgeOrchestration": "Bridge Orchestration Layer",
+            "walletManagement": "Wallet Management Layer",
+            "localization": "Localization Layer",
+            "securityValidation": "Security & Validation Layer"
+          },
+          "button": "Explore Architecture"
+        },
+        "governance": {
+          "title": "Governance",
+          "description": "Next-generation governance protocol",
+          "content": "Learn about the planned Lotus Bridge Governance protocol designed to prevent and halt malicious activities while enhancing community participation.",
+          "comingSoon": "Coming soon in a future update",
+          "features": {
+            "governanceSystem": "Governance System",
+            "communityVoting": "Community Voting Mechanism",
+            "transparentDecisionMaking": "Transparent Decision-Making",
+            "vietnameseStakeholder": "Vietnamese Stakeholder Involvement"
+          },
+          "button": "Learn About Governance"
         }
+      },
+      "keyInnovations": {
+        "title": "🚀 Key Innovations",
+        "description": "What makes Lotus Bridge unique in the cross-chain ecosystem",
+        "universalAdaptability": {
+          "title": "Universal Adaptability",
+          "features": {
+            "architectureAgnostic": "Architecture-agnostic bridging (Ethereum ↔ Solana)",
+            "dynamicAdaptation": "Dynamic adaptation to network capabilities",
+            "futureProofScalability": ""
+          }
+        },
+        "vietnameseFocus": {
+          "title": "Vietnamese Focus",
+          "features": {
+            "nativeTokenSupport": "Native support for Vietnamese tokens",
+            "localizedUx": "Localized user experience design",
+            "regionalMarketUnderstanding": "Regional market understanding",
+            "emergencyGovernance": "Governance system for emergency situations"
+          }
+        }
+      },
+      "navigation": {
+        "backToBackground": "Back to Background",
+        "exploreApplications": "Explore Real-World Applications",
+        "exploreApplicationsDescription": "Discover use cases and practical scenarios",
+        "continueToOverview": "Continue to Core Overview"
+      }
     },
-    "ecosystemBenefits": {
-        "title": "Ecosystem Benefits",
-        "forUsers": {
-            "title": "For Users",
-            "benefits": [
-                "Simplified access to global DeFi",
-                "Local-first design with Vietnamese token support",
-                "Flexible transaction routing across multiple chains"
-            ]
-        },
-        "forDevelopers": {
-            "title": "For Developers",
-            "benefits": [
-                "SDKs and APIs for building cross-chain dApps",
-                "Developer-friendly documentation localized for Vietnam"
-            ]
-        },
-        "forLiquidityProviders": {
-            "title": "For Liquidity Providers",
-            "benefits": [
-                "New liquidity pools tied to real usage",
-                "Exposure to multiple ecosystems through a single bridge",
-                "Dynamic fee structures and yield incentives"
-            ]
-        },
-        "forVietnam": {
-            "title": "For Vietnam's Crypto Industry",
-            "benefits": [
-                "Position Vietnam as a Web3 innovation hub",
-                "Showcase local tokens on the global stage",
-                "Empower local developers and entrepreneurs"
-            ]
-        }
-    },
-    "supportedTokens": {
-        "title": "Supported Vietnamese Tokens",
-        "description": "Native support for tokens popular in Vietnam",
-        "tokens": {
-            "AXS": "Axie Infinity",
-            "SLP": "Smooth Love Potion",
-            "VNDC": "Vietnamese Dong Coin",
-            "VNST": "VN Stable Token",
-            "KAI": "KardiaChain",
-            "SIPHER": "Sipher Token",
-            "A8": "A8 Token",
-            "C98": "Coin98",
-            "KNC": "Kyber Network Crystal"
-        }
+    "developerDocs": {
+      "badge": "Developer Resources",
+      "title": "Developer Documentation",
+      "subtitle": "Build cross-chain dApps with our comprehensive SDK, APIs, and localized documentation. Vietnamese developers get first-class support and Vietnamese-first documentation.",
+      "smartContractIntegration": "Smart Contract Integration",
+      "smartContractDescription": "Integrate Lotus Bridge directly into your smart contracts for seamless cross-chain functionality",
+      "bridgeContracts": "Bridge Contracts",
+      "moreDocs": "More Documentation Coming Soon",
+      "moreDocsDescription": "Additional developer resources including SDK documentation, REST API guides, and webhook integration examples are currently being prepared by our development team.",
+      "smartContracts": {
+        "keyFunctions": "Key Functions",
+        "exampleIntegration": "Example Contract Integration"
+      }
     },
     "roadmap": {
-        "title": "Development Roadmap",
-        "subtitle": "Strategic milestones and feature releases",
-        "genesis": "v1.0.0 \"Genesis Launch\" (June 2025)",
-        "phases": {
-            "q3_2025": {
-                "title": "Q3 2025: Beta Launch",
-                "description": "Beta launch with EVM + Solana support"
-            },
-            "q4_2025": {
-                "title": "Q4 2025: Tokenomics",
-                "description": "Liquidity provider incentives and tokenomics"
-            },
-            "q1_2026": {
-                "title": "Q1 2026: Mobile Integration",
-                "description": "Mobile wallet integration"
-            },
-            "q2_2026": {
-                "title": "Q2 2026: DAO Launch",
-                "description": "DAO governance model launch"
-            }
+      "title": "Development Roadmap",
+      "subtitle": "Strategic milestones and feature releases",
+      "genesis": "v1.0.0 \"Genesis Launch\" (June 2025)",
+      "phases": {
+        "q3_2025": {
+          "title": "Q3 2025: Beta Launch",
+          "description": "Beta release with EVM + Solana support"
+        },
+        "q4_2025": {
+          "title": "Q4 2025: Tokenomics",
+          "description": "Incentives for liquidity providers and tokenomics"
+        },
+        "q1_2026": {
+          "title": "Q1 2026: Mobile Integration",
+          "description": "Mobile wallet integration"
+        },
+        "q2_2026": {
+          "title": "Q2 2026: DAO Launch",
+          "description": "Launch of DAO governance model"
         }
+      }
     },
-    "contact": {
-        "title": "Contact Information",
-        "email": "team@lotusbridge.io",
-        "description": "For media inquiries, partnerships, or access to the developer program"
-    },
-    "legal": {
-        "disclaimer": "This document is for informational purposes only and does not constitute legal, financial, or investment advice. The Lotus Bridge project is under continuous development, and all information is subject to change."
-    },
-    "header": {
-        "title": "Lotus Bridge Documentation",
-        "lightMode": "Light mode",
-        "darkMode": "Dark mode"
-    },
-    "pages": {
-        "abstract": {
-            "badge": "Executive Summary",
-            "title": "🌸 Abstract",
-            "subtitle": "The foundational vision and core mission of Lotus Bridge - A next-generation multi-chain interoperability protocol rooted in Vietnamese innovation.",
-            "projectOverview": {
-                "title": "Project Overview",
-                "content": "Lotus Bridge is a next-generation multi-chain interoperability protocol, purpose-built to seamlessly connect heterogeneous blockchain networks. Designed by Vietnamese developers for the Vietnamese market and beyond, Lotus Bridge transcends the limitations of traditional bridges by enabling secure and flexible token transfers, swaps, and wallet-to-wallet communication across entirely different blockchain architectures—such as from Ethereum to Solana.",
-                "foundationalLayer": "With multi-wallet support and a localized focus on tokens popular in Vietnam, Lotus Bridge is positioned to become a foundational layer for Vietnamese DeFi innovation, paving the way for Vietnamese developers and entrepreneurs to build cross-chain applications that can tap into global liquidity while maintaining a seamless user experience."
-            },
-            "vietnameseInnovation": {
-                "title": "Vietnamese Innovation",
-                "description": "Built by Vietnam, for Vietnam, bridging the world",
-                "marketNeeds": "Designed with Vietnamese market needs in mind",
-                "nativeSupport": "Native support for Vietnamese tokens (AXS, SLP, VNDC, VNST, KAI, SIPHER, A8, C98, KNC)",
-                "localizedUX": "Localized user experience and cultural sensitivity",
-                "communityDriven": "Community-driven development with Vietnamese stakeholder participation"
-            },
-            "technicalExcellence": {
-                "title": "Technical Excellence",
-                "description": "Advanced architecture for seamless interoperability",
-                "architectureAgnostic": "Architecture-agnostic bridging (Ethereum ↔ Solana)",
-                "multiWallet": "Multi-wallet connectivity and management",
-                "secureTransfers": "Secure and flexible token transfers",
-                "futureProof": "Future-proof scalability and adaptability"
-            },
-            "visionImpact": {
-                "title": "🇻🇳 Vision & Impact",
-                "description": "Positioning Vietnam as a Web3 innovation hub",
-                "content": "Lotus Bridge is more than a technical innovation—it's a symbol of connection between cultures, economies, and tomorrow's digital world. By integrating Vietnamese tokens into the global liquidity stream, Lotus Bridge empowers Vietnam to step confidently onto the Web3 stage. With seamless user experience, uncompromising security, and scalable infrastructure, we are laying the groundwork for Vietnam to emerge as a leading hub of Web3 innovation—pioneering cross-chain interoperability and shaping the future of decentralized finance."
-            },
-            "navigation": {
-                "readyToDive": "Ready to dive deeper?",
-                "exploreDetailed": "Explore the detailed introduction and technical architecture",
-                "continueToIntroduction": "Continue to Introduction"
-            }
+    "coreOverview": {
+      "hero": {
+        "title": "Lotus Bridge System Overview",
+        "badge": "System Overview",
+        "description": "A comprehensive overview of Lotus Bridge’s capabilities, supported tokens, and technical architecture designed for seamless cross-chain interaction."
+      },
+      "capabilities": {
+        "title": "What Does Lotus Bridge Enable?",
+        "description": "An outline of the system’s core capabilities",
+        "content": "Lotus Bridge enables a comprehensive set of cross-chain capabilities designed to make blockchain interoperability seamless, secure, and accessible for both Vietnamese and global users."
+      },
+      "crossChain": {
+        "tokenBridging": {
+          "title": "Token Bridging",
+          "description": "Seamless cross-chain asset transfer",
+          "details": "Move any supported token between blockchains with under 15-second finality and minimal fees.",
+          "example": {
+            "chains": "Supports both native and wrapped token standards across different blockchain networks.",
+            "title": "Bridging Example",
+            "description": "Transfer AXS from Ronin to Ethereum to access global DeFi liquidity pools, expanding the utility of Vietnamese gaming tokens."
+          },
+          "features": {
+            "architectureAgnostic": "Architecture-agnostic bridging – works with any blockchain",
+            "secureCustody": "Secure custody mechanisms with decentralized security",
+            "realTimeTracking": "Real-time transaction tracking with instant notifications"
+          }
         },
-        "whatIsLotus": {
-            "title": "What is Lotus Bridge?",
-            "description": "A dynamic, universal adapter between blockchains that transcends traditional bridging limitations.",
-            "dynamicUniversalAdapter": {
-                "title": "Dynamic Universal Adapter",
-                "description1": "Lotus Bridge is a decentralized application (dApp) and infrastructure protocol that enables users to connect wallets and bridge assets across multiple blockchain networks—regardless of their architecture, consensus mechanisms, or token standards.",
-                "description2": "With the ability to adapt to any exchange method supported by the connected networks, Lotus is not just a bridge: it is a dynamic, universal adapter between blockchains."
-            },
-            "keyCapabilities": {
-                "crossArchitecture": {
-                    "title": "Cross-Architecture",
-                    "description": "Bridge between completely different blockchain architectures",
-                    "details": "Connect Ethereum to Solana, BNB Chain to Polygon, and much more - regardless of underlying technological differences."
-                },
-                "multiWallet": {
-                    "title": "Multi-Wallet Support",
-                    "description": "Connect and manage multiple wallets simultaneously",
-                    "details": "Seamlessly interact with MetaMask, Phantom, and other wallets in a unified interface."
-                },
-                "adaptiveProtocol": {
-                    "title": "Adaptive Protocol",
-                    "description": "Automatically adapts to available exchange methods",
-                    "details": "Dynamically selects the best bridging method based on network capabilities and user preferences."
-                }
-            },
-            "coreFunctions": {
-                "title": "Core Functions",
-                "description": "What Lotus Bridge enables for users",
-                "walletConnection": {
-                    "title": "Wallet Connection",
-                    "description": "Connect wallets from different blockchain ecosystems"
-                },
-                "assetBridging": {
-                    "title": "Asset Bridging",
-                    "description": "Transfer assets across heterogeneous networks"
-                },
-                "crossChainSwaps": {
-                    "title": "Cross-Chain Swaps",
-                    "description": "Exchange tokens across different blockchain networks"
-                },
-                "governance": {
-                    "title": "Governance",
-                    "description": "Governance system for emergency scenarios"
-                },
-                "flexibleTransfers": {
-                    "title": "Flexible Transfers",
-                    "description": "Send to same address or different user addresses"
-                },
-                "tokenStandards": {
-                    "title": "Token Standards",
-                    "description": "Support for different token standards and types"
-                },
-                "vietnameseTokens": {
-                    "title": "Vietnamese Tokens",
-                    "description": "Native support for AXS, SLP, VNDC, VNST, and more"
-                }
-            },
-            "navigation": {
-                "backToIntroduction": "Back to Introduction",
-                "understandingMission": "Understanding the mission",
-                "learnWhy": "Learn why Lotus Bridge was created and its cultural significance",
-                "continueToWhy": "Continue to Why Lotus?"
-            }
-        },
-        "developerDocs": {
-            "title": "Developer Documentation",
-            "subtitle": "Build cross-chain dApps with our comprehensive SDK, APIs, and localized documentation. Vietnamese developers get first-class support and Vietnamese-first documentation.",
-            "badge": "Developer Resources",
-            "smartContractIntegration": "Smart Contract Integration",
-            "smartContractDescription": "Integrate Lotus Bridge directly into your smart contracts for seamless cross-chain functionality",
-            "bridgeContracts": "Bridge Contracts",
-            "moreDocs": "More Documentation Coming Soon",
-            "moreDocsDescription": "Additional developer resources including SDK documentation, REST API guides, and webhook integration examples are currently being prepared by our development team.",
-            "smartContracts": {
-                "title": "Smart Contract Integration",
-                "description": "Direct smart contract interaction for advanced use cases",
-                "bridgeContracts": "Bridge Contract Addresses",
-                "keyFunctions": "Key Functions",
-                "exampleIntegration": "Example Contract Integration"
-            }
-        },
-        "userGuides": {
-            "title": "User Guides",
-            "subtitle": "Step-by-step guides to help you navigate and use Lotus Bridge effectively. From wallet connection to advanced bridging strategies.",
-            "badge": "User Documentation",
-            "gettingStarted": "Getting Started",
-            "tokenBridging": "Token Bridging",
-            "securityBestPractices": "Security Best Practices",
-            "troubleshooting": "Troubleshooting",
-            "howToBridge": {
-                "title": "How to Bridge Tokens",
-                "description": "Complete walkthrough of the token bridging process",
-                "selectNetworks": {
-                    "title": "Select Networks",
-                    "description": "Choose source and destination blockchains"
-                },
-                "enterAmount": {
-                    "title": "Enter Amount",
-                    "description": "Specify the amount of tokens to bridge"
-                },
-                "confirmTransaction": {
-                    "title": "Confirm Transaction",
-                    "description": "Review details and complete the transfer"
-                }
-            }
-        },
-        "benefitsUsers": {
-            "hero": {
-                "badge": "👥 User Benefits",
-                "title": "Benefits for Users",
-                "description": "Discover how Lotus Bridge empowers Vietnamese users to access global DeFi opportunities with local-first design and seamless cross-chain functionality."
-            },
-            "simplifiedAccess": {
-                "title": "Simplified Access to Global DeFi",
-                "description": "Navigate the complex DeFi landscape with ease, accessing protocols across multiple chains through a single, intuitive interface.",
-                "features": {
-                    "oneClickAccess": "One-click access to multiple DeFi protocols",
-                    "unifiedPortfolio": "Unified portfolio management across chains",
-                    "simplifiedRouting": "Simplified transaction routing",
-                    "reducedComplexity": "Reduced complexity for beginners"
-                }
-            },
-            "localFirstDesign": {
-                "title": "Local-First Design with Vietnamese Token Support",
-                "description": "Enjoy a platform designed specifically for Vietnamese users, with native support for popular local tokens and cultural preferences.",
-                "features": {
-                    "nativeTokenSupport": "Native AXS, SLP, VNDC, VNST support",
-                    "vietnameseInterface": "Vietnamese language interface",
-                    "localPaymentIntegration": "Local payment method integration",
-                    "culturalDesignElements": "Cultural UI/UX design elements"
-                }
-            },
-            "flexibleRouting": {
-                "title": "Flexible Transaction Routing",
-                "description": "Experience unparalleled flexibility in how you move and use your assets across multiple blockchain networks.",
-                "features": {
-                    "crossChainTransfers": "Cross-chain asset transfers",
-                    "multiWalletSupport": "Multi-wallet transaction support",
-                    "optimalRouting": "Optimal routing algorithms",
-                    "gasOptimization": "Gas optimization across chains"
-                }
-            },
-            "scenarios": {
-                "title": "Real-World Use Cases",
-                "gaming": {
-                    "title": "🎮 Gaming Enthusiast",
-                    "scenario": "Move AXS tokens from Ronin to Ethereum for DeFi opportunities",
-                    "benefit": "Access global DeFi yields while keeping gaming assets active",
-                    "tokens": [
-                        "AXS",
-                        "SLP",
-                        "RON"
-                    ]
-                },
-                "defi": {
-                    "title": "💰 DeFi Investor",
-                    "scenario": "Swap VNDC for ETH across chains to participate in new protocols",
-                    "benefit": "Seamless Vietnamese stablecoin integration with global DeFi",
-                    "tokens": [
-                        "VNDC",
-                        "VNST",
-                        "ETH"
-                    ]
-                },
-                "trading": {
-                    "title": "🚀 Crypto Trader",
-                    "scenario": "Arbitrage opportunities between Vietnamese and international exchanges",
-                    "benefit": "Quick cross-chain transfers for time-sensitive trading",
-                    "tokens": [
-                        "KAI",
-                        "C98",
-                        "KNC"
-                    ]
-                }
-            },
-            "tokenIntegration": {
-                "title": "🌸 Vietnamese Token Integration",
-                "description": "Lotus Bridge natively supports the most popular tokens in the Vietnamese crypto ecosystem.",
-                "supportedTokens": {
-                    "axs": {
-                        "name": "Axie Infinity",
-                        "chain": "Ronin"
-                    },
-                    "slp": {
-                        "name": "Smooth Love Potion",
-                        "chain": "Ronin"
-                    },
-                    "vndc": {
-                        "name": "VND Coin",
-                        "chain": "Multiple"
-                    },
-                    "vnst": {
-                        "name": "Vietnam Stable Token",
-                        "chain": "Multiple"
-                    },
-                    "kai": {
-                        "name": "KardiaChain",
-                        "chain": "Kardia"
-                    },
-                    "c98": {
-                        "name": "Coin98",
-                        "chain": "Multiple"
-                    },
-                    "knc": {
-                        "name": "Kyber Network",
-                        "chain": "Ethereum"
-                    },
-                    "sipher": {
-                        "name": "Sipher",
-                        "chain": "Ethereum"
-                    }
-                }
-            },
-            "navigation": {
-                "backToEcosystem": "Ecosystem Benefits",
-                "backToOverview": "Back to Overview",
-                "continueToBuilders": "For Builders"
-            }
-        },
-        "benefitsDevelopers": {
-            "hero": {
-                "badge": "🏗️ Builder Opportunities",
-                "title": "Benefits for Builders",
-                "description": "Leverage Lotus Bridge protocol to build innovative smart contracts, create revolutionary dApps, unlock new DeFi opportunities, and launch successful startups in the Vietnamese blockchain ecosystem."
-            },
-            "builderOpportunities": {
-                "title": "🚀 Building Opportunities",
-                "description": "Discover how to leverage Lotus Bridge protocol to create innovative solutions for the Vietnamese blockchain ecosystem.",
-                "smartContract": {
-                    "title": "Smart Contract Integration Opportunities",
-                    "description": "Build innovative smart contracts that leverage Lotus Bridge protocol for cross-chain functionality and Vietnamese token integration.",
-                    "features": {
-                        "crossChainDefi": "Cross-chain DeFi protocols",
-                        "gamingTokenUtilities": "Vietnamese gaming token utilities",
-                        "yieldFarming": "Multi-chain yield farming contracts",
-                        "paymentSolutions": "Cross-border payment solutions",
-                        "nftIntegration": "NFT marketplace integration"
-                    }
-                },
-                "dappDevelopment": {
-                    "title": "dApp Development Ecosystem",
-                    "description": "Create revolutionary decentralized applications using Lotus Bridge as the backbone for seamless cross-chain user experiences.",
-                    "features": {
-                        "vietnameseFirst": "Vietnamese-first dApp experiences",
-                        "gamingApplications": "Gaming ecosystem applications",
-                        "portfolioManagers": "Cross-chain portfolio managers",
-                        "remittancePlatforms": "Local remittance platforms",
-                        "tokenCommunities": "Cultural token communities"
-                    }
-                },
-                "defiInnovation": {
-                    "title": "DeFi Innovation Opportunities",
-                    "description": "Pioneer new DeFi protocols and financial products that serve the Vietnamese market while connecting to global liquidity.",
-                    "features": {
-                        "stablecoinProtocols": "Vietnamese stablecoin protocols",
-                        "lendingPlatforms": "Cross-chain lending platforms",
-                        "gamingDerivatives": "Gaming token derivatives",
-                        "assetTokenization": "Local asset tokenization",
-                        "yieldOptimization": "Yield optimization strategies"
-                    }
-                }
-            },
-            "startupOpportunities": {
-                "title": "💡 Startup Opportunities",
-                "description": "Entrepreneurial opportunities for ambitious builders looking to create the next generation of Vietnamese blockchain companies.",
-                "marketOpportunityLabel": "📈 Market Opportunity:",
-                "exampleApplicationsLabel": "🎯 Example Applications:",
-                "gamingStudios": {
-                    "title": "Cross-Chain Gaming Studios",
-                    "category": "Gaming & Entertainment",
-                    "description": "Build gaming platforms that seamlessly integrate AXS, SLP, and other Vietnamese gaming tokens across multiple blockchains.",
-                    "marketSize": "$2B+ Vietnamese gaming market",
-                    "examples": {
-                        "playToEarn": "Play-to-earn ecosystems",
-                        "crossChainNft": "Cross-chain NFT games",
-                        "gamingBridges": "Gaming token bridges"
-                    }
-                },
-                "defiProtocols": {
-                    "title": "Vietnamese DeFi Protocols",
-                    "category": "DeFi & Finance",
-                    "description": "Create DeFi protocols specifically designed for Vietnamese users, featuring local tokens and cultural preferences.",
-                    "marketSize": "$500M+ Vietnamese crypto market",
-                    "examples": {
-                        "yieldFarming": "VNDC/VNST yield farming",
-                        "lendingProtocols": "Local lending protocols",
-                        "crossChainRemittance": "Cross-chain remittance"
-                    }
-                },
-                "enterprise": {
-                    "title": "Enterprise Blockchain Solutions",
-                    "category": "B2B & Enterprise",
-                    "description": "Develop blockchain solutions for Vietnamese businesses looking to integrate cross-chain functionality.",
-                    "marketSize": "Growing enterprise adoption",
-                    "examples": {
-                        "supplyChain": "Supply chain tracking",
-                        "crossBorderPayments": "Cross-border payments",
-                        "digitalIdentity": "Digital identity solutions"
-                    }
-                }
-            },
-            "technicalResources": {
-                "title": "🛠️ Builder Resources & Support",
-                "description": "Everything you need to start building on Lotus Bridge today, with dedicated support for Vietnamese developers.",
-                "sdkTools": {
-                    "title": "Lotus Bridge SDK",
-                    "description": "Comprehensive development kit with Vietnamese documentation",
-                    "features": {
-                        "typescript": "TypeScript/JavaScript",
-                        "python": "Python bindings",
-                        "smartContract": "Smart contract libraries"
-                    }
-                }
-            },
-            "vietnameseDeveloperProgram": {
-                "features": {
-                    "grants": {
-                        "title": "Grant Program",
-                        "description": "Funding for innovative projects building on Lotus Bridge",
-                        "features": {
-                            "funding": "Up to $50K grants"
-                        }
-                    },
-                    "mentorship": {
-                        "title": "Mentorship",
-                        "description": "Connect with experienced Vietnamese blockchain entrepreneurs"
-                    },
-                    "incubation": {
-                        "title": "Go-to-market support"
-                    }
-                }
-            },
-            "community": {
-                "title": "Builder Community",
-                "description": "Vietnamese developer community with local language support",
-                "features": {
-                    "discordChannels": "Discord channels",
-                    "localMeetups": "Local meetups",
-                    "hackathonEvents": "Hackathon events"
-                },
-                "forums": {
-                    "title": "Technical Forums",
-                    "description": "Technical discussion and Q&A"
-                },
-                "hackathons": {
-                    "title": "Hackathons",
-                    "description": "Competitive development events with attractive prizes"
-                },
-                "openSource": {
-                    "title": "Open Source",
-                    "description": "Contribute to Vietnamese blockchain tooling and libraries"
-                }
-            },
-            "gettingStarted": {
-                "title": "🚀 Start Building Today",
-                "description": "Ready to leverage Lotus Bridge protocol for your next breakthrough project?",
-                "builderDocumentation": {
-                    "title": "📚 Builder Documentation",
-                    "description": "Complete guides for smart contract integration and dApp development"
-                },
-                "grantOpportunities": {
-                    "title": "💰 Grant Opportunities",
-                    "description": "Funding and support for innovative Vietnamese blockchain projects"
-                },
-                "partnershipProgram": {
-                    "title": "🤝 Partnership Program",
-                    "description": "Strategic partnerships for promising startups and projects"
-                },
-                "marketAccess": {
-                    "title": "🎯 Market Access",
-                    "description": "Direct access to Vietnamese crypto market and user base"
-                }
-            },
-            "navigation": {
-                "backToUsers": "For Users",
-                "backToOverview": "Back to Overview",
-                "continueToLiquidity": "For Liquidity Providers"
-            }
-        },
-        "benefitsVietnam": {
-            "hero": {
-                "badge": "🇻🇳 Vietnam's Crypto Industry",
-                "title": "Benefits for Vietnam's Crypto Industry",
-                "description": "Positioning Vietnam as a global leader in blockchain innovation while empowering local talent and showcasing Vietnamese excellence to the world."
-            },
-            "industryBenefits": {
-                "web3Innovation": {
-                    "title": "Position Vietnam as a Web3 Innovation Hub",
-                    "description": "Establish Vietnam as a leading force in blockchain interoperability and cross-chain innovation on the global stage.",
-                    "features": {
-                        "globalRecognition": "Global recognition for Vietnamese tech innovation",
-                        "internationalInvestment": "Attraction of international blockchain investments",
-                        "localTalent": "Development of local Web3 talent and expertise",
-                        "vietnameseApproach": "Vietnam-first approach to blockchain solutions",
-                        "culturalValues": "Cultural values integrated into technology"
-                    }
-                },
-                "globalShowcase": {
-                    "title": "Showcase Local Tokens on the Global Stage",
-                    "description": "Bring Vietnamese tokens and projects into the global DeFi ecosystem, increasing their visibility and adoption worldwide.",
-                    "features": {
-                        "axsSlpExpansion": "AXS and SLP global market expansion",
-                        "stablecoinRecognition": "VNDC and VNST international recognition",
-                        "kardiachainGlobalization": "KardiaChain ecosystem globalization",
-                        "gamingTokensAccess": "Vietnamese gaming tokens worldwide access",
-                        "projectFunding": "Local project international funding"
-                    }
-                },
-                "talentEmpowerment": {
-                    "title": "Empower Local Developers and Entrepreneurs",
-                    "description": "Create opportunities for Vietnamese talent to build world-class blockchain applications and businesses.",
-                    "features": {
-                        "jobOpportunities": "Vietnamese developer job opportunities",
-                        "startupGrowth": "Startup ecosystem growth",
-                        "blockchainEducation": "Local blockchain education initiatives",
-                        "mentorshipPrograms": "Mentorship and incubation programs",
-                        "vietnameseDocumentation": "Technical documentation in Vietnamese"
-                    }
-                }
-            },
-            "initiatives": {
-                "title": "🌸 Strategic Initiatives",
-                "description": "Comprehensive programs to support Vietnam's blockchain ecosystem development.",
-                "education": {
-                    "title": "🎓 Vietnamese Blockchain Education Program",
-                    "description": "Comprehensive educational initiatives to build local blockchain expertise",
-                    "features": {
-                        "universityPartnerships": "University partnerships for blockchain courses",
-                        "certificationPrograms": "Vietnamese-language certification programs",
-                        "bootcamps": "Developer bootcamps and workshops",
-                        "researchCollaborations": "Research collaborations with local institutions"
-                    }
-                },
-                "incubator": {
-                    "title": "🚀 Vietnam Web3 Startup Incubator",
-                    "description": "Supporting Vietnamese entrepreneurs in building blockchain businesses",
-                    "features": {
-                        "seedFunding": "Seed funding for Vietnamese blockchain startups",
-                        "expertMentorship": "Mentorship from global Web3 experts",
-                        "investorNetworks": "Access to international investor networks",
-                        "businessDevelopment": "Vietnamese market-focused business development"
-                    }
-                },
-                "conference": {
-                    "title": "🌐 Global Vietnam Blockchain Conference",
-                    "description": "Annual conference showcasing Vietnamese blockchain innovation",
-                    "features": {
-                        "internationalSpeakers": "International speaker lineup",
-                        "projectShowcases": "Vietnamese project showcases",
-                        "investmentPartnerships": "Global investment partnerships",
-                        "culturalExchange": "Cultural exchange and networking"
-                    }
-                }
-            },
-            "callToAction": {
-                "title": "🚀 Join the Vietnamese Blockchain Revolution",
-                "subtitle": "Together, let's build the future of technology and innovation",
-                "description": "Lotus Bridge is more than just a protocol—it's an opportunity to position Vietnam as a leader in global Web3 innovation. Join us on this journey."
-            },
-            "navigation": {
-                "backToLiquidity": "For Liquidity Providers",
-                "backToOverview": "Back to Overview",
-                "continueToSecurity": "Continue to Security"
-            }
-        },
-        "benefitsLiquidity": {
-            "hero": {
-                "badge": "💰 Liquidity Provider Benefits",
-                "title": "Benefits for Liquidity Providers",
-                "description": "Unlock new yield opportunities by providing liquidity to the Vietnamese blockchain ecosystem's first universal cross-chain bridge."
-            },
-            "liquidityOpportunities": {
-                "title": "Opportunities For New Liquidity Pools",
-                "description": "Cross-chain communication and cross-chain asset transfers being a foundation for creating new liquidity pools, enabling users to earn yields on diverse assets.",
-                "features": {
-                    "realUtilityDemand": "Real utility-driven demand",
-                    "crossChainArbitrage": "Cross-chain arbitrage opportunities",
-                    "vietnameseTokenPairs": "Vietnamese token pair liquidity",
-                    "gamingEcosystemIntegration": "Gaming ecosystem integration",
-                    "stableRevenue": "Stable revenue from bridge fees"
-                }
-            },
-            "multiEcosystemExposure": {
-                "title": "Exposure to Multiple Ecosystems",
-                "description": "Diversify your liquidity provision across multiple blockchain ecosystems through a single, unified bridge protocol.",
-                "features": {
-                    "multiChainPortfolio": "Multi-chain portfolio exposure",
-                    "reducedConcentrationRisk": "Reduced concentration risk",
-                    "vietnameseGamingTokens": "Access to Vietnamese gaming tokens",
-                    "crossEcosystemArbitrage": "Cross-ecosystem arbitrage",
-                    "balancedRiskDistribution": "Balanced risk distribution"
-                }
-            },
-            "dynamicFeeStructures": {
-                "title": "Dynamic Fee Structures and Yield Incentives",
-                "description": "Benefit from intelligent fee optimization and additional yield incentives designed to maximize liquidity provider returns.",
-                "features": {
-                    "dynamicFeeAdjustment": "Dynamic fee adjustment",
-                    "volumeBasedIncentives": "Volume-based incentives",
-                    "vietnameseMarketBonuses": "Vietnamese market bonuses",
-                    "longTermStakingRewards": "Long-term staking rewards",
-                    "governanceTokenDistribution": "Governance token distribution"
-                }
-            },
-            "poolTypes": {
-                "title": "Liquidity Pool Opportunities",
-                "gaming": {
-                    "name": "🎮 Gaming Token Pools",
-                    "description": "AXS/ETH, SLP/USDC cross-chain pairs",
-                    "apr": "15-25%",
-                    "risk": "Medium",
-                    "demand": "High",
-                    "tokens": [
-                        "AXS",
-                        "SLP",
-                        "RON",
-                        "ETH",
-                        "USDC"
-                    ]
-                },
-                "stablecoin": {
-                    "name": "🇻🇳 Vietnamese Stablecoin Pools",
-                    "description": "VNDC/VNST cross-chain liquidity",
-                    "apr": "8-12%",
-                    "risk": "Low",
-                    "demand": "Stable",
-                    "tokens": [
-                        "VNDC",
-                        "VNST",
-                        "USDT",
-                        "USDC"
-                    ]
-                },
-                "bridge": {
-                    "name": "⚡ Cross-Chain Bridge Pools",
-                    "description": "ETH/SOL, BNB/MATIC bridge liquidity",
-                    "apr": "20-35%",
-                    "risk": "High",
-                    "demand": "Very High",
-                    "tokens": [
-                        "ETH",
-                        "SOL",
-                        "BNB",
-                        "MATIC",
-                        "AVAX"
-                    ]
-                },
-                "innovation": {
-                    "name": "🚀 Vietnamese Innovation Pools",
-                    "description": "KAI/C98, KNC cross-ecosystem pairs",
-                    "apr": "18-28%",
-                    "risk": "Medium-High",
-                    "demand": "Growing",
-                    "tokens": [
-                        "KAI",
-                        "C98",
-                        "KNC",
-                        "SIPHER"
-                    ]
-                }
-            },
-            "gettingStarted": {
-                "title": "Getting Started as a Liquidity Provider",
-                "step1": {
-                    "title": "1. Choose Your Pool",
-                    "description": "Select from gaming, stablecoin, bridge, or innovation pools based on your risk tolerance"
-                },
-                "step2": {
-                    "title": "2. Provide Liquidity",
-                    "description": "Deposit your tokens into the selected liquidity pool"
-                },
-                "step3": {
-                    "title": "3. Earn Rewards",
-                    "description": "Start earning fees and additional yield incentives immediately"
-                }
-            },
-            "navigation": {
-                "backToDevelopers": "For Builders",
-                "backToOverview": "Back to Overview",
-                "continueToVietnam": "For Vietnam's Industry"
-            }
-        },
-        "coreOverview": {
-            "badge": "⚡ Core Capabilities",
-            "title": "Overview",
-            "subtitle": "Discover what Lotus Bridge enables and how it revolutionizes cross-chain interactions with Vietnamese token support.",
-            "coreCapabilities": {
-                "title": "What Lotus Bridge Enables",
-                "description": "Core capabilities that transform cross-chain interactions",
-                "content": "Lotus Bridge enables a comprehensive suite of cross-chain capabilities designed to make blockchain interoperability seamless, secure, and accessible to Vietnamese and global users alike."
-            },
-            "tokenBridging": {
-                "title": "Token Bridging",
-                "description": "Seamless cross-chain asset transfers",
-                "explanation": "Token bridging between heterogeneous blockchains (e.g., Ethereum ↔ Solana).",
-                "example": "Move VNST from BSC to TON to access lower fees and faster transactions while maintaining full asset control.",
-                "features": [
-                    "Architecture-agnostic bridging",
-                    "Secure custody mechanisms",
-                    "Real-time transaction tracking"
-                ]
-            },
-            "crossChainSwaps": {
-                "title": "Cross-Chain Swaps",
-                "description": "Direct token exchanges across networks",
-                "explanation": "Asset swaps within the same chain or across different chains.",
-                "example": "Instantly swap AXS on Ronin for ETH on Ethereum, accessing global liquidity from Vietnamese gaming tokens.",
-                "features": [
-                    "Best-rate routing algorithms",
-                    "Minimal slippage optimization",
-                    "Atomic swap guarantees"
-                ]
-            },
-            "multiWalletManagement": {
-                "title": "Multi-Wallet Management",
-                "description": "Unified interface for multiple wallets",
-                "explanation": "Multi-wallet connection and management with address mapping across architectures.",
-                "supportedWallets": {
-                    "metamask": "🦊 MetaMask",
-                    "phantom": "👻 Phantom",
-                    "trustWallet": "🛡️ Trust Wallet",
-                    "walletConnect": "🔗 WalletConnect"
-                },
-                "features": [
-                    "Portfolio tracking across chains",
-                    "Cross-chain address mapping",
-                    "Unified wallet interface"
-                ]
-            },
-            "flexibleTransactions": {
-                "title": "Flexible Transactions",
-                "description": "Advanced transaction capabilities",
-                "features": [
-                    "Send to same or different addresses",
-                    "Multi-recipient transactions",
-                    "Scheduled transactions",
-                    "Gas optimization"
-                ]
-            },
-            "liquidityAggregation": {
-                "title": "Liquidity Aggregation",
-                "description": "Access to global liquidity pools",
-                "features": [
-                    "Multi-DEX aggregation",
-                    "Optimal pricing algorithms",
-                    "Liquidity optimization",
-                    "Real-time price discovery"
-                ]
-            },
-            "vietnameseTokenIntegration": {
-                "title": "Vietnamese Token Integration",
-                "description": "Native support for Vietnamese tokens often neglected by other platforms",
-                "gamingEcosystem": {
-                    "title": "Gaming Ecosystem",
-                    "tokens": {
-                        "axs": "Axie Infinity",
-                        "slp": "Smooth Love Potion",
-                        "sipher": "Sipher Token",
-                        "a8": "A8 Token"
-                    }
-                },
-                "defiStablecoins": {
-                    "title": "DeFi & Stablecoins",
-                    "tokens": {
-                        "vndc": "Vietnamese Dong Coin",
-                        "vnst": "VN Stable Token",
-                        "c98": "Coin98",
-                        "knc": "Kyber Network Crystal"
-                    }
-                },
-                "infrastructureTokens": {
-                    "title": "Infrastructure & Utility",
-                    "tokens": {
-                        "kai": "KardiaChain"
-                    }
-                }
-            },
-            "navigation": {
-                "backToCoreConcept": "Back to Core Concept",
-                "continueToArchitecture": "Continue to Architecture"
-            }
-        },
-        "coreConcept": {
-            "badge": "🔧 Technical Foundation",
-            "title": "Core Concept & Philosophy",
-            "subtitle": "Deep dive into the technical architecture and innovative concepts that power Lotus Bridge.",
-            "technicalInnovation": {
-                "title": "Technical Innovation",
-                "description": "Explore the foundational concepts that make Lotus Bridge possible",
-                "content": "Lotus Bridge's core concept revolves around creating a truly universal adapter that transcends the limitations of existing bridge solutions. Our modular architecture enables seamless interoperability across any blockchain network."
-            },
-            "navigation": {
-                "overview": {
-                    "title": "Overview",
-                    "description": "Core capabilities and features",
-                    "content": "Discover what Lotus Bridge enables and how it revolutionizes cross-chain interactions with Vietnamese token support.",
-                    "features": {
-                        "tokenBridging": "Token bridging capabilities",
-                        "crossChainSwaps": "Cross-chain asset swaps",
-                        "multiWallet": "Multi-wallet management",
-                        "vietnameseIntegration": "Vietnamese token integration"
-                    },
-                    "button": "Explore Capabilities"
-                },
-                "architecture": {
-                    "title": "Architecture",
-                    "description": "Modular design and components",
-                    "content": "Understand the five-layer modular architecture that enables Lotus Bridge's universal adaptability and robust security.",
-                    "features": {
-                        "networkAdapter": "Network Adapter Layer",
-                        "bridgeOrchestration": "Bridge Orchestration Layer",
-                        "walletManagement": "Wallet Management Layer",
-                        "localization": "Localization Layer",
-                        "securityValidation": "Security & Validation Layer"
-                    },
-                    "button": "Study Architecture"
-                },
-                "governance": {
-                    "title": "Governance",
-                    "description": "Future governance protocol",
-                    "content": "Learn about the planned Lotus Bridge Governance protocol that will help preventing and stopping malicious activities while enhancing community participation.",
-                    "futureUpdate": "Coming in future update",
-                    "features": {
-                        "governanceSystem": "Governance System",
-                        "communityVoting": "Community voting mechanisms",
-                        "transparentDecision": "Transparent decision making",
-                        "vietnameseParticipation": "Vietnamese stakeholder participation"
-                    },
-                    "button": "Learn About Governance"
-                }
-            },
-            "keyInnovations": {
-                "title": "🚀 Key Innovations",
-                "description": "What makes Lotus Bridge unique in the cross-chain ecosystem",
-                "universalAdaptability": {
-                    "title": "Universal Adaptability",
-                    "features": {
-                        "architectureAgnostic": "Architecture-agnostic bridging (Ethereum ↔ Solana)",
-                        "dynamicAdaptation": "Dynamic adaptation to network capabilities",
-                        "futureProof": "Future-proof scalability design"
-                    }
-                },
-                "vietnameseFocus": {
-                    "title": "Vietnamese Focus",
-                    "features": {
-                        "nativeSupport": "Native support for Vietnamese tokens",
-                        "localizedUX": "Localized user experience design",
-                        "regionalUnderstanding": "Regional market understanding",
-                        "governanceEmergency": "Governance system for emergency scenarios"
-                    }
-                }
-            },
-            "navigationSection": {
-                "backToBackground": "Back to Background",
-                "exploreApplications": "Explore practical applications",
-                "discoverUseCases": "Discover real-world use cases and scenarios",
-                "continueToOverview": "Continue to Core Overview"
-            }
+        "swaps": {
+          "title": "Cross-Chain Swaps",
+          "description": "Direct token exchanges across networks",
+          "details": "Swap assets within the same chain or across different chains using optimized routing algorithms.",
+          "example": {
+            "title": "Cross-Chain Swap Example",
+            "description": "Instantly swap AXS on Ronin for ETH on Ethereum, accessing global liquidity from Vietnamese gaming tokens."
+          },
+          "features": {
+            "bestRateRouting": "Best-rate routing algorithms across multiple DEXes",
+            "minimalSlippage": "Optimized for minimal slippage on large trades",
+            "atomicSwapGuarantees": "Atomic swap guarantees – either fully succeeds or fully reverts"
+          }
         }
+      },
+      "multiWallet": {
+        "title": "Multi-Wallet Management",
+        "description": "Unified interface for multiple wallets",
+        "details": "Connect and manage multiple wallets across different architectures",
+        "addressMapping": "with seamless address mapping and unified portfolio tracking.",
+        "support": {
+          "title": "Popular Wallet Support",
+          "subtitle": "Here are some popular wallets we recommend — many others are also supported!",
+          "additional": "+ Many more wallets supported via WalletConnect protocol"
+        }
+      },
+      "flexibleTransactions": {
+        "title": "Flexible Transactions",
+        "description": "Advanced trading capabilities and smart routing",
+        "details": "Transactions between the same address or different user addresses",
+        "routingOptions": "with advanced routing options to optimize cost and speed.",
+        "types": {
+          "title": "Transaction Types",
+          "walletToWallet": "Wallet-to-Wallet (same address)",
+          "crossAddress": "Cross-Address Transfer",
+          "crossChainBridge": "Cross-Chain Bridge",
+          "crossChainSwap": "Cross-Chain Swap"
+        }
+      },
+      "vietnameseTokens": {
+        "title": "Vietnamese Token Support",
+        "description": "Native support for the Vietnamese token ecosystem",
+        "localization": "Localization and native support for Vietnamese tokens",
+        "priorityOptimization": "with priority optimization for routing, liquidity access, and fee structures.",
+        "categories": {
+          "gaming": {
+            "title": "Gaming Ecosystem"
+          },
+          "stablecoins": {
+            "title": "Vietnamese Stablecoins"
+          },
+          "defi": {
+            "title": "DeFi Infrastructure"
+          }
+        },
+        "prioritySupport": {
+          "title": "Priority Support",
+          "description": "Vietnamese tokens receive prioritized optimization for routing, liquidity access, and fee structures, ensuring the best possible user experience locally while facilitating global market access."
+        }
+      },
+      "navigation": {
+        "backToConcept": "Back to Core Concepts",
+        "explore": {
+          "title": "Explore Architecture",
+          "description": "Learn how our modular design enables these capabilities"
+        },
+        "continueToArchitecture": "Continue to Architecture"
+      }
+    },
+    "architecture": {
+      "badge": "🏗️ System Architecture",
+      "title": "Lotus Bridge Architecture",
+      "subtitle": "Detailed architecture documentation and diagrams coming soon.",
+      "documentationTitle": "Architecture Documentation",
+      "documentationDescription": "We are currently preparing comprehensive architecture diagrams and technical documentation. This section will cover detailed system architecture, component interactions, and specifications.",
+      "technicalArchitecture": "Technical Architecture Overview",
+      "architectureDescription": "Modular system design for maximum flexibility and scalability",
+      "networkAdapterLayer": "Network Adapter Layer",
+      "networkAdapterDescription": "Blockchain protocol interface",
+      "bridgeOrchestrationLayer": "Bridge Orchestration Layer",
+      "bridgeOrchestrationDescription": "Transaction coordination logic",
+      "walletManagementLayer": "Wallet Management Layer",
+      "walletManagementDescription": "Multi-wallet connectivity",
+      "localizationLayer": "Localization Layer",
+      "localizationDescription": "Vietnamese ecosystem integration",
+      "securityValidationLayer": "Security & Validation Layer",
+      "securityValidationDescription": "Decentralized security mechanisms",
+      "underDevelopment": "Under development – Stay tuned!"
+    },
+    "governance": {
+      "title": "Governance",
+      "subtitle": "Community-driven governance model with Vietnamese stakeholder involvement and transparent decision-making processes.",
+      "badge": "🏛️ Governance Framework",
+      "lotusGovernance": "Lotus Bridge Governance",
+      "governanceDescription": "A decentralized governance framework designed for Vietnam’s market needs and global blockchain interoperability.",
+      "underDevelopment": "🚧 Under Development",
+      "underDevelopmentDescription": "The Lotus Bridge governance framework is actively being developed. This section will be completed in a future update.",
+      "innovativeGovernance": "Our team is working on innovative governance solutions that will provide:",
+      "decentralizedGovernanceTitle": "Decentralized Governance",
+      "decentralizedGovernanceDescription": "Community-driven governance mechanism with Vietnamese stakeholder participation",
+      "efficientDecisionMaking": "Efficient Decision-Making",
+      "efficientDecisionDescription": "Streamlined proposal and voting system for rapid protocol evolution",
+      "transparentProcesses": "Transparent Processes",
+      "transparentProcessesDescription": "Open and auditable governance procedures with clear accountability",
+      "vietnameseCommunityFocus": "Vietnamese Community Focus",
+      "vietnameseCommunityDescription": "Representation of the local community with global interaction standards",
+      "developmentTimeline": "🌸 Development Timeline",
+      "timelineDescription": "Stay tuned for updates on our governance framework development as we build the future of blockchain interoperability in Vietnam.",
+      "q3_2025": "Q3 2025",
+      "researchDesign": "Research & Design",
+      "researchDescription": "Governance framework research and analysis of Vietnam market requirements",
+      "q4_2025": "Q4 2025",
+      "developmentTesting": "Development & Testing",
+      "developmentDescription": "Implementation of governance protocols with feedback from Vietnamese stakeholders",
+      "q1_2026": "Q1 2026",
+      "mainnetLaunch": "Mainnet Launch",
+      "mainnetDescription": "Full governance framework deployment with Vietnamese token integration",
+      "joinDevelopment": "🇻🇳 Join the Development",
+      "joinDevelopmentDescription": "Interested in contributing to Lotus Bridge governance development?",
+      "vietnameseDevelopers": "We welcome Vietnamese developers, researchers, and blockchain enthusiasts to help shape our governance framework.",
+      "contactTeam": "Contact the Development Team",
+      "backToCoreConcept": "Back to Core Concepts"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions & Glossary",
+      "subtitle": "Find answers to the most common questions about Lotus Bridge",
+      "helpCenter": "Help Center",
+      "faqsDescription": "Find answers to the most frequently asked questions about Lotus Bridge",
+      "general": "General",
+      "technical": "Technical",
+      "security": "Security",
+      "fees": "Fees",
+      "vietnamese": "Vietnam",
+      "support": "Support",
+      "generalQuestions": "General Questions",
+      "generalDescription": "Common questions about Lotus Bridge",
+      "technicalQuestions": "Technical Questions",
+      "technicalDescription": "Technical details and implementation",
+      "securityQuestions": "Security Questions",
+      "securityDescription": "Security measures and asset protection",
+      "feesAndCosts": "Fees & Costs",
+      "feesDescription": "Understanding bridge fees and gas costs",
+      "vietnameseCommunity": "Vietnamese Community",
+      "vietnameseDescription": "Questions specific to Vietnamese users and market",
+      "supportAndHelp": "Support & Help",
+      "supportDescription": "Get assistance when you need it",
+      "stillHaveQuestions": "Still have questions?",
+      "communitySupport": "Our community and support team are ready to help",
+      "discordCommunity": "Discord Community",
+      "discordDescription": "Join 5,000+ users for real-time support",
+      "vietnameseSupport": "Vietnamese Support",
+      "vietnameseSupportDescription": "Native language support available",
+      "developerDocs": "Developer Documentation",
+      "developerDocsDescription": "Comprehensive technical documentation"
+    },
+    "security": {
+      "badge": "🛡️ Security Framework",
+      "subtitle": "Multi-layered security approach protecting user assets and network integrity with Vietnamese innovation at its core.",
+      "documentationTitle": "Security Documentation",
+      "documentationDescription": "Comprehensive security framework documentation coming soon"
+    },
+    "tokenomics": {
+      "badge": "💰 Tokenomics",
+      "subtitle": "Sustainable token economics designed to incentivize network growth, reward contributors, and support the Vietnamese ecosystem development.",
+      "underDevelopment": "🚧 Under Development",
+      "underDevelopmentDescription": "The Lotus Bridge tokenomics model is currently being finalized. This section will be completed in a future update.",
+      "economicsTeam": "Our economics team is designing a sustainable model that will provide:",
+      "validatorIncentives": "Validator Incentives",
+      "validatorDescription": "Sustainable rewards for network validators and Vietnamese node operators",
+      "communityRewards": "Community Rewards",
+      "communityDescription": "Incentives for liquidity mining and governance participation",
+      "developmentFund": "Development Fund",
+      "developmentDescription": "Budget allocation for continuous protocol development",
+      "feeStructure": "Fee Structure",
+      "feeDescription": "Transparent and competitive fee model for cross-chain transactions",
+      "distributionPreview": "🌸 Distribution Preview",
+      "distributionDescription": "Preliminary token allocation focused on Vietnamese community development and long-term sustainability.",
+      "community40": "Community (40%)",
+      "communityLiquidity": "Vietnamese Users & Liquidity",
+      "communityAllocation": "Allocated for Vietnamese community growth, liquidity incentives, and early user rewards",
+      "development25": "Development (25%)",
+      "teamDevelopment": "Team & Future Development",
+      "developmentAllocation": "Reserved for core team, advisors, and ongoing protocol development with vesting schedule",
+      "ecosystem35": "Ecosystem (35%)",
+      "validatorsPartnerships": "Validators & Partnerships",
+      "ecosystemAllocation": "For validator rewards, strategic partners, and ecosystem growth initiatives",
+      "vietnameseFirstEconomics": "🇻🇳 Vietnam-First Economics",
+      "interestedTokenomics": "Interested in contributing to our tokenomics development?",
+      "tokenomicsDesign": "We are designing a tokenomics model prioritizing Vietnamese community growth while ensuring global competitiveness and sustainability.",
+      "joinTokenomicsDiscussion": "Join the Tokenomics Discussion",
+      "backToCoreConcept": "Back to Core Concepts"
+    },
+    "ecosystemBenefits": {
+      "hero": {
+        "badge": "Ecosystem Impact",
+        "title": "Ecosystem Benefits",
+        "description": "Explore how Lotus Bridge creates value for all stakeholders in the blockchain ecosystem."
+      },
+      "overview": {
+        "title": "Building Value for Everyone",
+        "description": "Lotus Bridge creates a comprehensive ecosystem where all participants benefit",
+        "content": "From individual users to large organizations, from developers to entire nations, Lotus Bridge is designed to generate value at every level of the blockchain ecosystem."
+      },
+      "stakeholders": {
+        "users": {
+          "title": "For Users",
+          "description": "Simple access and enhanced capabilities",
+          "content": "Lotus Bridge transforms the user experience by providing easy access to global DeFi with a local-first design and Vietnamese token support.",
+          "features": {
+            "simplifiedAccess": "Simplified access to global DeFi",
+            "localFirstDesign": "Local-first design with Vietnamese tokens",
+            "flexibleRouting": "Flexible transaction routing",
+            "multiWalletManagement": "Multi-wallet management"
+          },
+          "buttonText": "Explore User Benefits"
+        },
+        "builders": {
+          "title": "For Builders",
+          "description": "Tools and resources for innovation",
+          "content": "Leverage the Lotus Bridge protocol to build innovative smart contracts, create revolutionary dApps, and launch successful startups within the Vietnamese blockchain ecosystem.",
+          "features": {
+            "smartContractIntegration": "Smart contract integration opportunities",
+            "dappDevelopment": "Thriving dApp development ecosystem",
+            "defiInnovation": "DeFi innovation opportunities",
+            "startupSupport": "Funding and support programs for startups"
+          },
+          "buttonText": "Explore Builder Opportunities"
+        },
+        "liquidity": {
+          "title": "For Liquidity Providers",
+          "description": "New opportunities and profit generation",
+          "content": "Access new liquidity pools tied to real-world use cases with exposure to multiple ecosystems through a single bridge.",
+          "features": {
+            "newPools": "New liquidity pools linked to practical use cases",
+            "multiEcosystem": "Multi-ecosystem exposure",
+            "dynamicFees": "Dynamic fee structures",
+            "yieldIncentives": "Incentives and yield rewards"
+          },
+          "buttonText": "Learn About LP Benefits"
+        },
+        "vietnam": {
+          "title": "For Vietnam’s Crypto Industry",
+          "description": "National innovation and global recognition",
+          "content": "Position Vietnam as a Web3 innovation hub while showcasing local tokens on the global stage and empowering local developers.",
+          "features": {
+            "innovationHub": "Vietnam as a Web3 innovation hub",
+            "globalShowcase": "Global showcase of local tokens",
+            "developerEmpowerment": "Empowering developers and entrepreneurs",
+            "economicGrowth": "Economic growth through technology"
+          },
+          "buttonText": "Vietnam’s Web3 Future"
+        }
+      },
+      "networkEffect": {
+        "title": "Network Effects",
+        "description": "How benefits amplify across the ecosystem",
+        "content": "The beauty of Lotus Bridge lies in how benefits to one group amplify benefits for others, creating powerful network effects that strengthen the entire ecosystem.",
+        "positiveFeedback": {
+          "title": "Positive Feedback Loop",
+          "items": {
+            "userLiquidity": "More users → More liquidity → Better rates for everyone",
+            "developerAdoption": "More developers → More apps → More users",
+            "liquidityStability": "More LPs → Deeper liquidity → More stable operations"
+          }
+        },
+        "globalImpact": {
+          "title": "Global Impact",
+          "items": {
+            "vietnameseInnovation": "Vietnamese innovation inspiring global adoption",
+            "culturalBridge": "Building cultural bridges through technology",
+            "regionalEmpowerment": "Empowering regions while meeting global standards"
+          }
+        }
+      },
+      "navigation": {
+        "backToGovernance": "Back to Governance",
+        "questions": {
+          "title": "Have Questions?",
+          "description": "Check out our comprehensive FAQ section"
+        },
+        "continueToFaqs": "Continue to FAQ"
+      }
+    },
+    "benefitsLiquidity": {
+      "hero": {
+        "badge": "💰 Liquidity Provider Benefits",
+        "title": "Benefits for Liquidity Providers",
+        "description": "Unlock new yield opportunities by providing liquidity to the Vietnamese blockchain ecosystem's first universal cross-chain bridge."
+      },
+      "benefits": {
+        "opportunities": {
+          "title": "Opportunities for New Liquidity Pools",
+          "description": "Cross-chain communication and asset transfer form the foundation for creating new liquidity pools, enabling users to earn yield from diverse assets.",
+          "features": {
+            "realUtility": "Real demand from practical utility",
+            "arbitrageOpportunities": "Cross-chain arbitrage opportunities",
+            "vietnameseTokenLiquidity": "Liquidity for Vietnamese token pairs",
+            "gamingIntegration": "Integration with gaming ecosystems",
+            "stableRevenue": "Stable revenue from bridge fees"
+          }
+        },
+        "exposure": {
+          "title": "Exposure to Multiple Ecosystems",
+          "description": "Diversify your liquidity provision across multiple blockchain ecosystems through a unified bridge protocol.",
+          "features": {
+            "multiChainPortfolio": "Multi-chain portfolio exposure",
+            "reducedRisk": "Reduced concentration risk",
+            "vietnameseGamingTokens": "Access to Vietnamese gaming tokens",
+            "crossEcosystemArbitrage": "Cross-ecosystem cross-chain arbitrage",
+            "balancedRiskDistribution": "Balanced risk distribution"
+          }
+        },
+        "dynamicFees": {
+          "title": "Dynamic Fee Structure and Yield Incentives",
+          "description": "Benefit from smart fee optimization and additional yield incentives designed to maximize returns for liquidity providers.",
+          "features": {
+            "dynamicAdjustment": "Dynamic fee adjustment",
+            "volumeIncentives": "Volume-based incentives",
+            "vietnameseMarketBonus": "Vietnamese market bonus",
+            "longTermStaking": "Long-term staking rewards",
+            "governanceDistribution": "Governance token distribution"
+          }
+        }
+      },
+      "poolTypes": {
+        "title": "Liquidity Pool Opportunities",
+        "description": "Diverse pool options catering to different risk appetites and focused on Vietnamese market opportunities.",
+        "gaming": {
+          "name": "🎮 Gaming Token Pools",
+          "description": "AXS/ETH, SLP/USDC cross-chain pairs",
+          "apr": "15-25%",
+          "risk": "Medium",
+          "demand": "High"
+        },
+        "stablecoins": {
+          "name": "Vietnamese Stablecoin Pool",
+          "description": "Cross-chain liquidity for VNDC/VNST",
+          "apr": "8-12%",
+          "risk": "Low",
+          "demand": "Stable"
+        },
+        "bridge": {
+          "name": "⚡ Cross-Chain Bridge Pools",
+          "description": "ETH/SOL, BNB/MATIC bridge liquidity",
+          "apr": "20-35%",
+          "risk": "High",
+          "demand": "Very High"
+        },
+        "innovation": {
+          "name": "🚀 Vietnamese Innovation Pools",
+          "description": "KAI/C98, KNC cross-ecosystem pairs",
+          "apr": "18-28%",
+          "risk": "Medium-High",
+          "demand": "Growing"
+        }
+      },
+      "yieldOptimization": {
+        "title": "Yield Optimization",
+        "description": "Advanced mechanisms to maximize returns for liquidity providers in the Vietnamese blockchain ecosystem.",
+        "smartRebalancing": {
+          "title": "Smart Rebalancing",
+          "description": "Automated pool rebalancing based on Vietnamese market conditions and cross-chain demand patterns.",
+          "features": {
+            "tradingHours": "Optimization for Vietnamese trading hours",
+            "gamingCycles": "Gaming token demand cycles",
+            "arbitrageTiming": "Cross-chain arbitrage timing"
+          }
+        },
+        "dynamicFees": {
+          "title": "Dynamic Fees",
+          "description": "Fee structures adapting to Vietnamese market volatility and cross-chain trading volume.",
+          "features": {
+            "volumeScaling": "Volume-based fee scaling",
+            "peakDemandSurcharges": "Peak demand surcharges",
+            "holidayAdjustments": "Vietnamese holiday adjustments"
+          }
+        },
+        "bonusRewards": {
+          "title": "Bonus Rewards",
+          "description": "Additional incentives to support Vietnamese blockchain innovation and ecosystem growth.",
+          "features": {
+            "vietnameseTokenBonus": "Vietnamese token bonuses",
+            "loyaltyRewards": "Long-term loyalty rewards",
+            "governanceTokens": "Community governance tokens"
+          }
+        }
+      },
+      "gettingStarted": {
+        "title": "Getting Started with Liquidity Provision",
+        "description": "Join Vietnam’s blockchain revolution and earn competitive yields",
+        "features": {
+          "premiumApr": {
+            "title": "Premium APR",
+            "description": "Competitive returns on Vietnamese and cross-chain pairs"
+          },
+          "secureProtocol": {
+            "title": "Secure Protocol",
+            "description": "Multi-layer security with a focus on the Vietnamese market"
+          },
+          "realTimeAnalytics": {
+            "title": "Real-Time Analytics",
+            "description": "Comprehensive dashboard with Vietnamese language support"
+          },
+          "targetedOpportunities": {
+            "title": "Targeted Opportunities",
+            "description": "Pools designed for the Vietnamese gaming and DeFi ecosystem"
+          }
+        }
+      },
+      "navigation": {
+        "backToDevelopers": "For Builders",
+        "backToOverview": "Back to Overview",
+        "continueToVietnam": "For Vietnam's Industry"
+      }
+    },
+    "benefitsDevelopers": {
+      "hero": {
+        "badge": "🏗️ Builder Opportunities",
+        "title": "Benefits for Builders",
+        "description": "Leverage Lotus Bridge protocol to build innovative smart contracts, create revolutionary dApps, unlock new DeFi opportunities, and launch successful startups in the Vietnamese blockchain ecosystem."
+      },
+      "builderOpportunities": {
+        "title": "🚀 Building Opportunities",
+        "description": "Discover how to leverage Lotus Bridge protocol to create innovative solutions for the Vietnamese blockchain ecosystem.",
+        "smartContract": {
+          "title": "Smart Contract Integration Opportunities",
+          "description": "Build innovative smart contracts that leverage Lotus Bridge protocol for cross-chain functionality and Vietnamese token integration.",
+          "features": {
+            "crossChainDefi": "Cross-chain DeFi protocols",
+            "gamingTokenUtilities": "Vietnamese gaming token utilities",
+            "yieldFarming": "Multi-chain yield farming contracts",
+            "paymentSolutions": "Cross-border payment solutions",
+            "nftIntegration": "NFT marketplace integration"
+          }
+        },
+        "dappDevelopment": {
+          "title": "dApp Development Ecosystem",
+          "description": "Create revolutionary decentralized applications using Lotus Bridge as the backbone for seamless cross-chain user experiences.",
+          "features": {
+            "vietnameseFirst": "Vietnamese-first dApp experiences",
+            "gamingApplications": "Gaming ecosystem applications",
+            "portfolioManagers": "Cross-chain portfolio managers",
+            "remittancePlatforms": "Local remittance platforms",
+            "tokenCommunities": "Cultural token communities"
+          }
+        },
+        "defiInnovation": {
+          "title": "DeFi Innovation Opportunities",
+          "description": "Pioneer new DeFi protocols and financial products that serve the Vietnamese market while connecting to global liquidity.",
+          "features": {
+            "stablecoinProtocols": "Vietnamese stablecoin protocols",
+            "lendingPlatforms": "Cross-chain lending platforms",
+            "gamingDerivatives": "Gaming token derivatives",
+            "assetTokenization": "Local asset tokenization",
+            "yieldOptimization": "Yield optimization strategies"
+          }
+        }
+      },
+      "startupOpportunities": {
+        "title": "💡 Startup Opportunities",
+        "description": "Entrepreneurial opportunities for ambitious builders looking to create the next generation of Vietnamese blockchain companies.",
+        "marketOpportunityLabel": "📈 Market Opportunity:",
+        "exampleApplicationsLabel": "🎯 Example Applications:",
+        "gamingStudios": {
+          "title": "Cross-Chain Gaming Studios",
+          "category": "Gaming & Entertainment",
+          "description": "Build gaming platforms that seamlessly integrate AXS, SLP, and other Vietnamese gaming tokens across multiple blockchains.",
+          "marketSize": "$2B+ Vietnamese gaming market",
+          "examples": {
+            "playToEarn": "Play-to-earn ecosystems",
+            "crossChainNft": "Cross-chain NFT games",
+            "gamingBridges": "Gaming token bridges"
+          }
+        },
+        "defiProtocols": {
+          "title": "Vietnamese DeFi Protocols",
+          "category": "DeFi & Finance",
+          "description": "Create DeFi protocols specifically designed for Vietnamese users, featuring local tokens and cultural preferences.",
+          "marketSize": "$500M+ Vietnamese crypto market",
+          "examples": {
+            "yieldFarming": "VNDC/VNST yield farming",
+            "lendingProtocols": "Local lending protocols",
+            "crossChainRemittance": "Cross-chain remittance"
+          }
+        },
+        "enterprise": {
+          "title": "Enterprise Blockchain Solutions",
+          "category": "B2B & Enterprise",
+          "description": "Develop blockchain solutions for Vietnamese businesses looking to integrate cross-chain functionality.",
+          "marketSize": "Growing enterprise adoption",
+          "examples": {
+            "supplyChain": "Supply chain tracking",
+            "crossBorderPayments": "Cross-border payments",
+            "digitalIdentity": "Digital identity solutions"
+          }
+        }
+      },
+      "technicalResources": {
+        "title": "🛠️ Builder Resources & Support",
+        "description": "Everything you need to start building on Lotus Bridge today, with dedicated support for Vietnamese developers.",
+        "documentation": {
+          "title": "",
+          "description": ""
+        },
+        "sdkTools": {
+          "title": "Lotus Bridge SDK",
+          "description": "Comprehensive development kit with Vietnamese documentation",
+          "features": {
+            "typescript": "TypeScript/JavaScript",
+            "python": "Python bindings",
+            "smartContract": "Smart contract libraries"
+          }
+        },
+        "testnet": {
+          "title": "Testnet Environment",
+          "description": "A fully featured testing environment with testnet tokens and capabilities for safe experimentation."
+        },
+        "codeExamples": {
+          "title": "Code Examples",
+          "description": "Open-source code samples and templates to quickly get started with common use cases."
+        }
+      },
+      "vietnameseDeveloperProgram": {
+        "title": "Vietnam Developer Program",
+        "description": "Specialized support for Vietnamese developers and entrepreneurs",
+        "features": {
+          "grants": {
+            "title": "Grant Program",
+            "description": "Funding for innovative projects building on Lotus Bridge",
+            "features": {
+              "funding": "Up to $50K grants"
+            }
+          },
+          "mentorship": {
+            "title": "Mentorship",
+            "description": "Connect with experienced Vietnamese blockchain entrepreneurs"
+          },
+          "incubation": {
+            "title": "Go-to-market support",
+            "description": "3-month incubation with access to a network of investors and technical advisors"
+          },
+          "community": {
+            "title": "Developer Community",
+            "description": "Access to a private Discord community with direct technical support"
+          }
+        }
+      },
+      "community": {
+        "title": "Builder Community",
+        "description": "Vietnamese developer community with local language support",
+        "features": {
+          "discordChannels": "Discord channels",
+          "localMeetups": "Local meetups",
+          "hackathonEvents": "Hackathon events"
+        },
+        "forums": {
+          "title": "Technical Forums",
+          "description": "Technical discussion and Q&A"
+        },
+        "hackathons": {
+          "title": "Hackathons",
+          "description": "Competitive development events with attractive prizes"
+        },
+        "openSource": {
+          "title": "Open Source",
+          "description": "Contribute to Vietnamese blockchain tooling and libraries"
+        }
+      },
+      "gettingStarted": {
+        "title": "🚀 Start Building Today",
+        "description": "Ready to leverage Lotus Bridge protocol for your next breakthrough project?",
+        "builderDocumentation": {
+          "title": "📚 Builder Documentation",
+          "description": "Complete guides for smart contract integration and dApp development"
+        },
+        "grantOpportunities": {
+          "title": "💰 Grant Opportunities",
+          "description": "Funding and support for innovative Vietnamese blockchain projects"
+        },
+        "partnershipProgram": {
+          "title": "🤝 Partnership Program",
+          "description": "Strategic partnerships for promising startups and projects"
+        },
+        "marketAccess": {
+          "title": "🎯 Market Access",
+          "description": "Direct access to Vietnamese crypto market and user base"
+        },
+        "quickStart": {
+          "title": "Quick Start",
+          "description": "From idea to prototype within 24 hours using our SDK and documentation"
+        },
+        "communitySupport": {
+          "title": "Community Support",
+          "description": "Vibrant developer community with technical support in Vietnamese"
+        },
+        "production": {
+          "title": "Production Ready",
+          "description": "Reliable infrastructure with 99.9% uptime and 24/7 support"
+        }
+      },
+      "navigation": {
+        "backToUsers": "For Users",
+        "backToOverview": "Back to Overview",
+        "continueToLiquidity": "For Liquidity Providers"
+      }
+    },
+    "benefitsVietnam": {
+      "hero": {
+        "badge": "🇻🇳 Vietnam's Crypto Industry",
+        "title": "Benefits for Vietnam's Crypto Industry",
+        "description": "Positioning Vietnam as a global leader in blockchain innovation while empowering local talent and showcasing Vietnamese excellence to the world."
+      },
+      "industryBenefits": {
+        "innovationHub": {
+          "title": "Positioning Vietnam as a Web3 Innovation Hub",
+          "description": "Establish Vietnam as a leading force in blockchain interoperability and cross-chain innovation on the global stage.",
+          "features": {
+            "globalRecognition": "Global recognition for Vietnam’s technological innovation",
+            "internationalInvestment": "Attracting international blockchain investment",
+            "localTalent": "Developing local Web3 talent and expertise",
+            "vietnameseApproach": "Vietnam-first approach to blockchain solutions",
+            "culturalValues": "Cultural values integrated into technology"
+          }
+        },
+        "globalShowcase": {
+          "title": "Showcase Local Tokens on the Global Stage",
+          "description": "Bring Vietnamese tokens and projects into the global DeFi ecosystem, increasing their visibility and adoption worldwide.",
+          "features": {
+            "axsSlpExpansion": "AXS and SLP global market expansion",
+            "stablecoinRecognition": "VNDC and VNST international recognition",
+            "kardiachainGlobalization": "KardiaChain ecosystem globalization",
+            "gamingTokensAccess": "Vietnamese gaming tokens worldwide access",
+            "projectFunding": "Local project international funding"
+          }
+        },
+        "talentEmpowerment": {
+          "title": "Empower Local Developers and Entrepreneurs",
+          "description": "Create opportunities for Vietnamese talent to build world-class blockchain applications and businesses.",
+          "features": {
+            "jobOpportunities": "Vietnamese developer job opportunities",
+            "startupGrowth": "Startup ecosystem growth",
+            "blockchainEducation": "Local blockchain education initiatives",
+            "mentorshipPrograms": "Mentorship and incubation programs",
+            "vietnameseDocumentation": "Technical documentation in Vietnamese"
+          }
+        }
+      },
+      "initiatives": {
+        "title": "🌸 Strategic Initiatives",
+        "description": "Comprehensive programs to support Vietnam's blockchain ecosystem development.",
+        "education": {
+          "title": "🎓 Vietnamese Blockchain Education Program",
+          "description": "Comprehensive educational initiatives to build local blockchain expertise",
+          "features": {
+            "universityPartnerships": "University partnerships for blockchain courses",
+            "certificationPrograms": "Vietnamese-language certification programs",
+            "bootcamps": "Developer bootcamps and workshops",
+            "researchCollaborations": "Research collaborations with local institutions"
+          }
+        },
+        "incubator": {
+          "title": "🚀 Vietnam Web3 Startup Incubator",
+          "description": "Supporting Vietnamese entrepreneurs in building blockchain businesses",
+          "features": {
+            "seedFunding": "Seed funding for Vietnamese blockchain startups",
+            "expertMentorship": "Mentorship from global Web3 experts",
+            "investorNetworks": "Access to international investor networks",
+            "businessDevelopment": "Vietnamese market-focused business development"
+          }
+        },
+        "conference": {
+          "title": "🌐 Global Vietnam Blockchain Conference",
+          "description": "Annual conference showcasing Vietnamese blockchain innovation",
+          "features": {
+            "internationalSpeakers": "International speaker lineup",
+            "projectShowcases": "Vietnamese project showcases",
+            "investmentPartnerships": "Global investment partnerships",
+            "culturalExchange": "Cultural exchange and networking"
+          }
+        }
+      },
+      "economicImpact": {
+        "title": "Economic Impact",
+        "description": "How Lotus Bridge drives economic growth and innovation in Vietnam",
+        "jobCreation": {
+          "title": "Job Creation",
+          "description": "Thousands of new jobs in blockchain, fintech, and related sectors",
+          "stats": "10,000+ jobs projected over 5 years"
+        },
+        "foreignInvestment": {
+          "title": "Foreign Investment",
+          "description": "Attracting international capital into Vietnam’s technology ecosystem",
+          "stats": "$500M+ projected investment"
+        },
+        "exportGrowth": {
+          "title": "Export Growth",
+          "description": "Blockchain technology services and software solutions",
+          "stats": "50% technology export growth"
+        }
+      },
+      "callToAction": {
+        "title": "🚀 Join the Vietnamese Blockchain Revolution",
+        "subtitle": "Together, let's build the future of technology and innovation",
+        "description": "Lotus Bridge is more than just a protocol—it's an opportunity to position Vietnam as a leader in global Web3 innovation. Join us on this journey."
+      },
+      "navigation": {
+        "backToLiquidity": "For Liquidity Providers",
+        "backToOverview": "Back to Overview",
+        "continueToSecurity": "Continue to Security"
+      }
+    },
+    "benefitsUsers": {
+      "hero": {
+        "badge": "👥 User Benefits",
+        "title": "Benefits for Users",
+        "description": "Discover how Lotus Bridge empowers Vietnamese users to access global DeFi opportunities with local-first design and seamless cross-chain functionality."
+      },
+      "simplifiedAccess": "Simplified Access to Global DeFi",
+      "simplifiedDescription": "A unified interface to access all DeFi opportunities across multiple blockchains with special support for Vietnamese tokens.",
+      "unifiedPortfolio": "Unified portfolio management across chains",
+      "simplifiedRouting": "Simplified transaction routing",
+      "reducedComplexity": "Reduced complexity of cross-chain operations",
+      "oneClickAccess": "One-click access to global DeFi",
+      "localFirst": "Local-First Design",
+      "localDescription": "Interface and features specially designed for Vietnamese users, with native language and cultural support.",
+      "vietnameseInterface": "Fully Vietnamese-language interface",
+      "localPayment": "Integrated local payment methods",
+      "nativeTokenSupport": "Native support for Vietnamese tokens",
+      "culturalDesign": "Culturally sensitive design",
+      "flexibleRouting": "Flexible Transaction Routing",
+      "flexibleDescription": "Smart routing technology that automatically finds the optimal path for your transaction with the lowest cost and fastest speed.",
+      "optimalRouting": "Optimal routing across multiple chains",
+      "gasOptimization": "Gas optimization across chains",
+      "crossChainTransfers": "Cross-chain asset transfers",
+      "multiWalletSupport": "Multi-wallet transaction support",
+      "scenarios": {
+        "title": "Vietnamese User Scenarios",
+        "description": "Real-world use cases demonstrating how Lotus Bridge delivers value to Vietnamese users",
+        "benefitLabel": "Benefits",
+        "tokensLabel": "Tokens Used",
+        "gaming": {
+          "title": "🎮 Gaming Enthusiast",
+          "scenario": "Move AXS tokens from Ronin to Ethereum for DeFi opportunities",
+          "benefit": "Access global DeFi yields while keeping gaming assets active"
+        },
+        "defi": {
+          "title": "💰 DeFi Investor",
+          "scenario": "Swap VNDC for ETH across chains to participate in new protocols",
+          "benefit": "Seamless Vietnamese stablecoin integration with global DeFi"
+        },
+        "trader": {
+          "title": "Vietnamese Token Trader",
+          "scenario": "You want to trade between different Vietnamese tokens on various exchanges to capitalize on price differences.",
+          "benefit": "Quickly move tokens across chains to seize arbitrage opportunities without being limited by the liquidity of a single chain."
+        }
+      },
+      "tokenIntegration": {
+        "title": "🌸 Vietnamese Token Integration",
+        "description": "Lotus Bridge natively supports the most popular tokens in the Vietnamese crypto ecosystem."
+      },
+      "navigation": {
+        "backToEcosystem": "Ecosystem Benefits",
+        "backToOverview": "Back to Overview",
+        "continueToBuilders": "For Builders"
+      }
+    },
+    "intro": {
+      "badge": "Vietnamese Innovation",
+      "title": "The Problem: A Fragmented Blockchain World",
+      "description": "Today’s blockchain landscape is vast, vibrant — and fragmented. Each network speaks its own language, follows its own logic, and hosts unique communities and ecosystems. But for everyday users — especially in emerging markets like Vietnam — navigating this complexity is like trying to cross a river without a bridge.",
+      "enterLotus": "Enter Lotus Bridge – Blooming Unity from Diversity",
+      "enterDescription": "Inspired by the lotus — a sacred symbol of purity, resilience, and rebirth in Vietnamese culture — Lotus Bridge emerges as a multi-chain superbridge: architecture-agnostic and trustless.",
+      "continueReading": "Continue Reading"
+    },
+    "ecosystem": {
+      "title": "Ecosystem Benefits",
+      "subtitle": "Comprehensive benefits for all stakeholders in the Lotus Bridge ecosystem, from individual users to the broader Vietnamese crypto community.",
+      "ecosystemBenefits": "Ecosystem Benefits",
+      "benefitsDescription": "How Lotus Bridge creates value for all participants",
+      "continueToSecurity": "Continue to Security"
     }
+  }
 }
