@@ -785,16 +785,16 @@
       },
       "sections": {
         "overview": {
-            "title": "Overview",
-            "description": "Core capabilities and features",
-            "content": "Discover what Lotus Bridge enables and how it revolutionizes cross-chain interactions with support for Vietnamese tokens.",
-            "features": {
-              "tokenBridging": "Token bridging capabilities",
-              "crossChainSwaps": "Cross-chain asset swaps",
-              "multiWalletManagement": "Multi-wallet management",
-              "vietnameseTokenIntegration": "Vietnamese token integration"
-            },
-            "button": "Explore Capabilities"
+          "title": "Overview",
+          "description": "Core capabilities and features",
+          "content": "Discover what Lotus Bridge enables and how it revolutionizes cross-chain interactions with support for Vietnamese tokens.",
+          "features": {
+            "tokenBridging": "Token bridging capabilities",
+            "crossChainSwaps": "Cross-chain asset swaps",
+            "multiWalletManagement": "Multi-wallet management",
+            "vietnameseTokenIntegration": "Vietnamese token integration"
+          },
+          "button": "Explore Capabilities"
         },
         "architecture": {
           "title": "Architecture",
@@ -987,56 +987,233 @@
     "architecture": {
       "badge": "🏗️ System Architecture",
       "title": "Lotus Bridge Architecture",
-      "subtitle": "Detailed architecture documentation and diagrams coming soon.",
-      "documentationTitle": "Architecture Documentation",
-      "documentationDescription": "We are currently preparing comprehensive architecture diagrams and technical documentation. This section will cover detailed system architecture, component interactions, and specifications.",
-      "technicalArchitecture": "Technical Architecture Overview",
-      "architectureDescription": "Modular system design for maximum flexibility and scalability",
-      "networkAdapterLayer": "Network Adapter Layer",
-      "networkAdapterDescription": "Blockchain protocol interface",
-      "bridgeOrchestrationLayer": "Bridge Orchestration Layer",
-      "bridgeOrchestrationDescription": "Transaction coordination logic",
-      "walletManagementLayer": "Wallet Management Layer",
-      "walletManagementDescription": "Multi-wallet connectivity",
-      "localizationLayer": "Localization Layer",
-      "localizationDescription": "Vietnamese ecosystem integration",
-      "securityValidationLayer": "Security & Validation Layer",
-      "securityValidationDescription": "Decentralized security mechanisms",
+      "subtitle": "Comprehensive technical architecture featuring modular design, advanced consensus mechanisms, and clearly defined system entities.",
+      "documentationTitle": "System Architecture Overview",
+      "documentationDescription": "Detailed architecture documentation covering consensus mechanisms, system entities, and technical implementation.",
+      "consensusMechanism": {
+        "title": "Consensus Mechanism",
+        "subtitle": "Advanced Byzantine Fault Tolerant (BFT) consensus optimized for cross-chain operations",
+        "description": "Lotus Bridge employs a hybrid consensus mechanism that combines Practical Byzantine Fault Tolerance (pBFT) with Vietnamese validator selection to ensure security, speed, and cultural alignment.",
+        "validatorSelection": {
+          "title": "Validator Selection Process",
+          "description": "How validators are chosen to participate in consensus",
+          "criteria": {
+            "title": "Selection Criteria",
+            "items": {
+              "stakeRequirement": "Minimum stake requirement: 100,000 LOTUS tokens",
+              "technicalCompetency": "Technical competency assessment and infrastructure requirements",
+              "vietnameseConnection": "Preference for validators with Vietnamese community connections",
+              "uptimeRecord": "Proven uptime record of 99.5% or higher",
+              "securityAudit": "Successful security audit of validator infrastructure"
+            }
+          },
+          "process": {
+            "title": "Selection Process",
+            "steps": {
+              "application": "1. Validator submits application with stake deposit",
+              "assessment": "2. Technical and community assessment (7 days)",
+              "voting": "3. Community voting period (3 days)",
+              "activation": "4. Validator activation upon approval"
+            }
+          }
+        },
+        "userParticipation": {
+          "title": "User Participation in Consensus",
+          "description": "How regular users contribute to network security and governance",
+          "stakingRewards": {
+            "title": "Delegated Staking",
+            "description": "Users can delegate their LOTUS tokens to trusted validators",
+            "features": {
+              "minimumStake": "Minimum delegation: 1,000 LOTUS tokens",
+              "rewardSharing": "Proportional reward sharing with validators",
+              "vietnameseValidators": "Special incentives for supporting Vietnamese validators",
+              "liquidStaking": "Liquid staking options for flexibility"
+            }
+          },
+          "governance": {
+            "title": "Governance Participation",
+            "description": "Direct participation in protocol governance",
+            "features": {
+              "proposalVoting": "Vote on protocol improvement proposals",
+              "validatorSelection": "Participate in validator selection process",
+              "emergencyActions": "Emergency protocol actions and upgrades",
+              "parameterChanges": "Network parameter adjustments"
+            }
+          }
+        },
+        "validatorRewards": {
+          "title": "Validator Rewards Structure",
+          "description": "Comprehensive reward system incentivizing honest behavior and Vietnamese ecosystem growth",
+          "baseRewards": {
+            "title": "Base Consensus Rewards",
+            "items": {
+              "blockRewards": "Block production rewards: 50 LOTUS per block",
+              "transactionFees": "Transaction fee distribution: 80% to validators",
+              "uptimeBonus": "Uptime bonus: Additional 10% for 99.9% uptime",
+              "stakingRewards": "Delegated staking rewards: 8-12% APY"
+            }
+          },
+          "bonusRewards": {
+            "title": "Vietnamese Ecosystem Bonus",
+            "items": {
+              "localSupport": "Vietnamese validator bonus: Additional 20% rewards",
+              "communityEngagement": "Community engagement rewards for education/outreach",
+              "tokenIntegration": "Bonus for supporting Vietnamese token bridges",
+              "culturalContribution": "Cultural contribution rewards for Vietnamese events"
+            }
+          }
+        }
+      },
+      "systemEntities": {
+        "title": "System Entities & Roles",
+        "description": "Comprehensive overview of all participants in the Lotus Bridge ecosystem",
+        "users": {
+          "title": "Users",
+          "description": "End users utilizing Lotus Bridge for cross-chain transactions",
+          "types": {
+            "retailUsers": {
+              "name": "Retail Users",
+              "description": "Individual users performing cross-chain transactions",
+              "capabilities": {
+                "bridgeAssets": "Bridge assets between chains",
+                "swapTokens": "Swap tokens across networks",
+                "manageWallets": "Connect and manage multiple wallets",
+                "participateGovernance": "Participate in governance through staking"
+              }
+            },
+            "institutionalUsers": {
+              "name": "Institutional Users",
+              "description": "Organizations and protocols integrating with Lotus Bridge",
+              "capabilities": {
+                "bulkTransactions": "Perform bulk cross-chain transactions",
+                "apiIntegration": "Integrate via APIs and smart contracts",
+                "customizedSolutions": "Access customized bridging solutions",
+                "prioritySupport": "Receive priority customer support"
+              }
+            }
+          }
+        },
+        "bridges": {
+          "title": "Bridge Operators",
+          "description": "Entities responsible for managing cross-chain bridge connections",
+          "responsibilities": {
+            "networkConnections": "Maintain connections to supported blockchain networks",
+            "liquidityManagement": "Manage cross-chain liquidity pools",
+            "securityMonitoring": "Monitor bridge security and detect anomalies",
+            "upgradeCoordination": "Coordinate protocol upgrades across chains"
+          },
+          "requirements": {
+            "technicalExpertise": "Advanced technical expertise in multiple blockchain protocols",
+            "securityInfrastructure": "Robust security infrastructure and monitoring systems",
+            "liquidityProvision": "Ability to provide substantial liquidity backing",
+            "multiChainExperience": "Proven experience operating multi-chain infrastructure"
+          }
+        },
+        "liquidityProviders": {
+          "title": "Liquidity Providers (LPs)",
+          "description": "Specialized subset of Bridge Operators focused on liquidity management",
+          "roles": {
+            "poolManagement": "Manage cross-chain liquidity pools",
+            "arbitrageActivity": "Perform arbitrage to maintain price stability",
+            "riskManagement": "Implement risk management strategies",
+            "yieldOptimization": "Optimize yields for pool participants"
+          },
+          "incentives": {
+            "tradingFees": "Earn trading fees from bridge transactions",
+            "yieldFarming": "Participate in yield farming programs",
+            "governanceTokens": "Receive governance token distributions",
+            "vietnameseBonus": "Additional rewards for Vietnamese token pools"
+          }
+        },
+        "consensusValidators": {
+          "title": "Consensus Validators",
+          "description": "Validators responsible for consensus mechanism and transaction validation",
+          "responsibilities": {
+            "blockProduction": "Produce and validate blocks in the consensus mechanism",
+            "transactionValidation": "Validate cross-chain transactions and state changes",
+            "networkSecurity": "Maintain network security through honest participation",
+            "emergencyResponse": "Respond to emergency situations and protocol upgrades"
+          },
+          "requirements": {
+            "stakeRequirement": "Maintain minimum stake of 100,000 LOTUS tokens",
+            "technicalInfrastructure": "Operate high-availability validator infrastructure",
+            "communityStanding": "Maintain good standing in the Vietnamese crypto community",
+            "securityCompliance": "Comply with security standards and regular audits"
+          }
+        },
+        "relayers": {
+          "title": "Relayers",
+          "description": "Infrastructure providers facilitating cross-chain message and asset relay",
+          "functions": {
+            "messageRelay": "Relay messages and proofs between different blockchain networks",
+            "stateSync": "Synchronize state information across chains",
+            "eventMonitoring": "Monitor blockchain events and trigger cross-chain actions",
+            "dataOracle": "Provide oracle services for cross-chain data verification"
+          },
+          "types": {
+            "primaryRelayers": {
+              "name": "Primary Relayers",
+              "description": "Core infrastructure relayers operated by the protocol",
+              "features": {
+                "highAvailability": "99.9% uptime guarantee",
+                "multiChainSupport": "Support for all connected blockchain networks",
+                "securityFocus": "Enterprise-grade security measures",
+                "vietnameseOperators": "Preferentially operated by Vietnamese entities"
+              }
+            },
+            "communityRelayers": {
+              "name": "Community Relayers",
+              "description": "Community-operated relayers providing additional redundancy",
+              "features": {
+                "decentralizedOperation": "Operated by community members",
+                "incentiveRewards": "Earn rewards for reliable service",
+                "redundancyBackup": "Provide backup and redundancy",
+                "lowBarrierEntry": "Lower technical barriers for participation"
+              }
+            }
+          }
+        }
+      },
+      "technicalArchitecture": {
+        "title": "Technical Architecture Overview",
+        "description": "Modular system design for maximum flexibility and scalability",
+        "networkAdapterLayer": "Network Adapter Layer",
+        "networkAdapterDescription": "Blockchain protocol interface",
+        "bridgeOrchestrationLayer": "Bridge Orchestration Layer",
+        "bridgeOrchestrationDescription": "Transaction coordination logic",
+        "walletManagementLayer": "Wallet Management Layer",
+        "walletManagementDescription": "Multi-wallet connectivity",
+        "localizationLayer": "Localization Layer",
+        "localizationDescription": "Vietnamese ecosystem integration",
+        "securityValidationLayer": "Security & Validation Layer",
+        "securityValidationDescription": "Decentralized security mechanisms"
+      },
+      "entityInteractions": {
+        "title": "Entity Interactions & Workflow",
+        "description": "How different entities interact within the Lotus Bridge ecosystem",
+        "transactionFlow": {
+          "title": "Cross-Chain Transaction Flow",
+          "steps": {
+            "userInitiation": "1. User initiates cross-chain transaction through interface",
+            "validatorVerification": "2. Consensus Validators verify transaction validity and user authentication",
+            "bridgeExecution": "3. Bridge Operators execute the cross-chain transfer",
+            "relayerProcessing": "4. Relayers process and relay transaction data between chains",
+            "lpLiquidity": "5. Liquidity Providers ensure sufficient liquidity for the transaction",
+            "finalConfirmation": "6. Consensus Validators provide final confirmation and settlement"
+          }
+        },
+        "governanceFlow": {
+          "title": "Governance Decision Flow",
+          "steps": {
+            "proposalSubmission": "1. Any stakeholder submits governance proposal",
+            "validatorReview": "2. Consensus Validators review technical feasibility",
+            "communityDiscussion": "3. Community discussion period (7 days)",
+            "stakeholderVoting": "4. All entity types vote based on stake/participation",
+            "implementation": "5. Approved proposals implemented by Bridge Operators and Relayers"
+          }
+        }
+      },
       "underDevelopment": "Under development – Stay tuned!"
-    },
-    "governance": {
-      "title": "Governance",
-      "subtitle": "Community-driven governance model with Vietnamese stakeholder involvement and transparent decision-making processes.",
-      "badge": "🏛️ Governance Framework",
-      "lotusGovernance": "Lotus Bridge Governance",
-      "governanceDescription": "A decentralized governance framework designed for Vietnam’s market needs and global blockchain interoperability.",
-      "underDevelopment": "🚧 Under Development",
-      "underDevelopmentDescription": "The Lotus Bridge governance framework is actively being developed. This section will be completed in a future update.",
-      "innovativeGovernance": "Our team is working on innovative governance solutions that will provide:",
-      "decentralizedGovernanceTitle": "Decentralized Governance",
-      "decentralizedGovernanceDescription": "Community-driven governance mechanism with Vietnamese stakeholder participation",
-      "efficientDecisionMaking": "Efficient Decision-Making",
-      "efficientDecisionDescription": "Streamlined proposal and voting system for rapid protocol evolution",
-      "transparentProcesses": "Transparent Processes",
-      "transparentProcessesDescription": "Open and auditable governance procedures with clear accountability",
-      "vietnameseCommunityFocus": "Vietnamese Community Focus",
-      "vietnameseCommunityDescription": "Representation of the local community with global interaction standards",
-      "developmentTimeline": "🌸 Development Timeline",
-      "timelineDescription": "Stay tuned for updates on our governance framework development as we build the future of blockchain interoperability in Vietnam.",
-      "q3_2025": "Q3 2025",
-      "researchDesign": "Research & Design",
-      "researchDescription": "Governance framework research and analysis of Vietnam market requirements",
-      "q4_2025": "Q4 2025",
-      "developmentTesting": "Development & Testing",
-      "developmentDescription": "Implementation of governance protocols with feedback from Vietnamese stakeholders",
-      "q1_2026": "Q1 2026",
-      "mainnetLaunch": "Mainnet Launch",
-      "mainnetDescription": "Full governance framework deployment with Vietnamese token integration",
-      "joinDevelopment": "🇻🇳 Join the Development",
-      "joinDevelopmentDescription": "Interested in contributing to Lotus Bridge governance development?",
-      "vietnameseDevelopers": "We welcome Vietnamese developers, researchers, and blockchain enthusiasts to help shape our governance framework.",
-      "contactTeam": "Contact the Development Team",
-      "backToCoreConcept": "Back to Core Concepts"
     },
     "faqs": {
       "title": "Frequently Asked Questions & Glossary",
