@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { useEffect } from "react";
+import bridge from '@/assets/bridge.png'
 
 const UserGuides = () => {
   const { t } = useLanguage();
@@ -582,14 +583,17 @@ const UserGuides = () => {
                         {/* Bridging Process Diagram Placeholder */}
                         <div className="bg-muted/30 rounded-lg p-8 text-center border-2 border-dashed border-muted-foreground/30">
                           <div className="text-muted-foreground">
-                            <div className="text-4xl mb-4">📊</div>
+                            <img
+                              src={bridge}
+                              alt="Bridging Process Diagram"
+                              className="w-full h-auto block" // 👈 Full width image
+                            />
                             <h3 className="font-semibold text-lg mb-2">
                               Bridging Process Diagram
                             </h3>
                             <p className="text-sm">[Diagram Coming Soon]</p>
                             <p className="text-xs mt-2 text-muted-foreground/70">
-                              Awaiting Gia Bao completion of the visual bridging
-                              flow diagram
+                            Designed by Gia Bảo – Lotus Bridge
                             </p>
                           </div>
                         </div>
