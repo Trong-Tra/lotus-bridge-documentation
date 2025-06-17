@@ -990,6 +990,11 @@
       "subtitle": "Comprehensive technical architecture featuring modular design, advanced consensus mechanisms, and clearly defined system entities.",
       "documentationTitle": "System Architecture Overview",
       "documentationDescription": "Detailed architecture documentation covering consensus mechanisms, system entities, and technical implementation.",
+      "governanceDecisionMaking": {
+        "title": "Governance Decision Making Layer",
+        "subtitle": "Decentralized governance framework for protocol evolution and emergency response",
+        "description": "Lotus Bridge employs a comprehensive governance decision making layer that combines community participation with expert oversight to ensure secure, democratic, and culturally aligned protocol evolution."
+      },
       "consensusMechanism": {
         "title": "Consensus Mechanism",
         "subtitle": "Advanced Byzantine Fault Tolerant (BFT) consensus optimized for cross-chain operations",

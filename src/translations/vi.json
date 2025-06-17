@@ -990,6 +990,11 @@
             "subtitle": "Tài liệu kiến trúc chi tiết và sơ đồ sắp ra mắt.",
             "documentationTitle": "Tài liệu Kiến trúc",
             "documentationDescription": "Chúng tôi hiện đang chuẩn bị các sơ đồ kiến trúc toàn diện và tài liệu kỹ thuật. Phần này sẽ bao gồm kiến trúc hệ thống chi tiết, tương tác thành phần và thông số kỹ thuật.",
+            "governanceDecisionMaking": {
+                "title": "Lớp Ra Quyết Định Quản Trị",
+                "subtitle": "Khung quản trị phi tập trung cho sự phát triển giao thức và phản ứng khẩn cấp",
+                "description": "Lotus Bridge triển khai một lớp ra quyết định quản trị toàn diện, kết hợp giữa sự tham gia của cộng đồng và giám sát chuyên gia nhằm đảm bảo sự phát triển giao thức an toàn, dân chủ và phù hợp với văn hóa."
+            },
             "consensusMechanism": {
                 "title": "Cơ chế Đồng thuận",
                 "subtitle": "Cơ chế đồng thuận Byzantine Fault Tolerant (BFT) nâng cao, được tối ưu hóa cho hoạt động cross-chain",

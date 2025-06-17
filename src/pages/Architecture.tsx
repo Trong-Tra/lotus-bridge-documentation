@@ -57,18 +57,18 @@ const Architecture = () => {
               </div>
             </section>
 
-            {/* Consensus Mechanism Section */}
+            {/* Governance Decision Making Layer Section */}
             <section className="py-20 px-6">
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-4xl font-bold mb-4">
-                    {t("pages.architecture.consensusMechanism.title")}
+                    {t("pages.architecture.governanceDecisionMaking.title")}
                   </h2>
                   <p className="text-xl text-muted-foreground mb-2">
-                    {t("pages.architecture.consensusMechanism.subtitle")}
+                    {t("pages.architecture.governanceDecisionMaking.subtitle")}
                   </p>
                   <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-                    {t("pages.architecture.consensusMechanism.description")}
+                    {t("pages.architecture.governanceDecisionMaking.description")}
                   </p>
                 </div>
 
@@ -77,11 +77,11 @@ const Architecture = () => {
                   <CardHeader>
                     <div className="flex items-center gap-3 mb-4">
                       <Vote className="h-8 w-8 text-primary" />
-<CardTitle className="text-2xl">
+                      <CardTitle className="text-2xl">
                         {t("pages.architecture.consensusMechanism.validatorSelection.title")}
                       </CardTitle>
                     </div>
-                                        <CardDescription className="text-lg">
+                    <CardDescription className="text-lg">
                       {t("pages.architecture.consensusMechanism.validatorSelection.description")}
                     </CardDescription>
                   </CardHeader>
@@ -112,16 +112,16 @@ const Architecture = () => {
                           </div>
                           <div className="flex items-start gap-3">
                             <Globe className="h-5 w-5 text-accent mt-0.5" />
-                      <div>
+                            <div>
                               <p className="text-sm text-muted-foreground">
-                        {t("pages.architecture.consensusMechanism.validatorSelection.criteria.items.vietnameseConnection")}
+                                {t("pages.architecture.consensusMechanism.validatorSelection.criteria.items.vietnameseConnection")}
                               </p>
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
                             <TrendingUp className="h-5 w-5 text-primary mt-0.5" />
                             <div>
-                        <p className="text-sm text-muted-foreground">
+                              <p className="text-sm text-muted-foreground">
                                 {t("pages.architecture.consensusMechanism.validatorSelection.criteria.items.uptimeRecord")}
                               </p>
                             </div>
@@ -148,8 +148,8 @@ const Architecture = () => {
                             <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">1</div>
                             <p className="text-sm">
                               {t("pages.architecture.consensusMechanism.validatorSelection.process.steps.application")}
-                        </p>
-                        </div>
+                            </p>
+                          </div>
                           <div className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
                             <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">2</div>
                             <p className="text-sm">
@@ -171,7 +171,7 @@ const Architecture = () => {
                         </div>
                       </div>
                     </div>
-</CardContent>
+                  </CardContent>
                 </Card>
 
                 {/* User Participation */}
@@ -200,7 +200,7 @@ const Architecture = () => {
                         <div className="space-y-2">
                           <div className="flex items-center gap-2">
                             <CheckCircle className="h-4 w-4 text-green-500" />
-                        <p className="text-sm">
+                            <p className="text-sm">
                               {t("pages.architecture.consensusMechanism.userParticipation.stakingRewards.features.minimumStake")}
                             </p>
                           </div>
@@ -254,7 +254,7 @@ const Architecture = () => {
                           </div>
                           <div className="flex items-center gap-2">
                             <CheckCircle className="h-4 w-4 text-green-500" />
-                        <p className="text-sm">
+                            <p className="text-sm">
                               {t("pages.architecture.consensusMechanism.userParticipation.governance.features.parameterChanges")}
                             </p>
                           </div>
@@ -284,7 +284,7 @@ const Architecture = () => {
                           {t("pages.architecture.consensusMechanism.validatorRewards.baseRewards.title")}
                         </h4>
                         <div className="space-y-3">
-                                                    <div className="flex items-start gap-3">
+                          <div className="flex items-start gap-3">
                             <Coins className="h-5 w-5 text-primary mt-0.5" />
                             <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.baseRewards.items.blockRewards")}</p>
                           </div>
@@ -300,13 +300,13 @@ const Architecture = () => {
                               <Coins className="h-5 w-5 text-primary mt-0.5" />
                               <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.baseRewards.items.stakingRewards")}</p>
                             </div>
-                                                  </div>
+                        </div>
                       </div>
                       <div className="p-6 bg-gradient-to-br from-accent/5 to-accent/10 rounded-lg border">
                         <h4 className="font-semibold text-lg mb-4 text-accent flex items-center gap-2">
                           🇻🇳 {t("pages.architecture.consensusMechanism.validatorRewards.bonusRewards.title")}
                         </h4>
-<div className="space-y-3">
+                        <div className="space-y-3">
                           <div className="flex items-start gap-3">
                             <Globe className="h-5 w-5 text-accent mt-0.5" />
                             <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.bonusRewards.items.localSupport")}</p>
@@ -323,7 +323,7 @@ const Architecture = () => {
                               <Globe className="h-5 w-5 text-accent mt-0.5" />
                         <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.bonusRewards.items.culturalContribution")}</p>
                             </div>
-                                                  </div>
+                        </div>
                       </div>
                     </div>
                   </CardContent>
