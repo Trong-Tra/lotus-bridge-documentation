@@ -76,21 +76,21 @@
         "description": "Bối cảnh blockchain ngày nay rộng lớn, sôi động và... phân mảnh. Đối với người dùng ở các thị trường mới nổi như Việt Nam, việc điều hướng sự phức tạp này giống như vượt sông mà không có cầu.",
         "currentChallenges": {
             "title": "Thách thức hiện tại",
-            "challenges": [
-                "Cần nhiều bước, công cụ, ví để hoán đổi chuỗi chéo",
-                "Token Việt Nam như VNDC, VNST, KNC, C98 thường bị không được hỗ trợ",
-                "Giao dịch rườm rà, rủi ro hoặc không thể thực hiện giữa các kiến trúc khác nhau",
-                "Việc áp dụng toàn cầu bị cản trở do loại trừ, tính thanh khoản bị cô lập, người dùng bối rối"
-            ]
+            "challenges": {
+                "0": "Cần nhiều bước, công cụ, ví để hoán đổi chuỗi chéo",
+                "1": "Token Việt Nam như VNDC, VNST, KNC, C98 thường bị không được hỗ trợ",
+                "2": "Giao dịch rườm rà, rủi ro hoặc không thể thực hiện giữa các kiến trúc khác nhau",
+                "3": "Việc áp dụng toàn cầu bị cản trở do loại trừ, tính thanh khoản bị cô lập, người dùng bối rối"
+            }
         },
         "lotusSolution": {
             "title": "Giải pháp Lotus Bridge",
             "description": "Một siêu cầu nối đa chuỗi, bất khả tri kiến trúc, không cần tin cậy, nở rộ sự thống nhất từ sự đa dạng.",
-            "features": [
-                "Lớp cầu nối phổ quát thích ứng với bất kỳ mạng nào",
-                "Kết nối chuỗi chéo kiến trúc (Ethereum ↔ Solana)",
-                "Cổng đa ví cho việc bridging tài sản liền mạch"
-            ]
+            "features": {
+                "0": "Lớp cầu nối phổ quát thích ứng với bất kỳ mạng nào",
+                "1": "Kết nối chuỗi chéo kiến trúc (Ethereum ↔ Solana)",
+                "2": "Cổng đa ví cho việc bridging tài sản liền mạch"
+            }
         },
         "builtForVietnam": {
             "title": "🇻🇳 Được xây dựng cho Việt Nam. Kết nối thế giới.",
@@ -498,30 +498,30 @@
                 "transactionStuck": {
                     "title": "Giao dịch bị kẹt hoặc đang chờ",
                     "description": "Giao dịch của bạn đã được xác nhận trên chuỗi nguồn nhưng chưa xuất hiện trên chuỗi đích.",
-                    "solutions": [
-                        "Kiểm tra trạng thái giao dịch trong trình khám phá cầu nối của chúng tôi",
-                        "Cho phép tối đa 30 phút để hoàn thành trong thời gian tắc nghẽn mạng cao",
-                        "Liên hệ hỗ trợ nếu bị kẹt hơn 1 giờ"
-                    ]
+                    "solutions": {
+                        "0": "Kiểm tra trạng thái giao dịch trong trình khám phá cầu nối của chúng tôi",
+                        "1": "Cho phép tối đa 30 phút để hoàn thành trong thời gian tắc nghẽn mạng cao",
+                        "2": "Liên hệ hỗ trợ nếu bị kẹt hơn 1 giờ"
+                    }
                 },
                 "insufficientGas": {
                     "title": "Phí gas không đủ",
                     "description": "Giao dịch thất bại do phí gas thấp hoặc không đủ token gốc.",
-                    "solutions": [
-                        "Đảm bảo bạn có đủ token gốc (ETH, BNB, v.v.) cho gas",
-                        "Tăng giới hạn gas nếu giao dịch tiếp tục thất bại",
-                        "Thử trong giờ thấp điểm để có phí thấp hơn"
-                    ]
+                    "solutions": {
+                        "0": "Đảm bảo bạn có đủ token gốc (ETH, BNB, v.v.) cho gas",
+                        "1": "Tăng giới hạn gas nếu giao dịch tiếp tục thất bại",
+                        "2": "Thử trong giờ thấp điểm để có phí thấp hơn"
+                    }
                 },
                 "walletConnection": {
                     "title": "Vấn đề kết nối ví",
                     "description": "Không thể kết nối ví hoặc ví không được phát hiện.",
-                    "solutions": [
-                        "Làm mới trang và thử kết nối lại",
-                        "Kiểm tra xem tiện ích mở rộng ví có được bật không",
-                        "Chuyển sang mạng chính xác trong ví của bạn",
-                        "Xóa bộ nhớ cache và cookie của trình duyệt"
-                    ]
+                    "solutions": {
+                        "0": "Làm mới trang và thử kết nối lại",
+                        "1": "Kiểm tra xem tiện ích mở rộng ví có được bật không",
+                        "2": "Chuyển sang mạng chính xác trong ví của bạn",
+                        "3": "Xóa bộ nhớ cache và cookie của trình duyệt"
+                    }
                 }
             },
             "walletRecommendations": "Đề xuất Ví",
@@ -531,45 +531,45 @@
                     "name": "MetaMask",
                     "badge": "Thân thiện với người mới",
                     "description": "Hoàn hảo cho những người mới tham gia DeFi. Giao diện đơn giản với hướng dẫn tuyệt vời và khả năng tương thích rộng rãi.",
-                    "features": [
-                        "Thiết lập và hướng dẫn dễ dàng",
-                        "Hỗ trợ hệ sinh thái rộng rãi",
-                        "Tuyệt vời cho việc sử dụng cơ bản",
-                        "Tài nguyên giáo dục tuyệt vời"
-                    ]
+                    "features": {
+                        "0": "Thiết lập và hướng dẫn dễ dàng",
+                        "1": "Hỗ trợ hệ sinh thái rộng rãi",
+                        "2": "Tuyệt vời cho việc sử dụng cơ bản",
+                        "3": "Tài nguyên giáo dục tuyệt vời"
+                    }
                 },
                 "rabby": {
                     "name": "Rabby Wallet",
                     "badge": "EVM Nâng cao",
                     "description": "UI/UX vượt trội với quản lý tài sản tốt hơn trên các chuỗi EVM. Hoàn hảo cho người dùng chuyên nghiệp.",
-                    "features": [
-                        "Giao diện đẹp, trực quan",
-                        "Góc nhìn đa chuỗi nâng cao",
-                        "Kiểm soát tài sản tốt hơn",
-                        "Tính năng bảo mật nâng cao"
-                    ]
+                    "features": {
+                        "0": "Giao diện đẹp, trực quan",
+                        "1": "Góc nhìn đa chuỗi nâng cao",
+                        "2": "Kiểm soát tài sản tốt hơn",
+                        "3": "Tính năng bảo mật nâng cao"
+                    }
                 },
                 "phantom": {
                     "name": "Phantom",
                     "badge": "Solana",
                     "description": "Ví phổ biến và đáng tin cậy nhất cho hệ sinh thái Solana với hỗ trợ token SPL gốc.",
-                    "features": [
-                        "Tích hợp Solana gốc",
-                        "Giao dịch nhanh như chớp",
-                        "Hỗ trợ NFT tích hợp",
-                        "Tối ưu hóa giao thức DeFi"
-                    ]
+                    "features": {
+                        "0": "Tích hợp Solana gốc",
+                        "1": "Giao dịch nhanh như chớp",
+                        "2": "Hỗ trợ NFT tích hợp",
+                        "3": "Tối ưu hóa giao thức DeFi"
+                    }
                 },
                 "slush": {
                     "name": "Slush Wallet",
                     "badge": "Mạng Sui",
                     "description": "Ví chính thức được phát triển bởi Mysten Labs cho trải nghiệm blockchain Sui tối ưu.",
-                    "features": [
-                        "Hỗ trợ chính thức Mysten Labs",
-                        "Tối ưu hóa blockchain Sui",
-                        "Quản lý đối tượng nâng cao",
-                        "Tích hợp ngôn ngữ Move"
-                    ]
+                    "features": {
+                        "0": "Hỗ trợ chính thức Mysten Labs",
+                        "1": "Tối ưu hóa blockchain Sui",
+                        "2": "Quản lý đối tượng nâng cao",
+                        "3": "Tích hợp ngôn ngữ Move"
+                    }
                 }
             },
             "connectionSteps": {
@@ -990,53 +990,230 @@
             "subtitle": "Tài liệu kiến trúc chi tiết và sơ đồ sắp ra mắt.",
             "documentationTitle": "Tài liệu Kiến trúc",
             "documentationDescription": "Chúng tôi hiện đang chuẩn bị các sơ đồ kiến trúc toàn diện và tài liệu kỹ thuật. Phần này sẽ bao gồm kiến trúc hệ thống chi tiết, tương tác thành phần và thông số kỹ thuật.",
-            "technicalArchitecture": "Tổng quan kiến trúc kỹ thuật",
-            "architectureDescription": "Thiết kế hệ thống mô-đun cho tính linh hoạt và khả năng mở rộng tối đa",
-            "networkAdapterLayer": "Lớp Bộ chuyển đổi Mạng",
-            "networkAdapterDescription": "Giao diện giao thức blockchain",
-            "bridgeOrchestrationLayer": "Lớp Điều phối Bridge",
-            "bridgeOrchestrationDescription": "Logic phối hợp giao dịch",
-            "walletManagementLayer": "Lớp Quản lý Ví",
-            "walletManagementDescription": "Kết nối đa ví",
-            "localizationLayer": "Lớp Bản địa hóa",
-            "localizationDescription": "Tích hợp hệ sinh thái Việt Nam",
-            "securityValidationLayer": "Lớp Bảo mật & Xác thực",
-            "securityValidationDescription": "Cơ chế bảo mật phi tập trung",
+            "consensusMechanism": {
+                "title": "Cơ chế Đồng thuận",
+                "subtitle": "Cơ chế đồng thuận Byzantine Fault Tolerant (BFT) nâng cao, được tối ưu hóa cho hoạt động cross-chain",
+                "description": "Lotus Bridge áp dụng cơ chế đồng thuận lai, kết hợp Practical Byzantine Fault Tolerance (pBFT) với quy trình lựa chọn validator kiểu Việt Nam nhằm đảm bảo tính bảo mật, tốc độ và sự phù hợp về văn hóa.",
+                "validatorSelection": {
+                    "title": "Quy trình Lựa chọn Validator",
+                    "description": "Cách các validator được chọn để tham gia vào quá trình đồng thuận",
+                    "criteria": {
+                        "title": "Tiêu chí Lựa chọn",
+                        "items": {
+                            "stakeRequirement": "Yêu cầu stake tối thiểu: 100.000 token LOTUS",
+                            "technicalCompetency": "Đánh giá năng lực kỹ thuật và yêu cầu về hạ tầng",
+                            "vietnameseConnection": "Ưu tiên các validator có liên kết với cộng đồng Việt Nam",
+                            "uptimeRecord": "Lịch sử hoạt động ổn định với thời gian uptime đạt từ 99.5% trở lên",
+                            "securityAudit": "Đã vượt qua kiểm tra bảo mật hạ tầng validator"
+                        }
+                    },
+                    "process": {
+                        "title": "Quy trình Lựa chọn",
+                        "steps": {
+                            "application": "1. Validator gửi đơn đăng ký kèm theo khoản stake",
+                            "assessment": "2. Đánh giá kỹ thuật và cộng đồng (7 ngày)",
+                            "voting": "3. Giai đoạn bỏ phiếu cộng đồng (3 ngày)",
+                            "activation": "4. Kích hoạt validator sau khi được phê duyệt"
+                        }
+                    }
+                },
+                "userParticipation": {
+                    "title": "Sự Tham Gia của Người Dùng vào Cơ chế Đồng Thuận",
+                    "description": "Cách người dùng thông thường đóng góp vào bảo mật và quản trị mạng lưới",
+                    "stakingRewards": {
+                        "title": "Staking Ủy Quyền",
+                        "description": "Người dùng có thể ủy quyền token LOTUS của mình cho các validator đáng tin cậy",
+                        "features": {
+                            "minimumStake": "Mức ủy quyền tối thiểu: 1.000 token LOTUS",
+                            "rewardSharing": "Chia sẻ phần thưởng theo tỷ lệ với validator",
+                            "vietnameseValidators": "Ưu đãi đặc biệt khi hỗ trợ các validator người Việt",
+                            "liquidStaking": "Tùy chọn liquid staking giúp linh hoạt hơn"
+                        }
+                    },
+                    "governance": {
+                        "title": "Tham Gia Quản Trị",
+                        "description": "Tham gia trực tiếp vào quản trị giao thức",
+                        "features": {
+                            "proposalVoting": "Bỏ phiếu cho các đề xuất cải tiến giao thức",
+                            "validatorSelection": "Tham gia vào quy trình lựa chọn validator",
+                            "emergencyActions": "Thực hiện các hành động và nâng cấp khẩn cấp của giao thức",
+                            "parameterChanges": "Điều chỉnh các tham số mạng lưới"
+                        }
+                    }
+                },
+                "validatorRewards": {
+                    "title": "Cấu Trúc Phần Thưởng cho Validator",
+                    "description": "Hệ thống phần thưởng toàn diện nhằm khuyến khích hành vi minh bạch và thúc đẩy hệ sinh thái Việt Nam",
+                    "baseRewards": {
+                        "title": "Phần Thưởng Cơ Bản trong Đồng Thuận",
+                        "items": {
+                            "blockRewards": "Phần thưởng tạo block: 50 LOTUS mỗi block",
+                            "transactionFees": "Phân bổ phí giao dịch: 80% dành cho validator",
+                            "uptimeBonus": "Thưởng uptime: Thêm 10% nếu đạt uptime 99.9%",
+                            "stakingRewards": "Phần thưởng staking ủy quyền: 8–12% APY"
+                        }
+                    },
+                    "bonusRewards": {
+                        "title": "Phần Thưởng Hệ Sinh Thái Việt Nam",
+                        "items": {
+                            "localSupport": "Thưởng cho validator Việt Nam: Cộng thêm 20% phần thưởng",
+                            "communityEngagement": "Phần thưởng cho hoạt động giáo dục và kết nối cộng đồng",
+                            "tokenIntegration": "Thưởng khi hỗ trợ các cầu nối token Việt Nam",
+                            "culturalContribution": "Phần thưởng đóng góp văn hóa cho các sự kiện Việt Nam"
+                        }
+                    }
+                }
+            },
+            "systemEntities": {
+                "title": "Thành Phần & Vai Trò trong Hệ Thống",
+                "description": "Tổng quan đầy đủ về tất cả các bên tham gia trong hệ sinh thái Lotus Bridge",
+                "users": {
+                    "title": "",
+                    "description": "",
+                    "types": {
+                        "retailUsers": {
+                            "name": "Người Dùng Cá Nhân",
+                            "description": "Người dùng thực hiện giao dịch cross-chain cá nhân",
+                            "capabilities": {
+                                "bridgeAssets": "Chuyển tài sản giữa các chuỗi",
+                                "swapTokens": "Hoán đổi token giữa các mạng",
+                                "manageWallets": "Kết nối và quản lý nhiều ví",
+                                "participateGovernance": "Tham gia quản trị thông qua staking"
+                            }
+                        },
+                        "institutionalUsers": {
+                            "name": "Người Dùng Tổ Chức",
+                            "description": "Tổ chức và giao thức tích hợp với Lotus Bridge",
+                            "capabilities": {
+                                "bulkTransactions": "Thực hiện giao dịch cross-chain với khối lượng lớn",
+                                "apiIntegration": "Tích hợp thông qua API và smart contract",
+                                "customizedSolutions": "Truy cập giải pháp cầu nối tùy chỉnh",
+                                "prioritySupport": "Nhận hỗ trợ khách hàng ưu tiên"
+                            }
+                        }
+                    }
+                },
+                "bridges": {
+                    "title": "Nhà Vận Hành Cầu Nối",
+                    "description": "Các đơn vị chịu trách nhiệm quản lý kết nối cầu cross-chain",
+                    "responsibilities": {
+                        "networkConnections": "Duy trì kết nối với các mạng blockchain được hỗ trợ",
+                        "liquidityManagement": "Quản lý các pool thanh khoản cross-chain",
+                        "securityMonitoring": "Giám sát bảo mật cầu nối và phát hiện bất thường",
+                        "upgradeCoordination": "Phối hợp nâng cấp giao thức giữa các chuỗi"
+                    },
+                    "requirements": {
+                        "technicalExpertise": "Chuyên môn kỹ thuật cao về nhiều giao thức blockchain",
+                        "securityInfrastructure": "Hạ tầng bảo mật mạnh và hệ thống giám sát",
+                        "liquidityProvision": "Khả năng cung cấp thanh khoản đáng kể",
+                        "multiChainExperience": "Kinh nghiệm vận hành hạ tầng đa chuỗi đã được chứng minh"
+                    }
+                },
+                "liquidityProviders": {
+                    "title": "Nhà Cung Cấp Thanh Khoản (LPs)",
+                    "description": "Nhóm chuyên biệt trong các Nhà Vận Hành Cầu Nối, tập trung vào quản lý thanh khoản",
+                    "roles": {
+                        "poolManagement": "Quản lý các pool thanh khoản cross-chain",
+                        "arbitrageActivity": "Thực hiện arbitrage để duy trì sự ổn định giá",
+                        "riskManagement": "Triển khai các chiến lược quản lý rủi ro",
+                        "yieldOptimization": "Tối ưu hóa lợi suất cho người tham gia pool"
+                    },
+                    "incentives": {
+                        "tradingFees": "Nhận phí giao dịch từ các giao dịch cầu nối",
+                        "yieldFarming": "Tham gia các chương trình yield farming",
+                        "governanceTokens": "Nhận phân phối governance token",
+                        "vietnameseBonus": "Phần thưởng bổ sung cho các pool token Việt Nam"
+                    }
+                },
+                "consensusValidators": {
+                    "title": "Validator Đồng Thuận",
+                    "description": "Các validator chịu trách nhiệm cho cơ chế đồng thuận và xác thực giao dịch",
+                    "responsibilities": {
+                        "blockProduction": "Tạo và xác thực block trong cơ chế đồng thuận",
+                        "transactionValidation": "Xác thực giao dịch cross-chain và các thay đổi trạng thái",
+                        "networkSecurity": "Duy trì bảo mật mạng lưới thông qua sự tham gia trung thực",
+                        "emergencyResponse": "Phản ứng với tình huống khẩn cấp và nâng cấp giao thức"
+                    },
+                    "requirements": {
+                        "stakeRequirement": "Duy trì mức stake tối thiểu 100.000 token LOTUS",
+                        "technicalInfrastructure": "Vận hành hạ tầng validator với độ sẵn sàng cao",
+                        "communityStanding": "Giữ uy tín trong cộng đồng crypto Việt Nam",
+                        "securityCompliance": "Tuân thủ các tiêu chuẩn bảo mật và kiểm tra định kỳ"
+                    }
+                },
+                "relayers": {
+                    "title": "Relayer",
+                    "description": "Các nhà cung cấp hạ tầng hỗ trợ chuyển tiếp thông điệp và tài sản cross-chain",
+                    "functions": {
+                        "messageRelay": "Chuyển tiếp thông điệp và bằng chứng giữa các mạng blockchain khác nhau",
+                        "stateSync": "Đồng bộ thông tin trạng thái giữa các chuỗi",
+                        "eventMonitoring": "Giám sát sự kiện blockchain và kích hoạt hành động cross-chain",
+                        "dataOracle": "Cung cấp dịch vụ oracle để xác minh dữ liệu cross-chain"
+                    },
+                    "types": {
+                        "primaryRelayers": {
+                            "name": "Relayer Chính",
+                            "description": "Các relayer hạ tầng cốt lõi được vận hành bởi giao thức",
+                            "features": {
+                                "highAvailability": "Đảm bảo uptime 99.9%",
+                                "multiChainSupport": "Hỗ trợ tất cả các mạng blockchain được kết nối",
+                                "securityFocus": "Áp dụng các biện pháp bảo mật cấp doanh nghiệp",
+                                "vietnameseOperators": "Ưu tiên được vận hành bởi các tổ chức Việt Nam"
+                            }
+                        },
+                        "communityRelayers": {
+                            "name": "Relayer Cộng Đồng",
+                            "description": "Các relayer do cộng đồng vận hành nhằm tăng tính dự phòng",
+                            "features": {
+                                "decentralizedOperation": "Vận hành bởi các thành viên cộng đồng",
+                                "incentiveRewards": "Nhận phần thưởng cho dịch vụ ổn định",
+                                "redundancyBackup": "Cung cấp dự phòng và sao lưu",
+                                "lowBarrierEntry": "Rào cản kỹ thuật thấp để tham gia"
+                            }
+                        }
+                    }
+                }
+            },
+            "technicalArchitecture": {
+                "title": "Tổng Quan Kiến Trúc Kỹ Thuật",
+                "description": "Thiết kế hệ thống dạng mô-đun để tối đa hóa tính linh hoạt và khả năng mở rộng",
+                "networkAdapterLayer": "Lớp Kết Nối Giao Thức",
+                "networkAdapterDescription": "Giao diện kết nối với các giao thức blockchain",
+                "bridgeOrchestrationLayer": "Lớp Điều Phối Cầu Nối",
+                "bridgeOrchestrationDescription": "Logic điều phối giao dịch",
+                "walletManagementLayer": "Lớp Quản Lý Ví",
+                "walletManagementDescription": "Kết nối đa ví",
+                "localizationLayer": "Lớp Bản Địa Hóa",
+                "localizationDescription": "Tích hợp hệ sinh thái Việt Nam",
+                "securityValidationLayer": "Lớp Bảo Mật & Xác Thực",
+                "securityValidationDescription": "Cơ chế bảo mật phi tập trung"
+            },
+            "entityInteractions": {
+                "title": "Tương Tác & Quy Trình Giữa Các Thành Phần",
+                "description": "Cách các thành phần khác nhau tương tác trong hệ sinh thái Lotus Bridge",
+                "transactionFlow": {
+                    "title": "Luồng Giao Dịch Cross-Chain",
+                    "steps": {
+                        "userInitiation": "1. Người dùng khởi tạo giao dịch cross-chain thông qua giao diện",
+                        "validatorVerification": "2. Validator Đồng Thuận xác minh tính hợp lệ của giao dịch và xác thực người dùng",
+                        "bridgeExecution": "3. Nhà Vận Hành Cầu Nối thực hiện chuyển giao cross-chain",
+                        "relayerProcessing": "4. Relayer xử lý và chuyển tiếp dữ liệu giao dịch giữa các chuỗi",
+                        "lpLiquidity": "5. Nhà Cung Cấp Thanh Khoản đảm bảo đủ thanh khoản cho giao dịch",
+                        "finalConfirmation": "6. Validator Đồng Thuận xác nhận cuối cùng và hoàn tất giao dịch"
+                    }
+                },
+                "governanceFlow": {
+                    "title": "Luồng Ra Quyết Định Quản Trị",
+                    "steps": {
+                        "proposalSubmission": "1. Bất kỳ bên tham gia nào cũng có thể gửi đề xuất quản trị",
+                        "validatorReview": "2. Validator Đồng Thuận đánh giá tính khả thi kỹ thuật",
+                        "communityDiscussion": "3. Giai đoạn thảo luận cộng đồng (7 ngày)",
+                        "stakeholderVoting": "4. Tất cả các thành phần bỏ phiếu dựa trên stake/sự tham gia",
+                        "implementation": "5. Các đề xuất được thông qua sẽ được triển khai bởi Nhà Vận Hành Cầu Nối và Relayer"
+                    }
+                }
+            },
             "underDevelopment": "Đang phát triển - Hãy chờ đón!"
-        },
-        "governance": {
-            "title": "Quản trị",
-            "subtitle": "Mô hình quản trị do cộng đồng điều khiển với sự tham gia của bên liên quan Việt Nam và quy trình ra quyết định minh bạch.",
-            "badge": "🏛️ Khung quản trị",
-            "lotusGovernance": "Quản trị Lotus Bridge",
-            "governanceDescription": "Khung quản trị phi tập trung được thiết kế cho nhu cầu thị trường Việt Nam và khả năng tương tác blockchain toàn cầu.",
-            "underDevelopment": "🚧 Đang phát triển",
-            "underDevelopmentDescription": "Khung quản trị Lotus Bridge hiện đang được phát triển tích cực. Phần này sẽ được hoàn thiện trong bản cập nhật tương lai.",
-            "innovativeGovernance": "Đội ngũ của chúng tôi đang làm việc trên các giải pháp quản trị đổi mới sẽ cung cấp:",
-            "decentralizedGovernanceTitle": "Quản trị phi tập trung",
-            "decentralizedGovernanceDescription": "Cơ chế quản trị do cộng đồng điều khiển với sự tham gia của bên liên quan Việt Nam",
-            "efficientDecisionMaking": "Ra quyết định hiệu quả",
-            "efficientDecisionDescription": "Hệ thống đề xuất và bỏ phiếu được hợp lý hóa để phát triển giao thức nhanh chóng",
-            "transparentProcesses": "Quy trình minh bạch",
-            "transparentProcessesDescription": "Các quy trình quản trị mở và có thể kiểm toán với trách nhiệm giải trình rõ ràng",
-            "vietnameseCommunityFocus": "Tập trung cộng đồng Việt Nam",
-            "vietnameseCommunityDescription": "Đại diện cộng đồng địa phương với tiêu chuẩn tương tác toàn cầu",
-            "developmentTimeline": "🌸 Lịch trình phát triển",
-            "timelineDescription": "Hãy chờ đón các bản cập nhật về phát triển khung quản trị của chúng tôi khi chúng tôi xây dựng tương lai tương tác blockchain Việt Nam.",
-            "q3_2025": "Q3 2025",
-            "researchDesign": "Nghiên cứu & Thiết kế",
-            "researchDescription": "Nghiên cứu khung quản trị và phân tích yêu cầu thị trường Việt Nam",
-            "q4_2025": "Q4 2025",
-            "developmentTesting": "Phát triển & Thử nghiệm",
-            "developmentDescription": "Thực hiện các giao thức quản trị với phản hồi từ bên liên quan Việt Nam",
-            "q1_2026": "Q1 2026",
-            "mainnetLaunch": "Ra mắt Mainnet",
-            "mainnetDescription": "Triển khai khung quản trị đầy đủ với tích hợp token Việt Nam",
-            "joinDevelopment": "🇻🇳 Tham gia phát triển",
-            "joinDevelopmentDescription": "Quan tâm đến việc đóng góp cho phát triển quản trị Lotus Bridge?",
-            "vietnameseDevelopers": "Chúng tôi chào đón các nhà phát triển, nhà nghiên cứu và những người đam mê blockchain Việt Nam tham gia định hình khung quản trị của chúng tôi.",
-            "contactTeam": "Liên hệ đội phát triển",
-            "backToCoreConcept": "Quay lại khái niệm cốt lõi"
         },
         "faqs": {
             "title": "Câu hỏi thường gặp & Thuật ngữ",
