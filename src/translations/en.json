@@ -866,26 +866,161 @@
       }
     },
     "roadmap": {
-      "title": "Development Roadmap",
-      "subtitle": "Strategic milestones and feature releases",
-      "genesis": "v1.0.0 \"Genesis Launch\" (June 2025)",
-      "phases": {
-        "q3_2025": {
-          "title": "Q3 2025: Beta Launch",
-          "description": "Beta release with EVM + Solana support"
+      "badge": "Roadmap",
+      "title": "📍 Lotus Bridge Roadmap",
+      "subtitle": "From vision to reality — our journey from 2025 to 2026",
+      "timeline": [
+        {
+          "id": "planningPhase",
+          "title": "🧭 Planning & Research",
+          "date": "Feb – Apr 2025",
+          "status": "complete",
+          "description": "Initial ideation, market research, community interviews, and protocol feasibility analysis.",
+          "highlights": {
+            "researchScope": "Explored multi-chain bridging models and security assumptions",
+            "communityNeeds": "Conducted surveys and interviews with Vietnamese Web3 builders",
+            "technicalFeasibility": "Validated architecture choices through prototype simulations"
+          }
         },
-        "q4_2025": {
-          "title": "Q4 2025: Tokenomics",
-          "description": "Incentives for liquidity providers and tokenomics"
+        {
+          "id": "mvpLaunch",
+          "title": "🚀 MVP Deployment",
+          "date": "May 2025",
+          "status": "complete",
+          "description": "Launch of Lotus Bridge v1.0.0 with support for Ethereum ↔ Solana interoperability, token lock/release and mint/burn capabilities.",
+          "highlights": {
+            "coreProtocol": "Deployed core contracts for lock/release and mint/burn bridge modes",
+            "guardianCouncil": "Formed initial semi-centralized governance body",
+            "initialAudit": "Internal security checks and static analysis"
+          }
         },
-        "q1_2026": {
-          "title": "Q1 2026: Mobile Integration",
-          "description": "Mobile wallet integration"
+        {
+          "id": "testnetExpansion",
+          "title": "🧪 Testnet Expansion",
+          "date": "Jun – Jul 2025",
+          "status": "active",
+          "description": "Add support for more chains (e.g., BNB Chain, Polygon), enhanced dashboard, and ongoing bug bounties.",
+          "highlights": {
+            "multiChainSupport": "Extend bridge to additional EVM chains",
+            "uiImprovements": "Launch analytics and chain monitoring UI",
+            "publicBugBounty": "Launch public bug bounty with tiered rewards"
+          }
         },
-        "q2_2026": {
-          "title": "Q2 2026: DAO Launch",
-          "description": "Launch of DAO governance model"
+        {
+          "id": "communityPrograms",
+          "title": "🎁 Community Contribution Program",
+          "date": "Q3 2025",
+          "status": "upcoming",
+          "description": "Begin staged $LOTUS distribution to builders, testers, and voters. Learn more about the Community Program below.",
+          "popupContent": {
+            "philosophy": {
+              "title": "Purpose Over Profit",
+              "description": "We believe tokens should reward meaningful participation, not just presence. The community program is designed to fairly recognize early adopters, security contributors, ecosystem builders, and active voters — not speculators or sybil farmers."
+            },
+            "phases": [
+              {
+                "phase": "Phase 1: Retroactive Contribution Airdrop",
+                "allocation": "15,000,000 $LOTUS",
+                "eligibility": {
+                  "earlyUsers": "Early testnet users with actual cross-chain transactions",
+                  "bugReporters": "Bug reporters or security contributors",
+                  "openSource": "Open-source contributors to Lotus Bridge ecosystem",
+                  "onChainReputation": "On-chain reputation (Gitcoin Passport, ENS, POAP, SBTs)"
+                },
+                "claim": {
+                  "method": "Points-based allocation per wallet, claimable via frontend",
+                  "vesting": "Linear vesting for higher tiers, immediate unlock for smaller allocations",
+                  "sybilProtection": {
+                    "zkLogin": "zkLogin for uniqueness verification",
+                    "ensHeuristics": "ENS clustering heuristics",
+                    "daoPledge": "Optional DAO pledge signature"
+                  }
+                }
+              },
+              {
+                "phase": "Phase 2: Usage Mining & Governance Mining",
+                "allocation": "20,000,000 $LOTUS",
+                "eligibility": {
+                  "activeBridgeUsers": "Bridge usage over sustained timeframes",
+                  "diverseAssets": "Diversity of assets bridged",
+                  "voterParticipation": "Snapshot voting participation",
+                  "guardianVotes": "Guardian nomination votes",
+                  "proposalEngagement": "Proposal engagement or comment activity"
+                },
+                "claim": {
+                  "method": "Epoch-based snapshot and distribution cycle",
+                  "vesting": "Weekly or monthly release based on activity tier",
+                  "antiAbuse": {
+                    "whaleCaps": "Whale caps per epoch",
+                    "cooldownPeriods": "Cooldown periods for low-effort accounts",
+                    "noReferrals": "No self-referral or looping"
+                  }
+                }
+              },
+              {
+                "phase": "Phase 3: Ecosystem Growth Grants",
+                "allocation": "5,000,000 $LOTUS",
+                "eligibility": {
+                  "sdkIntegration": "Vietnamese-focused dApps integrating Lotus SDK",
+                  "hackathonWinners": "Hackathon winners building tools or dashboards",
+                  "contentCreators": "Content creators (education, docs, tutorials)",
+                  "communityBuilders": "Local community builders and campaign organizers"
+                },
+                "claim": {
+                  "method": "Grant proposal submission to DAO or Guardian Council",
+                  "vesting": "Milestone-based vesting per approved grant",
+                  "reviewProcess": "Community vote or multi-sig approval depending on tier"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "mainnetLaunch",
+          "title": "🌉 Mainnet Launch",
+          "date": "Q4 2025",
+          "status": "upcoming",
+          "description": "Launch of fully audited Lotus Bridge mainnet with core governance and tokenomics activated.",
+          "highlights": {
+            "auditPartners": "Third-party audit from top security firm",
+            "governanceEnabled": "DAO control over listings and emergency actions",
+            "tokenUtility": "$LOTUS token utility activated for fee reduction and voting"
+          }
+        },
+        {
+          "id": "ecosystemGrowth",
+          "title": "🌱 Ecosystem Growth & Localization",
+          "date": "Q1 2026",
+          "status": "upcoming",
+          "description": "Target integration with Vietnamese-focused dApps, fiat ramps, and cross-chain dApp partners.",
+          "highlights": {
+            "sdkLaunch": "SDK and API launch for developers",
+            "fiatOnboarding": "Work with fiat gateways like VNDC or local ramps",
+            "grantsDeployed": "First batch of ecosystem grants distributed"
+          }
+        },
+        {
+          "id": "layer2Scale",
+          "title": "⚡ L2 Expansion & Advanced Security",
+          "date": "Q2 2026",
+          "status": "upcoming",
+          "description": "Explore Layer 2 bridge deployments, modular bridge components, and advanced zk-proof integration.",
+          "highlights": {
+            "l2Support": "Support for Optimism, Arbitrum, and ZK Stack chains",
+            "modularArchitecture": "Decouple core modules (proof engine, liquidity router)",
+            "zkSecurity": "Experimentation with zero-knowledge security layer"
+          }
         }
+      ],
+      "status": {
+        "complete": "Complete",
+        "active": "Active",
+        "upcoming": "Upcoming"
+      },
+      "navigation": {
+        "backToTokenomics": "Return to Tokenomics",
+        "continueToFaqs": "Continue to FAQs",
+        "next": "Explore Architecture"
       }
     },
     "coreOverview": {
@@ -1384,35 +1519,66 @@
       }
     },
     "tokenomics": {
-      "badge": "💰 Tokenomics",
-      "subtitle": "Sustainable token economics designed to incentivize network growth, reward contributors, and support the Vietnamese ecosystem development.",
-      "underDevelopment": "🚧 Under Development",
-      "underDevelopmentDescription": "The Lotus Bridge tokenomics model is currently being finalized. This section will be completed in a future update.",
-      "economicsTeam": "Our economics team is designing a sustainable model that will provide:",
-      "validatorIncentives": "Validator Incentives",
-      "validatorDescription": "Sustainable rewards for network validators and Vietnamese node operators",
-      "communityRewards": "Community Rewards",
-      "communityDescription": "Incentives for liquidity mining and governance participation",
-      "developmentFund": "Development Fund",
-      "developmentDescription": "Budget allocation for continuous protocol development",
-      "feeStructure": "Fee Structure",
-      "feeDescription": "Transparent and competitive fee model for cross-chain transactions",
-      "distributionPreview": "🌸 Distribution Preview",
-      "distributionDescription": "Preliminary token allocation focused on Vietnamese community development and long-term sustainability.",
-      "community40": "Community (40%)",
-      "communityLiquidity": "Vietnamese Users & Liquidity",
-      "communityAllocation": "Allocated for Vietnamese community growth, liquidity incentives, and early user rewards",
-      "development25": "Development (25%)",
-      "teamDevelopment": "Team & Future Development",
-      "developmentAllocation": "Reserved for core team, advisors, and ongoing protocol development with vesting schedule",
-      "ecosystem35": "Ecosystem (35%)",
-      "validatorsPartnerships": "Validators & Partnerships",
-      "ecosystemAllocation": "For validator rewards, strategic partners, and ecosystem growth initiatives",
-      "vietnameseFirstEconomics": "🇻🇳 Vietnam-First Economics",
-      "interestedTokenomics": "Interested in contributing to our tokenomics development?",
-      "tokenomicsDesign": "We are designing a tokenomics model prioritizing Vietnamese community growth while ensuring global competitiveness and sustainability.",
-      "joinTokenomicsDiscussion": "Join the Tokenomics Discussion",
-      "backToCoreConcept": "Back to Core Concepts"
+      "badge": "Token Economics",
+      "title": "🌱 $LOTUS Tokenomics",
+      "subtitle": "Designed to support decentralized decision-making, not speculation.",
+      "supply": {
+        "title": "Total Supply",
+        "total": "100,000,000 $LOTUS",
+        "fixed": true,
+        "inflation": false,
+        "burnPolicy": "Burns may occur via DAO decisions, Guardian slashing, or reputation resets. No minting beyond genesis."
+      },
+      "allocation": {
+        "title": "Token Allocation Breakdown",
+        "description": "The $LOTUS allocation model reflects long-term alignment with community trust, decentralized governance, and zero VC pressure.",
+        "distribution": {
+          "communityPrograms": {
+            "category": "Community Programs",
+            "percentage": 40,
+            "purpose": "Used to reward real users, builders, and active contributors over time. Reserved for airdrops, usage-based mining, and future DAO programs.",
+            "rationale": "Majority ownership must remain with the users who operate, test, and secure the protocol from the ground up."
+          },
+          "coreTeam": {
+            "category": "Core Team",
+            "percentage": 15,
+            "purpose": "Allocated to founding developers and core contributors with a long-term vesting schedule.",
+            "rationale": "Recognizes the foundational effort while preventing early exit or short-term incentive distortion."
+          },
+          "guardianCouncilPartners": {
+            "category": "Guardian Council & Partners",
+            "percentage": 10,
+            "purpose": "Vested allocation for those serving in risk mitigation and early collaboration roles in the governance process.",
+            "rationale": "Incentivizes credible security-aligned actors without granting unilateral power or early liquidity."
+          },
+          "daoTreasury": {
+            "category": "DAO Treasury",
+            "percentage": 25,
+            "purpose": "Reserved for future governance-directed funding, including protocol upgrades, grants, audits, liquidity, and ecosystem maintenance.",
+            "rationale": "Provides long-term sustainability, flexible tooling, and reactive capacity for emergencies and builder funding."
+          },
+          "ecosystemDevelopmentFund": {
+            "category": "Ecosystem Development Fund",
+            "percentage": 10,
+            "purpose": "Allocated for integrations, hackathons, education campaigns, and expansion across Vietnam and the region.",
+            "rationale": "Grows the Lotus ecosystem through builder incentives, localized partnerships, and onboarding resources."
+          }
+        }
+      },
+      "philosophy": {
+        "title": "Design Philosophy",
+        "statements": {
+          "noVcAllocation": "No VC or private investor allocation — 100% community and contributor controlled.",
+          "longTermVesting": "Long-term vesting schedules for both team and strategic roles.",
+          "noSpeculativeYield": "No speculative yield, no farming loops — participation and governance are the only incentives.",
+          "activeControl": "Control belongs to those who use, build, or secure the bridge — not passive holders."
+        }
+      },
+      "navigation": {
+        "readyToBuild": "Ready to build with $LOTUS?",
+        "continueToGovernance": "Continue to Governance",
+        "next": "Explore Community Roadmap"
+      }
     },
     "ecosystemBenefits": {
       "hero": {
@@ -1821,11 +1987,6 @@
           "title": "Production Ready",
           "description": "Reliable infrastructure with 99.9% uptime and 24/7 support"
         }
-      },
-      "navigation": {
-        "backToUsers": "For Users",
-        "backToOverview": "Back to Overview",
-        "continueToLiquidity": "For Liquidity Providers"
       }
     },
     "benefitsVietnam": {
@@ -2002,6 +2163,58 @@
       "ecosystemBenefits": "Ecosystem Benefits",
       "benefitsDescription": "How Lotus Bridge creates value for all participants",
       "continueToSecurity": "Continue to Security"
+    },
+    "governance": {
+      "badge": "Governance Model",
+      "title": "🛡️ Governance & Oversight",
+      "subtitle": "A hybrid, purpose-built governance framework empowering communities without compromising security.",
+      "guardianCouncil": {
+        "title": "Guardian Council",
+        "description": "A curated set of trusted entities who have limited emergency powers to intervene in the event of protocol-level threats or attacks.",
+        "powers": {
+          "title": "Powers",
+          "pauseChannels": "Pause specific cross-chain channels or assets in case of malicious activity",
+          "triggerEmergencyVotes": "Trigger emergency votes in the DAO during active threats",
+          "proposeUpgrades": "Propose security upgrades or risk mitigations"
+        },
+        "limitations": {
+          "title": "Limitations",
+          "noUserFundTransfer": "Cannot transfer user funds",
+          "noUnilateralChanges": "Cannot change core contracts unilaterally",
+          "multisigRequired": "Actions require multi-signature supermajority approval"
+        },
+        "transparency": "All Guardian actions are logged on-chain and require DAO ratification within a defined voting window."
+      },
+      "daoParticipation": {
+        "title": "Community DAO Participation",
+        "description": "Token holders are empowered to vote, propose, and direct the future of Lotus Bridge through structured governance cycles.",
+        "votePowers": {
+          "title": "DAO Voting Rights",
+          "electGuardians": "Elect or replace Guardians",
+          "whitelistAssets": "Whitelist or blacklist specific assets or chains",
+          "fundingApproval": "Approve funding from treasury for ecosystem projects or bug bounties",
+          "protocolUpgrade": "Propose or review protocol upgrades"
+        },
+        "inclusiveDesign": "Participation is enhanced through sybil-resistant tools like Gitcoin Passport and optional Soulbound tokens for higher weight delegation based on reputation."
+      },
+      "governableActions": {
+        "title": "Governable Protocol Actions",
+        "list": {
+          "pauseMalicious": "Pausing of malicious chain interactions",
+          "manageAssets": "Adding/removing supported assets or networks",
+          "issueGrants": "Issuing grants or allocating ecosystem funds",
+          "overrideGuardians": "Overriding emergency Guardian decisions via DAO vote"
+        }
+      },
+      "securityEthics": {
+        "title": "Ethics & Cultural Grounding",
+        "description": "Lotus Bridge governance reflects Vietnam’s communal values of collective responsibility and layered trust. Guardians act as protectors, not rulers, and the DAO functions as a dynamic forum for technological and cultural alignment."
+      },
+      "navigation": {
+        "readyToParticipate": "Ready to join governance?",
+        "exploreProposals": "Explore proposals and vote on Snapshot",
+        "continueToTokenomics": "Continue to Tokenomics"
+      }
     }
   }
 }
