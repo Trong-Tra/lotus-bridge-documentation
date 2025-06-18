@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
+import bridge from "@/assets/bridge.png";
 
 const Architecture = () => {
   const { t, language } = useLanguage();
@@ -59,6 +60,16 @@ const Architecture = () => {
 
             {/* Governance Decision Making Layer Section */}
             <section className="py-20 px-6">
+              <figure className="text-center mb-12">
+                <img
+                  src={bridge}
+                  alt="Lotus Bridge Architecture"
+                  className="mx-auto max-w-4xl w-full h-auto rounded-lg shadow-md"
+                />
+                <figcaption className="mt-2 text-sm text-muted-foreground">
+                  Lotus Bridge Architecture
+                </figcaption>
+              </figure>
               <div className="container mx-auto max-w-6xl">
                 <div className="text-center mb-12">
                   <h2 className="text-4xl font-bold mb-4">
@@ -297,9 +308,9 @@ const Architecture = () => {
                             <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.baseRewards.items.uptimeBonus")}</p>
                           </div>
                           <div className="flex items-start gap-3">
-                              <Coins className="h-5 w-5 text-primary mt-0.5" />
-                              <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.baseRewards.items.stakingRewards")}</p>
-                            </div>
+                            <Coins className="h-5 w-5 text-primary mt-0.5" />
+                            <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.baseRewards.items.stakingRewards")}</p>
+                          </div>
                         </div>
                       </div>
                       <div className="p-6 bg-gradient-to-br from-accent/5 to-accent/10 rounded-lg border">
@@ -320,9 +331,9 @@ const Architecture = () => {
                             <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.bonusRewards.items.tokenIntegration")}</p>
                           </div>
                           <div className="flex items-start gap-3">
-                              <Globe className="h-5 w-5 text-accent mt-0.5" />
-                        <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.bonusRewards.items.culturalContribution")}</p>
-                            </div>
+                            <Globe className="h-5 w-5 text-accent mt-0.5" />
+                            <p className="text-sm">{t("pages.architecture.consensusMechanism.validatorRewards.bonusRewards.items.culturalContribution")}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -367,26 +378,26 @@ const Architecture = () => {
                             {t("pages.architecture.systemEntities.users.types.retailUsers.description")}
                           </p>
                           <div className="space-y-2">
-                            <div className="flex items-center gap-2">      
-                              <CheckCircle className="h-4 w-4 text-green-500" />      
+                            <div className="flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-green-500" />
                               <p className="text-sm">
                                 {t("pages.architecture.systemEntities.users.types.retailUsers.capabilities.bridgeAssets")}
                               </p>
                             </div>
-                            <div className="flex items-center gap-2">      
-                              <CheckCircle className="h-4 w-4 text-green-500" />      
+                            <div className="flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-green-500" />
                               <p className="text-sm">
                                 {t("pages.architecture.systemEntities.users.types.retailUsers.capabilities.swapTokens")}
                               </p>
                             </div>
-                            <div className="flex items-center gap-2">      
-                              <CheckCircle className="h-4 w-4 text-green-500" />      
+                            <div className="flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-green-500" />
                               <p className="text-sm">
                                 {t("pages.architecture.systemEntities.users.types.retailUsers.capabilities.manageWallets")}
                               </p>
                             </div>
-                            <div className="flex items-center gap-2">      
-                              <CheckCircle className="h-4 w-4 text-green-500" />      
+                            <div className="flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-green-500" />
                               <p className="text-sm">
                                 {t("pages.architecture.systemEntities.users.types.retailUsers.capabilities.participateGovernance")}
                               </p>
@@ -802,56 +813,56 @@ const Architecture = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          1
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            1
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.transactionFlow.steps.userInitiation")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.transactionFlow.steps.userInitiation")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          2
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            2
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.transactionFlow.steps.validatorVerification")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.transactionFlow.steps.validatorVerification")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          3
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            3
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.transactionFlow.steps.bridgeExecution")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.transactionFlow.steps.bridgeExecution")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          4
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            4
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.transactionFlow.steps.relayerProcessing")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.transactionFlow.steps.relayerProcessing")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          5
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            5
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.transactionFlow.steps.lpLiquidity")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.transactionFlow.steps.lpLiquidity")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          6
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            6
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.transactionFlow.steps.finalConfirmation")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.transactionFlow.steps.finalConfirmation")}
-                        </p>
                       </div>
-                    </div>
                     </CardContent>
                   </Card>
 
@@ -863,48 +874,48 @@ const Architecture = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          1
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            1
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.governanceFlow.steps.proposalSubmission")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.governanceFlow.steps.proposalSubmission")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          2
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            2
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.governanceFlow.steps.validatorReview")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.governanceFlow.steps.validatorReview")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          3
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            3
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.governanceFlow.steps.communityDiscussion")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.governanceFlow.steps.communityDiscussion")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          4
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            4
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.governanceFlow.steps.stakeholderVoting")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.governanceFlow.steps.stakeholderVoting")}
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
-                        <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                          5
+                        <div className="flex items-start gap-3 p-3 bg-muted/30 rounded-lg">
+                          <div className="w-6 h-6 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
+                            5
+                          </div>
+                          <p className="text-sm">
+                            {t("pages.architecture.entityInteractions.governanceFlow.steps.implementation")}
+                          </p>
                         </div>
-                        <p className="text-sm">
-                          {t("pages.architecture.entityInteractions.governanceFlow.steps.implementation")}
-                        </p>
                       </div>
-                    </div>
                     </CardContent>
                   </Card>
                 </div>
