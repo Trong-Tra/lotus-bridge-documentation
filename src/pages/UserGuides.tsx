@@ -591,10 +591,6 @@ const UserGuides = () => {
                             <h3 className="font-semibold text-lg mb-2">
                               Bridging Process Diagram
                             </h3>
-                            <p className="text-sm">[Diagram Coming Soon]</p>
-                            <p className="text-xs mt-2 text-muted-foreground/70">
-                            Designed by Gia Bảo – Lotus Bridge
-                            </p>
                           </div>
                         </div>
 

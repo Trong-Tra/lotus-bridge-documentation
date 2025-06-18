@@ -1,0 +1,130 @@
+"security": {
+    "badge": "🛡️ Security Framework",
+    "title": "🔐 Security",
+    "subtitle": "End-to-end safety by design, reinforced by transparency, governance, and community education.",
+    "coreModel": {
+        "title": "Bridge Architecture",
+        "lockAndRelease": {
+            "title": "Lock & Release Model",
+            "description": "Supports canonical token bridging by locking tokens in custody on the source chain and releasing them on the destination chain. All custody contracts are immutable and audited."
+        },
+        "mintAndBurn": {
+            "title": "Mint & Burn Model",
+            "description": "For synthetic assets, minting is only allowed with explicit permission from token issuers. The bridge holds no unilateral mint authority, and token owners can revoke mint rights anytime."
+        },
+        "tokenListing": {
+            "title": "Token Listing Security",
+            "description": "Only governance-approved tokens can be bridged. No arbitrary token activation. Safelist model enforced by on-chain registry."
+        }
+    },
+    "guardianCouncil": {
+        "title": "Guardian Council Emergency Layer",
+        "emergencyPowers": {
+            "title": "Emergency Powers",
+            "description": "Can pause token pairs or entire bridge during exploit events or abnormal behavior. Cannot access funds, mint tokens, or override contracts."
+        },
+        "attackResponse": {
+            "title": "Attack Response",
+            "description": "In case of a foreseen or live attack, guardians act quickly to contain damage, notify the community, and coordinate with token issuers to resolve issues."
+        }
+    },
+    "smartContractSecurity": {
+        "title": "Smart Contract Protections",
+        "reentrancy": {
+            "title": "Reentrancy Protection",
+            "description": "All functions interacting with external tokens follow checks-effects-interactions and are protected by ReentrancyGuard."
+        },
+        "overflow": {
+            "title": "Overflow Protection",
+            "description": "SafeMath or Solidity 0.8+ native overflow protections are used throughout."
+        },
+        "permissionControl": {
+            "title": "Permission Control",
+            "description": "Sensitive roles like minting or upgrades are gated behind AccessControl and/or multisig, never assigned to EOAs."
+        },
+        "upgradeSafety": {
+            "title": "Upgrade Safety",
+            "description": "If contracts are upgradable, they follow the UUPS proxy pattern. Admin logic is controlled by the DAO or multisig."
+        },
+        "flashLoanProtection": {
+            "title": "Flash Loan Protection",
+            "description": "Bridge behavior includes checks against flash loan manipulations, liquidity spoofing, and replay attacks."
+        },
+        "gasDos": {
+            "title": "Gas DoS Protection",
+            "description": "Contracts are written with bounded logic to avoid denial-of-service attacks due to excessive gas use."
+        }
+    },
+    "governanceAccountability": {
+        "title": "Accountable Governance",
+        "description": "Unlike anonymous DAOs, the Lotus governance layer is composed of identifiable actors.",
+        "identityRequirement": {
+            "title": "Identity Requirement",
+            "description": "All governance members are known and publicly verifiable, reducing attack surfaces from anonymous insiders."
+        },
+        "legalLiability": {
+            "title": "Legal Liability",
+            "description": "Governance actors can be held accountable under real-world laws for malicious actions or negligence."
+        },
+        "auditTrail": {
+            "title": "Audit Trail",
+            "description": "All votes, emergency actions, and listing decisions are signed on-chain with visible history and rationales."
+        },
+        "reputationModel": {
+            "title": "Reputation Model",
+            "description": "Bad actors face removal, public blacklisting, and potential legal proceedings if responsible for protocol abuse."
+        }
+    },
+    "userAwareness": {
+        "title": "User Awareness & Best Practices",
+        "verifyAddress": {
+            "title": "Verify Wallet Addresses",
+            "description": "Always verify full wallet addresses when bridging. Never rely only on the first and last digits."
+        },
+        "protectKeys": {
+            "title": "Protect Private Keys",
+            "description": "Never share your seed phrase or private key. Use hardware wallets or trusted browser extensions."
+        },
+        "officialSources": {
+            "title": "Use Official Sources",
+            "description": "Only use the official bridge UI: https://bridge.lotus.zone. Avoid links from DMs or random social posts."
+        },
+        "socialEngineering": {
+            "title": "Beware Social Engineering",
+            "description": "Lotus Bridge will never DM you. No one should ask for your keys or funds. Be wary of impersonators."
+        },
+        "tokenRisk": {
+            "title": "Token Risk Assessment",
+            "description": "Only DAO-approved tokens are supported. If it's not listed, don't bridge it."
+        },
+        "gasExploits": {
+            "title": "Gas Exploit Awareness",
+            "description": "Watch for abnormally high gas fees — they may be signs of malicious contract behavior."
+        },
+        "blockExplorerUse": {
+            "title": "Use Block Explorers",
+            "description": "Always check your transaction on Etherscan or Solscan to confirm correct execution and destination."
+        },
+        "reporting": {
+            "title": "Report Issues",
+            "description": "Report phishing or protocol issues at https://report.lotus.zone"
+        }
+    },
+    "securityAudits": {
+        "title": "Security Audits & Compliance",
+        "auditFirms": "Leading security audit firms",
+        "trailOfBits": "Trail of Bits - Smart contract security audit",
+        "quantstamp": "Quantstamp - Protocol design review",
+        "certik": "CertiK - Comprehensive security assessment",
+        "bugBounty": {
+            "title": "Bug Bounty Program",
+            "description": "Up to $100,000 for critical vulnerabilities",
+            "scope": "Covers smart contracts, web interfaces, and infrastructure"
+        }
+    },
+    "navigation": {
+        "backToBenefits": "Back to Benefits",
+        "continueExploring": "Continue Exploring",
+        "learnAboutRoadmap": "Learn about our development roadmap",
+        "continueToRoadmap": "Continue to Roadmap"
+    }
