@@ -237,6 +237,9 @@
     "reportIssue": "Báo cáo vấn đề"
   },
   "documentationHub": {
+    "badge": "📚 Trung tâm Tài liệu",
+    "title": "Tự tin xây dựng ứng dụng của riêng bạn",
+    "subtitle": "Khám phá hướng dẫn kỹ thuật, tài liệu API và ví dụ về hợp đồng thông minh để tăng tốc phát triển với Lotus Bridge.",
     "buttons": {
       "buildWithUs": "Xây dựng cùng chúng tôi",
       "readWhitepaper": "Đọc Whitepaper",

@@ -237,6 +237,9 @@
     "reportIssue": "Report Issue"
   },
   "documentationHub": {
+    "badge": "📚 Documentation Hub",
+    "title": "Build with Confidence",
+    "subtitle": "Explore technical guides, API references, and smart contract examples to accelerate your development with Lotus Bridge.",
     "buttons": {
       "buildWithUs": "Build with Us",
       "readWhitepaper": "Read Whitepaper",
@@ -1507,7 +1510,7 @@
         "certik": "CertiK - Comprehensive security assessment",
         "bugBounty": {
           "title": "Bug Bounty Program",
-          "description": "Up to $100,000 for critical vulnerabilities",
+          "description": "Up to $1000 for critical vulnerabilities",
           "scope": "Covers smart contracts, web interfaces, and infrastructure"
         }
       },
