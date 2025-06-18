@@ -157,7 +157,8 @@
     "gettingStarted": "Bắt đầu",
     "tokenBridging": "Bridging token",
     "securityBestPractices": "Thực hành bảo mật tốt nhất",
-    "troubleshooting": "Khắc phục sự cố"
+    "troubleshooting": "Khắc phục sự cố",
+    "subtitle": "Hướng dẫn từng bước giúp người dùng sử dụng Lotus Bridge và truy cập DeFi xuyên chuỗi một cách dễ dàng."
   },
   "developerDocs": {
     "title": "Tài liệu nhà phát triển",
@@ -240,12 +241,18 @@
     "badge": "📚 Trung tâm Tài liệu",
     "title": "Tự tin xây dựng ứng dụng của riêng bạn",
     "subtitle": "Khám phá hướng dẫn kỹ thuật, tài liệu API và ví dụ về hợp đồng thông minh để tăng tốc phát triển với Lotus Bridge.",
+    "faqs": {
+      "description": "Giải đáp các câu hỏi thường gặp về tích hợp, bảo mật, quản trị và tokenomics của Lotus Bridge."
+    },
     "buttons": {
       "buildWithUs": "Xây dựng cùng chúng tôi",
       "readWhitepaper": "Đọc Whitepaper",
       "findAnswers": "Tìm câu trả lời",
       "viewUpdates": "Xem cập nhật",
       "joinCommunity": "Tham gia cộng đồng"
+    },
+    "whitepaper": {
+      "description": "Tổng quan kỹ thuật chuyên sâu về giao thức Lotus Bridge, bao gồm kiến trúc, quản trị, tokenomics và thiết kế bảo mật."
     }
   },
   "footer": {

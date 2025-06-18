@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Link } from "react-router-dom";
+import lotus_logo from "../../public/$LOTUS.svg"
 
 const Tokenomics = () => {
   const { t, language } = useLanguage();
@@ -63,7 +64,11 @@ const Tokenomics = () => {
                 <Card className="mb-12 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
                   <CardHeader className="text-center">
                     <CardTitle className="flex items-center justify-center gap-2 text-3xl">
-                      <Coins className="h-8 w-8" />
+                      <img
+                        src={lotus_logo}
+                        alt="$LOTUS Logo"
+                        style={{ width: "3rem", height: "3rem" }}
+                      />
                       {t("pages.tokenomics.supply.title")}
                     </CardTitle>
                     <div className="text-5xl font-bold text-primary mt-4">

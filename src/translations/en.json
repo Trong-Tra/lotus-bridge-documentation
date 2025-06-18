@@ -157,7 +157,8 @@
     "gettingStarted": "Begin",
     "tokenBridging": "Bridging token",
     "securityBestPractices": "Best Security Practices",
-    "troubleshooting": "Troubleshooting"
+    "troubleshooting": "Troubleshooting",
+    "subtitle": "Step-by-step guides to help you navigate and use Lotus Bridge effectively. From wallet connection to advanced bridging strategies."
   },
   "developerDocs": {
     "title": "Developer Documentation",
@@ -240,12 +241,18 @@
     "badge": "📚 Documentation Hub",
     "title": "Build with Confidence",
     "subtitle": "Explore technical guides, API references, and smart contract examples to accelerate your development with Lotus Bridge.",
+    "faqs": {
+      "description": "Find answers to frequently asked questions about Lotus Bridge integration, security, governance, and tokenomics."
+    },
     "buttons": {
       "buildWithUs": "Build with Us",
       "readWhitepaper": "Read Whitepaper",
       "findAnswers": "Find Answers",
       "viewUpdates": "View Updates",
       "joinCommunity": "Join Community"
+    },
+    "whitepaper": {
+      "description": "In-depth technical overview of the Lotus Bridge protocol, including architecture, governance, tokenomics, and security design."
     }
   },
   "footer": {
@@ -1743,7 +1750,7 @@
           "name": "🚀 Vietnamese Innovation Pools",
           "description": "KAI/C98, KNC cross-ecosystem pairs",
           "apr": "18-28%",
-          "risk": "Medium-High",
+          "risk": "High",
           "demand": "Growing"
         }
       },
