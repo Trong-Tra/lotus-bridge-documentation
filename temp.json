@@ -1,0 +1,148 @@
+{
+    "badge": "Roadmap",
+    "title": "📍 Lotus Bridge Roadmap",
+    "subtitle": "From vision to reality — our journey from 2025 to 2026",
+    "timeline": [
+        {
+            "id": "planningPhase",
+            "title": "🧭 Planning & Research",
+            "date": "Feb – Apr 2025",
+            "status": "complete",
+            "description": "Initial ideation, market research, community interviews, and protocol feasibility analysis.",
+            "highlights": {
+                "researchScope": "Explored multi-chain bridging models and security assumptions",
+                "communityNeeds": "Conducted surveys and interviews with Vietnamese Web3 builders",
+                "technicalFeasibility": "Validated architecture choices through prototype simulations"
+            }
+        },
+        {
+            "id": "mvpLaunch",
+            "title": "🚀 MVP Deployment",
+            "date": "May 2025",
+            "status": "complete",
+            "description": "Launch of Lotus Bridge v1.0.0 with support for Ethereum ↔ Solana interoperability, token lock/release and mint/burn capabilities.",
+            "highlights": {
+                "coreProtocol": "Deployed core contracts for lock/release and mint/burn bridge modes",
+                "guardianCouncil": "Formed initial semi-centralized governance body",
+                "initialAudit": "Internal security checks and static analysis"
+            }
+        },
+        {
+            "id": "testnetExpansion",
+            "title": "🧪 Testnet Expansion",
+            "date": "Jun – Jul 2025",
+            "status": "active",
+            "description": "Add support for more chains (e.g., BNB Chain, Polygon), enhanced dashboard, and ongoing bug bounties.",
+            "highlights": {
+                "multiChainSupport": "Extend bridge to additional EVM chains",
+                "uiImprovements": "Launch analytics and chain monitoring UI",
+                "publicBugBounty": "Launch public bug bounty with tiered rewards"
+            }
+        },
+        {
+            "id": "communityPrograms",
+            "title": "🎁 Community Contribution Program",
+            "date": "Q3 2025",
+            "status": "upcoming",
+            "description": "Begin staged $LOTUS distribution to builders, testers, and voters. Learn more about the Community Program below.",
+            "popupContent": {
+                "philosophy": {
+                    "title": "Purpose Over Profit",
+                    "description": "We believe tokens should reward meaningful participation, not just presence. The community program is designed to fairly recognize early adopters, security contributors, ecosystem builders, and active voters — not speculators or sybil farmers."
+                },
+                "phases": [
+                    {
+                        "phase": "Phase 1: Retroactive Contribution Airdrop",
+                        "allocation": "15,000,000 $LOTUS",
+                        "eligibility": {
+                            "earlyUsers": "Early testnet users with actual cross-chain transactions",
+                            "bugReporters": "Bug reporters or security contributors",
+                            "openSource": "Open-source contributors to Lotus Bridge ecosystem",
+                            "onChainReputation": "On-chain reputation (Gitcoin Passport, ENS, POAP, SBTs)"
+                        },
+                        "claim": {
+                            "method": "Points-based allocation per wallet, claimable via frontend",
+                            "vesting": "Linear vesting for higher tiers, immediate unlock for smaller allocations",
+                            "sybilProtection": {
+                                "zkLogin": "zkLogin for uniqueness verification",
+                                "ensHeuristics": "ENS clustering heuristics",
+                                "daoPledge": "Optional DAO pledge signature"
+                            }
+                        }
+                    },
+                    {
+                        "phase": "Phase 2: Usage Mining & Governance Mining",
+                        "allocation": "20,000,000 $LOTUS",
+                        "eligibility": {
+                            "activeBridgeUsers": "Bridge usage over sustained timeframes",
+                            "diverseAssets": "Diversity of assets bridged",
+                            "voterParticipation": "Snapshot voting participation",
+                            "guardianVotes": "Guardian nomination votes",
+                            "proposalEngagement": "Proposal engagement or comment activity"
+                        },
+                        "claim": {
+                            "method": "Epoch-based snapshot and distribution cycle",
+                            "vesting": "Weekly or monthly release based on activity tier",
+                            "antiAbuse": {
+                                "whaleCaps": "Whale caps per epoch",
+                                "cooldownPeriods": "Cooldown periods for low-effort accounts",
+                                "noReferrals": "No self-referral or looping"
+                            }
+                        }
+                    },
+                    {
+                        "phase": "Phase 3: Ecosystem Growth Grants",
+                        "allocation": "5,000,000 $LOTUS",
+                        "eligibility": {
+                            "sdkIntegration": "Vietnamese-focused dApps integrating Lotus SDK",
+                            "hackathonWinners": "Hackathon winners building tools or dashboards",
+                            "contentCreators": "Content creators (education, docs, tutorials)",
+                            "communityBuilders": "Local community builders and campaign organizers"
+                        },
+                        "claim": {
+                            "method": "Grant proposal submission to DAO or Guardian Council",
+                            "vesting": "Milestone-based vesting per approved grant",
+                            "reviewProcess": "Community vote or multi-sig approval depending on tier"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "mainnetLaunch",
+            "title": "🌉 Mainnet Launch",
+            "date": "Q4 2025",
+            "status": "upcoming",
+            "description": "Launch of fully audited Lotus Bridge mainnet with core governance and tokenomics activated.",
+            "highlights": {
+                "auditPartners": "Third-party audit from top security firm",
+                "governanceEnabled": "DAO control over listings and emergency actions",
+                "tokenUtility": "$LOTUS token utility activated for fee reduction and voting"
+            }
+        },
+        {
+            "id": "ecosystemGrowth",
+            "title": "🌱 Ecosystem Growth & Localization",
+            "date": "Q1 2026",
+            "status": "upcoming",
+            "description": "Target integration with Vietnamese-focused dApps, fiat ramps, and cross-chain dApp partners.",
+            "highlights": {
+                "sdkLaunch": "SDK and API launch for developers",
+                "fiatOnboarding": "Work with fiat gateways like VNDC or local ramps",
+                "grantsDeployed": "First batch of ecosystem grants distributed"
+            }
+        },
+        {
+            "id": "layer2Scale",
+            "title": "⚡ L2 Expansion & Advanced Security",
+            "date": "Q2 2026",
+            "status": "upcoming",
+            "description": "Explore Layer 2 bridge deployments, modular bridge components, and advanced zk-proof integration.",
+            "highlights": {
+                "l2Support": "Support for Optimism, Arbitrum, and ZK Stack chains",
+                "modularArchitecture": "Decouple core modules (proof engine, liquidity router)",
+                "zkSecurity": "Experimentation with zero-knowledge security layer"
+            }
+        }
+    ]
+}

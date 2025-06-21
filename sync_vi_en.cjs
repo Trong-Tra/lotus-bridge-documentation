@@ -23,26 +23,20 @@ function syncKeysStrict(source, target) {
     const targetValue = target[key];
     
     if (typeof sourceValue === "object" && sourceValue !== null) {
-      // Source là object - target cũng phải là object
       if (typeof targetValue === "object" && targetValue !== null) {
-        // Cả hai đều là object - đồng bộ recursive
         newTarget[key] = syncKeysStrict(sourceValue, targetValue);
       } else {
-        // Target không phải object - tạo object mới và đồng bộ
         console.log(`🔄 Converting "${key}" from ${typeof targetValue} to object (following vi.json structure)`);
         newTarget[key] = syncKeysStrict(sourceValue, {});
       }
     } else {
-      // Source là primitive
       if (typeof targetValue === "object" && targetValue !== null) {
-        // Target là object nhưng source là primitive - reset về empty string
         console.log(`⚠️  TYPE MISMATCH at "${key}":`);
         console.log(`     vi.json: "${sourceValue}" (${typeof sourceValue})`);
         console.log(`     en.json: [object] (${typeof targetValue})`);
         console.log(`     → Resetting to empty string to match vi.json structure`);
         newTarget[key] = "";
       } else {
-        // Cả hai đều là primitive - giữ nguyên giá trị đã dịch hoặc để trống
         newTarget[key] = targetValue || "";
       }
     }

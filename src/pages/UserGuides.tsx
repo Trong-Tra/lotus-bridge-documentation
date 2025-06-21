@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { useEffect } from "react";
+import bridge1 from '@/assets/bridge_1.png'
 
 const UserGuides = () => {
   const { t } = useLanguage();
@@ -580,20 +581,18 @@ const UserGuides = () => {
                       </CardHeader>
                       <CardContent className="space-y-6">
                         {/* Bridging Process Diagram Placeholder */}
-                        <div className="bg-muted/30 rounded-lg p-8 text-center border-2 border-dashed border-muted-foreground/30">
-                          <div className="text-muted-foreground">
-                            <div className="text-4xl mb-4">📊</div>
-                            <h3 className="font-semibold text-lg mb-2">
+                        <div className="text-muted-foreground">
+                          <figure className="text-center mb-12">
+                            <img
+                              src={bridge1}
+                              alt="Bridge Architecture"
+                              className="mx-auto max-w-4xl w-full h-auto rounded-lg shadow-md"
+                            />
+                            <figcaption className="mt-2 text-sm text-muted-foreground">
                               Bridging Process Diagram
-                            </h3>
-                            <p className="text-sm">[Diagram Coming Soon]</p>
-                            <p className="text-xs mt-2 text-muted-foreground/70">
-                              Awaiting Gia Bao completion of the visual bridging
-                              flow diagram
-                            </p>
-                          </div>
+                            </figcaption>
+                          </figure>
                         </div>
-
                         <div className="bg-muted/30 rounded-lg p-6 cursor-default">
                           <h4 className="font-semibold mb-4">
                             Supported Networks

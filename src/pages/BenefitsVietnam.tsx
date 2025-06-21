@@ -19,27 +19,27 @@ const BenefitsVietnam = () => {
 
   const industryBenefits = [
     {
-      title: t("pages.benefitsVietnam.industryBenefits.web3Innovation.title"),
+      title: t("pages.benefitsVietnam.industryBenefits.innovationHub.title"),
       description: t(
-        "pages.benefitsVietnam.industryBenefits.web3Innovation.description"
+        "pages.benefitsVietnam.industryBenefits.innovationHub.description"
       ),
       icon: Star,
       features: [
         t(
-          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.globalRecognition"
+          "pages.benefitsVietnam.industryBenefits.innovationHub.features.globalRecognition"
         ),
         t(
-          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.internationalInvestment"
+          "pages.benefitsVietnam.industryBenefits.innovationHub.features.internationalInvestment"
         ),
         t(
-          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.localTalent"
+          "pages.benefitsVietnam.industryBenefits.innovationHub.features.localTalent"
         ),
         t(
-          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.vietnameseApproach"
+          "pages.benefitsVietnam.industryBenefits.innovationHub.features.vietnameseApproach"
         ),
         t(
-          "pages.benefitsVietnam.industryBenefits.web3Innovation.features.culturalValues"
-        ),
+          "pages.benefitsVietnam.industryBenefits.innovationHub.features.culturalValues"
+        ),  
       ],
     },
     {
@@ -184,27 +184,24 @@ const BenefitsVietnam = () => {
                     return (
                       <Card key={index} className="relative overflow-hidden">
                         <div
-                          className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${
-                            index % 2 === 0
+                          className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${index % 2 === 0
                               ? "from-red-500 to-yellow-500"
                               : "from-yellow-500 to-red-500"
-                          }`}
+                            }`}
                         />
                         <CardHeader className="pl-8">
                           <div className="flex items-center gap-4 mb-2">
                             <div
-                              className={`p-3 rounded-lg ${
-                                index % 2 === 0
+                              className={`p-3 rounded-lg ${index % 2 === 0
                                   ? "bg-red-50 border border-red-200"
                                   : "bg-yellow-50 border border-yellow-200"
-                              }`}
+                                }`}
                             >
                               <IconComponent
-                                className={`h-6 w-6 ${
-                                  index % 2 === 0
+                                className={`h-6 w-6 ${index % 2 === 0
                                     ? "text-red-600"
                                     : "text-yellow-600"
-                                }`}
+                                  }`}
                               />
                             </div>
                             <CardTitle className="text-2xl">
